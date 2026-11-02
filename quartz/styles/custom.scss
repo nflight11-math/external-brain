@@ -1,4 +1,12 @@
 
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+.explorer .explorer-content > .explorer-ul {
+  > li:nth-last-child(3)::before,
+  > li:nth-last-child(2)::before {
+    content: "";
+    display: block;
+    border-top: 1px solid var(--lightgray);
+    margin: 0.9rem 0 0.7rem;
+  }
+}

@@ -58,5 +58,3 @@ $q$를 소수 거듭제곱이라 하고 $F_q\in G_{\mathbb F_q}$를 $F_q(x)=x^q$
 
 - J. S. Milne, [Fields and Galois Theory](https://www.jmilne.org/math/CourseNotes/ft.html): 유한체와 무한 Galois 이론.
 - Gabor Wiese, [Galois Representations](https://math.uni.lu/~wiese/notes/GalRep): 연속 Galois 표현의 기초 및 §1.3의 cyclotomic character.
-
-문제는 위 주제들을 공부하기 위한 연습으로 재구성하였다. 다음 회차에서는 $\mathbb Z_\ell$-격자와 잔여표현을 다룬다.

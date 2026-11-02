@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: ko-KR
-  baseUrl: nflight11-math.github.io/external-brain
+  baseUrl: external-brain.kr
   ignorePatterns:
     - private
     - templates

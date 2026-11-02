@@ -20,8 +20,8 @@ componentRegistry.setOptionOverrides("@quartz-community/explorer", {
           .trim()
           .toLowerCase()
 
-        if (name === "help" && node.isFolder) return 2
-        if (name === "integration of the week") return 1
+        if (name === "Help" && node.isFolder) return 2
+        if (name === "Integration of the week") return 1
 
         return 0
       }

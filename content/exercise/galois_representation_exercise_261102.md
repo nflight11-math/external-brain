@@ -19,7 +19,7 @@ tags:
 - $\ell$은 소수이며, $\mathbb Z_\ell$과 $\mathbb Q_\ell$에는 각각 통상적인 $\ell$-adic 위상을 준다. Finite group에는 discrete topology를 준다.
 - 이 문서에서 arithmetic Frobenius는 residue field에서 $x\mapsto x^q$로 작용하는 원소이다. Geometric Frobenius는 그 역원이다.
 
-## 문제 1. 유한 표적 표현의 연속성
+## 문제 1. Finite codomain representation의 연속성
 
 Finite group $H$와 group homomorphism $\rho:G_K\to H$를 생각하자.
 
@@ -36,7 +36,7 @@ Finite group $H$와 group homomorphism $\rho:G_K\to H$를 생각하자.
 > [!done]- 증명
 > 1. 만일 $\rho$가 연속이라면 inverse image of open set $\{1\}\subset H$인 $\ker\rho$는 open subgroup of $G_K$여야 한다. 반대로 만일 $\ker\rho$가 open subgroup이라면, 임의의 (open) subset $U\subset H$에 대하여, $\rho^{-1}U=\bigcup_{\sigma\in\rho^{-1}U}\sigma\ker\rho$는 union of open set이므로 역시 open이므로 $\rho$가 연속이다. $\square$
 
-## 문제 2. 유한체의 Galois 군과 1차원 표현
+## 문제 2. 유한체의 Galois 군과 1-dimensional representation
 
 $q=p^k$는 prime power이며, $F_q\in G_{\mathbb F_q}$를 $F_q(x)=x^q$로 정의하자.
 

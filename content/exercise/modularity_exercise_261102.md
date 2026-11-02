@@ -105,7 +105,7 @@ $$
 \cong\mathbb Z_\ell(1)
 $$
 
-을 유도함을 보이고, $\det\rho_{E,\ell}=\chi_\ell$임을 보여라. 단, 여기서 $\bigwedge^n V$는 [[Definitions/E#Exterior power|$n$-th exterior power of $V$]]이다.
+을 유도함을 보이고, $\det\rho_{E,\ell}=\chi_\ell$임을 보여라. 단, 여기서 $\bigwedge^n V$는 $n$-th [[Definitions/E#Exterior power|exterior power]] of $V$이다.
 
 ## 문제 3. Torsion field와 real place에서의 oddness
 

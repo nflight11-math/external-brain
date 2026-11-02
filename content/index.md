@@ -6,10 +6,12 @@ title: External Brain
 
 Welcome to my External Brain.
 
-## Fields
+## 분야
 
 - [[Algebra]]
 - [[Number Theory]]
+
+## 연습문제
 
 - [[exercise|Exercise]]
 

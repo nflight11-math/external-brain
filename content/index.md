@@ -11,9 +11,7 @@ Welcome to my External Brain.
 - [[Algebra]]
 - [[Number Theory]]
 
-## 연습문제
-
-- [[exercise|Exercise]]
+- [[exercise/index|Exercise]]
 
 ## About
 

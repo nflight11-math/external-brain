@@ -20,7 +20,7 @@ tags:
 > $$
 > 이 주어지면 $\{\operatorname{Gal}(F/K);\pi_{F_2,F_1}\}_{F\in\mathcal F}$는 inverse system이다.
 > 이 system의 inverse limit $G=\varprojlim_{F\in\mathcal F}\operatorname{Gal}(F/K)$를 Galois group of $L/K$로 간주한다.
-> $\operatorname{Gal}(F/K)$가 discrete space일 때, $G$에는 product space $\prod_{F\in\mathcal F}\operatorname{Gal}(F/K)$의 subspace topologt를 부여한다.
+> $\operatorname{Gal}(F/K)$가 discrete space일 때, $G$에는 product space $\prod_{F\in\mathcal F}\operatorname{Gal}(F/K)$의 subspace topology를 부여한다.
 
 ## Infinite Galois correspondence
 $L/K$가 (infinite) Galois extension with Galois group $G$이고, $G$에 Krull topology가 부여되어 있을 때
@@ -36,3 +36,10 @@ $$
 3. Closed subgroup of $G$ $H$이 normal subgroup임과 $L^H/K$가 normal extension임이 동치이다. 이때 $\operatorname{Gal}(L^H/G)\cong G/H$이다.
 
 > [!done]- 증명
+>$H$가 subgroup of $G$일 시, $\sigma\in \overline H$임은 모든 finite Galois $E/K$에 대하여 $\sigma\operatorname{Gal}(E/K)\cap H\ne\varnothing$임과, 즉 $\operatorname{res}_E(\sigma)\in\operatorname{res}_E(H)$임과 동치이다.
+>그러므로,
+>$$
+>\overline H=\bigcap_{E/K\text{ is finite Galois}}\operatorname{res}_E^{-1}\operatorname{res}_EH.
+>$$
+>
+> 1.

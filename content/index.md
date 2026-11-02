@@ -6,11 +6,9 @@ title: External Brain
 
 External Brain에 오신 것을 환영합니다.
 
-## 분야
+## 색인
 
-- [[Algebra]]
-- [[Number Theory]]
-
+- [[Definitions/index|Definitions]]
 - [[exercise/index|Exercise]]
 
 ## 소개

@@ -9,12 +9,6 @@ tags:
   - exercises
 ---
 
-## 학습 목표
-
-타원곡선의 유한 torsion subgroup에서 Tate module을 구성하고, Weil pairing을 이용하여 Galois 표현의 determinant를 계산한다. 이를 torsion field의 cyclotomic 부분과 실소점에서의 oddness에 연결한다. 이 내용은 이후 deformation theory의 determinant 조건과 modularity lifting을 공부하기 위한 기초이다.
-
-세 문제는 모두 증명된 사실을 다룬다. 전체 예상 소요 시간은 약 2-3시간이다.
-
 ## 공통 설정
 
 $K$는 수체, $\overline K$는 대수적 폐포이며, $G_K=\operatorname{Gal}(\overline K/K)$라 하자. $E/K$는 타원곡선, $\ell$은 소수이다. $n\ge 1$에 대하여 $E[\ell^n]=\{P\in E(\overline K):[\ell^n]P=O\}$로 쓴다. 이는 $K$-유리점만이 아니라 기하적 torsion points 전체를 뜻한다.
@@ -111,9 +105,9 @@ $$
 \cong\mathbb Z_\ell(1)
 $$
 
-을 유도함을 보이고, $\det\rho_{E,\ell}=\chi_\ell$임을 보여라. 단, 여기서 $\bigwedge^n V$는 $n$-th exterior power of $V$이다.
+을 유도함을 보이고, $\det\rho_{E,\ell}=\chi_\ell$임을 보여라. 단, 여기서 $\bigwedge^n V$는 [[Definitions/E#Exterior power|$n$-th exterior power of $V$]]이다.
 
-## 문제 3. Torsion field와 실소점에서의 oddness
+## 문제 3. Torsion field와 real place에서의 oddness
 
 $m=\ell^n$이라 하고, $L_m=K(E[m])$을 모든 $m$-torsion point의 좌표를 첨가한 체라 하자.
 
@@ -132,7 +126,7 @@ $$
 
 $K$가 real place $v$를 갖는다고 가정하자. 해당 실 embedding을 확장하는 $\overline K\hookrightarrow\mathbb C$를 선택하여 얻는 complex conjugation을 $c_v\in G_K$라 하자. $\det\rho_{E,\ell}(c_v)=-1$임을 보여라.
 
-이어서 $V_\ell(E):=T_\ell(E)\otimes_{\mathbb Z_\ell}\mathbb Q_\ell$ 위에서 $c_v$의 $+1$, $-1$ eigenspace가 각각 1차원임을 증명하라. 여기서 2차원 표현의 실소점에서의 **oddness**는 complex conjugation의 determinant가 $-1$이라는 조건을 뜻한다.
+이어서 $V_\ell(E):=T_\ell(E)\otimes_{\mathbb Z_\ell}\mathbb Q_\ell$ 위에서 $c_v$의 $+1$, $-1$ eigenspace가 각각 1차원임을 증명하라. 여기서 2차원 표현의 real place에서의 **oddness**는 complex conjugation의 determinant가 $-1$이라는 조건을 뜻한다.
 
 ### (3) Residual representation과 $\ell=2$
 

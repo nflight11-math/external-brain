@@ -4,7 +4,7 @@ title: External Brain
 
 # External Brain
 
-Welcome to my External Brain.
+External Brain에 오신 것을 환영합니다.
 
 ## 분야
 
@@ -13,10 +13,12 @@ Welcome to my External Brain.
 
 - [[exercise/index|Exercise]]
 
-## About
+## 소개
 
-This website is a collection of mathematical definitions, theorems, proofs, and notes.
+External Brain은 작성자가 공부 중 마주친 수학적 정의, 정리, 증명, 연구 노트, 그리고 연습문제와 그 해답을 모아 놓은 사이트입니다.
 
-## 사이트 이용 안내
+인간은 모든 것을 기억할 수 없습니다. 작성자는 이 사이트가 작성자의 외장형 두뇌처럼 기능하기를 소망합니다. 즉, 잊어버린 것들을 그때그때 복구할 수 있도록 작동하기를 바랍니다.
+
+## 문서 작성법
 
 - [[help/markdown-syntax|Markdown 및 LaTeX 문법 안내]]

@@ -1,12 +1,4 @@
+
 @use "./variables.scss" as *;
 
-// Explorer의 마지막 두 항목 앞에 구분선 표시
-.explorer .explorer-content > .explorer-ul {
-  > li:nth-last-child(2):not(.overflow-end)::before,
-  > li:last-child:not(.overflow-end)::before {
-    content: "";
-    display: block;
-    border-top: 1px solid var(--lightgray);
-    margin: 0.9rem 0 0.7rem;
-  }
-}
+// put your custom CSS here!

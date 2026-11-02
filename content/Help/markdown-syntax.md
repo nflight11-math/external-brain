@@ -72,10 +72,18 @@ tags:
 > 여기에는 인용문을 쓴다.
 ````
 
+- 첫 번째 항목
+- 두 번째 항목
+
+1. 첫 번째 단계
+2. 두 번째 단계
+
 | 개념 | 기호 |
 |---|---|
 | 정수환 | $\mathbb{Z}$ |
 | 유리수체 | $\mathbb{Q}$ |
+
+> 여기에는 인용문을 쓴다.
 
 ## 5. LaTeX 수식
 
@@ -95,6 +103,7 @@ $$
 
 미리보기:
 
+체 $K$는 $\mathbb{Q}$의 유한 확장이다.
 $$
 [K:\mathbb{Q}]<\infty.
 $$
@@ -149,6 +158,7 @@ Callout 안의 모든 줄에는 `>`가 들어가야 한다. 빈 줄도 `>`로 �
 [[algebra|대수학]]
 [[number-theory|수론]]
 [[number-theory/iwasawa-theory|이와사와 이론]]
+[[number-theory/iwasawa-theory#Growth formula|Growth formula]]
 ````
 
 경로는 `content/`를 기준으로 작성한다. 파일 이름은 영어로 유지하면서 표시 이름은 한국어로 지정할 수 있다. 링크 대상 문서를 실제로 만들어야 연결된다.
@@ -165,6 +175,10 @@ Callout 안의 모든 줄에는 `>`가 들어가야 한다. 빈 줄도 `>`로 �
 1. J. Neukirch, *Algebraic Number Theory*.
 2. L. C. Washington, *Introduction to Cyclotomic Fields*.
 ````
+
+이 문장에 각주를 붙인다.[^one]
+
+[^one]: 각주 내용이다.
 
 ## 9. 그림과 첨부 파일
 

@@ -1,0 +1,50 @@
+name: Quartz 한국어 수학 위키 배포
+
+on:
+  push:
+    branches:
+      - v5
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 소스 가져오기
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Node.js 설치
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Node.js 의존성 설치
+        run: npm ci
+      - name: Quartz 플러그인 설치
+        run: npx quartz plugin install
+      - name: 정적 웹사이트 빌드
+        run: npx quartz build
+      - name: GitHub Pages 결과 업로드
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: GitHub Pages 배포
+        id: deployment
+        uses: actions/deploy-pages@v4

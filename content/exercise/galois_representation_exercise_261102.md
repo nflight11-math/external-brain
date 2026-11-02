@@ -21,7 +21,7 @@ tags:
 
 ## 문제 1. 유한 표적 표현의 연속성
 
-유한군 $H$와 군 준동형 $\rho:G_K\to H$를 생각하자.
+Finite group $H$와 group homomorphism $\rho:G_K\to H$를 생각하자.
 
 1. $\rho$가 연속일 필요충분조건은 $\ker\rho$가 open subgroup이라는 것임을 증명하라.
 2. 다음 두 조건이 동치임을 증명하라.

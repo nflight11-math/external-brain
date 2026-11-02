@@ -4,20 +4,16 @@ title: External Brain
 
 # External Brain
 
-Welcome to my personal mathematics wiki.
+Welcome to my External Brain.
 
-## Mathematics
+## Fields
 
 - [[Algebra]]
 - [[Number Theory]]
-- [[Geometry]]
-- [[Topology]]
-- [[Analysis]]
 
 ## About
 
-This website is a collection of mathematical definitions,
-theorems, proofs, and notes.
+This website is a collection of mathematical definitions, theorems, proofs, and notes.
 
 ## 사이트 이용 안내
 

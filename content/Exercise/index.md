@@ -1,5 +1,5 @@
 ---
-title: Exercise
+title: "📚 Exercise"
 description: 연습문제
 tags:
   - exercise

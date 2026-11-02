@@ -1,5 +1,5 @@
 ---
-title: Definitions
+title: "📚 Definitions"
 description: 정의들
 tags:
   - definitions

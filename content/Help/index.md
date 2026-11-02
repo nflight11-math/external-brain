@@ -1,5 +1,5 @@
 ---
-title: 수학 위키 문법 안내
+title: "🛟 Help"
 description: Quartz 5에서 사용할 수 있는 Markdown, LaTeX 및 위키 링크 작성법
 tags:
   - guide

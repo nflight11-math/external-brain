@@ -13,7 +13,7 @@ tags:
 
 타원곡선의 유한 torsion subgroup에서 Tate module을 구성하고, Weil pairing을 이용하여 Galois 표현의 determinant를 계산한다. 이를 torsion field의 cyclotomic 부분과 실소점에서의 oddness에 연결한다. 이 내용은 이후 deformation theory의 determinant 조건과 modularity lifting을 공부하기 위한 기초이다.
 
-세 문제는 모두 증명된 사실을 다룬다. 전체 예상 소요 시간은 약 2~3시간이다.
+세 문제는 모두 증명된 사실을 다룬다. 전체 예상 소요 시간은 약 2-3시간이다.
 
 ## 공통 설정
 
@@ -54,8 +54,8 @@ $$
 ## 문제 1. 유한 torsion에서 Tate module 구성하기
 
 **지위:** 증명된 사실  
-**난이도:** 기초~중급  
-**예상 시간:** 45~60분  
+**난이도:** 기초-중급  
+**예상 시간:** 45-60분  
 **배경지식:** 유한 아벨군의 구조정리, inverse limit, $\mathbb Z_\ell$, profinite topology.
 
 ### (1) Torsion subgroup의 구조
@@ -105,7 +105,7 @@ $$
 
 **지위:** 증명된 사실  
 **난이도:** 중급  
-**예상 시간:** 40~60분  
+**예상 시간:** 40-60분  
 **배경지식:** Bilinear 및 alternating pairing, determinant, exterior power, cyclotomic character, 문제 1의 결과.
 
 $m=\ell^n$이라 하자. Weil pairing의 성질 중 다음을 추가로 사용해도 된다.
@@ -193,7 +193,7 @@ $$
 
 **지위:** 증명된 사실  
 **난이도:** 중급  
-**예상 시간:** 30~45분  
+**예상 시간:** 30-45분  
 **배경지식:** Galois correspondence, 고정체, 실소점과 complex conjugation, involution의 eigenspace 분해, 문제 2의 결과.
 
 $m=\ell^n$이라 하고, $L_m=K(E[m])$을 모든 $m$-torsion point의 좌표를 첨가한 체라 하자.

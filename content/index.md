@@ -11,7 +11,7 @@ Welcome to my External Brain.
 - [[Algebra]]
 - [[Number Theory]]
 
-- [[]]
+- [[exercise|Exercise]]
 
 ## About
 

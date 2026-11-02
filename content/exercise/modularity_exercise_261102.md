@@ -3,7 +3,7 @@ title: "모듈러성 증명 연습 1 — Tate module과 Weil pairing"
 date: 2026-11-02
 description: "Torsion points, Tate module의 Galois 작용, Weil pairing과 determinant에 관한 증명 연습문제."
 tags:
-  - mathematics/number-theory
+  - number-theory
   - elliptic-curves
   - galois-representations
   - exercises

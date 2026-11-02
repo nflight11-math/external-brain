@@ -21,10 +21,6 @@ tags:
 
 ## 문제 1. 유한 표적 표현의 연속성
 
-**목표:** 유한 계수의 연속 Galois 표현이 유한 Galois 확대를 통해 인수분해된다는 사실을 증명한다.
-
-**필요한 배경:** 무한 Galois 이론, 열린 부분군, 몫위상, 군 준동형의 핵.
-
 유한군 $H$와 군 준동형 $\rho:G_K\to H$를 생각하자.
 
 1. $\rho$가 연속일 필요충분조건은 $\ker\rho$가 열린 부분군이라는 것임을 증명하라.
@@ -38,10 +34,6 @@ tags:
 
 ## 문제 2. 유한체의 Galois 군과 1차원 표현
 
-**목표:** Frobenius 한 원소의 값이 표현을 결정한다는 말에서 연속성이 하는 역할을 이해한다.
-
-**필요한 배경:** 유한체, 역극한, $\widehat{\mathbb Z}=\varprojlim_m\mathbb Z/m\mathbb Z$, compactness, $\ell$-진 절댓값.
-
 $q$를 소수 거듭제곱이라 하고 $F_q\in G_{\mathbb F_q}$를 $F_q(x)=x^q$로 정의하자.
 
 1. 유한 확대들의 Galois 군을 이용하여 $G_{\mathbb F_q}\cong\widehat{\mathbb Z}$를 위상군으로서 증명하라. 이 동형에서 $F_q$가 $1\in\widehat{\mathbb Z}$에 대응하며, $F_q$가 생성하는 순환부분군이 조밀함을 보여라.
@@ -52,10 +44,6 @@ $q$를 소수 거듭제곱이라 하고 $F_q\in G_{\mathbb F_q}$를 $F_q(x)=x^q$
 **짧은 힌트:** 조밀한 부분집합에서 일치하는 연속함수의 유일성을 이용하라. 존재성은 유한한 몫들에서 구성하고, 필요조건은 compact한 상에 valuation을 적용하여 조사하라.
 
 ## 문제 3. Cyclotomic character의 구성과 Frobenius 값
-
-**목표:** 단위근에 대한 작용에서 연속적인 1차원 $\ell$-진 Galois 표현을 구성한다.
-
-**필요한 배경:** Cyclotomic fields, 단위근, 역극한, 소수의 분기, decomposition group과 inertia group.
 
 각 $n\geq1$에 대해 원시 $\ell^n$제곱근 $\zeta_{\ell^n}\in\overline{\mathbb Q}$를 $\zeta_{\ell^{n+1}}^\ell=\zeta_{\ell^n}$이 되도록 고르자. $\sigma\in G_{\mathbb Q}$에 대해 $\sigma(\zeta_{\ell^n})=\zeta_{\ell^n}^{\chi_{\ell,n}(\sigma)}$로 $\chi_{\ell,n}(\sigma)\in(\mathbb Z/\ell^n\mathbb Z)^\times$를 정의한다.
 

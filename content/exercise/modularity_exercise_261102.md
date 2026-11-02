@@ -31,11 +31,6 @@ $K$는 수체, $\overline K$는 대수적 폐포이며, $G_K=\operatorname{Gal}(
 
 ## 문제 1. 유한 torsion에서 Tate module 구성하기
 
-**지위:** 증명된 사실  
-**난이도:** 기초-중급  
-**예상 시간:** 45-60분  
-**배경지식:** 유한 아벨군의 구조정리, inverse limit, $\mathbb Z_\ell$, profinite topology.
-
 ### (1) Torsion subgroup의 구조
 
 모든 $n\ge 1$에 대해 $E[\ell^n]\cong(\mathbb Z/\ell^n\mathbb Z)^2$임을 증명하라. 군의 원소 수만으로 결론을 내리지 말고, 유한 아벨군의 구조를 설명하라.
@@ -56,11 +51,6 @@ $$
 자연스러운 사영으로부터 $G_K$-equivariant isomorphism $T_\ell(E)/\ell^nT_\ell(E)\cong E[\ell^n]$을 얻어라. 이어서 $G_K$의 작용이 연속인 표현 $\rho_{E,\ell}:G_K\longrightarrow\operatorname{GL}_2(\mathbb Z_\ell)$을 정의함을 보여라. 이 행렬 표현이 기저 선택에 어떻게 의존하는지도 설명하라.
 
 ## 문제 2. Weil pairing으로 determinant 계산하기
-
-**지위:** 증명된 사실  
-**난이도:** 중급  
-**예상 시간:** 40-60분  
-**배경지식:** Bilinear 및 alternating pairing, determinant, exterior power, cyclotomic character, 문제 1의 결과.
 
 $m=\ell^n$이라 하자. Weil pairing의 성질 중 다음을 추가로 사용해도 된다.
 
@@ -125,11 +115,6 @@ $$
 
 ## 문제 3. Torsion field와 실소점에서의 oddness
 
-**지위:** 증명된 사실  
-**난이도:** 중급  
-**예상 시간:** 30-45분  
-**배경지식:** Galois correspondence, 고정체, 실소점과 complex conjugation, involution의 eigenspace 분해, 문제 2의 결과.
-
 $m=\ell^n$이라 하고, $L_m=K(E[m])$을 모든 $m$-torsion point의 좌표를 첨가한 체라 하자.
 
 ### (1) Torsion field의 cyclotomic 부분
@@ -137,10 +122,7 @@ $m=\ell^n$이라 하고, $L_m=K(E[m])$을 모든 $m$-torsion point의 좌표를 
 다음을 증명하라.
 
 $$
-K(\mu_m)\subseteq L_m,
-$$
-
-$$
+K(\mu_m)\subseteq L_m,\qquad
 \rho_{E,m}(G_K)\subseteq\operatorname{SL}_2(\mathbb Z/m\mathbb Z)
 \quad\Longleftrightarrow\quad
 \mu_m\subseteq K.
@@ -148,7 +130,7 @@ $$
 
 ### (2) Complex conjugation과 oddness
 
-$K$가 실소점 $v$를 갖는다고 가정하자. 해당 실 embedding을 확장하는 $\overline K\hookrightarrow\mathbb C$를 선택하여 얻는 complex conjugation을 $c_v\in G_K$라 하자. $\det\rho_{E,\ell}(c_v)=-1$임을 보여라.
+$K$가 real place $v$를 갖는다고 가정하자. 해당 실 embedding을 확장하는 $\overline K\hookrightarrow\mathbb C$를 선택하여 얻는 complex conjugation을 $c_v\in G_K$라 하자. $\det\rho_{E,\ell}(c_v)=-1$임을 보여라.
 
 이어서 $V_\ell(E):=T_\ell(E)\otimes_{\mathbb Z_\ell}\mathbb Q_\ell$ 위에서 $c_v$의 $+1$, $-1$ eigenspace가 각각 1차원임을 증명하라. 여기서 2차원 표현의 실소점에서의 **oddness**는 complex conjugation의 determinant가 $-1$이라는 조건을 뜻한다.
 

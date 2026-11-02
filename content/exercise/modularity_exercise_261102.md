@@ -117,11 +117,11 @@ $$
 로 쓴다. Weil pairing이 $G_K$-equivariant isomorphism
 
 $$
-\bigwedge\nolimits^2_{\mathbb Z_\ell}T_\ell(E)
+\bigwedge^2_{\mathbb Z_\ell}T_\ell(E)
 \cong\mathbb Z_\ell(1)
 $$
 
-을 유도함을 보이고, $\det\rho_{E,\ell}=\chi_\ell$임을 보여라.
+을 유도함을 보이고, $\det\rho_{E,\ell}=\chi_\ell$임을 보여라. 단, 여기서 $\bigwedge^n V$는 $n$-th exterior power of $V$이다.
 
 ## 문제 3. Torsion field와 실소점에서의 oddness
 

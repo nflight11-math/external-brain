@@ -24,10 +24,15 @@ tags:
 
 ## Infinite Galois correspondence
 $L/K$가 (infinite) Galois extension with Galois group $G$이고, $G$에 Krull topology가 부여되어 있을 때
-1. Order-reversing 일대일 대응
+
+1. Order-reversing bijection
 $$
 \left\{\text{closed subgroups }H\subset G\right\} \longleftrightarrow \left\{M:K\subset M\subset L\right\}
 $$
 이 $H\mapsto L^H$, $M\mapsto \operatorname{Gal}(L/M)$으로 존재한다.
+
 2. $H$이 open subgroup of $G$임과 $[L^H:K]<\infty$임이 동치이다.
+
 3. Closed subgroup of $G$ $H$이 normal subgroup임과 $L^H/K$가 normal extension임이 동치이다. 이때 $\operatorname{Gal}(L^H/G)\cong G/H$이다.
+
+> [!done]- 증명

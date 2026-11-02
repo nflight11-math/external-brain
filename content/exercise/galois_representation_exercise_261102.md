@@ -1,7 +1,7 @@
 ---
 title: "Galois representation Exercise #1"
 date: 2026-11-02
-description: "Profinite Galois 군, 유한체의 Frobenius, cyclotomic character"
+description: "Profinite Galois 군, 유한체의 Frobenius, cyclotomic character에 관한 GPT-generated 증명 연습문제."
 tags:
   - exercise
   - galois-representation

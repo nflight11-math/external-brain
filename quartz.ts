@@ -5,10 +5,11 @@ import { componentRegistry } from "./quartz/components/registry"
 type ExplorerNode = {
   isFolder: boolean
   displayName?: string
+  slugSegment?: string
   slugSegments?: string[]
 }
 
-componentRegistry.setOptionOverrides("@quartz-community/explorer", {
+componentRegistry.setOptionOverrides("explorer", {
   sortFn: (a: ExplorerNode, b: ExplorerNode) => {
     // 최상위 항목에만 특별 정렬 적용
     if (
@@ -20,17 +21,36 @@ componentRegistry.setOptionOverrides("@quartz-community/explorer", {
           .trim()
           .toLowerCase()
 
-        if (name === "Help" && node.isFolder) return 2
-        if (name === "Integration of the week") return 1
+        const slug = (node.slugSegment ?? "")
+          .trim()
+          .toLowerCase()
+          .replace(/[-_]+/g, " ")
 
+        // Help를 최하단에 배치
+        if (
+          node.isFolder &&
+          (name === "help" || slug === "help")
+        ) {
+          return 2
+        }
+
+        // Integration of the week를 바로 위에 배치
+        if (
+          name === "integration of the week" ||
+          slug === "integration of the week"
+        ) {
+          return 1
+        }
+
+        // 나머지 일반 항목
         return 0
       }
 
-      const diff = rank(a) - rank(b)
-      if (diff !== 0) return diff
+      const difference = rank(a) - rank(b)
+      if (difference !== 0) return difference
     }
 
-    // 나머지는 폴더 우선, 같은 종류끼리는 사전순
+    // 기본 정렬: 폴더 먼저, 이후 사전순
     if (a.isFolder !== b.isFolder) {
       return a.isFolder ? -1 : 1
     }

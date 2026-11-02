@@ -1,5 +1,5 @@
 ---
-title: "Galois representation 연습문제 1 — 연속성과 Frobenius"
+title: "Galois representation Exercise #1"
 date: 2026-11-02
 description: "Profinite Galois 군, 유한체의 Frobenius, cyclotomic character"
 tags:

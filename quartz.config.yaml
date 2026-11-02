@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: "External Brain | 수학 위키"
+  pageTitle: "External Brain"
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true

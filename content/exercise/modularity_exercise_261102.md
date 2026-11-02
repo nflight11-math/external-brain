@@ -1,7 +1,7 @@
 ---
-title: "Modularity 연습문제 1 — Tate module과 Weil pairing"
+title: "Modularity Exercise #1"
 date: 2026-11-02
-description: "Torsion points, Tate module, Weil pairing과 determinant에 관한 증명 연습문제."
+description: "Torsion points, Tate module, Weil pairing과 determinant에 관한 GPT-generated 증명 연습문제."
 tags:
   - mathematics/number-theory
   - elliptic-curves

@@ -30,7 +30,7 @@ tags:
 3. $\rho$가 연속이라고 하자. $L_\rho=(K^{\mathrm{sep}})^{\ker\rho}$로 놓으면 $L_\rho/K$가 유한 Galois 확대이고 $\operatorname{Gal}(L_\rho/K)\cong\operatorname{im}\rho$임을 보여라. 또한 $L_\rho$가 위 인수분해를 가능하게 하는 최소의 중간체임을 증명하라.
 4. 유한체 $k$ 위의 표현 $\bar\rho:G_K\to\operatorname{GL}_d(k)$에 위 결과를 적용하라. 이때 정의체 $L_{\bar\rho}$의 차수와 $\#\operatorname{GL}_d(k)$ 사이에 어떤 나눗셈 관계가 있는지 서술하고 증명하라.
 
-**짧은 힌트:** 이산공간으로 가는 함수의 연속성을 점의 역상으로 판정하라. 부분군의 지표와 고정체의 차수를 연결하라.
+> [!tip]- **짧은 힌트:** 이산공간으로 가는 함수의 연속성을 점의 역상으로 판정하라. 부분군의 지표와 고정체의 차수를 연결하라.
 
 ## 문제 2. 유한체의 Galois 군과 1차원 표현
 
@@ -41,7 +41,7 @@ $q$를 소수 거듭제곱이라 하고 $F_q\in G_{\mathbb F_q}$를 $F_q(x)=x^q$
 3. $a\in\mathbb Q_\ell^\times$가 주어졌다고 하자. $\chi_a(F_q)=a$인 연속 준동형 $\chi_a:G_{\mathbb F_q}\to\mathbb Q_\ell^\times$가 존재할 필요충분조건을 $v_\ell(a)$로 나타내고 증명하라. 존재할 때 유일성도 증명하라. 여기서 $v_\ell(\ell)=1$로 정규화한다.
 4. 3번에서 존재하는 $\chi_a$의 상이 유한할 필요충분조건을 $a$에 관한 조건으로 서술하고 증명하라. 유한군을 표적으로 하는 경우와 $\ell$-진 계수를 사용하는 경우의 차이를 설명하라.
 
-**짧은 힌트:** 조밀한 부분집합에서 일치하는 연속함수의 유일성을 이용하라. 존재성은 유한한 몫들에서 구성하고, 필요조건은 compact한 상에 valuation을 적용하여 조사하라.
+> [!tip]- **짧은 힌트:** 조밀한 부분집합에서 일치하는 연속함수의 유일성을 이용하라. 존재성은 유한한 몫들에서 구성하고, 필요조건은 compact한 상에 valuation을 적용하여 조사하라.
 
 ## 문제 3. Cyclotomic character의 구성과 Frobenius 값
 
@@ -52,16 +52,7 @@ $q$를 소수 거듭제곱이라 하고 $F_q\in G_{\mathbb F_q}$를 $F_q(x)=x^q$
 3. 소수 $p\ne\ell$과 그 위의 소수를 하나 고르고, 대응하는 decomposition group과 inertia group을 $D_p$, $I_p$라 쓰자. $\chi_\ell(I_p)=\{1\}$임을 증명하라. 즉 $\chi_\ell$이 $p$에서 비분기임을 보여라.
 4. $\operatorname{Frob}_p\in D_p/I_p$를 arithmetic Frobenius라 하자. 3번에 의해 정의되는 값이 $\chi_\ell(\operatorname{Frob}_p)=p$임을 증명하라. Geometric Frobenius를 사용하면 우변이 어떻게 바뀌는지도 설명하라.
 
-**짧은 힌트:** 각 유한 단계의 cyclotomic field에서 먼저 생각하라. $p\ne\ell$에서는 $\ell$-거듭제곱 차수의 단위근을 잉여체로 환원하는 것이 잘 작동한다는 사실을 이용하라.
-
-## 학습 점검
-
-세 문제를 푼 뒤 다음을 자신의 말로 설명해 보자.
-
-- 표현을 정의할 때 표적의 위상을 명시해야 하는 이유.
-- 유한 잔여표현과 $\ell$-진 표현을 각각 유한 Galois 확대 하나로 설명할 수 있는지의 차이.
-- 비분기 표현에서 Frobenius 값을 정의할 때 lift의 선택을 확인해야 하는 이유.
-- Arithmetic Frobenius와 geometric Frobenius의 convention이 계산에 미치는 영향.
+> [!tip]- **짧은 힌트:** 각 유한 단계의 cyclotomic field에서 먼저 생각하라. $p\ne\ell$에서는 $\ell$-거듭제곱 차수의 단위근을 잉여체로 환원하는 것이 잘 작동한다는 사실을 이용하라.
 
 ## 참고 자료
 

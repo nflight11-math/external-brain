@@ -42,7 +42,7 @@ $K$는 수체, $\overline K$는 대수적 폐포이며, $G_K=\operatorname{Gal}(
 
 ### (2) 호환되는 기저와 inverse limit
 
-각 $n$에서 $\mathbb Z/\ell^n\mathbb Z$-기저 $(P_n,Q_n)$을 선택하되 $\ell P_{n+1}=P_n,\qquad \ell Q_{n+1}=Q_n$이 되게 할 수 있음을 보여라. 이를 이용하여
+각 $n$에서 $\mathbb Z/\ell^n\mathbb Z$-기저 $(P_n,Q_n)$을 선택하되 $\ell P_{n+1}=P_n, \ell Q_{n+1}=Q_n$이 되게 할 수 있음을 보여라. 이를 이용하여
 
 $$
 T_\ell(E):=\varprojlim_n E[\ell^n],

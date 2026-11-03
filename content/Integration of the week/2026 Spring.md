@@ -13,7 +13,7 @@ tags:
 
 > [!done]- Answer 1
 > 
-> Lebesgue measure of countable set은 $0$이므로, $A=\set{n+m^{-1}}{1\le n,m\in\Z}$에 대해 $\mu(A)=0$이다. 적분 구간인 $(0,\infty)$에서 null set을 빼어도 적분 결과에 미치는 영향은 전혀 없으므로, 주어진 적분을 다음과 같은 집합에서 계산하여도 무방하다. $$(0,\infty)\setminus A=\bigcup_{n=0}^\infty\bigcup_{m=1}^\infty I_{n,m}\qquad\left(I_{n,m}=(n+(m+1)^{-1},n+m^{-1})\right)$$
+> Lebesgue measure of countable set은 $0$이므로, $A=\set{n+m^{-1}}{1\le n,m\in\mathbb{Z}}$에 대해 $\mu(A)=0$이다. 적분 구간인 $(0,\infty)$에서 null set을 빼어도 적분 결과에 미치는 영향은 전혀 없으므로, 주어진 적분을 다음과 같은 집합에서 계산하여도 무방하다. $$(0,\infty)\setminus A=\bigcup_{n=0}^\infty\bigcup_{m=1}^\infty I_{n,m}\qquad\left(I_{n,m}=(n+(m+1)^{-1},n+m^{-1})\right)$$
 > 
 > 그렇다면, 구해야 하는 값은 $J_{n,m}:=\int_{I_{n,m}}\frac{dx}{\left(\{x\}\cdot\text{lcm}\left(\lceil x\rceil,\left\lfloor1/\{x\}\right\rfloor\right)\right)^2}$의 합이다.
 > 
@@ -27,7 +27,7 @@ tags:
 > 
 > 즉, $\int_0^\infty\frac{dx}{\left(\{x\}\cdot\text{lcm}\left(\lceil x\rceil,\left\lfloor\frac{1}{\{x\}}\right\rfloor\right)\right)^2}=\sum_{n=0}^\infty\sum_{m=1}^\infty J_{n,m}=\sum_{n,m=1}^\infty\text{lcm}(n,m)^{-2}$이다.
 > 
-> $\mathbb P:=\set{0<n\in\Z}{n\text{ is prime}}$으로 두자. $n=\prod_{p\in\mathbb P}p^{n_p}$, $m=\prod_{p\in\mathbb P}p^{m_p}$의 꼴로 표기한다면, $$\text{lcm}(n,m)=\prod_{p\in \mathbb P}p^{\max(n_p,m_p)}$$이다. 즉, 구해야 하는 값은 $\sum_{1\le n,m\in\Z}\prod_{p\in\mathbb P}p^{-2\max(n_p,m_p)}=\prod_{p\in\mathbb P}\sum_{0\le n_p,m_p\in\Z}p^{-2\max(n_p,m_p)}$이다. 각 소수에 대해서 $A(p)=\sum_{a,b=0}^\infty p^{-2\max(a,b)}$를 구할 수 있다면 구해야 하는 값은 $\prod_{p\in\mathbb P} A(p)$라는 것이다.
+> $\mathbb P:=\{0<n\in\mathbb{Z}:n\text{ is prime}\}$으로 두자. $n=\prod_{p\in\mathbb P}p^{n_p}$, $m=\prod_{p\in\mathbb P}p^{m_p}$의 꼴로 표기한다면, $$\text{lcm}(n,m)=\prod_{p\in \mathbb P}p^{\max(n_p,m_p)}$$이다. 즉, 구해야 하는 값은 $\sum_{1\le n,m\in\}\prod_{p\in\mathbb P}p^{-2\max(n_p,m_p)}=\prod_{p\in\mathbb P}\sum_{0\le n_p,m_p\in\mathbb{Z}}p^{-2\max(n_p,m_p)}$이다. 각 소수에 대해서 $A(p)=\sum_{a,b=0}^\infty p^{-2\max(a,b)}$를 구할 수 있다면 구해야 하는 값은 $\prod_{p\in\mathbb P} A(p)$라는 것이다.
 > 
 > 이 $A(p)$를 구하기 위해서 합을 $a<b$, $a=b$, $a>b$ 세 부분으로 쪼개서 구해 보자. 대칭성에 의하여 $$\sum_{0\le a<b}p^{-2\max(a,b)}=\sum_{0\le b<a}p^{-2\max(a,b)}$$이 성립하며, $$\sum_{0\le a<b}p^{-2\max(a,b)}=\sum_{0\le a<b}p^{-2b}=\sum_{a=0}^\infty\sum_{b=a+1}^\infty p^{-2b}=\sum_{a=0}^\infty\frac{p^{-2-2a}}{1-p^{-2}}=\frac{p^{-2}}{(1-p^{-2})^2}.$$
 > 

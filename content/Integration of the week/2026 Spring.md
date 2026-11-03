@@ -343,7 +343,6 @@ tags:
 > 일반적인 상수 $a(>0)$에 대해서 $S_a=\int_0^\infty \frac{\sin ax \ln x}{\sqrt x}dx$과 $C_a=\int_0^\infty \frac{\cos ax \ln x}{\sqrt x}dx$을 구할 수 있으면, 이를 통해서 주어진 적분의 값이 $S_{e^2/4}-C_{e^4/4}$임을 알 수 있다. 그러므로 $S_a, C_a$의 값을 구해 보도록 하자.
 > 
 > $\sin ax$의 Mellin transform $\mathcal M(\sin ax):=\int_0^\infty x^{p-1}\sin axdx$의 양 변을 $p$에 대해 편미분하면 $\frac{\partial}{\partial p}\mathcal M(\sin ax)=\int_0^\infty \frac{\partial}{\partial p}x^{p-1}\sin axdx=\int_0^\infty x^{p-1}\sin ax\ln xdx$이므로, $S_a=\left.\frac{\partial}{\partial p}\mathcal M(\sin ax)\right|_{p=1/2}$임을 알 수 있으며, 정확히 같은 방식으로 $C_a=\left.\frac{\partial}{\partial p}\mathcal M(\cos ax)\right|_{p=1/2}$임 또한 알 수 있다. 그러므로 $\sin ax,\cos ax$의 Mellin transform을 구하면 된다.
-> \vspace{18pt}
 > 
 > 이를 구하기 위해서는 Laplace transform의 다음과 같은 성질이 유용하게 쓰인다:
 > $$
@@ -442,6 +441,45 @@ tags:
 > Evaluate following integral.
 > $$
 > \int_0^\frac{\pi}{2}x\sqrt{\tan x}dx.
+> $$
+
+> [!done]- Answer 9
+> 적분 $\int_0^{\frac\pi 2}x\sqrt{\tan x}dx$를 구하기 위해 다음과 같은 적분을 생각하자:
+> $$
+> I(t):=\int_0^{\frac\pi 2}\arctan(t\tan x)\sqrt{\tan x}dx
+> $$
+> $I(0)=0$임은 자명하고, $I$의 도함수는 다음과 같이 구할 수 있다.
+> $$
+> \begin{aligned}
+> I'(t)&=\frac{d}{dt}\int_0^{\frac\pi2}\arctan(t\tan x)\sqrt{\tan x}dx=\int_0^{\frac\pi2}\frac{\partial}{\partial t}\arctan(t\tan x)\sqrt{\tan x}dx\\
+> &=\int_0^{\frac{\pi}{2}}\frac{\tan x}{1+t^2\tan^2x}\sqrt{\tan x}dx\\
+> &=\int_0^\infty\frac{v\sqrt v}{(1+v^2)(1+t^2 v^2)}dv&&(v\leftarrow \tan x)\\
+> &=\int_0^\infty\frac{2u^4}{(1+u^4)(1+t^2u^4)}=\frac{2}{t^2-1}\left[\int_0^\infty\frac{1}{1+u^4}du-\int_0^\infty\frac{1}{1+t^2u^4}du\right]&&(u\leftarrow\sqrt v)
+> \end{aligned}
+> $$
+> 
+> Beta function에 관한 다음 식 $\mathrm{B}(x,y)=\int_0^\infty\frac{t^{y-1}}{(1+t)^{x+y}}dt$를 이용하면 위 식에서 얻은 두 적분을 다음과 같이 계산할 수 있다.
+> $$
+> \begin{aligned}
+> \int_0^\infty\frac{1}{1+u^4}du &= \int_0^\infty\frac{\frac14t^{-\frac34}}{1+t}dt=\frac{1}{4}\mathrm{B}\left(\frac14,\frac34\right)=\frac{\Gamma(1/4)\Gamma(3/4)}{4\Gamma(1)} =\frac{\pi}{4\sin\frac\pi4}=\frac{\pi}{2\sqrt 2}&&(t\leftarrow u^4)\\
+> \int_0^\infty\frac{1}{1+t^2u^4}du &= \int_0^\infty\frac{t^{-\frac12}}{1+w^4}dw=\frac{\pi}{2\sqrt{2}\sqrt{t}}&&(w\leftarrow\sqrt tu)
+> \end{aligned}
+> $$
+> 
+> 그러므로,
+> $$
+> I'(t)=\frac{2}{t^2-1}\left(\frac{\pi}{2\sqrt2}-\frac{\pi}{2\sqrt2\sqrt t}\right)=\frac{\pi}{\sqrt 2}\left(\frac{1}{t^2-1}\cdot\frac{\sqrt t-1}{\sqrt t}\right)=\frac{\pi}{\sqrt2}\frac{1}{\sqrt t(1+t)(1+\sqrt t)}
+> $$
+> 이 됨을 알 수 있다.
+> 
+> 구하는 값은 $I(1)$이므로, $I'(t)$를 $0$부터 $1$까지 적분해 주면 된다.
+> $$
+> \begin{aligned}
+> \int_0^{\frac\pi 2}x\sqrt{\tan x}dx=I(1) &= \int_0^1 I'(t)dt=\frac{\pi}{\sqrt 2}\int_0^1\frac{1}{\sqrt t(1+t)(1+\sqrt t)}dt=\frac{\pi}{\sqrt 2}\int_0^1\frac{2}{(x+1)(x^2+1)}dx\\
+> &=\frac{\pi}{\sqrt 2}\left(\int_0^1\frac{1}{x+1}dx-\int_0^1\frac{x}{x^2+1}dx+\int_0^1\frac{1}{x^2+1}dx\right)&&(x\leftarrow\sqrt t)\\
+> &=\frac{\pi}{\sqrt 2}\left(\left.\log (x+1)\right|_0^1-\left.\frac12\log(1+x^2)\right|_0^1+\left.\arctan x\right|_0^1\right)\\
+> &=\boxed{\frac{\pi}{4\sqrt 2}(2\ln 2+\pi)}.
+> \end{aligned}
 > $$
 
 > [!abstract] Integral 10 - 260512

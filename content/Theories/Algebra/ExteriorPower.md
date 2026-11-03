@@ -9,7 +9,7 @@ aliases:
 
 ## Definition
 
-$K$를 field, $V$를 $K$-vector space, $k\ge 1$을 integer라 하자. $V^{\otimes_K k}$를 $V$의 $k$-fold tensor product라 하고, $R_k$를 $V^{\otimes_K k}$의 다음 원소들로 생성되는 subspace라 하자.
+$K$를 field, $V$를 $K$-vector space, $k\ge 1$을 integer라 하자. $V^{\otimes_K k}:=V\otimes_K V \otimes_K\cdots\otimes_K V$를 $V$의 $k$-fold tensor product라 하고, $R_k$를 $V^{\otimes_K k}$의 다음 원소들로 생성되는 subspace라 하자.
 $$
 v_1\otimes\cdots\otimes v_k
 \qquad (v_i=v_j\text{ for some }i\ne j).

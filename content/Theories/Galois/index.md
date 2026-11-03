@@ -42,9 +42,11 @@ $$
 > \overline H=\bigcap_{E/K\text{ is finite Galois}}\operatorname{res}_E^{-1}\operatorname{res}_EH.
 > $$
 > 1. $M$이 intermediate field이면 당연히 $M\subset L^{\operatorname{Gal}(L/M)}$이다.
-> $\alpha\in L\setminus M$을 하나 선택하자. 그러면 $L/M$이 Galois extension이므로 $f(X):=\operatorname{irr}(\alpha,M,X)\in M[X]$는 separable이고 split into linear factor over $L$이다.
-> $\alpha$와 다른 $f(X)$의 근 $\beta$를 하나 선택하자. 그러면 $M$-embedding $M(\alpha)\hookrightarrow L$이 $\alpha\mapsto\beta$이게 존재한다.
-> 이의 extension $\sigma\in\operatorname{Gal}(L/M)$에 대하여 $\sigma\alpha\ne\alpha$이므로 $\alpha\notin L^{\operatorname{Gal}(L/M)}$.
-> 그러므로 $M=L^{\operatorname{Gal(L/M)}}$이다.
 > 
-> 각 $\alpha\in M$에 대하여 stabilizer $G_\alpha:=\{\sigma\in G:\sigma\alpha=\alpha\}$를 생각하자. 그러면 $\operatorname{Gal}(K(\alpha)/K)\subset G_\alpha$이므로 이는 [[Theories/TopologicalGroup#Relation of open and closed|open subgroup이고, 따라서 closed]]이다.
+>     $\alpha\in L\setminus M$을 하나 선택하자. 그러면 $L/M$이 Galois extension이므로 $f(X):=\operatorname{irr}(\alpha,M,X)\in M[X]$는 separable이고 split into linear factor over $L$이다.
+>     $\alpha$와 다른 $f(X)$의 근 $\beta$를 하나 선택하자. 그러면 $M$-embedding $M(\alpha)\hookrightarrow L$이 $\alpha\mapsto\beta$이게 존재한다.
+>     이의 extension $\sigma\in\operatorname{Gal}(L/M)$에 대하여 $\sigma\alpha\ne\alpha$이므로 $\alpha\notin L^{\operatorname{Gal}(L/M)}$.
+>     그러므로 $M=L^{\operatorname{Gal(L/M)}}$이다.
+> 
+>     각 $\alpha\in M$에 대하여 stabilizer $G_\alpha:=\{\sigma\in G:\sigma\alpha=\alpha\}$를 생각하자. 그러면 $\operatorname{Gal}(K(\alpha)/K)\subset G_\alpha$이므로 이는 [[Theories/TopologicalGroup#Relation of open and closed|open subgroup이고, 따라서 closed]]이다.
+>     그러므로 $\operatorname{Gal}(L/M)=\bigcup_{\alpha\in M}G_\alpha$는 closed subgroup이다.

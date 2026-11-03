@@ -13,7 +13,7 @@ tags:
 
 > [!done]- Answer 1
 > 
-> Lebesgue measure of countable set은 $0$이므로, $A=\set{n+m^{-1}}{1\le n,m\in\mathbb{Z}}$에 대해 $\mu(A)=0$이다. 적분 구간인 $(0,\infty)$에서 null set을 빼어도 적분 결과에 미치는 영향은 전혀 없으므로, 주어진 적분을 다음과 같은 집합에서 계산하여도 무방하다.
+> Lebesgue measure of countable set은 $0$이므로, $A=\{n+m^{-1}:1\le n,m\in\mathbb{Z}\}$에 대해 $\mu(A)=0$이다. 적분 구간인 $(0,\infty)$에서 null set을 빼어도 적분 결과에 미치는 영향은 전혀 없으므로, 주어진 적분을 다음과 같은 집합에서 계산하여도 무방하다.
 > $$
 > (0,\infty)\setminus A=\bigcup_{n=0}^\infty\bigcup_{m=1}^\infty I_{n,m}\qquad\left(I_{n,m}=(n+(m+1)^{-1},n+m^{-1})\right)
 > $$

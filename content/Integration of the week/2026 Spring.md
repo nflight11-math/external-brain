@@ -252,6 +252,34 @@ tags:
 > \int\frac{\cos^2x+\cos\sin x}{1+\sin x\sin\sin x}dx.
 > $$
 
+> [!done]- Answer 5
+> 피적분함수의 분모에 반각공식을 사용하면, $a=\frac{x+\sin x}{2}, b=\frac{x-\sin x}{2}$를 이용하여 다음과 같이 식변형을 할 수 있다.
+> $$
+> \begin{aligned}
+> 1+\sin x\sin\sin x &= \frac12\left[\cos(x-\sin x)-\cos(x+\sin x)\right]+1=\frac12(\cos 2b-\cos 2a)+1\\
+> &= \frac{1-\cos 2a}{2}+\frac{1+\cos 2b}{2}=\sin^2a+\cos^2b
+> \end{aligned}
+> $$
+> 
+> 또한, $\cos\sin x$를 $a,b$를 사용하여 나타내면, $1+\cos x=\frac{da}{dx}$이고 $1-\cos x=\frac{db}{dx}$ 이므로 분자도 다음과 같이 변형할 수 있다.
+> $$
+> \begin{aligned}
+> \cos^2x+\cos\sin x&=\cos x\cos(a+b)+\cos(a-b) = (1+\cos x)\cos a\cos b+(1-\cos x)\sin a\sin b\\
+> &=2\cos b\frac{d\sin a}{dx}-2\sin a\frac{d\cos b}{dx}
+> \end{aligned}
+> $$
+> 
+> 이제 분모와 분자를 동시에 $\sin^2 a$로 나누면, 적분을 다음과 같이 계산할 수 있다.
+> $$
+> \begin{aligned}
+> \int\frac{\cos^2x+\cos\sin x}{1+\sin x\sin\sin x}dx &= \int\frac{2\cos b\frac{d\sin a}{dx}-2\sin b\frac{d\cos a}{dx}}{\sin^2 a+\cos^2 b}dx\\
+> &= \int\frac{1}{1+(\cos b/\sin a)^2}\left(2\cos b\frac{1}{\sin^2a}\frac{d\sin a}{dx}-\frac{2}{\sin a}\frac{d\cos b}{dx}\right)dx \\
+> &= \int\frac{1}{1+(\cos b/\sin a)^2}\left(-2\cos b\frac{d(1/\sin a)}{dx}-2\left(\frac1{\sin a}\right)\frac{d\cos b}{dx}\right)dx \\
+> &= -2\int\frac{1}{1+(\cos b/\sin a)^2}\frac{d(\cos b/\sin a)}{dx}dx\\
+> &= -2\arctan(\cos b/\sin a)+C = \mathbf{-2\arctan\left(\frac{\cos\frac{x-\sin x}{2}}{\sin\frac{x+\sin x}{2}}\right) +C}.
+> \end{aligned}
+> $$
+
 > [!abstract] Integral 6 - 260414
 > Evaluate following integral.
 > $$

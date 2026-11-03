@@ -48,7 +48,7 @@ tags:
 > $$
 > \begin{aligned}
 > \int_0^\infty\frac{dx}{\left(\{x\}\cdot\text{lcm}\left(\lceil x\rceil,\left\lfloor\frac{1}{\{x\}}\right\rfloor\right)\right)^2} &= \prod_{p\in\mathbb P}\frac{1-p^{-4}}{(1-p^{-2})^3}=\frac{\prod_{p\in\mathbb P}(1-p^{-4})}{\left(\prod_{p\in\mathbb P}(1-p^{-2})\right)^3}=\frac{\zeta(2)^3}{\zeta(4)}\\
-> &=\color{red}{\frac{5\pi^2}{12}}.
+> &=\mathbf{\frac{5\pi^2}{12}}.
 > \end{aligned}
 > $$
 > 
@@ -57,7 +57,7 @@ tags:
 > $$
 > \begin{aligned}
 > \zeta(2)^2=\sum_{1\le a,b}\frac{1}{a^2b^2}&=\sum_{g=1}^\infty\frac{1}{g^4}\sum_{x\perp y}\frac{1}{x^2y^2}=\zeta(4)\sum_{x\perp y}\frac{1}{x^2y^2}\text{이므로,}\\
-> \sum_{1\le a,b}\operatorname{lcm}(a,b)^{-2}&=\sum_{g=1}^\infty\sum_{x\perp y}\frac{1}{(gxy)^2}=\zeta(2)\sum_{x\perp y}\frac{1}{x^2y^2}=\zeta(2)^3\zeta(4)^{-1}=\color{red}{\frac{5\pi^2}{12}}.
+> \sum_{1\le a,b}\operatorname{lcm}(a,b)^{-2}&=\sum_{g=1}^\infty\sum_{x\perp y}\frac{1}{(gxy)^2}=\zeta(2)\sum_{x\perp y}\frac{1}{x^2y^2}=\zeta(2)^3\zeta(4)^{-1}=\mathbf{\frac{5\pi^2}{12}}.
 > \end{aligned}
 > $$
 

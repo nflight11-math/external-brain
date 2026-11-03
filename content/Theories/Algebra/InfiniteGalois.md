@@ -1,6 +1,5 @@
 ---
-title: Galois Theory
-description: Galois theory에 대한 기본적인 정리와 그 증명 모음.
+title: Infinite Galois Theory
 tags:
   - theory
   - galois

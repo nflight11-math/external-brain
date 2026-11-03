@@ -6,9 +6,8 @@ title: External Brain
 
 ## 색인
 
-- [[Definitions/index|Definitions]]
-- [[Exercise/index|Exercise]]
 - [[Theories/index|Theories]]
+- [[Exercise/index|Exercise]]
 
 ## 소개
 

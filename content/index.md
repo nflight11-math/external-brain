@@ -8,6 +8,7 @@ title: External Brain
 
 - [[Definitions/index|Definitions]]
 - [[Exercise/index|Exercise]]
+- [[Theories/index|Theories]]
 
 ## 소개
 

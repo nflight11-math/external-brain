@@ -27,15 +27,19 @@ tags:
 > 
 > 즉, $\int_0^\infty\frac{dx}{\left(\{x\}\cdot\text{lcm}\left(\lceil x\rceil,\left\lfloor\frac{1}{\{x\}}\right\rfloor\right)\right)^2}=\sum_{n=0}^\infty\sum_{m=1}^\infty J_{n,m}=\sum_{n,m=1}^\infty\text{lcm}(n,m)^{-2}$이다.
 > 
-> $\mathbb P:=\{0<n\in\mathbb{Z}:n\text{ is prime}\}$으로 두자. $n=\prod_{p\in\mathbb P}p^{n_p}$, $m=\prod_{p\in\mathbb P}p^{m_p}$의 꼴로 표기한다면, $$\text{lcm}(n,m)=\prod_{p\in \mathbb P}p^{\max(n_p,m_p)}$$이다. 즉, 구해야 하는 값은 $\sum_{1\le n,m\in\}\prod_{p\in\mathbb P}p^{-2\max(n_p,m_p)}=\prod_{p\in\mathbb P}\sum_{0\le n_p,m_p\in\mathbb{Z}}p^{-2\max(n_p,m_p)}$이다. 각 소수에 대해서 $A(p)=\sum_{a,b=0}^\infty p^{-2\max(a,b)}$를 구할 수 있다면 구해야 하는 값은 $\prod_{p\in\mathbb P} A(p)$라는 것이다.
+> $\mathbb P:=\{0<n\in\mathbb{Z}:n\text{ is prime}\}$으로 두자. $n=\prod_{p\in\mathbb P}p^{n_p}$, $m=\prod_{p\in\mathbb P}p^{m_p}$의 꼴로 표기한다면,
+> $$
+> \text{lcm}(n,m)=\prod_{p\in \mathbb P}p^{\max(n_p,m_p)}
+> $$
+> 이다. 즉, 구해야 하는 값은 $\sum_{1\le n,m\in\mathbb{Z}}\prod_{p\in\mathbb P}p^{-2\max(n_p,m_p)}=\prod_{p\in\mathbb P}\sum_{0\le n_p,m_p\in\mathbb{Z}}p^{-2\max(n_p,m_p)}$이다. 각 소수에 대해서 $A(p)=\sum_{a,b=0}^\infty p^{-2\max(a,b)}$를 구할 수 있다면 구해야 하는 값은 $\prod_{p\in\mathbb P} A(p)$라는 것이다.
 > 
 > 이 $A(p)$를 구하기 위해서 합을 $a<b$, $a=b$, $a>b$ 세 부분으로 쪼개서 구해 보자. 대칭성에 의하여 $$\sum_{0\le a<b}p^{-2\max(a,b)}=\sum_{0\le b<a}p^{-2\max(a,b)}$$이 성립하며, $$\sum_{0\le a<b}p^{-2\max(a,b)}=\sum_{0\le a<b}p^{-2b}=\sum_{a=0}^\infty\sum_{b=a+1}^\infty p^{-2b}=\sum_{a=0}^\infty\frac{p^{-2-2a}}{1-p^{-2}}=\frac{p^{-2}}{(1-p^{-2})^2}.$$
 > 
 > $\sum_{0\le a=b}^\infty p^{-2\max(a,b)}=\sum_{a=0}^\infty p^{-2a}=\frac{1}{1-p^{-2}}$이다. 그러므로 아래와 같이 계산 가능하다.
 > $$
 > \begin{aligned}
->     A(p) &=\sum_{0\le a,b} p^{-2\max(a,b)} = 2\sum_{0\le a<b} p^{-2\max(a,b)}+\sum_{0\le a=b}p^{-2\max(a,b)}=2\frac{p^{-2}}{(1-p^{-2})^2}+\frac{1}{1-p^{-2}}\\
->     &=\frac{1+p^{-2}}{(1-p^{-2})^2}=\frac{1-p^{-4}}{(1-p^{-2})^3}.
+> A(p) &=\sum_{0\le a,b} p^{-2\max(a,b)} = 2\sum_{0\le a<b} p^{-2\max(a,b)}+\sum_{0\le a=b}p^{-2\max(a,b)}=2\frac{p^{-2}}{(1-p^{-2})^2}+\frac{1}{1-p^{-2}}\\
+> &=\frac{1+p^{-2}}{(1-p^{-2})^2}=\frac{1-p^{-4}}{(1-p^{-2})^3}.
 > \end{aligned}
 > $$
 > 
@@ -43,8 +47,8 @@ tags:
 > 
 > $$
 > \begin{aligned}
->     \int_0^\infty\frac{dx}{\left(\{x\}\cdot\text{lcm}\left(\lceil x\rceil,\left\lfloor\frac{1}{\{x\}}\right\rfloor\right)\right)^2} &= \prod_{p\in\mathbb P}\frac{1-p^{-4}}{(1-p^{-2})^3}=\frac{\prod_{p\in\mathbb P}(1-p^{-4})}{\left(\prod_{p\in\mathbb P}(1-p^{-2})\right)^3}=\frac{\zeta(2)^3}{\zeta(4)}\\
->     &=\color{red}{\frac{5\pi^2}{12}}.
+> \int_0^\infty\frac{dx}{\left(\{x\}\cdot\text{lcm}\left(\lceil x\rceil,\left\lfloor\frac{1}{\{x\}}\right\rfloor\right)\right)^2} &= \prod_{p\in\mathbb P}\frac{1-p^{-4}}{(1-p^{-2})^3}=\frac{\prod_{p\in\mathbb P}(1-p^{-4})}{\left(\prod_{p\in\mathbb P}(1-p^{-2})\right)^3}=\frac{\zeta(2)^3}{\zeta(4)}\\
+> &=\color{red}{\frac{5\pi^2}{12}}.
 > \end{aligned}
 > $$
 > 
@@ -52,8 +56,8 @@ tags:
 > 
 > $$
 > \begin{aligned}
->     \zeta(2)^2=\sum_{1\le a,b}\frac{1}{a^2b^2}&=\sum_{g=1}^\infty\frac{1}{g^4}\sum_{x\perp y}\frac{1}{x^2y^2}=\zeta(4)\sum_{x\perp y}\frac{1}{x^2y^2}\text{이므로,}\\
->     \sum_{1\le a,b}\operatorname{lcm}(a,b)^{-2}&=\sum_{g=1}^\infty\sum_{x\perp y}\frac{1}{(gxy)^2}=\zeta(2)\sum_{x\perp y}\frac{1}{x^2y^2}=\zeta(2)^3\zeta(4)^{-1}=\color{red}{\frac{5\pi^2}{12}}.
+> \zeta(2)^2=\sum_{1\le a,b}\frac{1}{a^2b^2}&=\sum_{g=1}^\infty\frac{1}{g^4}\sum_{x\perp y}\frac{1}{x^2y^2}=\zeta(4)\sum_{x\perp y}\frac{1}{x^2y^2}\text{이므로,}\\
+> \sum_{1\le a,b}\operatorname{lcm}(a,b)^{-2}&=\sum_{g=1}^\infty\sum_{x\perp y}\frac{1}{(gxy)^2}=\zeta(2)\sum_{x\perp y}\frac{1}{x^2y^2}=\zeta(2)^3\zeta(4)^{-1}=\color{red}{\frac{5\pi^2}{12}}.
 > \end{aligned}
 > $$
 

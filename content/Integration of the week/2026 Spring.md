@@ -68,6 +68,35 @@ tags:
 > $$
 
 > [!done]- Answer 2
+> 변수를 $X_i=2^{-x_i}$로 변환하면, $dX_i=(-\log2)X_idx_i$가 되고 $x_i=0,\infty$일 때 $X_i=1,0$이 각각 성립하므로, 주어진 적분은 $\frac{\log(1+u)}{u}=\int_0^1\frac{dx}{1+ux}$를 사용하여 다음과 같이 변환할 수 있다.
+> $$
+> \begin{aligned}
+> \int_0^\infty\int_0^\infty\cdots\int_0^\infty\frac{\log\left(1+\sum_1^n2^{x_i}\right)}{\sum_1^n2^{x_i+\sum_1^n x_i}}dx_1dx_2\cdots dx_n &= \int_1^0\int_1^0\cdots\int_1^0 \frac{\log(1+\sum_{1}^n X_i^{-1})}{(-\log 2)^n\sum_1^n X_i^{-1}}dX_1dX_2\cdots dX_n\\
+> &= (\log2)^{-n}\int_0^1\int_0^1\cdots\int_0^1\frac{\log(1+\sum_1^nX_{i}^{-1})}{\sum_1^nX_{i}^{-1}}dX_1dX_2\cdots dX_n\\
+> &= (\log2)^{-n} \int_0^1\cdots\int_0^1\frac{1}{1+X_0\sum_1^nX_{i}^{-1}}dX_0dX_1\cdots dX_n \\
+> &= (\log 2)^{-n}\int_0^1\cdots\int_0^1\frac{X/X_0}{\sum_0^n(X/X_i)}dX_0dX_1\cdots dX_n.
+> \end{aligned}
+> $$
+> 
+> 단, 위 식에서 $X=\prod_0^n X_i$이다.
+> 
+> 피적분함수 $f(X_0,X_1,\cdots,X_n):=\frac{X/X_0}{\sum_0^n(X/X_i)}$이라고 하자. 그러면 적분 및 변수의 순서를 바꾸는 것만으로도
+> $$\int_{[0,1]^{n+1}}f(X_0,X_1,\cdots,X_n)dX_0dX_1\cdots dX_n=\int_{[0,1]^{n+1}}f(X_i,\cdots,X_n,X_0,\cdots,X_{i-1})dX_0dX_1\cdots dX_n$$이 성립함은 쉽게 보일 수 있다. 또한 $\sum_{\text{cyc}}f(X_0,\cdots,X_n)=1$이므로,
+> $$
+> \begin{aligned}
+> \int_{[0,1]^{n+1}}f(X_0,X_1,\cdots,X_n)dX_0dX_1\cdots dX_n &= \frac{1}{1+n}\int_{[0,1]^{n+1}} \sum_{\operatorname{cyc}}f(X_0,X_1,\cdots,X_n) dX_0dX_1\cdots dX_n\\
+> &= \frac{1}{1+n}\int_{[0,1]^{n+1}}dX_0dX_1\cdots dX_n=\frac{1}{1+n}\\
+> \end{aligned}
+> $$
+> 이 성립한다.
+> 
+> 그러므로,
+> $$
+> \begin{aligned}
+> \int_0^\infty\int_0^\infty\cdots\int_0^\infty\frac{\log\left(1+\sum_1^n2^{x_i}\right)}{\sum_1^n2^{x_i+\sum_1^n x_i}}dx_1dx_2\cdots dx_n &= (\log 2)^{-n}\int_0^1\cdots\int_0^1f(X_0,X_1,\cdots,X_n)dX_0dX_1\cdots dX_n\\
+> &=\mathbf{\frac{1}{(n+1)(\log2)^n}.}
+> \end{aligned}
+> $$
 
 > [!abstract] Integral 3 - 260324
 > Evaluate following integral.

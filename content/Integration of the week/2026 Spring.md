@@ -529,6 +529,46 @@ tags:
 > $$
 > You will easily notice that this is a generalized version of IOTW \#3. But you might have already realized that it is impossible to go the same way.
 
+> [!done]- Answer 11
+> 적분을 계산하기 전에 다음과 같은 Lemma를 증명하자.
+> 
+> **Lemma (Ramanujan's master theorem)** If complex-valued function $f(x)$ has an expansion of the form $f(x) = \sum_{k=0}^\infty (-x)^k \lambda(k)$ for the analytic function $\lambda$ defined on a half-plane $H(\delta):=\{z\in\mathbb C:\Re z\ge-\delta\}$ for some $0<\delta<1$. And assume that $\lambda$ satisfies the growth condition $|\lambda(v+iw)|<Ce^{Pv+A|w|}$ for some $A<\pi$ for all $v+iw\in H(\delta)$. Then the Mellin transform of $f(x)$ is given by
+> $$
+> \mathcal M f(s):=\int_0^\infty x^{s-1}f(x)dx=\frac{\pi}{\sin \pi s}\lambda(-s).
+> $$
+> 
+> **Proof.** $0<x<e^{-P}$라고 하자. 그러면 이 growth condition은 $|\lambda(n)|<Ce^{Pn}$ 꼴이 되므로 $\left|(-x)^k\lambda(k)\right|<C(e^Px)<1$이 되어 $f(x)$는 absolutely converge한다. 이제 $\Lambda(s):=\frac{\pi}{\sin\pi s}\lambda(-s)x^{-s}$를, 경로 $C_R$을 따라 적분하자. 여기서 $C_R=C_1\cup C_2$ with $C_1:c+it\quad(-R\le t\le R)$, $C_2:c+e^{it}\quad(\frac\pi2\le t\le \frac{3\pi}2)$이다.
+> 
+> 그러면 함수 $\Lambda(s)$는 $C_R$로 경계지어진 영역 내부에서 simple pole $0,-1,-2,...$을 가진다. 여기서의 residue는 $\lambda(-s)x^{-s}$가 $-n$에서는 analytic이므로 $$\text{Res}\left(\Lambda;-n\right)=\left.\lambda(-s)x^{-s}\right|_{s=-n}\text{Res}\left(\frac{\pi}{\sin\pi s};-n\right)=\lambda(n)x^n\lim_{s\to-n}\frac{\pi(s+n)}{\sin\pi s}=(-1)^n\lambda(n)x^n.$$
+> 
+> 즉, residue theorem에 의하여 $\int_{C_R}\Lambda(s)ds=2\pi i\sum_0^{\lfloor R\rfloor}\text{Res}(\Lambda;-n)=2\pi i\sum_0^{\lfloor R\rfloor}(-x)^n\lambda(n)$이 성립하고, 이 때 $R\to \infty$를 취하면 $f(x)=\frac{1}{2\pi i}\int_{c-i\infty}^{c+\infty}\Lambda(s)ds$이 성립한다.
+> 
+> 적분경로 상에서 $|x^{-s}|=|x^{-c-iy}|=x^{-c}$이 성립하고, $|\sin \pi s|^2\approx \cos^2\pi c\sinh^2\pi y\approx \frac{1}{4}e^{2\pi|y|}$이니 $|\pi/\sin\pi s|\le M_1 e^{-\pi|y|}$인 상수 $M_1$이 존재함을 알 수 있다. 또한 $|\lambda(s)|=|\lambda(c+iy)|<Ce^{Pc+A|y|}$이므로, $|\Lambda(s)|=CM_1e^{Pc}\cdot e^{(A-\pi)|y|}$이므로 $\int_{c-i\infty}^{c+\infty}\Lambda(s)ds$이 절대수렴함을 알 수 있으며, 적당한 $0<a<b<\delta$에 대해서 $c\in(a,b)$에서 uniformly converge함 역시 알 수 있다. 그러므 Mellin inversion formula $\mathcal M^{-1}f(x)=\frac{1}{2\pi i}\int_{c-i\infty}^{c+i\infty}f(s)x^{-s}ds$를 사용할 수 있다.
+> $$
+> f(x)=\frac{1}{2\pi i}\int_{c-i\infty}^{c+\infty}\frac{\pi}{\sin \pi s}\lambda(-s)x^{-s}ds\implies\mathcal Mf(s)=\frac{\pi}{\sin\pi s}\lambda(-s).\quad\square
+> $$
+> 
+> 이제 위 Lemma를 사용하여 $\int_0^\infty e^{-x^a}\sin(x^a)dx$를 계산하면 된다. $t\leftarrow x^a$로 두면 $dx=\frac{1}{ax^{a-1}}dt=a^{-1}t^{a^{-1}-1}dt$이므로 다음과 같이 변환된다.
+> $$
+> \int_0^\infty e^{-x^a}\sin(x^a)dx=\int_0^\infty e^{-t}\sin t\cdot a^{-1}t^{a^{-1}-1}dt=a^{-1}\Im\int_0^\infty e^{-(1-i)t}t^{a^{-1}-1}dt.
+> $$
+> 
+> 여기서 $e^{-(1-i)t}$의 Taylor expansion을 취하면 피적분함수를 $t^{a^{-1}-1}\sum_0^\infty\frac{(1-i)^k}{k!}(-t)^k=t^{a^{-1}-1}\sum_0^\infty\frac{(1-i)^k}{\Gamma(k+1)}(-t)^k$의 형태로 쓸 수 있다. $\lambda(u)=\frac{(1-i)^u}{\Gamma(u+1)}$로 쓰면 이는 전해석함수이며 $t^{a^{-1}-1}\sum_0^\infty\frac{(1-i)^k}{\Gamma(k+1)}(-t)^k=t^{a^{-1}-1}f(t)dt$가 되므로, Ramanujan's master theorem을 이용하면 $\int_0^\infty e^{-(1-i)t}t^{a^{-1}-1}dt=\frac{\pi}{\sin \pi a^{-1}}\lambda(-a^{-1})=\frac{\pi}{\sin\pi a^{-1}}\frac{(1-i)^{-a^{-1}}}{\Gamma(1-a^{-1})}$이다.
+> 
+> 여기에 Gamma function의 reflection fomula $\Gamma(z)\Gamma(1-z)=\frac{\pi}{\sin\pi z}$를 이용하면 $\frac{\pi}{\sin\pi a^{-1}}\frac{(1-i)^{-a^{-1}}}{\Gamma(1-a^{-1})}=(1-i)^{-a^{-1}}\Gamma(a^{-1})$이므로, $\int_0^\infty e^{-(1-i)t}t^{a^{-1}-1}dt=(1-i)^{-a^{-1}}\Gamma(a^{-1})$. $(1-i)^{-a^{-1}}=(\sqrt2 e^{-\pi/4})^{-a^{-1}}=2^{-1/2a}e^{\pi/4a}$이다. 이를 대입하면 원하는 값을 다음과 같이 얻을 수 있다.
+> $$
+> \begin{aligned}
+>     \int_0^\infty e^{-x^a}\sin(x^a)dx &= a^{-1}\Im\int_0^\infty e^{-(1-i)t}t^{a^{-1}-1}dt = a^{-1}\Im\left((1-i)^{-a^{-1}}\Gamma(a^{-1})\right)=a^{-1}\Gamma(a^{-1})\cdot\Im\left((1-i)^{-a^{-1}}\right)\\
+>     &= \Gamma(1+a^{-1})\cdot\Im(2^{-1/2a}e^{\pi/4a})=\boxed{2^{-1/2a}\Gamma(1+a^{-1})\sin\frac{\pi}{4a}}.
+> \end{aligned}
+> $$
+> 
+> 여기에 $a=2$를 대입하면 나오는 값은
+> $$
+> 2^{-1/4}\Gamma(3/2)\sin\frac{\pi}{8}=2^{-1/4}\cdot\frac{\sqrt\pi}{2}\cdot\frac{\sqrt{2-\sqrt2}}{2}=\frac{\sqrt{\sqrt2-1}}{4}\sqrt\pi
+> $$
+> 으로, IOTW \#3에서 다루었던 값과 정확하게 일치하는 것을 알 수가 있다.
+
 > [!abstract] Integral 12 - 260529
 > Evaluate following integral.
 > $$

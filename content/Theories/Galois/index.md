@@ -26,10 +26,10 @@ tags:
 $L/K$가 (infinite) Galois extension with Galois group $G$이고, $G$에 Krull topology가 부여되어 있을 때
 
 1. Order-reversing bijection
-$$
-\left\{\text{closed subgroups }H\subset G\right\} \longleftrightarrow \left\{M:K\subset M\subset L\right\}
-$$
-이 $H\mapsto L^H$, $M\mapsto \operatorname{Gal}(L/M)$으로 존재한다.
+    $$
+    \left\{\text{closed subgroups }H\subset G\right\} \longleftrightarrow \left\{M:K\subset M\subset L\right\}
+    $$
+    이 $H\mapsto L^H$, $M\mapsto \operatorname{Gal}(L/M)$으로 존재한다.
 
 2. $H$이 open subgroup of $G$임과 $[L^H:K]<\infty$임이 동치이다.
 
@@ -46,7 +46,7 @@ $$
 >     $\alpha\in L\setminus M$을 하나 선택하자. 그러면 $L/M$이 Galois extension이므로 $f(X):=\operatorname{irr}(\alpha,M,X)\in M[X]$는 separable이고 split into linear factor over $L$이다.
 >     $\alpha$와 다른 $f(X)$의 근 $\beta$를 하나 선택하자. 그러면 $M$-embedding $M(\alpha)\hookrightarrow L$이 $\alpha\mapsto\beta$이게 존재한다.
 >     이의 extension $\sigma\in\operatorname{Gal}(L/M)$에 대하여 $\sigma\alpha\ne\alpha$이므로 $\alpha\notin L^{\operatorname{Gal}(L/M)}$.
->     그러므로 $M=L^{\operatorname{Gal(L/M)}}$이다.
+>     그러므로 $M=L^{\operatorname{Gal}(L/M)}$이다.
 > 
 >     각 $\alpha\in M$에 대하여 stabilizer $G_\alpha:=\{\sigma\in G:\sigma\alpha=\alpha\}$를 생각하자.
 >     그러면 $\alpha$를 포함하는 finite Galois extension $E/K$에 대하여 $\operatorname{Gal}(E/K)\subset G_\alpha$이므로 이는 [[Theories/TopologicalGroup#Relation of open and closed|open subgroup이고, 따라서 closed]]이다.
@@ -60,3 +60,12 @@ $$
 >     \sigma\in\bigcap_{E/K\text{ is finite Galois}}\operatorname{res}^{-1}_E H_E=\overline H.
 >     $$
 >     그러므로 $\operatorname{Gal}(L/L^H)\subset \overline H$이다.
+>     
+>     반대로 $\sigma\in\overline{H}$이라고 하자. 임의의 $\alpha\in L^H$에 대하여 $\alpha$를 포함하는 finite Galois subextension $E/K$를 택하자.
+>     그러면 $\left.\sigma\right|_E\in H_E$이고 $\alpha\in E^{H_E}$이므로 $\sigma\alpha=\alpha$.
+>     그러므로 $\sigma\in\operatorname{Gal}(L/L^H)$이며 따라서 $\operatorname{Gal}(L/L^H)=\overline{H}$.
+>     특히 $H$가 closed이면 $\operatorname{Gal}(L/L^H)=H$.
+>     
+>     이 두 correspondence $H\mapsto L^H$, $M\mapsto \operatorname{Gal}(L/M)$는 서로 inverse이며,
+>     $H_1\subset H_2$이면 $L^{H_1}\supset L^{H_2}$, $M_1\subset M_2$이면 $\operatorname{Gal}(L/M_1)\supset\operatorname{Gal}(L/M_2)$이다.
+>     그러므로 이 두 corredpondence는 order-reversing bijection. $\square$

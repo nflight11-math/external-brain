@@ -221,6 +221,7 @@ plugins:
     options:
       links:
         GitHub: https://github.com/nflight11-math/external-brain
+        개인정보처리방침: https://external-brain.kr/privacy
     layout:
       position: footer
       priority: 50

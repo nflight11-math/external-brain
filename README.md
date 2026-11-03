@@ -2,4 +2,4 @@
 
 Personal mathematics wikipedia.
 
-Link: https://nflight11-math.github.io/external-brain/
+Link: https://external-brain.kr/

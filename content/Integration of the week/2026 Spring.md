@@ -58,7 +58,7 @@ tags:
 > $$
 > \begin{aligned}
 > \int_0^\infty\frac{dx}{\left(\{x\}\cdot\text{lcm}\left(\lceil x\rceil,\left\lfloor\frac{1}{\{x\}}\right\rfloor\right)\right)^2} &= \prod_{p\in\mathbb P}\frac{1-p^{-4}}{(1-p^{-2})^3}=\frac{\prod_{p\in\mathbb P}(1-p^{-4})}{\left(\prod_{p\in\mathbb P}(1-p^{-2})\right)^3}=\frac{\zeta(2)^3}{\zeta(4)}\\
-> &=\mathbf{\frac{5\pi^2}{12}}.
+> &=\boxed{\frac{5\pi^2}{12}}.
 > \end{aligned}
 > $$
 > 
@@ -67,7 +67,7 @@ tags:
 > $$
 > \begin{aligned}
 > \zeta(2)^2=\sum_{1\le a,b}\frac{1}{a^2b^2}&=\sum_{g=1}^\infty\frac{1}{g^4}\sum_{x\perp y}\frac{1}{x^2y^2}=\zeta(4)\sum_{x\perp y}\frac{1}{x^2y^2}\text{이므로,}\\
-> \sum_{1\le a,b}\operatorname{lcm}(a,b)^{-2}&=\sum_{g=1}^\infty\sum_{x\perp y}\frac{1}{(gxy)^2}=\zeta(2)\sum_{x\perp y}\frac{1}{x^2y^2}=\zeta(2)^3\zeta(4)^{-1}=\mathbf{\frac{5\pi^2}{12}}.
+> \sum_{1\le a,b}\operatorname{lcm}(a,b)^{-2}&=\sum_{g=1}^\infty\sum_{x\perp y}\frac{1}{(gxy)^2}=\zeta(2)\sum_{x\perp y}\frac{1}{x^2y^2}=\zeta(2)^3\zeta(4)^{-1}=\boxed{\frac{5\pi^2}{12}}.
 > \end{aligned}
 > $$
 
@@ -104,7 +104,7 @@ tags:
 > $$
 > \begin{aligned}
 > \int_0^\infty\int_0^\infty\cdots\int_0^\infty\frac{\log\left(1+\sum_1^n2^{x_i}\right)}{\sum_1^n2^{x_i+\sum_1^n x_i}}dx_1dx_2\cdots dx_n &= (\log 2)^{-n}\int_0^1\cdots\int_0^1f(X_0,X_1,\cdots,X_n)dX_0dX_1\cdots dX_n\\
-> &=\mathbf{\frac{1}{(n+1)(\log2)^n}.}
+> &=\boxed{\frac{1}{(n+1)(\log2)^n}.}
 > \end{aligned}
 > $$
 
@@ -135,7 +135,7 @@ tags:
 > \end{aligned}
 > $$
 > 
-> $(J^2+I^2)^2=(J^2-I^2)^2+(2IJ)^2=\frac{\pi^2}{32}$이므로 $J^2+I^2=\frac{\pi\sqrt2}{8}$이 성립한다. 그러므로 $I^2=\frac{1}{2}((J^2+I^2)-(J^2-I^2))=\frac{\sqrt2-1}{16}\pi$이 성립하여, 주어진 적분의 답이 $\mathbf{\displaystyle \frac{\sqrt{\sqrt2-1}}{4}\sqrt{\pi}}$임을 알 수 있다.
+> $(J^2+I^2)^2=(J^2-I^2)^2+(2IJ)^2=\frac{\pi^2}{32}$이므로 $J^2+I^2=\frac{\pi\sqrt2}{8}$이 성립한다. 그러므로 $I^2=\frac{1}{2}((J^2+I^2)-(J^2-I^2))=\frac{\sqrt2-1}{16}\pi$이 성립하여, 주어진 적분의 답이 $\boxed{\displaystyle \frac{\sqrt{\sqrt2-1}}{4}\sqrt{\pi}}$임을 알 수 있다.
 > 
 > +) $I>0$인 이유는 아래 수식과 같다. 여기서 $f(x)=e^{-x}/\sqrt x$는 $x\to\infty$일 때 $f(x)\to 0$인 감소함수임은 보이지 않겠으나, 도함수를 취함으로서 어렵지 않게 증명할 수 있다.
 > $$
@@ -244,7 +244,7 @@ tags:
 > &= {\frac{6\zeta(3)+\pi^2}{24\pi^4}}.
 > \end{aligned}
 > $$
-> 구하는 값은 $\displaystyle \frac I2=\mathbf{\frac{6\zeta(3)+\pi^2}{48\pi^4}}$이다.
+> 구하는 값은 $\displaystyle \frac I2=\boxed{\frac{6\zeta(3)+\pi^2}{48\pi^4}}$이다.
 
 > [!abstract] Integral 5 - 260407
 > Evaluate following integral.
@@ -276,7 +276,7 @@ tags:
 > &= \int\frac{1}{1+(\cos b/\sin a)^2}\left(2\cos b\frac{1}{\sin^2a}\frac{d\sin a}{dx}-\frac{2}{\sin a}\frac{d\cos b}{dx}\right)dx \\
 > &= \int\frac{1}{1+(\cos b/\sin a)^2}\left(-2\cos b\frac{d(1/\sin a)}{dx}-2\left(\frac1{\sin a}\right)\frac{d\cos b}{dx}\right)dx \\
 > &= -2\int\frac{1}{1+(\cos b/\sin a)^2}\frac{d(\cos b/\sin a)}{dx}dx\\
-> &= -2\arctan(\cos b/\sin a)+C = \mathbf{-2\arctan\left(\frac{\cos\frac{x-\sin x}{2}}{\sin\frac{x+\sin x}{2}}\right) +C}.
+> &= -2\arctan(\cos b/\sin a)+C = \boxed{-2\arctan\left(\frac{\cos\frac{x-\sin x}{2}}{\sin\frac{x+\sin x}{2}}\right) +C}.
 > \end{aligned}
 > $$
 
@@ -284,6 +284,18 @@ tags:
 > Evaluate following integral.
 > $$
 > \int\frac{2n!\sin x+x^n}{e^x+\sin x+\cos x+1+x+\frac{x^2}{2}+\cdots+\frac{x^n}{n!}}dx.
+> $$
+
+> [!done]- Answer 6
+> 피적분함수의 분모를 $f(x):=e^x+\sin x+\cos x+1+x+\frac{x^2}2+\cdots\frac{x^n}{n!}$으로 두자. 그러면 $f'(x)=e^x-\sin x+\cos x+1+x+\frac{x^2}{2}+\cdots\frac{x^{n-1}}{(n-1)!}=f(x)-2\sin x-\frac{x^n}{n!}$.
+> 
+> 그러므로 피적분함수의 분자는 $2n!\sin x+x^n=n!(f(x)-f'(x))$이다. 이를 이용하면 주어진 적분은 다음과 같이 깔끔하게 계산할 수 있다.
+> $$
+> \begin{aligned}
+> \int\frac{2n!\sin x+x^n}{e^x+\sin x+\cos x+1+x+\frac{x^2}{2}+\cdots+\frac{x^n}{n!}}dx &=\int n!\frac{f(x)-f'(x)}{f(x)}dx=n!\int\left(1-\frac{f'(x)}{f(x)}\right)dx\\
+> &= n!(x-\ln |f(x)|)+C\\
+> &= \boxed{n!\left(x-\ln\left|e^x+\sin x+\cos x+1+x+\frac{x^2}{2}+\cdots+\frac{x^n}{n!}\right|\right)+C}.
+> \end{aligned}
 > $$
 
 > [!abstract] Integral 7 - 260421

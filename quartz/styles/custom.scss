@@ -10,3 +10,13 @@
     margin: 1rem 0 0.75rem;
   }
 }
+
+/* 접힌 Callout의 빈 공간 제거 */
+.callout.is-collapsed > .callout-content {
+  display: none;
+}
+
+/* 접힌 Callout의 세로 여백 축소 */
+.callout.is-collapsed > .callout-title {
+  padding: 0.45rem 0;
+}

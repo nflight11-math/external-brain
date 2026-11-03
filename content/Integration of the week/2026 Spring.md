@@ -304,6 +304,35 @@ tags:
 > \int\frac{x(2x+3)\sqrt[3]{x+1}}{x^6+x^2+2x+1}dx.
 > $$
 
+> [!done]- Answer 7
+> 피적분함수의 분모와 분자를 $x^6$으로 나누면 식은 다음과 같이 변형된다.
+> $$
+> \frac{x(2x+3)\sqrt[3]{x+1}}{x^6+x^2+2x+1}=(2x^{-3}-3x^{-4})\frac{\sqrt[3]{x^{-2}+x^{-3}}}{1+(x^{-2}+x^{-3})^2}
+> $$
+> 
+> 또한 $\frac{d}{dx}(x^{-2}+x^{-3})=-2x^{-3}-3x^{-4}$이므로, $u\leftarrow x^{-2}+x^{-3}$의 치환을 적용하면 주어진 적분은 $-\int\frac{u^{-1/3}}{u^2+1}du$이 된다. 다시 $t\leftarrow u^{2/3}$으로 치환하면 $u^{1/3}du=u^{2/3}(u^{-1/3}du)=\frac32 tdt$가 되니, 주어진 적분은 $-\frac32\int\frac{t}{t^3+1}dt$가 된다.
+> 
+> $I=\int\frac{t}{1+t^3}dt$, $J=\int\frac{1}{1+t^3}dt$로 두면,
+> $$
+> \begin{aligned}
+> I+J &= \int\frac{1+t}{1+t^3}dt=\int\frac{1}{1-t+t^2}dt=\int\frac{1}{\frac34+\left(t-\frac12\right)^2}dt=\frac{2}{\sqrt3}\tan^{-1}\frac{2t-1}{\sqrt3}+C\\
+> -I+J &= \int\frac{1-t}{1+t^3}dt = \int\frac{1}{1+t}dt-\int\frac{t^2}{1+t^3}dt=\ln|1+t|-\frac13\ln|1+t^3|+C
+> \end{aligned}
+> $$
+> 이므로,
+> $$
+> I=\frac{1}{\sqrt3}\tan^{-1}\frac{2t-1}{\sqrt3}-\frac12\ln|1+t|+\frac16\ln|1+t^3|+C.
+> $$
+> 
+> 즉, 구하는 적분은 다음과 같다.
+> $$
+> \begin{aligned}
+> \int \frac{x(2x+3)\sqrt[3]{x+1}}{x^6+x^2+2x+1}dx &= -\frac32 I=-\frac{3}{2\sqrt3}\tan^{-1}\frac{2t-1}{\sqrt3}-\frac34\ln|1+t|+\frac14\ln|1+t^3|+C\\
+> &= -\frac{3}{2\sqrt3}\tan^{-1}\frac{2u^{2/3}-1}{\sqrt3}-\frac34\ln|1+u^{2/3}|+\frac14\ln|1+u^2|+C \\
+> &= \boxed{-\frac{3}{2\sqrt3}\tan^{-1}\frac{2\left(x^{-2}+x^{-3}\right)^{2/3}-1}{\sqrt3}-\frac34\ln\left|1+\left(x^{-2}+x^{-3}\right)^{2/3}\right|+\frac14\ln\left|1+\left(x^{-2}+x^{-3}\right)^2\right|+C}.
+> \end{aligned}
+> $$
+
 > [!abstract] Integral 8 - 260428
 > Evaluate following integral.
 > $$

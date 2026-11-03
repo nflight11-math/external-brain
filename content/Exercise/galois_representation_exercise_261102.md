@@ -47,11 +47,11 @@ Finite group $H$와 group homomorphism $\rho:G_K\to H$를 생각하자.
 > 
 > 3.
 >     우선 $\ker\rho$는 $\rho$가 연속이므로 open subgroup이며, 따라서 closed이다.
->     그러므로 [[Theories/Galois/#Infinite Galois correspondence|infinite Galois correspondence]]에 의하여 $L_\rho/K$는 finite Galois extension이다.
->     또한 $\ker\rho$는 normal subgroup of $G_K$이니, [[Theories/Galois/#Infinite Galois correspondence|infinite Galois correspondence]]에 의하여 $L_\rho/K$는 normal extension이고 $\operatorname{Gal}(L_\rho/K)\cong G_K/\ker\rho\cong\operatorname{im}\rho$.
+>     그러므로 [[Theories/Algebra/InfiniteGalois#Infinite Galois correspondence|infinite Galois correspondence]]에 의하여 $L_\rho/K$는 finite Galois extension이다.
+>     또한 $\ker\rho$는 normal subgroup of $G_K$이니, [[Theories/Algebra/InfiniteGalois#Infinite Galois correspondence|infinite Galois correspondence]]에 의하여 $L_\rho/K$는 normal extension이고 $\operatorname{Gal}(L_\rho/K)\cong G_K/\ker\rho\cong\operatorname{im}\rho$.
 >     
 >     만일 finite Galois extension $L/K$에 대하여 homomorphism $\rho_L:\operatorname{Gal}(L/K)\to H$이 $\rho=\rho_L\circ\operatorname{res}_{L/K}$라고 하자.
->     그러면 [[Theories/Galois/#Infinite Galois correspondence|infinite Galois correspondence]]에 의하여 $\operatorname{Gal}(K^{\operatorname{sep}}/L)=\ker\operatorname{res}_{L/K}\subset\ker\rho$이므로, $L=(K^{\operatorname{sep}})^{\operatorname{Gal}(K^{\operatorname{sep}}/L)}\supset (K^{\operatorname{sep}})^{\ker\rho}=L_\rho$이다.
+>     그러면 [[Theories/Algebra/InfiniteGalois#Infinite Galois correspondence|infinite Galois correspondence]]에 의하여 $\operatorname{Gal}(K^{\operatorname{sep}}/L)=\ker\operatorname{res}_{L/K}\subset\ker\rho$이므로, $L=(K^{\operatorname{sep}})^{\operatorname{Gal}(K^{\operatorname{sep}}/L)}\supset (K^{\operatorname{sep}})^{\ker\rho}=L_\rho$이다.
 >     즉, $L_\rho$는 그러한 factorization이 가능한 minimal intermediate field이다. $\square$
 
 ## 문제 2. Finite field의 Galois group과 1-dimensional representation

@@ -1,6 +1,7 @@
 @use "./variables.scss" as *;
 
 .explorer .explorer-content > ul.explorer-ul {
+  > li:nth-last-child(3):not(.overflow-end)::before,
   > li:nth-last-child(2)::before,
   > li:last-child:not(.overflow-end)::before {
     content: "";

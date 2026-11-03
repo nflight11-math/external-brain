@@ -2,7 +2,7 @@
 title: "[001~012] 2026 Spring"
 description: 2026년 3월 2주차 ~ 5월 4주차까지의 12문제.
 tags:
-  - integration
+- integration
 ---
 
 > [!abstract] Integral 1 - 260310
@@ -558,8 +558,9 @@ tags:
 > 여기에 Gamma function의 reflection fomula $\Gamma(z)\Gamma(1-z)=\frac{\pi}{\sin\pi z}$를 이용하면 $\frac{\pi}{\sin\pi a^{-1}}\frac{(1-i)^{-a^{-1}}}{\Gamma(1-a^{-1})}=(1-i)^{-a^{-1}}\Gamma(a^{-1})$이므로, $\int_0^\infty e^{-(1-i)t}t^{a^{-1}-1}dt=(1-i)^{-a^{-1}}\Gamma(a^{-1})$. $(1-i)^{-a^{-1}}=(\sqrt2 e^{-\pi/4})^{-a^{-1}}=2^{-1/2a}e^{\pi/4a}$이다. 이를 대입하면 원하는 값을 다음과 같이 얻을 수 있다.
 > $$
 > \begin{aligned}
->     \int_0^\infty e^{-x^a}\sin(x^a)dx &= a^{-1}\Im\int_0^\infty e^{-(1-i)t}t^{a^{-1}-1}dt = a^{-1}\Im\left((1-i)^{-a^{-1}}\Gamma(a^{-1})\right)=a^{-1}\Gamma(a^{-1})\cdot\Im\left((1-i)^{-a^{-1}}\right)\\
->     &= \Gamma(1+a^{-1})\cdot\Im(2^{-1/2a}e^{\pi/4a})=\boxed{2^{-1/2a}\Gamma(1+a^{-1})\sin\frac{\pi}{4a}}.
+> \int_0^\infty e^{-x^a}\sin(x^a)dx &= a^{-1}\Im\int_0^\infty e^{-(1-i)t}t^{a^{-1}-1}dt = a^{-1}\Im\left((1-i)^{-a^{-1}}\Gamma(a^{-1})\right)\\
+> &= a^{-1}\Gamma(a^{-1})\cdot\Im\left((1-i)^{-a^{-1}}\right) = \Gamma(1+a^{-1})\cdot\Im(2^{-1/2a}e^{\pi/4a})\\
+> &=\boxed{2^{-1/2a}\Gamma(1+a^{-1})\sin\frac{\pi}{4a}}.
 > \end{aligned}
 > $$
 > 

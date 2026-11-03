@@ -49,13 +49,14 @@ $$
 >     그러므로 $M=L^{\operatorname{Gal(L/M)}}$이다.
 > 
 >     각 $\alpha\in M$에 대하여 stabilizer $G_\alpha:=\{\sigma\in G:\sigma\alpha=\alpha\}$를 생각하자.
->     그러면 $\operatorname{Gal}(K(\alpha)/K)\subset G_\alpha$이므로 이는 [[Theories/TopologicalGroup#Relation of open and closed|open subgroup이고, 따라서 closed]]이다.
+>     그러면 $\alpha$를 포함하는 finite Galois extension $E/K$에 대하여 $\operatorname{Gal}(E/K)\subset G_\alpha$이므로 이는 [[Theories/TopologicalGroup#Relation of open and closed|open subgroup이고, 따라서 closed]]이다.
 >     그러므로 $\operatorname{Gal}(L/M)=\bigcup_{\alpha\in M}G_\alpha$는 closed subgroup이다.
 >     
 >     Subgroup $H$와 finite Galois extension $E/K$에 대하여, $H_E:=\operatorname{res}_E(H)$라고 하자. 그러면 $E\cap L^H=E^{H_E}$이다.
 >     그러므로 finite Galois correspondence에 의하여 $\operatorname{Gal}(E/E^{H_E})=H_E$이다.
 >     $\sigma\in \operatorname{Gal}(L/L^H)$는 모든 $E^{H_E}$를 pointwise fix하므로 $\left.\sigma\right|_E\in H_E$.
->     이는 임의의 $E$에 대하여 성립하므로 $$
+>     이는 임의의 $E$에 대하여 성립하므로
+>     $$
 >     \sigma\in\bigcap_{E/K\text{ is finite Galois}}\operatorname{res}^{-1}_E H_E=\overline H.
 >     $$
 >     그러므로 $\operatorname{Gal}(L/L^H)\subset \overline H$이다.

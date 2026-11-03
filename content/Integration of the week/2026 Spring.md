@@ -339,6 +339,105 @@ tags:
 > \int_0^\infty\frac{\left(\sin \frac{e^2x}{4}-\cos \frac{e^4x}{4}\right)\ln x}{\sqrt x}dx.
 > $$
 
+> [!done]- Answer 8
+> 일반적인 상수 $a(>0)$에 대해서 $S_a=\int_0^\infty \frac{\sin ax \ln x}{\sqrt x}dx$과 $C_a=\int_0^\infty \frac{\cos ax \ln x}{\sqrt x}dx$을 구할 수 있으면, 이를 통해서 주어진 적분의 값이 $S_{e^2/4}-C_{e^4/4}$임을 알 수 있다. 그러므로 $S_a, C_a$의 값을 구해 보도록 하자.
+> 
+> $\sin ax$의 Mellin transform $\mathcal M(\sin ax):=\int_0^\infty x^{p-1}\sin axdx$의 양 변을 $p$에 대해 편미분하면 $\frac{\partial}{\partial p}\mathcal M(\sin ax)=\int_0^\infty \frac{\partial}{\partial p}x^{p-1}\sin axdx=\int_0^\infty x^{p-1}\sin ax\ln xdx$이므로, $S_a=\left.\frac{\partial}{\partial p}\mathcal M(\sin ax)\right|_{p=1/2}$임을 알 수 있으며, 정확히 같은 방식으로 $C_a=\left.\frac{\partial}{\partial p}\mathcal M(\cos ax)\right|_{p=1/2}$임 또한 알 수 있다. 그러므로 $\sin ax,\cos ax$의 Mellin transform을 구하면 된다.
+> \vspace{18pt}
+> 
+> 이를 구하기 위해서는 Laplace transform의 다음과 같은 성질이 유용하게 쓰인다:
+> $$
+> \begin{aligned}
+> \int_0^\infty f(x)\mathcal L g(x)dx &= \int_0^\infty f(x)\left[\int_0^\infty e^{-tx}g(t)dt\right]dx = \int_0^\infty\int_0^\infty e^{-tx}f(x)g(t)dtdx\\
+> &= \int_0^\infty g(t)\left[\int_0^\infty e^{-tx}f(x)dx\right]dt=\int_0^\infty \mathcal L f(t)g(t)dt.
+> \end{aligned}
+> $$
+> 여기에 $f(x)=\sin ax,$ $\mathcal Lg(x)=x^{p-1}$을 대입하면, Laplace transform of $x^{a-1}$이 $\Gamma(a)s^{-a}$이기 때문에 $g(t)=\frac{t^{-p}}{\Gamma(1-p)}$이 성립하며, $\mathcal Lf(t)=\frac{a}{a^2+t^2}$이 역시 성립한다. 그러므로
+> $$
+> \mathcal M(\sin ax)=\int_0^\infty x^{p-1}\sin axdx=\int_0^\infty f(x)\mathcal Lg(x)dx=\int_0^\infty\mathcal Lf(t)g(t)dt=\frac{a}{\Gamma(1-p)}\int_0^\infty\frac{t^{-p}}{a^2+t^2}dt.
+> $$
+> 또한 $f(x)=\cos ax$를 사용할 때 $\mathcal Lf(x)=\frac{t}{a^2+t^2}$임을 대입하면 다음과 같은 식 역시 얻을 수 있다.
+> $$
+> \mathcal M(\cos ax)=\frac{1}{\Gamma(1-p)}\int_0^\infty\frac{t^{1-p}}{a^2+t^2}dt.
+> $$
+> 
+> 이제 위 두 개의 적분을 한 번에 계산하기 위해서 $I_z=\int_0^\infty\frac{t^z}{a^2+t^2}dt$를 $-1<z<1$ 범위에서 계산해 보자. $t\leftarrow au$의 치환을 적용하면 $$
+> I_z=\int_0^\infty\frac{a^zu^z}{a^2(1+u^2)}\cdot adu=a^{z-1}\int_0^\infty\frac{u^z}{1+u^2}du
+> $$
+> 가 성립하며, 다시 한 번 $v\leftarrow \sqrt u$의 치환을 적용하면
+> $$
+> I_z=a^{z-1}\int_0^\infty\frac{v^{z/2}}{1+v}\cdot\frac{dv}{2\sqrt v}=\frac{a^{z-1}}{2}\int_0^\infty\frac{v^{(z-1)/2}}{1+v}dv
+> $$
+> 임을 알 수 있다.
+> 
+> Beta function $\mathrm{B}(x,y)=\int_0^1u^{x-1}(1-u)^{y-1}du$에 $u\leftarrow t/(1+t)$ 치환을 적용하면,
+> $$
+> \mathrm{B}(x,y)=\int_0^\infty\left(\frac{t}{1+t}\right)^{x-1}\left(\frac{1}{t+1}\right)^{y-1}\cdot\frac{1}{(t+1)^2}dt=\int_0^\infty\frac{t^{x-1}}{(1+t)^{x+y}}dt
+> $$
+> 임을 얻을 수 있으며, 이를 통하여 $I_z$를 다음과 같이 정리할 수 있다:
+> $$
+> I_z=\frac{a^{z-1}}{2}\mathrm{B}\left(\frac{z+1}{2},\frac{-z+1}{2}\right).
+> $$
+> 
+> 
+> $\mathrm B(x,y)=\frac{\Gamma(x)\Gamma(y)}{\Gamma(x+y)}$와, reflection formula of Gamma function $\Gamma(z)\Gamma(1-z)=\pi\csc(\pi z)$를 이용하면 $I_z$를 다음과 같이 정리할 수 있다:
+> $$
+> I_z =\frac{a^{z-1}}{2}\frac{\Gamma\left(\frac{z+1}{2}\right)\Gamma\left(\frac{-z+1}{2}\right)}{\Gamma(1)}=\frac{a^{z-1}}{2}\pi\csc\left(\frac{\pi z+\pi}{2}\right)=\frac{a^{z-1}}{2}\pi\sec\frac{\pi z}{2}.
+> $$
+> 
+> 그러므로 다음과 같은 식이 성립한다:
+> $$
+> \begin{aligned}
+> \mathcal M(\sin ax) &=\frac{a}{\Gamma(1-p)}I_{-p}=\frac{a^{-p}\pi}{2\Gamma(1-p)\cos\frac{\pi p}{2}}=\frac{a^{-p}}{2\cos\frac{\pi p}{2}}\frac{\Gamma(p)}{\csc\pi p}=a^{-p}\Gamma(p)\sin\frac{\pi p}{2}\\
+> \mathcal M(\cos ax) &=\frac{1}{\Gamma(1-p)}I_{1-p}=\frac{a^{-p}\pi}{2\Gamma(1-p)\cos\frac{\pi(1-p)}{2}}=\frac{a^{-p}}{2\sin\frac{\pi p}{2}}\frac{\Gamma(p)}{\csc\pi p}=a^{-p}\Gamma(p)\cos\frac{\pi p}{2}.
+> \end{aligned}
+> $$
+> 
+> 따라서, 이를 $p$로 편미분한 뒤 $p=\frac12$를 대입하면 다음과 같은 식을 얻을 수 있다:
+> $$
+> \begin{aligned}
+> S_a &=\left.\frac{\partial}{\partial p}\mathcal M(\sin ax)\right|_{p=1/2}=\left.\frac{\partial}{\partial p}a^{-p}\Gamma(p)\sin\frac{\pi p}{2}\right|_{p=1/2}\\
+> &=\left.-a^{-p}\Gamma(p)\sin\frac{\pi p}{2}\ln a+a^{-p}\Gamma'(p)\sin\frac{\pi p}{2}+\frac{\pi}{2}a^{-p}\Gamma(p)\cos\frac{\pi p}{2}\right|_{p=1/2}\\
+> &=a^{-\frac12}\left(-\Gamma\left(\frac12\right)\sin\frac{\pi}{4}\ln a+\Gamma'\left(\frac12\right)\sin\frac{\pi}{4}+\frac\pi 2\Gamma\left(\frac12\right)\cos\frac{\pi}{4}\right)\\
+> &= \frac{\sqrt{\pi}}{\sqrt{2a}}\left(-\ln a+\frac{\Gamma'(1/2)}{\Gamma(1/2)}+\frac{\pi}{2}\right).\\
+> C_a &= \left.\frac{\partial}{\partial p}\mathcal M(\cos ax)\right|_{p=1/2}=\left.\frac{\partial}{\partial p}a^{-p}\Gamma(p)\cos\frac{\pi p}{2}\right|_{p=1/2}\\
+> &=\left.-a^{-p}\Gamma(p)\cos\frac{\pi p}{2}\ln a+a^{-p}\Gamma'(p)\cos\frac{\pi p}{2}-\frac{\pi}{2}a^{-p}\Gamma(p)\sin\frac{\pi p}{2}\right|_{p=1/2}\\
+> &= a^{-\frac12}\left(-\Gamma\left(\frac12\right)\cos\frac\pi4\ln a+\Gamma'\left(\frac12\right)\cos\frac\pi4-\frac\pi2\Gamma\left(\frac12\right)\sin\frac\pi4\right)\\
+> &=\frac{\sqrt{\pi}}{\sqrt{2a}}\left(-\ln a+\frac{\Gamma'(1/2)}{\Gamma(1/2)}-\frac{\pi}{2}\right).
+> \end{aligned}
+> $$
+> 
+> 위 식에서 처리하지 못한 $\frac{\Gamma'(1/2)}{\Gamma(1/2)}$을 계산하기 위해서 Gamma function의 Euler infinite product을 이용하자. $\Gamma(z)=\lim_{n\to\infty}\frac{n^zn!}{z(z+1)(z+2)\cdots(z+n)}$의 양 변에 자연로그를 씌우면 다음과 같은 식이 얻어진다:
+> $$
+> \ln\Gamma(z)=\lim_{n\to\infty}\left(z\log n+\log n!-\sum_0^n\log(z+k)\right).
+> $$
+> 이 식의 양 변을 미분하면 다음과 같이 변형된다:
+> $$
+> \begin{aligned}
+> \frac{\Gamma'(z)}{\Gamma(z)}&=\frac{d}{dz}\ln\Gamma(z)=\lim_{n\to\infty}\left(\log n-\sum_0^n\frac{1}{z+k}\right)=\lim_{n\to\infty}\left(\log n-\sum_0^{n}\frac 1{k+1}\right)-\lim_{n\to\infty}\sum_0^n\left(\frac{1}{z+k}-\frac{1}{1+k}\right)\\
+> &=-\gamma-\sum_0^\infty\left(\frac{1}{z+k}-\frac{1}{1+k}\right).
+> \end{aligned}
+> $$
+> $z=\frac12$를 대입하면,
+> $$
+> \begin{aligned}
+> \frac{\Gamma'(1/2)}{\Gamma(1/2)} &= -\gamma - \sum_0^\infty\left(\frac{1}{1/2+k}-\frac{1}{1+k}\right) = -\gamma-2\sum_0^\infty\left(\frac{1}{1+2k}-\frac{1}{2+2k}\right) = -\gamma+2\sum_1^\infty\frac{(-1)^k}{k}\\
+> &= -\gamma-\ln4.
+> \end{aligned}
+> $$
+> 그러므로,
+> $$
+> S_a=\sqrt{\frac{\pi}{2a}}\left(-\gamma-\ln4a+\frac{\pi}{2}\right),\qquad C_a=\sqrt{\frac{\pi}{2a}}\left(-\gamma-\ln4a-\frac{\pi}{2}\right).
+> $$
+> 
+> 문제에서 요구하는 값은 $S_{e^2/4}-C_{e^4/4}$이었으므로,
+> $$
+> \begin{aligned}
+> \int_0^\infty\frac{\left(\sin\frac{e^2x}{4}-\cos\frac{e^4x}{4}\right)\ln x}{\sqrt x}dx &= S_{e^2/4}-C_{e^4/4} = \sqrt{\frac{\pi}{e^2/2}}\left(-\gamma-\ln e^2+\frac\pi 2\right)-\sqrt{\frac{\pi}{e^4/2}}\left(-\gamma-\ln e^4-\frac{\pi}{2}\right) \\
+> &= \boxed{\frac{\sqrt{2\pi}}{e^2}\left((1-e)\gamma+\frac{(e+1)\pi}{2}+4-2e\right)}.
+> \end{aligned}
+> $$
+
 > [!abstract] Integral 9 - 260505
 > Evaluate following integral.
 > $$

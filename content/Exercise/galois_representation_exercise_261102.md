@@ -36,12 +36,13 @@ Finite group $H$와 group homomorphism $\rho:G_K\to H$를 생각하자.
 > [!done]- 증명
 > 1. 만일 $\rho$가 연속이라면 inverse image of open set $\{1\}\subset H$인 $\ker\rho$는 open subgroup of $G_K$여야 한다. 반대로 만일 $\ker\rho$가 open subgroup이라면, 임의의 (open) subset $U\subset H$에 대하여, $\rho^{-1}U=\bigcup_{\sigma\in\rho^{-1}U}\sigma\ker\rho$는 union of open set이므로 역시 open이므로 $\rho$가 연속이다. $\square$
 > 2.
->     만일 $\rho$가 연속이라면 $\ker\rho$가 open subgroup이므로, 적당한 finite Galois subextension $L/K$가 $\operatorname{Gal}(K^{\operatorname{sep}}/L)\subset \ker\rho$이게 존재한다.
->     따라서 $G_K/\operatorname{Gal}(K^{\operatorname{sep}}/L)=\operatorname{Gal}(L/K)$로 동일시하였을 때, $\rho_L:G_K/\operatorname{Gal}(K^{\operatorname{sep}}/L)\to H$를 $\sigma\operatorname{Gal}(K^{\operatorname{sep}}/L)\mapsto \rho\sigma$ 정의하면 이는 잘 정의된 homomorphism이며, $\rho=\rho_L\circ\operatorname{res}_{L/K}$이다.
+>     만일 $\rho$가 연속이라면 $\ker\rho$가 open subgroup이므로, 적당한 finite Galois subextension $L/K$가 $G_L\subset \ker\rho$이게 존재한다.
+>     따라서 $G_K/G_L=\operatorname{Gal}(L/K)$로 동일시하였을 때, $\rho_L:G_K/G_L\to H$를 $\sigma G_L\mapsto \rho\sigma$ 정의하면 이는 잘 정의된 homomorphism이며, $\rho=\rho_L\circ\operatorname{res}_{L/K}$이다.
 >     
 >     역으로 $\rho=\rho_L\circ\operatorname{res}_{L/K}$이 성립하는 적당한 finite Galois subextension $L/K$와 homomorphism $\rho_L:\operatorname{Gal}(L/K)\to H$이 존재한다고 하자.
->     그럼 $\operatorname{res}_{L/K}:G_K\to\operatorname{Gal}(L/K)$는 kernel이 $\operatorname{Gal}(K^{\operatorname{sep}}/L)$이므로 연속이며, $\rho_L$은 domain $\operatorname{Gal}(L/K)$이 discrete space이므로 연속이다.
+>     그럼 $\operatorname{res}_{L/K}:G_K\to\operatorname{Gal}(L/K)$는 kernel이 $G_L$이므로 연속이며, $\rho_L$은 domain $\operatorname{Gal}(L/K)$이 discrete space이므로 연속이다.
 >     따라서 합성사상 $\rho=\rho_L\circ\operatorname{res}_{L/K}$도 연속이다. $\square$
+
 ## 문제 2. Finite field의 Galois group과 1-dimensional representation
 
 $q=p^k$는 prime power이며, $F_q\in G_{\mathbb F_q}$를 $F_q(x)=x^q$로 정의하자.

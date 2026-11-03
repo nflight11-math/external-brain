@@ -96,7 +96,7 @@ $$
 \qquad\text{transition map }\zeta\longmapsto\zeta^\ell.
 $$
 
-그 위의 자연스러운 Galois action에 대응하는 character를 $\chi_\ell=\varprojlim_n\chi_{\ell^n}:G_K\to\mathbb Z_\ell^\times$로 쓴다. Weil pairing이 $G_K$-equivariant isomorphism $\bigwedge\nolimits^2_{\mathbb Z_\ell}T_\ell(E) \cong\mathbb Z_\ell(1)$을 유도함을 보이고, $\det\rho_{E,\ell}=\chi_\ell$을 도출하라. 여기서 $\bigwedge\nolimits^2_{\mathbb Z_\ell}T_\ell(E)$는 [[Theories/Algebra/Exterior Power|exterior square]] of Tate module $T_\ell(E)$이다.
+그 위의 자연스러운 Galois action에 대응하는 character를 $\chi_\ell=\varprojlim_n\chi_{\ell^n}:G_K\to\mathbb Z_\ell^\times$로 쓴다. Weil pairing이 $G_K$-equivariant isomorphism $\bigwedge\nolimits^2_{\mathbb Z_\ell}T_\ell(E) \cong\mathbb Z_\ell(1)$을 유도함을 보이고, $\det\rho_{E,\ell}=\chi_\ell$을 도출하라. 여기서 $\bigwedge\nolimits^2_{\mathbb Z_\ell}T_\ell(E)$는 [[Theories/Algebra/ExteriorPower|exterior square]] of Tate module $T_\ell(E)$이다.
 
 > [!tip]- 힌트
 >

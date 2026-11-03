@@ -12,7 +12,7 @@ tags:
 >
 > $L/K$를 Galois group $G:=\operatorname{Gal}(L/K)$를 가지는 (infinite) Galois extension이라고 하자.
 > $L/K$의 intermediate field 중 finite Galois extension over $K$의 모임 $\mathcal F:=\left\{F:K\subset F\subset L, F/K\text{ is finite Galois}.\right\}$을 정의하자.
-> $\sigma\in G$에서의 local base가 $\{\sigma\operatorname{Gal}(L/F):F\in\mathcal F\}$인 $G$ 상의 위상을 Krull topology라고 한다.
+> $\sigma\in G$에서의 local base가 $\{\sigma\operatorname{Gal}(L/F):F\in\mathcal F\}$인 $G$ 상의 위상을 **Krull topology**라고 한다.
 > 
 > 동치적으로, $F_1,F_2\in\mathcal F$이 $F_1\subset F_2$일 시 projection
 > $$
@@ -36,7 +36,7 @@ $L/K$가 (infinite) Galois extension with Galois group $G$이고, $G$에 Krull t
 
 2. Closed subgroup $H$에 대하여, $H$이 open subgroup of $G$임과 $[L^H:K]<\infty$임이 동치이다.
 
-3. Closed subgroup of $G$ $H$이 normal subgroup임과 $L^H/K$가 normal extension임이 동치이다. 이때 $\operatorname{Gal}(L^H/G)\cong G/H$이다.
+3. Closed subgroup $H$이 normal subgroup임과 $L^H/K$가 normal extension임이 동치이다. 이때 $\operatorname{Gal}(L^H/G)\cong G/H$이다.
 
 > [!done]- 증명
 > $H$가 subgroup of $G$일 시, $\sigma\in \overline H$임은 모든 finite Galois $E/K$에 대하여 $\sigma\operatorname{Gal}(E/K)\cap H\ne\varnothing$임과, 즉 $\operatorname{res}_E(\sigma)\in\operatorname{res}_E(H)$임과 동치이다.
@@ -77,3 +77,6 @@ $L/K$가 (infinite) Galois extension with Galois group $G$이고, $G$에 Krull t
 >     그러므로 $L^H\subset L^{\operatorname{Gal}(L/E)}=E$이며, 따라서 $[L^H:K]\le[E:K]<\infty$.
 >     반대로 $[L^H:K]<\infty$이면 $L^H$를 포함하는 finite Galois subextension $E/K$가 존재한다.
 >     그러므로 $\operatorname{Gal}(L/E)\subset\operatorname{Gal}(L/L^H)=H$이니 $H$는 open. $\square$
+> 
+> 3. $\sigma(L^H)=L^{\sigma H\sigma^{-1}}$임을 이용하면, $H$이 normal subgroup임과 임의의 $\sigma\in G$에 대하여 $L^H=\sigma(L^H)$임, 즉 $L^H/K$가 normal임이 동치임을 얻을 수 있다.
+>     또한 restriction map $\operatorname{res}_{L^H}$는 surjective이고, $\ker\operatorname{res}_{L^H}=\operatorname{Gal}(L/L^H)=H$이므로 isomorphism theorem에 의하여, $G/H=G/\ker\operatorname{res}_{L^H}\cong\operatorname{im}\operatorname{res}_{L^H}=\operatorname{Gal}(L^H/K).$ $\square$

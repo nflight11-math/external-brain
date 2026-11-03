@@ -105,6 +105,35 @@ tags:
 > $$
 > But, you should not use knowledge other than Engineering Mathematics 1, 2 or Calculus and Vector Analysis 1, 2.
 
+> [!done]- Answer 3
+> 다음 두 적분을 생각하자: $$I=\int_0^\infty e^{-x^2}\sin(x^2)dx,\qquad J=\int_0^\infty e^{-x^2}\cos(x^2)dx.$$
+> 
+> 그렇다면 다음과 같이 극좌표 치환을 통하여 $2IJ, J^2-I^2$을 계산할 수 있다.
+> 
+> ($\frac{\partial(x,y)}{\partial(r,\theta)}=r,$ $\Omega:=\{(x,y):0<x,y\}=\{(r\cos\theta,r\sin\theta):0<r,0<\theta<\pi/2\}.$)
+> $$
+> \begin{aligned}
+> 2IJ&=IJ+JI=\int_0^\infty e^{-x^2}\sin(x^2)dx\int_0^\infty e^{-y^2}\cos(y^2)dy+\int_0^\infty e^{-x^2}\cos(x^2)dx\int_0^\infty e^{-y^2}\sin(y^2)dy\\
+> &=\int_0^\infty\int_0^\infty\sin(x^2+y^2)e^{-x^2-y^2}dxdy=\int_0^{\frac\pi2}\int_0^\infty r\sin(r^2)e^{-r^2}drd\theta=\frac12\int_0^\frac\pi2 d\theta\int_0^\infty e^{-u}\sin udu\\
+> &=\frac{\pi}{8},\\
+> J^2-I^2&=JJ-II=\int_0^\infty e^{-x^2}\cos(x^2)dx\int_0^\infty e^{-y^2}\cos(y^2)dy-\int_0^\infty e^{-x^2}\sin(x^2)dx\int_0^\infty e^{-y^2}\sin(y^2)dy\\
+> &=\int_0^\infty\int_0^\infty \cos(x^2+y^2)e^{-x^2-y^2}dxdy=\int_0^\frac\pi2 r\cos(r^2)e^{-r^2}drd\theta=\frac12\int_0^\frac\pi2d\theta\int_0^\infty e^{-u}\cos udu\\
+> &=\frac\pi8.
+> \end{aligned}
+> $$
+> 
+> $(J^2+I^2)^2=(J^2-I^2)^2+(2IJ)^2=\frac{\pi^2}{32}$이므로 $J^2+I^2=\frac{\pi\sqrt2}{8}$이 성립한다. 그러므로 $I^2=\frac{1}{2}((J^2+I^2)-(J^2-I^2))=\frac{\sqrt2-1}{16}\pi$이 성립하여, 주어진 적분의 답이 $\mathbf{\displaystyle \frac{\sqrt{\sqrt2-1}}{4}\sqrt{\pi}}$임을 알 수 있다.
+> 
+> +) $I>0$인 이유는 아래 수식과 같다. 여기서 $f(x)=e^{-x}/\sqrt x$는 $x\to\infty$일 때 $f(x)\to 0$인 감소함수임은 보이지 않겠으나, 도함수를 취함으로서 어렵지 않게 증명할 수 있다.
+> $$
+> \begin{aligned}
+> I&=\int_0^\infty\frac{e^{-t}\sin t}{\sqrt t}dt=\sum_0^\infty\int_{n\pi}^{(n+1)\pi}f(t)\sin tdt = \sum_0^\infty \int_0^\pi f(t+n\pi)(-1)^n\sin tdt\\
+> &=\int_0^{\pi}\sin t\left(\sum_0^\infty(-1)^nf(t+n\pi)\right)dt \ge 0.
+> \end{aligned}
+> $$
+> 
+> 여기서 $\sum_0^\infty(-1)^nf(t+n\pi)$는 교대급수 형태이므로, 모든 $0<t<\pi$에 대해 극한이 존재하고 그 극한값이 $0$ 이상임을 Alternating series test로 보일 수 있다.
+
 > [!abstract] Integral 4 - 260331
 > Evaluate following integral.
 > $$

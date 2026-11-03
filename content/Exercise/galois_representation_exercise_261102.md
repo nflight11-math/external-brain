@@ -14,8 +14,8 @@ tags:
 
 ## 공통 표기와 배경
 
-- Field $K$의 separable closure를 $K^{\mathrm{sep}}$로 고정하고 $G_K=\operatorname{Gal}(K^{\mathrm{sep}}/K)$로 쓴다. $G_K$에는 Krull topology를 준다.
-- Finite Galois extension $L/K$에 대하여 $G_L=\operatorname{Gal}(K^{\mathrm{sep}}/L)$는 $G_K$의 open normal subgroup이다. 이들이 $1$의 local base를 이룬다는 사실을 사용해도 좋다.
+- Field $K$의 separable closure를 $K^{\operatorname{sep}}$로 고정하고 $G_K=\operatorname{Gal}(K^{\operatorname{sep}}/K)$로 쓴다. $G_K$에는 Krull topology를 준다.
+- Finite Galois extension $L/K$에 대하여 $G_L=\operatorname{Gal}(K^{\operatorname{sep}}/L)$는 $G_K$의 open normal subgroup이다. 이들이 $1$의 local base를 이룬다는 사실을 사용해도 좋다.
 - $\ell$은 소수이며, $\mathbb Z_\ell$과 $\mathbb Q_\ell$에는 각각 통상적인 $\ell$-adic 위상을 준다. Finite group에는 discrete topology를 준다.
 - 이 문서에서 arithmetic Frobenius는 residue field에서 $x\mapsto x^q$로 작용하는 원소이다. Geometric Frobenius는 그 역원이다.
 
@@ -26,17 +26,23 @@ Finite group $H$와 group homomorphism $\rho:G_K\to H$를 생각하자.
 1. $\rho$가 연속일 필요충분조건은 $\ker\rho$가 open subgroup이라는 것임을 증명하라.
 2. 다음 두 조건이 동치임을 증명하라.
    - $\rho$가 연속이다.
-   - 어떤 유한 Galois 확대 $L/K$와 homomorphism $\rho_L:\operatorname{Gal}(L/K)\to H$가 존재하여 $\rho=\rho_L\circ\operatorname{res}_{L/K}$이다.
-3. $\rho$가 연속이라고 하자. $L_\rho=(K^{\mathrm{sep}})^{\ker\rho}$로 놓으면 $L_\rho/K$가 finite Galois extension이고 $\operatorname{Gal}(L_\rho/K)\cong\operatorname{im}\rho$임을 보여라. 또한 $L_\rho$가 위 factorization을 가능하게 하는 최소의 intermediate field임을 증명하라.
-4. 유한체 $k$ 위의 표현 $\bar\rho:G_K\to\operatorname{GL}_d(k)$에 위 결과를 적용하라. 이때 fixed field $L_{\bar\rho}$의 extension degree (over $K$)와 $\#\operatorname{GL}_d(k)$ 사이에 어떤 관계가 있는지 서술하고 증명하라.
+   - 어떤 finite Galois 확대 $L/K$와 homomorphism $\rho_L:\operatorname{Gal}(L/K)\to H$가 존재하여 $\rho=\rho_L\circ\operatorname{res}_{L/K}$이다.
+3. $\rho$가 연속이라고 하자. $L_\rho=(K^{\operatorname{sep}})^{\ker\rho}$로 놓으면 $L_\rho/K$가 finite Galois extension이고 $\operatorname{Gal}(L_\rho/K)\cong\operatorname{im}\rho$임을 보여라. 또한 $L_\rho$가 위 factorization을 가능하게 하는 최소의 intermediate field임을 증명하라.
+4. Finite field $k$ 위의 representation $\bar\rho:G_K\to\operatorname{GL}_d(k)$에 위 결과를 적용하라. 이때 fixed field $L_{\bar\rho}$의 extension degree over $K$와 $\#\operatorname{GL}_d(k)$ 사이에 어떤 관계가 있는지 서술하고 증명하라.
 
 > [!tip]- 힌트
 > Discrete space로 가는 함수의 연속성을 점의 역상으로 판정하라. Subgroup index와 extension degree of fixed field를 연결하라.
 
 > [!done]- 증명
 > 1. 만일 $\rho$가 연속이라면 inverse image of open set $\{1\}\subset H$인 $\ker\rho$는 open subgroup of $G_K$여야 한다. 반대로 만일 $\ker\rho$가 open subgroup이라면, 임의의 (open) subset $U\subset H$에 대하여, $\rho^{-1}U=\bigcup_{\sigma\in\rho^{-1}U}\sigma\ker\rho$는 union of open set이므로 역시 open이므로 $\rho$가 연속이다. $\square$
-
-## 문제 2. 유한체의 Galois 군과 1-dimensional representation
+> 2.
+>     만일 $\rho$가 연속이라면 $\ker\rho$가 open subgroup이므로, 적당한 finite Galois subextension $L/K$가 $\operatorname{Gal}(K^{\operatorname{sep}}/L)\subset \ker\rho$이게 존재한다.
+>     따라서 $G_K/\operatorname{Gal}(K^{\operatorname{sep}}/L)=\operatorname{Gal}(L/K)$로 동일시하였을 때, $\rho_L:G_K/\operatorname{Gal}(K^{\operatorname{sep}}/L)\to H$를 $\sigma\operatorname{Gal}(K^{\operatorname{sep}}/L)\mapsto \rho\sigma$ 정의하면 이는 잘 정의된 homomorphism이며, $\rho=\rho_L\circ\operatorname{res}_{L/K}$이다.
+>     
+>     역으로 $\rho=\rho_L\circ\operatorname{res}_{L/K}$이 성립하는 적당한 finite Galois subextension $L/K$와 homomorphism $\rho_L:\operatorname{Gal}(L/K)\to H$이 존재한다고 하자.
+>     그럼 $\operatorname{res}_{L/K}:G_K\to\operatorname{Gal}(L/K)$는 kernel이 $\operatorname{Gal}(K^{\operatorname{sep}}/L)$이므로 연속이며, $\rho_L$은 domain $\operatorname{Gal}(L/K)$이 discrete space이므로 연속이다.
+>     따라서 합성사상 $\rho=\rho_L\circ\operatorname{res}_{L/K}$도 연속이다. $\square$
+## 문제 2. Finite field의 Galois group과 1-dimensional representation
 
 $q=p^k$는 prime power이며, $F_q\in G_{\mathbb F_q}$를 $F_q(x)=x^q$로 정의하자.
 

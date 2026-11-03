@@ -39,7 +39,7 @@ tags:
 > \end{aligned*}
 > $$
 > 
-> 지금까지의 논의를 종합하면, 적분 $\int_0^\infty\frac{dx}{\left(\{x\}\cdot\text{lcm}\left(\lceil x\rceil,\left\lfloor\frac{1}{\{x\}}\right\rfloor\right)\right)^2}$의 값은 $\prod_{p\in\mathbb P}\frac{1-p^{-4}}{(1-p^{-2})^3}$과 같다. 이 값은 Riemann zeta function에 대한 Euler product $\zeta(s)=\prod_{p\in \mathbb P}\frac{1}{1-p^{-s}}$를 통하여 계산할 수 있다. 잘 알려진 결과 $\zeta(2)=\frac{\pi^2}{6}$, $\zeta(4)=\frac{\pi^4}{90}$\footnote{$\zeta(2)$는 $f(x)=x^2\in L^2(-\pi,\pi)$의 Fourier transform으로, $\zeta(4)$는 이를 Parseval's identity에 그대로 집어넣어서 계산할 수 있다.}을 이용하면,
+> 지금까지의 논의를 종합하면, 적분 $\int_0^\infty\frac{dx}{\left(\{x\}\cdot\text{lcm}\left(\lceil x\rceil,\left\lfloor\frac{1}{\{x\}}\right\rfloor\right)\right)^2}$의 값은 $\prod_{p\in\mathbb P}\frac{1-p^{-4}}{(1-p^{-2})^3}$과 같다. 이 값은 Riemann zeta function에 대한 Euler product $\zeta(s)=\prod_{p\in \mathbb P}\frac{1}{1-p^{-s}}$를 통하여 계산할 수 있다. 잘 알려진 결과 $\zeta(2)=\frac{\pi^2}{6}$, $\zeta(4)=\frac{\pi^4}{90}$[^1]을 이용하면,
 > 
 > $$
 > \begin{aligned*}
@@ -126,3 +126,5 @@ tags:
 > $$
 > \int_0^\pi\frac{\sin x}{x}e^{x/\tan x}\left(\frac{x}{\tan x}+\log\sin x-\log x\right)^3dx.
 > $$
+
+[^1]: $\zeta(2)$는 $f(x)=x^2\in L^2(-\pi,\pi)$의 Fourier transform으로, $\zeta(4)$는 이를 Parseval's identity에 그대로 집어넣어서 계산할 수 있다.

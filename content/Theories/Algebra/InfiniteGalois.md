@@ -50,7 +50,7 @@ $L/K$가 (infinite) Galois extension with Galois group $G$이고, $G$에 Krull t
 >     그러므로 $M=L^{\operatorname{Gal}(L/M)}$이다.
 > 
 >     각 $\alpha\in M$에 대하여 stabilizer $G_\alpha:=\{\sigma\in G:\sigma\alpha=\alpha\}$를 생각하자.
->     그러면 $\alpha$를 포함하는 finite Galois extension $E/K$에 대하여 $\operatorname{Gal}(E/K)\subset G_\alpha$이므로 이는 [[Theories/Topology/TopologicalGroup^topological-group-open-closed|open subgroup이고, 따라서 closed]]이다.
+>     그러면 $\alpha$를 포함하는 finite Galois extension $E/K$에 대하여 $\operatorname{Gal}(E/K)\subset G_\alpha$이므로 이는 [[Theories/Topology/TopologicalGroup#Relation of open and closed|open subgroup이고, 따라서 closed]]이다.
 >     그러므로 $\operatorname{Gal}(L/M)=\bigcup_{\alpha\in M}G_\alpha$는 closed subgroup이다.
 >     
 >     Subgroup $H$와 finite Galois extension $E/K$에 대하여, $H_E:=\operatorname{res}_E(H)$라고 하자. 그러면 $E\cap L^H=E^{H_E}$이다.

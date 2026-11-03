@@ -22,6 +22,9 @@ tags:
 > 이 system의 inverse limit $G=\varprojlim_{F\in\mathcal F}\operatorname{Gal}(F/K)$를 Galois group of $L/K$로 간주한다.
 > $\operatorname{Gal}(F/K)$가 discrete space일 때, $G$에는 product space $\prod_{F\in\mathcal F}\operatorname{Gal}(F/K)$의 subspace topology를 부여한다.
 
+각 $\operatorname{Gal}(F/K)$는 Hausdorff이므로 product space $\prod_{F\in\mathcal F}\operatorname{Gal}(F/K)$ 역시 Hausdorff이다.
+그러므로 이의 subspace $G$ 역시 Hausdorff이다.
+
 ## Infinite Galois correspondence
 $L/K$가 (infinite) Galois extension with Galois group $G$이고, $G$에 Krull topology가 부여되어 있을 때
 
@@ -31,7 +34,7 @@ $L/K$가 (infinite) Galois extension with Galois group $G$이고, $G$에 Krull t
     $$
     이 $H\mapsto L^H$, $M\mapsto \operatorname{Gal}(L/M)$으로 존재한다.
 
-2. $H$이 open subgroup of $G$임과 $[L^H:K]<\infty$임이 동치이다.
+2. Closed subgroup $H$에 대하여, $H$이 open subgroup of $G$임과 $[L^H:K]<\infty$임이 동치이다.
 
 3. Closed subgroup of $G$ $H$이 normal subgroup임과 $L^H/K$가 normal extension임이 동치이다. 이때 $\operatorname{Gal}(L^H/G)\cong G/H$이다.
 
@@ -69,3 +72,8 @@ $L/K$가 (infinite) Galois extension with Galois group $G$이고, $G$에 Krull t
 >     이 두 correspondence $H\mapsto L^H$, $M\mapsto \operatorname{Gal}(L/M)$는 서로 inverse이며,
 >     $H_1\subset H_2$이면 $L^{H_1}\supset L^{H_2}$, $M_1\subset M_2$이면 $\operatorname{Gal}(L/M_1)\supset\operatorname{Gal}(L/M_2)$이다.
 >     그러므로 이 두 corredpondence는 order-reversing bijection. $\square$
+> 
+> 2. $H$이 open이면 $\operatorname{Gal}(L/E)\subset H$인 finite Galois subextension $E/K$가 존재한다.
+>     그러므로 $L^H\subset L^{\operatorname{Gal}(L/E)}=E$이며, 따라서 $[L^H:K]\le[E:K]<\infty$.
+>     반대로 $[L^H:K]<\infty$이면 $L^H$를 포함하는 finite Galois subextension $E/K$가 존재한다.
+>     그러므로 $\operatorname{Gal}(L/E)\subset\operatorname{Gal}(L/L^H)=H$이니 $H$는 open. $\square$

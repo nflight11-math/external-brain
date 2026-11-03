@@ -4,7 +4,7 @@ title: 개인정보처리방침
 
 # 개인정보처리방침
 
-본 웹사이트(External Brain, https://external-brain.kr)는 수학 관련 지식과 학습 자료를 공유하기 위한 개인 위키입니다.
+본 웹사이트 [External Brain](https://external-brain.kr)은 수학 관련 지식과 학습 자료를 공유하기 위한 개인 위키입니다.
 
 ## 1. 개인정보의 수집
 

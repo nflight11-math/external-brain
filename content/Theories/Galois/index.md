@@ -36,7 +36,7 @@ $L/K$가 (infinite) Galois extension with Galois group $G$이고, $G$에 Krull t
 
 2. Closed subgroup $H$에 대하여, $H$이 open subgroup of $G$임과 $[L^H:K]<\infty$임이 동치이다.
 
-3. Closed subgroup $H$이 normal subgroup임과 $L^H/K$가 normal extension임이 동치이다. 이때 $\operatorname{Gal}(L^H/G)\cong G/H$이다.
+3. Closed subgroup $H$이 normal subgroup임과 $L^H/K$가 normal extension임이 동치이다. 이때 $\operatorname{Gal}(L^H/K)\cong G/H$이다.
 
 > [!done]- 증명
 > $H$가 subgroup of $G$일 시, $\sigma\in \overline H$임은 모든 finite Galois $E/K$에 대하여 $\sigma\operatorname{Gal}(E/K)\cap H\ne\varnothing$임과, 즉 $\operatorname{res}_E(\sigma)\in\operatorname{res}_E(H)$임과 동치이다.
@@ -44,7 +44,8 @@ $L/K$가 (infinite) Galois extension with Galois group $G$이고, $G$에 Krull t
 > $$
 > \overline H=\bigcap_{E/K\text{ is finite Galois}}\operatorname{res}_E^{-1}\operatorname{res}_EH.
 > $$
-> 1. $M$이 intermediate field이면 당연히 $M\subset L^{\operatorname{Gal}(L/M)}$이다.
+> 1. 
+>     $M$이 intermediate field이면 당연히 $M\subset L^{\operatorname{Gal}(L/M)}$이다.
 > 
 >     $\alpha\in L\setminus M$을 하나 선택하자. 그러면 $L/M$이 Galois extension이므로 $f(X):=\operatorname{irr}(\alpha,M,X)\in M[X]$는 separable이고 split into linear factor over $L$이다.
 >     $\alpha$와 다른 $f(X)$의 근 $\beta$를 하나 선택하자. 그러면 $M$-embedding $M(\alpha)\hookrightarrow L$이 $\alpha\mapsto\beta$이게 존재한다.
@@ -73,10 +74,12 @@ $L/K$가 (infinite) Galois extension with Galois group $G$이고, $G$에 Krull t
 >     $H_1\subset H_2$이면 $L^{H_1}\supset L^{H_2}$, $M_1\subset M_2$이면 $\operatorname{Gal}(L/M_1)\supset\operatorname{Gal}(L/M_2)$이다.
 >     그러므로 이 두 corredpondence는 order-reversing bijection. $\square$
 > 
-> 2. $H$이 open이면 $\operatorname{Gal}(L/E)\subset H$인 finite Galois subextension $E/K$가 존재한다.
+> 2.
+>     $H$이 open이면 $\operatorname{Gal}(L/E)\subset H$인 finite Galois subextension $E/K$가 존재한다.
 >     그러므로 $L^H\subset L^{\operatorname{Gal}(L/E)}=E$이며, 따라서 $[L^H:K]\le[E:K]<\infty$.
 >     반대로 $[L^H:K]<\infty$이면 $L^H$를 포함하는 finite Galois subextension $E/K$가 존재한다.
 >     그러므로 $\operatorname{Gal}(L/E)\subset\operatorname{Gal}(L/L^H)=H$이니 $H$는 open. $\square$
 > 
-> 3. $\sigma(L^H)=L^{\sigma H\sigma^{-1}}$임을 이용하면, $H$이 normal subgroup임과 임의의 $\sigma\in G$에 대하여 $L^H=\sigma(L^H)$임, 즉 $L^H/K$가 normal임이 동치임을 얻을 수 있다.
+> 3.
+>     $\sigma(L^H)=L^{\sigma H\sigma^{-1}}$임을 이용하면, $H$이 normal subgroup임과 임의의 $\sigma\in G$에 대하여 $L^H=\sigma(L^H)$임, 즉 $L^H/K$가 normal임이 동치임을 얻을 수 있다.
 >     또한 restriction map $\operatorname{res}_{L^H}$는 surjective이고, $\ker\operatorname{res}_{L^H}=\operatorname{Gal}(L/L^H)=H$이므로 isomorphism theorem에 의하여, $G/H=G/\ker\operatorname{res}_{L^H}\cong\operatorname{im}\operatorname{res}_{L^H}=\operatorname{Gal}(L^H/K).$ $\square$

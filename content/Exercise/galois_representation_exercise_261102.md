@@ -34,7 +34,9 @@ Finite group $H$와 group homomorphism $\rho:G_K\to H$를 생각하자.
 > Discrete space로 가는 함수의 연속성을 점의 역상으로 판정하라. Subgroup index와 extension degree of fixed field를 연결하라.
 
 > [!done]- 증명
-> 1. 만일 $\rho$가 연속이라면 inverse image of open set $\{1\}\subset H$인 $\ker\rho$는 open subgroup of $G_K$여야 한다. 반대로 만일 $\ker\rho$가 open subgroup이라면, 임의의 (open) subset $U\subset H$에 대하여, $\rho^{-1}U=\bigcup_{\sigma\in\rho^{-1}U}\sigma\ker\rho$는 union of open set이므로 역시 open이므로 $\rho$가 연속이다. $\square$
+> 1.
+>     만일 $\rho$가 연속이라면 inverse image of open set $\{1\}\subset H$인 $\ker\rho$는 open subgroup of $G_K$여야 한다. 반대로 만일 $\ker\rho$가 open subgroup이라면, 임의의 (open) subset $U\subset H$에 대하여, $\rho^{-1}U=\bigcup_{\sigma\in\rho^{-1}U}\sigma\ker\rho$는 union of open set이므로 역시 open이므로 $\rho$가 연속이다. $\square$
+> 
 > 2.
 >     만일 $\rho$가 연속이라면 $\ker\rho$가 open subgroup이므로, 적당한 finite Galois subextension $L/K$가 $G_L\subset \ker\rho$이게 존재한다.
 >     따라서 $G_K/G_L=\operatorname{Gal}(L/K)$로 동일시하였을 때, $\rho_L:G_K/G_L\to H$를 $\sigma G_L\mapsto \rho\sigma$ 정의하면 이는 잘 정의된 homomorphism이며, $\rho=\rho_L\circ\operatorname{res}_{L/K}$이다.
@@ -42,6 +44,15 @@ Finite group $H$와 group homomorphism $\rho:G_K\to H$를 생각하자.
 >     역으로 $\rho=\rho_L\circ\operatorname{res}_{L/K}$이 성립하는 적당한 finite Galois subextension $L/K$와 homomorphism $\rho_L:\operatorname{Gal}(L/K)\to H$이 존재한다고 하자.
 >     그럼 $\operatorname{res}_{L/K}:G_K\to\operatorname{Gal}(L/K)$는 kernel이 $G_L$이므로 연속이며, $\rho_L$은 domain $\operatorname{Gal}(L/K)$이 discrete space이므로 연속이다.
 >     따라서 합성사상 $\rho=\rho_L\circ\operatorname{res}_{L/K}$도 연속이다. $\square$
+> 
+> 3.
+>     우선 $\ker\rho$는 $\rho$가 연속이므로 open subgroup이며, 따라서 closed이다.
+>     그러므로 [[Theories/Galois/#Infinite Galois correspondence|infinite Galois correspondence]]에 의하여 $L_\rho/K$는 finite Galois extension이다.
+>     또한 $\ker\rho$는 normal subgroup of $G_K$이니, [[Theories/Galois/#Infinite Galois correspondence|infinite Galois correspondence]]에 의하여 $L_\rho/K$는 normal extension이고 $\operatorname{Gal}(L_\rho/K)\cong G_K/\ker\rho\cong\operatorname{im}\rho$.
+>     
+>     만일 finite Galois extension $L/K$에 대하여 homomorphism $\rho_L:\operatorname{Gal}(L/K)\to H$이 $\rho=\rho_L\circ\operatorname{res}_{L/K}$라고 하자.
+>     그러면 [[Theories/Galois/#Infinite Galois correspondence|infinite Galois correspondence]]에 의하여 $\operatorname{Gal}(K^{\operatorname{sep}}/L)=\ker\operatorname{res}_{L/K}\subset\ker\rho$이므로, $L=(K^{\operatorname{sep}})^{\operatorname{Gal}(K^{\operatorname{sep}}/L)}\supset (K^{\operatorname{sep}})^{\ker\rho}=L_\rho$이다.
+>     즉, $L_\rho$는 그러한 factorization이 가능한 minimal intermediate field이다. $\square$
 
 ## 문제 2. Finite field의 Galois group과 1-dimensional representation
 

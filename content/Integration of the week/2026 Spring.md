@@ -488,6 +488,40 @@ tags:
 > \int_0^{\log\phi}\log(e^x-e^{-x})dx.
 > $$
 
+> [!done]- Answer 10
+> 우선 주어진 적분을 $u\leftarrow e^{x}$로 치환하면 다음과 같은 식을 얻는다:
+> $$
+> I:=\int_0^{\log\phi}\log(e^x-e^{-x})dx=\int_1^\phi\frac{\log(u-u^{-1})}{u}du=\int_1^\phi\frac{\log(u^2-1)}{u}du-\int_1^\phi\frac{\log u}{u}du.
+> $$
+> 여기서 $z=u^2-1$로 치환하면 $\int_1^\phi\frac{\log(u^2-1)}{u}du=\int_1^\phi\frac{\log(u^2-1)}{u^2}udu=\frac12\int_0^\phi\frac{\log z}{z+1}dz$임을 알 수 있다. $J:=\int_0^\phi\frac{\log z}{z+1}dz$로 두면, $I=\frac{J}{2}-\frac12\log^2\phi$이다. 또한 $I=\int_1^\phi\frac{\log(u^2-1)}{u}du-\frac12\log^2\phi$를 변형시켜 보면 다음과 같은 결과를 얻을 수 있다:
+> 
+> $$
+> \begin{aligned}
+> I&=\int_1^\phi\frac{\log(u^2-1)}{u}du-\frac12\log^2\phi=\int_1^\phi\frac{\log(u-1)}{u}du+\int_1^\phi\frac{\log(u+1)}{u}du-\frac{1}{2}\log^2\phi\\
+> &=\int_0^{\phi-1}\frac{\log z}{1+z}dz+\left(\left.\log u\log(u+1)\right|_1^\phi-\int_1^\phi\frac{\log u}{u+1}du\right)-\frac{1}{2}\log^2\phi&&(z\leftarrow u-1\text{ \& IBP})\\
+> &= \int_0^{1}\frac{\log z}{1+z}dz-\int_{\phi^{-1}}^1\frac{\log z}{1+z}dz+\log\phi\log\phi^2-\int_1^\phi\frac{\log w}{1+w}dw-\frac{1}{2}\log^2\phi\\
+> &= \int_0^{1}\frac{\log z}{1+z}dz-\int^1_\phi\frac{\log w^{-1}}{1+w^{-1}}(-w^2dw)-\int_1^\phi\frac{\log w}{1+w}dw+\frac32\log^2\phi&&(w\leftarrow z^{-1})\\
+> &= \int_0^1\frac{\log z}{1+z}dz+\int_1^\phi\frac{\log w}{w(w+1)}dw-\int_1^\phi\frac{\log w}{1+w}dw+\frac32\log^2\phi\\
+> &= \int_0^1\frac{\log z}{1+z}dz+\int_1^\phi\frac{\log w}{w}dw-2\int_1^\phi\frac{\log w}{1+w}dw+\frac32\log^2\phi\\
+> &= 3\int_0^1\frac{\log z}{1+z}-2\int_0^\phi\frac{\log w}{1+w}dw+2\log^2\phi\\
+> &= 3\int_0^1\frac{\log z}{1+z}+2\log^2\phi -2J.
+> \end{aligned}
+> $$
+> 
+> 또한, $\int_0^1\frac{\log z}{1+z}dz$는 다음과 같이 계산 가능하다:
+> $$
+> \begin{aligned}
+> \int_0^1\frac{\log z}{1+z}dz &= \int_0^1\log z\sum_0^\infty(-z)^ndz=\sum_0^\infty\left((-1)^n\int_0^1z^n\log zdz\right) = \sum_0^\infty\left((-1)^n\int_0^1\frac{\partial }{\partial n}z^ndz\right)\\
+> &= \sum_0^\infty\left((-1)^n\frac{d}{dn}\int_0^1 z^ndz\right)=\sum_0^\infty\left((-1)^n\frac{d}{dn}\frac{1}{1+n}\right) = \sum_0^\infty\frac{(-1)^{n+1}}{(n+1)^2}=\sum_1^\infty\frac{(-1)^n}{n^2}\\
+> &= -\frac{\pi^2}{12}
+> \end{aligned}
+> $$
+> 
+> 그러므로 $I=\frac{J}{2}-\frac12\log^2\phi=-\frac{\pi^2}{4}+2\log^2\phi-2J$이며, 여기서 $J$를 소거하면 $I$의 값을 구할 수 있다:
+> $$
+> I=\frac45I+\frac15I=\frac45\left(\frac J2-\frac12\log^2\phi\right)+\frac15\left(-\frac{\pi^2}4+2\log^2\phi-2J\right)=\boxed{-\frac{\pi^2}{20}}.
+> $$
+
 > [!abstract] Integral 11 - 260519
 > Evaluate following integral for $a\ge1$.
 > $$

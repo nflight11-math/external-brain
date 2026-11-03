@@ -13,7 +13,10 @@ tags:
 
 > [!done]- Answer 1
 > 
-> Lebesgue measure of countable set은 $0$이므로, $A=\set{n+m^{-1}}{1\le n,m\in\mathbb{Z}}$에 대해 $\mu(A)=0$이다. 적분 구간인 $(0,\infty)$에서 null set을 빼어도 적분 결과에 미치는 영향은 전혀 없으므로, 주어진 적분을 다음과 같은 집합에서 계산하여도 무방하다. $$(0,\infty)\setminus A=\bigcup_{n=0}^\infty\bigcup_{m=1}^\infty I_{n,m}\qquad\left(I_{n,m}=(n+(m+1)^{-1},n+m^{-1})\right)$$
+> Lebesgue measure of countable set은 $0$이므로, $A=\set{n+m^{-1}}{1\le n,m\in\mathbb{Z}}$에 대해 $\mu(A)=0$이다. 적분 구간인 $(0,\infty)$에서 null set을 빼어도 적분 결과에 미치는 영향은 전혀 없으므로, 주어진 적분을 다음과 같은 집합에서 계산하여도 무방하다.
+> $$
+> (0,\infty)\setminus A=\bigcup_{n=0}^\infty\bigcup_{m=1}^\infty I_{n,m}\qquad\left(I_{n,m}=(n+(m+1)^{-1},n+m^{-1})\right)
+> $$
 > 
 > 그렇다면, 구해야 하는 값은 $J_{n,m}:=\int_{I_{n,m}}\frac{dx}{\left(\{x\}\cdot\text{lcm}\left(\lceil x\rceil,\left\lfloor1/\{x\}\right\rfloor\right)\right)^2}$의 합이다.
 > 
@@ -33,7 +36,14 @@ tags:
 > $$
 > 이다. 즉, 구해야 하는 값은 $\sum_{1\le n,m\in\mathbb{Z}}\prod_{p\in\mathbb P}p^{-2\max(n_p,m_p)}=\prod_{p\in\mathbb P}\sum_{0\le n_p,m_p\in\mathbb{Z}}p^{-2\max(n_p,m_p)}$이다. 각 소수에 대해서 $A(p)=\sum_{a,b=0}^\infty p^{-2\max(a,b)}$를 구할 수 있다면 구해야 하는 값은 $\prod_{p\in\mathbb P} A(p)$라는 것이다.
 > 
-> 이 $A(p)$를 구하기 위해서 합을 $a<b$, $a=b$, $a>b$ 세 부분으로 쪼개서 구해 보자. 대칭성에 의하여 $$\sum_{0\le a<b}p^{-2\max(a,b)}=\sum_{0\le b<a}p^{-2\max(a,b)}$$이 성립하며, $$\sum_{0\le a<b}p^{-2\max(a,b)}=\sum_{0\le a<b}p^{-2b}=\sum_{a=0}^\infty\sum_{b=a+1}^\infty p^{-2b}=\sum_{a=0}^\infty\frac{p^{-2-2a}}{1-p^{-2}}=\frac{p^{-2}}{(1-p^{-2})^2}.$$
+> 이 $A(p)$를 구하기 위해서 합을 $a<b$, $a=b$, $a>b$ 세 부분으로 쪼개서 구해 보자. 대칭성에 의하여
+> $$
+> \sum_{0\le a<b}p^{-2\max(a,b)}=\sum_{0\le b<a}p^{-2\max(a,b)}
+> $$
+> 이 성립하며,
+> $$
+> \sum_{0\le a<b}p^{-2\max(a,b)}=\sum_{0\le a<b}p^{-2b}=\sum_{a=0}^\infty\sum_{b=a+1}^\infty p^{-2b}=\sum_{a=0}^\infty\frac{p^{-2-2a}}{1-p^{-2}}=\frac{p^{-2}}{(1-p^{-2})^2}.
+> $$
 > 
 > $\sum_{0\le a=b}^\infty p^{-2\max(a,b)}=\sum_{a=0}^\infty p^{-2a}=\frac{1}{1-p^{-2}}$이다. 그러므로 아래와 같이 계산 가능하다.
 > $$
@@ -171,7 +181,10 @@ tags:
 > \operatorname{Res}\left(F;\frac{i\pi}{2}\right)=\lim_{z\to\frac{i\pi}2}\frac{d}{dz}\left[\left(z-\frac{i\pi}{2}\right)^2\frac{e^{-2isz}}{\cosh^2z}\right].
 > $$
 > 
-> 극한값을 구하기 위해서 $w=z-i\pi/2$로 치환하자. $e^{-2isz}=e^{s\pi}e^{-2isw}$이며, $1/\cosh^2z=1/\cosh^2(w+i\pi/2)=1/(i\sinh w)^2=-1/\sinh^2w$이고, $\sinh^2w$의 급수 전개는 다음과 같다: $$\sinh^2w=-\frac12+\frac12\cosh2w=\sum_1^\infty\frac{2^{2k-1}w^{2k}}{(2k)!}=w^2+\frac{w^4}{3}+\mathcal O(w^5)$$
+> 극한값을 구하기 위해서 $w=z-i\pi/2$로 치환하자. $e^{-2isz}=e^{s\pi}e^{-2isw}$이며, $1/\cosh^2z=1/\cosh^2(w+i\pi/2)=1/(i\sinh w)^2=-1/\sinh^2w$이고, $\sinh^2w$의 급수 전개는 다음과 같다:
+> $$
+> \sinh^2w=-\frac12+\frac12\cosh2w=\sum_1^\infty\frac{2^{2k-1}w^{2k}}{(2k)!}=w^2+\frac{w^4}{3}+\mathcal O(w^5)
+> $$
 > 
 > 그러므로,
 > $$
@@ -184,7 +197,14 @@ tags:
 > \end{aligned}
 > $$
 > 
-> 유수는 $2ise^{s\pi}$가 됨을 알 수 있다. 이제 $C_R$을 네 경로 $C_1:-R\to R,$ $C_2:R+i\pi\to-R+i\pi,$ $C_3:R\to R+i\pi,$ $C_4:-R+i\pi\to R$로 분해해 보면, $R\to \infty$일 때 $\int_{C_3}F(z)dz,\int_{C_4}F(z)dz\to 0$이며, $F(z+i\pi)=e^{2s\pi}F(z)$이 성립하기 때문에 $\int_{C_2}F(z)dz=-e^{2s\pi}\int_{C_1}F(z)dz$가 됨을 알 수 있다. 실수부가 반대 방향으로 이동하고 있으므로 부호가 바뀌었음에 유의하라. 즉, $$\lim_{R\to\infty}\oint_{C_R}F(z)dz=(1-e^{2s\pi})\lim_{R\to\infty}\int_{-R}^RF(z)dz=\frac12(1-e^{2s\pi})\widehat{f}(s)$$이 성립하고, 이 적분의 값은 $2\pi i\operatorname{Res}\left(F;\frac{i\pi}{2}\right)=-4\pi se^{s\pi}$. 곧 $$\widehat f(s)=\frac{-4\pi se^{\pi s}}{\frac12(1-e^{2\pi s})}=\frac{4\pi s}{\sinh \pi s}.$$
+> 유수는 $2ise^{s\pi}$가 됨을 알 수 있다. 이제 $C_R$을 네 경로 $C_1:-R\to R,$ $C_2:R+i\pi\to-R+i\pi,$ $C_3:R\to R+i\pi,$ $C_4:-R+i\pi\to R$로 분해해 보면, $R\to \infty$일 때 $\int_{C_3}F(z)dz,\int_{C_4}F(z)dz\to 0$이며, $F(z+i\pi)=e^{2s\pi}F(z)$이 성립하기 때문에 $\int_{C_2}F(z)dz=-e^{2s\pi}\int_{C_1}F(z)dz$가 됨을 알 수 있다. 실수부가 반대 방향으로 이동하고 있으므로 부호가 바뀌었음에 유의하라. 즉,
+> $$
+> \lim_{R\to\infty}\oint_{C_R}F(z)dz=(1-e^{2s\pi})\lim_{R\to\infty}\int_{-R}^RF(z)dz=\frac12(1-e^{2s\pi})\widehat{f}(s)
+> $$
+> 이 성립하고, 이 적분의 값은 $2\pi i\operatorname{Res}\left(F;\frac{i\pi}{2}\right)=-4\pi se^{s\pi}$. 곧
+> $$
+> \widehat f(s)=\frac{-4\pi se^{\pi s}}{\frac12(1-e^{2\pi s})}=\frac{4\pi s}{\sinh \pi s}.
+> $$
 > 
 > 또한,
 > $$
@@ -193,7 +213,10 @@ tags:
 > &= \frac{1}{\pi} \frac{a}{a^2 + s^2}
 > \end{aligned}
 > $$
-> 이므로 $\widehat{\frac{1}{a^2+s^2}}=\pi e^{-a|s|}$이다. 양 변에 $\partial/\partial a$를 취하면, 좌변은 $-2a\widehat{\frac{1}{(a^2+u^2)^2}}$이 되며, 우변은 $\frac{\pi}{a^2}e^{-a|s|}(1+a|s|)$이 된다. 결론적으로, $\widehat{\frac{1}{(a^2+u^2)^2}}=\frac{\pi}{2a^3}(1+a|s|)e^{-a|s|}$이며, $a\leftarrow \pi$로부터 $\widehat{g}(s)$를 얻을 수 있다. $$\widehat{g}(s)=\frac{1}{2\pi^2}(1+\pi|s|)e^{-\pi|s|}.$$
+> 이므로 $\widehat{\frac{1}{a^2+s^2}}=\pi e^{-a|s|}$이다. 양 변에 $\partial/\partial a$를 취하면, 좌변은 $-2a\widehat{\frac{1}{(a^2+u^2)^2}}$이 되며, 우변은 $\frac{\pi}{a^2}e^{-a|s|}(1+a|s|)$이 된다. 결론적으로, $\widehat{\frac{1}{(a^2+u^2)^2}}=\frac{\pi}{2a^3}(1+a|s|)e^{-a|s|}$이며, $a\leftarrow \pi$로부터 $\widehat{g}(s)$를 얻을 수 있다.
+> $$
+> \widehat{g}(s)=\frac{1}{2\pi^2}(1+\pi|s|)e^{-\pi|s|}.
+> $$
 > 
 > $4I=\int_\mathbb{R} fgdu=\frac{1}{2\pi}\int_\mathbb{R}\widehat f(-s)\widehat g(s)ds$임과 $f,g$의 Fourier transform 결과를 합치면 $I$를 얻을 준비가 완료된 셈이다. $\widehat f,\widehat g$가 모두 even function이므로, $8\pi I=\int_\mathbb{R}\widehat f(-s)\widehat g(s)ds=2\int_0^\infty\widehat f(s)\widehat g(s)ds$임을 얻을 수 있다.
 > 

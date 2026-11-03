@@ -106,7 +106,10 @@ tags:
 > But, you should not use knowledge other than Engineering Mathematics 1, 2 or Calculus and Vector Analysis 1, 2.
 
 > [!done]- Answer 3
-> 다음 두 적분을 생각하자: $$I=\int_0^\infty e^{-x^2}\sin(x^2)dx,\qquad J=\int_0^\infty e^{-x^2}\cos(x^2)dx.$$
+> 다음 두 적분을 생각하자:
+> $$
+> I=\int_0^\infty e^{-x^2}\sin(x^2)dx,\qquad J=\int_0^\infty e^{-x^2}\cos(x^2)dx.
+> $$
 > 
 > 그렇다면 다음과 같이 극좌표 치환을 통하여 $2IJ, J^2-I^2$을 계산할 수 있다.
 > 
@@ -139,6 +142,86 @@ tags:
 > $$
 > \int_0^1 \frac{dx}{(\pi^2+\ln^2x)^2(x+1)^2}.
 > $$
+
+> [!done]- Answer 4
+> 우선, 주어진 적분에 치환 $t\leftarrow1/x$을 적용하자. 그러면 적분은 다음과 같이 변경된다.
+> $$
+> \int_0^1\frac{dx}{(\pi^2+\ln^2x)^2(x+1)^2}=\int_{\infty}^1\frac{-dt/t^2}{(\pi^2+(-\ln t)^2)^2+(1/t+1)^2}=\int_1^\infty\frac{dt}{(\pi^2+\ln^2t)^2(t+1)^2}.
+> $$
+> 즉, 구해야 하는 값은 $I=\int_0^\infty\frac{dt}{(\pi^2+\ln^2t)^2(t+1)^2}$이라 두었을 때 $\frac I2$이다.
+> 
+> 이제 $I$에 치환 $t\leftarrow e^u$을 적용하자. 그러면 $\ln t=u$이고 $dt/(1+t)^2=e^udu/(1+e^u)^2=du/4\cosh^2(u/2)$가 되므로
+> $$
+> I=\int_{-\infty}^\infty\frac{1}{4\cosh^2(u/2)}\frac{du}{(\pi^2+u^2)^2}
+> $$
+> 이 됨을 알 수 있다. 두 함수 $f:u\mapsto\frac{1}{\cosh^2(u/2)},$ $g:u\mapsto\frac{1}{(\pi^2+u^2)^2}$로 두면 $\int_\mathbb{R} fgdu=4I$이며, Fourier transform $\widehat{h}(s)=\int_{\mathbb{R}}h(u)e^{-isu}du$괴 그 inverse $2\pi h(u)=\int_{\mathbb{R}}\widehat h(s)e^{isu}ds$를 이용하여 $\int_\mathbb{R} fgdu$를 다음과 같이 고쳐 쓸 수 있다.
+> $$
+> \begin{aligned}
+> \int_{\mathbb{R}}f(u)g(u)du &=\int_{\mathbb{R}}f(u)\left[\frac{1}{2\pi}\int_{\mathbb{R}}\widehat g(s)e^{isu}ds\right]du = \frac{1}{2\pi}\int_\mathbb{R} \widehat g(s)\left[\int_\mathbb{R} f(u)e^{-i(-s)u}du\right]ds\\
+> &=\frac{1}{2\pi}\int_\mathbb{R}\widehat f(-s)\widehat g(s)ds.
+> \end{aligned}
+> $$
+> 또한, 아래 적분을 $x\leftarrow u/2$의 치환으로부터 얻을 수 있다.
+> $$
+> \widehat f(s)=\int_\mathbb{R} \frac{e^{-isu}du}{\cosh^2(u/2)}=2\int_{\mathbb{R}}\frac{e^{-2isx}dx}{\cosh^2x}
+> $$
+> 
+> 이제 함수 $F(x)=e^{-2isx}/{\cosh^2x}$을 복소평면에서 적분한다고 생각하자. $F(z)$는 $z=(\frac12+n)i\pi$ 지점에서 double pole을 가진다. 양의 실수 $R$에 대하여 직사각형 폐곡선을 따르는 경로 $C_R:R\to R+i\pi\to -R+i\pi\to -R\to R$을 생각하면, $C_R$의 내부에는 pole이 $z=i\pi/2$ 하나만 들어 있다. 이 지점의 유수는 
+> $$
+> \operatorname{Res}\left(F;\frac{i\pi}{2}\right)=\lim_{z\to\frac{i\pi}2}\frac{d}{dz}\left[\left(z-\frac{i\pi}{2}\right)^2\frac{e^{-2isz}}{\cosh^2z}\right].
+> $$
+> 
+> 극한값을 구하기 위해서 $w=z-i\pi/2$로 치환하자. $e^{-2isz}=e^{s\pi}e^{-2isw}$이며, $1/\cosh^2z=1/\cosh^2(w+i\pi/2)=1/(i\sinh w)^2=-1/\sinh^2w$이고, $\sinh^2w$의 급수 전개는 다음과 같다: $$\sinh^2w=-\frac12+\frac12\cosh2w=\sum_1^\infty\frac{2^{2k-1}w^{2k}}{(2k)!}=w^2+\frac{w^4}{3}+\mathcal O(w^5)$$
+> 
+> 그러므로,
+> $$
+> \begin{aligned}
+> \lim_{z\to\frac{i\pi}2}\frac{d}{dz}\left[\left(z-\frac{i\pi}{2}\right)^2\frac{e^{-2isz}}{\cosh^2z}\right]&=\lim_{w\to 0}\frac{d}{dw}\left[-w^2\frac{e^{s\pi}e^{-2isw}}{\sinh^2w}\right]=-e^{s\pi}\lim_{w\to 0}\frac{d}{dw}\left[w^2\frac{1-2isw-2s^2w^2+\mathcal O(w^3)}{w^2+w^4/3+\mathcal O(w^5)}\right]\\
+> &=-e^{s\pi}\lim_{w\to 0}\frac{d}{dw}\frac{1-2isw-2s^2w^2+\mathcal O(w^3)}{1+w^2/3+\mathcal O(w^3)}\\
+> &=-e^{s\pi}\lim_{w\to 0}\frac{d}{dw}(1-2isw-2s^2w^2+\mathcal O(w^3))(1-w^2/3+\mathcal O(w^3))\\
+> &=-e^{s\pi}\lim_{w\to 0}\frac{d}{dw}(1-2isw+\mathcal O(w^2))=-e^{s\pi}\lim_{w\to 0}\frac{d}{dw}(-2is+\mathcal O(w))\\
+> &=2ise^{s\pi}.
+> \end{aligned}
+> $$
+> 
+> 유수는 $2ise^{s\pi}$가 됨을 알 수 있다. 이제 $C_R$을 네 경로 $C_1:-R\to R,$ $C_2:R+i\pi\to-R+i\pi,$ $C_3:R\to R+i\pi,$ $C_4:-R+i\pi\to R$로 분해해 보면, $R\to \infty$일 때 $\int_{C_3}F(z)dz,\int_{C_4}F(z)dz\to 0$이며, $F(z+i\pi)=e^{2s\pi}F(z)$이 성립하기 때문에 $\int_{C_2}F(z)dz=-e^{2s\pi}\int_{C_1}F(z)dz$가 됨을 알 수 있다. 실수부가 반대 방향으로 이동하고 있으므로 부호가 바뀌었음에 유의하라. 즉, $$\lim_{R\to\infty}\oint_{C_R}F(z)dz=(1-e^{2s\pi})\lim_{R\to\infty}\int_{-R}^RF(z)dz=\frac12(1-e^{2s\pi})\widehat{f}(s)$$이 성립하고, 이 적분의 값은 $2\pi i\operatorname{Res}\left(F;\frac{i\pi}{2}\right)=-4\pi se^{s\pi}$. 곧 $$\widehat f(s)=\frac{-4\pi se^{\pi s}}{\frac12(1-e^{2\pi s})}=\frac{4\pi s}{\sinh \pi s}.$$
+> 
+> 또한,
+> $$
+> \begin{aligned}
+> \frac{1}{2\pi}\int_\mathbb{R} e^{-a|u|}e^{isu}ds &= \frac{1}{2\pi} \left[ \int_{-\infty}^{0} e^{au} e^{isu} du + \int_{0}^{\infty} e^{-au} e^{isu} du \right] = \frac{1}{2\pi} \left( \frac{1}{a+is} + \frac{1}{a-is} \right)\\
+> &= \frac{1}{\pi} \frac{a}{a^2 + s^2}
+> \end{aligned}
+> $$
+> 이므로 $\widehat{\frac{1}{a^2+s^2}}=\pi e^{-a|s|}$이다. 양 변에 $\partial/\partial a$를 취하면, 좌변은 $-2a\widehat{\frac{1}{(a^2+u^2)^2}}$이 되며, 우변은 $\frac{\pi}{a^2}e^{-a|s|}(1+a|s|)$이 된다. 결론적으로, $\widehat{\frac{1}{(a^2+u^2)^2}}=\frac{\pi}{2a^3}(1+a|s|)e^{-a|s|}$이며, $a\leftarrow \pi$로부터 $\widehat{g}(s)$를 얻을 수 있다. $$\widehat{g}(s)=\frac{1}{2\pi^2}(1+\pi|s|)e^{-\pi|s|}.$$
+> 
+> $4I=\int_\mathbb{R} fgdu=\frac{1}{2\pi}\int_\mathbb{R}\widehat f(-s)\widehat g(s)ds$임과 $f,g$의 Fourier transform 결과를 합치면 $I$를 얻을 준비가 완료된 셈이다. $\widehat f,\widehat g$가 모두 even function이므로, $8\pi I=\int_\mathbb{R}\widehat f(-s)\widehat g(s)ds=2\int_0^\infty\widehat f(s)\widehat g(s)ds$임을 얻을 수 있다.
+> 
+> $$
+> \begin{aligned}
+> 4\pi I&=\int_0^\infty\widehat f(s)\widehat g(s)ds = \int_0^\infty\frac{4\pi s}{\sinh\pi s}\cdot\frac{1}{2\pi^2}(1+\pi s)e^{-\pi s}ds = \frac2{\pi}\int_0^\infty\frac{s+\pi s^2}{e^{\pi s}\sinh \pi s}ds\\
+> \pi^2 I&=\int_0^\infty\frac{sds}{e^{2\pi s}-1}+\pi\int_0^\infty\frac{s^2ds}{e^{2\pi s}-1}
+> \end{aligned}
+> $$
+> 
+> $J(a,p):=\int_0^\infty\frac{x^{p-1}}{e^{ax}-1}dx$라고 하자. 그렇다면 $\pi^2 I=J(2\pi,2)+\pi J(2\pi,3)$이다. $J(a,p)$의 값은 아래와 같은 방법으로 구할 수 있다.
+> $$
+> \begin{aligned}
+> J(a,p) &= a^{-p}\int_0^\infty\frac{(ax)^{p-1}}{e^{ax}-1}adx=a^{-p}\int_0^\infty\frac{z^{p-1}e^{-z}}{1-e^{-z}}dz = a^{-p}\int_0^\infty z^{p-1}\left(\sum_{n=1}^\infty e^{nz}\right)dz\\
+> &=a^{-p}\sum_{n=1}^\infty\left(\int_0^\infty e^{nz}z^{p-1}dz\right) = a^{-p}\sum_{n=1}^\infty n^{-p}\left(\int_0^\infty e^{nz}(nz)^{p-1}ndz\right)\\
+> &= a^{-p}\sum_{n=1}^\infty n^{-p}\left(\int_0^\infty w^{p-1}e^wdw\right)=a^{-p}\sum_{n=1}^\infty\frac{\Gamma(p)}{n^p}=\frac{\Gamma(p)\zeta(p)}{a^p}.
+> \end{aligned}
+> $$
+> 
+> 그러므로, 적분값 $I$는 다음과 같은 값이 됨을 알 수 있다.
+> $$
+> \begin{aligned}
+> I &= \frac{1}{\pi^2}\left(J(2\pi,2)+\pi J(2\pi,3)\right) = \frac{1}{\pi^2}\left(\frac{\Gamma(2)\zeta(2)}{(2\pi)^2}+\pi\frac{\Gamma(3)\zeta(3)}{(2\pi)^3}\right)\\
+> &=\frac{1}{\pi^2}\left(\frac{1\cdot\pi^2/6}{4\pi^2}+\pi\frac{2\zeta(3)}{8\pi^3}\right) = \frac{1}{\pi^2}\left(\frac{1}{24}+\frac{\zeta(3)}{4\pi^2}\right)\\
+> &= {\frac{6\zeta(3)+\pi^2}{24\pi^4}}.
+> \end{aligned}
+> $$
+> 구하는 값은 $\displaystyle \frac I2=\mathbf{\frac{6\zeta(3)+\pi^2}{48\pi^4}}$이다.
 
 > [!abstract] Integral 5 - 260407
 > Evaluate following integral.

@@ -576,4 +576,93 @@ tags:
 > \int_0^\pi\frac{\sin x}{x}e^{x/\tan x}\left(\frac{x}{\tan x}+\log\sin x-\log x\right)^3dx.
 > $$
 
+> [!done]- Answer 12
+> 문제의 피적분함수를 잘 보면, $f(x)=\frac{\sin x}{x}e^{x/\tan x}$에 곱해진 값인 $\left(\frac{x}{\tan x}+\log\sin x-\log x\right)^3$는 $\log f(x)$임을 알 수 있다. 즉, 피적분함수는 $f(x)\log^3f(x)$의 꼴이며, 이는 다음과 같은 식의 값이다: 
+> $$
+> f(x)\log^3(x)=\left.f(x)^a\log^3f(x)\right|_{a=1}=\left.\frac{\partial^3}{\partial a^3}f(x)^a\right|_{a=1}.
+> $$
+> 
+> 즉, 주어진 적분은 다음과 같이 변형된다.
+> $$
+> \begin{aligned}
+> \int_0^\pi\frac{\sin x}{x}e^{x/\tan x}\left(\frac{x}{\tan x}+\log\sin x-\log x\right)^3dx &= \int_0^\pi \left.\frac{\partial^3}{\partial a^3}f(x)^a\right|_{a=1}dx=\left.\frac{d^3}{da^3}\int_0^\pi f(x)^adx\right|_{a=1}
+> \end{aligned}
+> $$
+> 우리가 계산해야 하는 값은 이제 $\int_0^\pi\left(\frac{\sin x}{x}e^{x/\tan x}\right)^adx$이다.
+> 
+> $-\infty$에서 출발하여 원점을 시계 방향으로 감싸고 $-\infty$로 향하는 복소평면상의 Hankel's loop를 생각하자.[^2] 이 loop를 따라서 $z^{-s-1}e^z$를 적분한 값을 구할 것이다. 피적분함수의 특이점은 원점 하나뿐이라는 점에 유의하라. 즉, 원점을 포함하기만 하면 loop를 어떻게 설정해도 무관하다.
+> 
+> 이 Hankel's loop $H$는 다음과 같은 세 가지 부분곡선으로 분해할 수 있다.
+> $$
+> \begin{cases}
+> I_1:z=re^{-i\pi} & (r:\infty\to\epsilon)\\
+> C_\epsilon:z=\epsilon e^{i\theta} & (\theta:-\pi\to\pi)\\
+> I_2: z=re^{i\pi} & (r:\epsilon\to\infty) \\
+> \end{cases}
+> $$
+> 이 세 가지 부분곡선에 대해서 $z^{-s-1}e^z$를 각각 적분해 보자.
+> $$
+> \begin{aligned}
+> \int_{I_1} z^{-s-1}e^z  dz &= \int_{\infty}^{\epsilon} (r e^{-i\pi})^{-s-1} e^{-r} (-dr) = -e^{i\pi(s+1)} \int_{\infty}^{\epsilon} r^{-s-1} e^{-r}dr\\
+> &= e^{i\pi(s+1)} \int_{\epsilon}^{\infty} r^{-s-1} e^{-r}  dr \to e^{i\pi(s+1)} \Gamma(-s) \\
+> \int_{C_\epsilon}z^{-s-1}e^zdz &\le\max\{|z^{-s-1}e^z|:z\in C_\epsilon\}\cdot 2\pi\epsilon\\
+> &=\max\{\epsilon^{-\Re s-1}e^{\epsilon\cos\theta}:-\pi\le\theta\le \pi\}\cdot 2\pi\epsilon\to 0\\
+> \int_{I_2} z^{-s-1}e^z dz &= \int_{\epsilon}^{\infty} (r e^{i\pi})^{-s-1} e^{-r} (-dr) = -e^{-i\pi(s+1)} \int_{\epsilon}^{\infty} r^{-s-1} e^{-r}  dr\\
+> &\to -e^{-i\pi(s+1)} \Gamma(-s)
+> \end{aligned}
+> $$
+> 그러므로, Hankel's loop $H$를 따라 적분한 결과는 다음과 같다.
+> $$
+> \begin{aligned}
+> \int_Hz^{-s-1}e^zdz&=\int_{I_1} z^{-s-1}e^zdz+\int_{C_\epsilon}z^{-s-1}e^zdz+\int_{I_2} z^{-s-1}e^z dz\\
+> &\to (-e^{i\pi s}+e^{-i\pi s})\Gamma(-s)=-2i\sin\pi s\Gamma(-s)=\frac{2\pi i}{\Gamma(s+1)}.
+> \end{aligned}
+> $$
+> 이를 이용하면 $\int_H z^{-s-1}e^{az}dz$ 역시 구할 수 있다.
+> $$
+> \int_H z^{-s-1}e^{az}dz=a^s\int_H(az)^{-s-1}e^{az}d(az)=a^z\int_H z^{-s-1}e^{z}dz=\frac{2\pi ia^s}{\Gamma(s+1)}.
+> $$
+> 
+> Hankel's loop 대신 원점을 같은 방식으로 감싸는 경로를 생각하자: $C:z=\frac{t}{\sin t}e^{it}\quad(t:-\pi\to \pi)$. 언급한 대로 $z^{-s-1}e^{az}$의 특이점은 원점 뿐이기 때문에, $\int_C z^{-s-1}e^{az}dz=\int_H z^{-s-1}e^{az}dz=\frac{2\pi ia^s}{\Gamma(s+1)}$가 성립한다. $s=a-1$로 지정하면 $\int_C z^{-a}e^{az}dz=\frac{2\pi i a^a}{a\Gamma(a)}=\frac{2\pi i a^a}{\Gamma(a+1)}$이 성립한다. 그러므로,
+> $$
+> \begin{aligned}
+> \frac{2\pi ia^a}{\Gamma(a+1)}&=\int_Cz^{-a}e^{az}dz=\int_{-\pi}^\pi\left(\frac{t}{\sin t}\right)^{-a}e^{-iat}\cdot e^{at/\tan t}\cdot e^{iat}\cdot d(te^{it}/\sin t) \\
+> &= \int_{-\pi}^\pi\left(\frac{\sin t}{t}\right)^ae^{at/\tan t}(\cot t - t \csc^2t+i)dt\\
+> &= \int_{-\pi}^\pi\left(\frac{\sin t}{t}\right)^ae^{at/\tan t}(\cot t - t \csc^2t)dt+i\int_{-\pi}^\pi\left(\frac{\sin t}{t}\right)^ae^{at/\tan t}dt\\
+> &=2i\int_0^\pi\left(\frac{\sin t}{t}\right)^ae^{at/\tan t}dt.
+> \end{aligned}
+> $$
+> 이 $\left(\frac{\sin t}{t}\right)^ae^{at/\tan t}(\cot t - t \csc^2t)$은 odd function이기 때문에 성립한다. 곧, 구하고자 했던 적분 값은 다음과 같음을 알 수 있다.
+> $$
+> \int_0^\pi\left(\frac{\sin t}{t}\right)^ae^{at/\tan t}dt=\frac{\pi a^a}{\Gamma(a+1)}.
+> $$
+> 
+> 문제에서 구하고자 하는 값은 $g(a):=\frac{\pi a^a}{\Gamma(a+1)}$일 시 $g'''(1)$이다. 이를 직접 미분하기 힘드므로 $\log g(a)=\log\pi+a\log a-\log\Gamma(a+1)$를 세 번 미분해 보자. 다음과 같은 사실은 직접 계산해 보면 어렵지 않게 얻을 수 있다.
+> $$
+> \frac{d}{da}\log g(a)=\frac{g'(a)}{g(a)},\quad\frac{d^2}{d^2a}\log g(a)=\frac{g''(a)g(a)-g'(a)^2}{g(a)^2},
+> $$
+> $$
+> \frac{d^3}{da^3}\log g(a)=\frac{g'''(a)g(a)-3g''(a)g'(a)g(a)+2g'(a)^3}{g(a)^3}
+> $$
+> 
+> Polygamma function of order $m$을 $\psi^{(m)}(z)=\frac{d^{m+1}}{dz^{m+1}}\log\Gamma(z)$와 같이 정의하면, $\frac{d}{da}\log g(a)=1+\log a-\psi^{(0)}(a+1),$ $\frac{d^2}{da^2}\log g(a)=a^{-1}-\psi^{(1)}(a+1),$ $\frac{d^3}{da^3}\log g(a)=-a^{-2}-\psi^{(2)}(a+1)$이다. Polygamma function of order $0, 1, 2$의 2에서의 값을 계산하기 위해서는 IOTW \#8에서 사용한 아래 식이 필요하다.
+> $$
+> \log\Gamma(z)=\lim_{n\to\infty}\left(z\log n+\log n!-\sum_{k=0}^n\log(z+k)\right).
+> $$
+> 
+> 이 식의 양 변을 미분하면 $\psi^{(0)}(z)=\frac{d}{dz}\log\Gamma(z)=\lim_n(\log n-\sum_0^n\frac{1}{z+k})=\lim_n(\log n-\sum_0^n\frac{1}{k+1})-\sum_0^\infty(\frac{1}{z+k}-\frac{1}{1+k})=-\gamma-\sum_0^\infty(\frac{1}{z+k}-\frac{1}{1+k})$이 얻어지고, 그 결과로 $\psi^{(0)}(2)=-\gamma-\sum_0^\infty(\frac{1}{2+k}-\frac{1}{1+k})=1-\gamma$를 얻는다. 또한 이 식을 한 번 더 미분하면 $\psi^{(1)}(z)=\sum_0^\infty\frac{1}{(z+k)^2}$이므로 Basel problem에서 $\psi^{(1)}(2)=\sum_0^\infty\frac{1}{(2+k)^2}=\frac{\pi^2}{6}-1$임을 얻는다. 마지막으로, 이 식을 한 번 더 미분하면 $\psi^{(2)}(z)=-2\sum_0^\infty\frac{1}{(z+k)^3}$이므로 $\psi^{(2)}(2)=-2\sum_0^\infty\frac{1}{(2+k)^3}=2-2\zeta(3)$임까지 얻을 수 있다.
+> 
+> 지금까지의 결과를 종합하면 $\frac{d}{da}\log g(1)=1+\log1-\psi^{(0)}(2)=\gamma,$ $\frac{d^2}{d^2a}\log g(1)=1^{-1}-\psi^{(1)}(2)=2-\frac{\pi^2}{6},$ $\frac{d^3}{da^3}\log g(1)=-1^{-2}-\psi^{(2)}(2)=2\zeta(3)-3$이라는 결과가 나온다. 이를 $g(1)=\frac{\pi\cdot 1^1}{\Gamma(2)}=\pi$와 함께 연쇄적으로 대입하면 $g'(1), g''(1), g'''(1)$을 구할 수 있다. 그 계산 결과는 다음과 같다.
+> $$
+> \begin{aligned}
+> g'(1) &= g(1)\cdot\frac{d}{da}\log g(1)=\gamma\pi,\\
+> g''(1) &= \frac{1}{g(1)}\left(g'(1)^2+g(1)^2\frac{d^2}{da^2}\log g(1)\right) = \frac{1}{\pi}\left((\gamma\pi)^2+\pi^2\left(2-\frac{\pi^2}{6}\right)\right)\\
+> &=\gamma^2\pi+2\pi-\frac{\pi^3}{6},\\
+> g'''(1) &= \frac{1}{g(1)}\left(-2g'(1)^3+3g''(1)g'(1)g(1)+g(1)^3\frac{d^3}{da^3}\log g(1)\right)\\
+> &= \frac1\pi\left(-2(\gamma\pi)^3+3\left(\gamma^2\pi+2\pi-\frac{\pi^3}{6}\right)\cdot\gamma\pi\cdot\pi+\pi^3\left(2\zeta(3)-3\right)\right)\\
+> &=\color{red}{\pi^2\left(\gamma^3+6\gamma-\frac12\gamma\pi^2+2\zeta(3)-3\right)}.
+> \end{aligned}
+> $$
+
 [^1]: $\zeta(2)$는 $f(x)=x^2\in L^2(-\pi,\pi)$의 Fourier transform으로, $\zeta(4)$는 이를 Parseval's identity에 그대로 집어넣어서 계산할 수 있다.
+[^2]: ![Image of Hankel Loop](image.png)

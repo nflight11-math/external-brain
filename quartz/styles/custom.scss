@@ -17,11 +17,12 @@
   display: none;
 }
 
-/* 접힌 Callout의 세로 여백 축소 */
+/* 접힌 callout의 세로 높이 축소 */
 .callout.is-collapsed > .callout-title {
-  padding: 0.45rem 0;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
 }
 
 article p {
-  margin-bottom: 1.5em;
+  margin-bottom: 0.8em;
 }

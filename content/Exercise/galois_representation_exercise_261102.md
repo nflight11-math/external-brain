@@ -28,7 +28,7 @@ Finite group $H$와 group homomorphism $\rho:G_K\to H$를 생각하자.
    - $\rho$가 연속이다.
    - 어떤 finite Galois 확대 $L/K$와 homomorphism $\rho_L:\operatorname{Gal}(L/K)\to H$가 존재하여 $\rho=\rho_L\circ\operatorname{res}_{L/K}$이다.
 3. $\rho$가 연속이라고 하자. $L_\rho=(K^{\operatorname{sep}})^{\ker\rho}$로 놓으면 $L_\rho/K$가 finite Galois extension이고 $\operatorname{Gal}(L_\rho/K)\cong\operatorname{im}\rho$임을 보여라. 또한 $L_\rho$가 위 factorization을 가능하게 하는 최소의 intermediate field임을 증명하라.
-4. Finite field $k$ 위의 representation $\bar\rho:G_K\to\operatorname{GL}_d(k)$에 위 결과를 적용하라. 이때 fixed field $L_{\bar\rho}$의 extension degree over $K$와 $\#\operatorname{GL}_d(k)$ 사이에 어떤 관계가 있는지 서술하고 증명하라.
+4. Finite field $k$ 위의 representation $\overline{\rho}:G_K\to\operatorname{GL}_d(k)$에 위 결과를 적용하라. 이때 fixed field $L_{\overline{\rho}}$의 extension degree over $K$와 $\#\operatorname{GL}_d(k)$ 사이에 어떤 관계가 있는지 서술하고 증명하라.
 
 > [!tip]- 힌트
 > Discrete space로 가는 함수의 연속성을 점의 역상으로 판정하라. Subgroup index와 extension degree of fixed field를 연결하라.

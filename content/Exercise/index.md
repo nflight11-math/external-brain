@@ -9,10 +9,10 @@ tags:
 
 ## GPT-generated
 
-- [[exercise/galois_representation_exercise_261102|갈로아 표현론 연습문제 1]]
+- [[exercise/GaloisGPT/galois_representation_exercise_261102|갈로아 표현론 연습문제 1]]
 
 # Modularity
 
 ## GPT-generated
 
-- [[exercise/modularity_exercise_261102|모듈러성 연습문제 1]]
+- [[exercise/ModularityGPT/modularity_exercise_261102|모듈러성 연습문제 1]]

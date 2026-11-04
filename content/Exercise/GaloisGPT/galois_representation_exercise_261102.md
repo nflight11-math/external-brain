@@ -8,18 +8,18 @@ tags:
   - number-theory
 ---
 
-# Galois representation 연습문제 1
+## Galois representation 연습문제 1
 
 이번 회차에서는 Galois representation을 공부하는 데 필요한 위상적 기초와 가장 기본적인 1차원 표현을 다룬다. 타원곡선의 Tate module이나 모듈러 형식에 관한 지식은 필요하지 않다.
 
-## 공통 표기와 배경
+### 공통 표기와 배경
 
 - Field $K$의 separable closure를 $K^{\operatorname{sep}}$로 고정하고 $G_K=\operatorname{Gal}(K^{\operatorname{sep}}/K)$로 쓴다. $G_K$에는 Krull topology를 준다.
 - Finite Galois extension $L/K$에 대하여 $G_L=\operatorname{Gal}(K^{\operatorname{sep}}/L)$는 $G_K$의 open normal subgroup이다. 이들이 $1$의 local base를 이룬다는 사실을 사용해도 좋다.
 - $\ell$은 소수이며, $\mathbb Z_\ell$과 $\mathbb Q_\ell$에는 각각 통상적인 $\ell$-adic 위상을 준다. Finite group에는 discrete topology를 준다.
 - 이 문서에서 arithmetic Frobenius는 residue field에서 $x\mapsto x^q$로 작용하는 원소이다. Geometric Frobenius는 그 역원이다.
 
-## 문제 1. Finite codomain representation의 연속성
+### 문제 1. Finite codomain representation의 연속성
 
 Finite group $H$와 group homomorphism $\rho:G_K\to H$를 생각하자.
 
@@ -59,7 +59,7 @@ Finite group $H$와 group homomorphism $\rho:G_K\to H$를 생각하자.
 >    3.에서 얻은 결과를 그대로 적용하면, extension degree $[L_{\overline{\rho}}:K]$는 size of Galois group $\#\operatorname{Gal}(L_{\overline\rho}/K)=\#\operatorname{im}\overline{\rho}$와 같다.
 >    이는 codomain의 size $\#\operatorname{GL}_d(k)$의 divisor이며, $\#\operatorname{GL}_d(k)=q^{\binom d2}(q-1)^d[d]!_q$이므로 $[L_{\overline{\rho}}:K]\mid q^{\binom d2}(q-1)^d[d]!_q$이다.
 
-## 문제 2. Finite field의 Galois group과 1-dimensional representation
+### 문제 2. Finite field의 Galois group과 1-dimensional representation
 
 $q=p^k$는 prime power이며, $F_q\in G_{\mathbb F_q}$를 $F_q(x)=x^q$로 정의하자.
 
@@ -71,7 +71,7 @@ $q=p^k$는 prime power이며, $F_q\in G_{\mathbb F_q}$를 $F_q(x)=x^q$로 정의
 > [!tip]- 힌트
 > Dense subset에서 일치하는 연속함수의 유일성을 이용하라. 존재성은 유한한 몫들에서 구성하고, 필요조건은 compact한 상에 valuation을 적용하여 조사하라.
 
-## 문제 3. Cyclotomic character의 구성과 Frobenius 값
+### 문제 3. Cyclotomic character의 구성과 Frobenius 값
 
 각 $n\geq1$에 대해 primitive $\ell^n$-th root of unity $\zeta_{\ell^n}\in\overline{\mathbb Q}$를 $\zeta_{\ell^{n+1}}^\ell=\zeta_{\ell^n}$이 되도록 고르자. $\sigma\in G_{\mathbb Q}$에 대해 $\sigma(\zeta_{\ell^n})=\zeta_{\ell^n}^{\chi_{\ell,n}(\sigma)}$로 $\chi_{\ell,n}(\sigma)\in(\mathbb Z/\ell^n\mathbb Z)^\times$를 정의한다.
 
@@ -83,7 +83,7 @@ $q=p^k$는 prime power이며, $F_q\in G_{\mathbb F_q}$를 $F_q(x)=x^q$로 정의
 > [!tip]- 힌트
 > 각 finite layer의 cyclotomic field에서 먼저 생각하라. $p\ne\ell$에서는 $\ell$-powerth primitive root of unity를 residue field로 환원하는 것이 잘 작동한다는 사실을 이용하라.
 
-## 참고 자료
+### 참고 자료
 
 - J. S. Milne, [Fields and Galois Theory](https://www.jmilne.org/math/CourseNotes/ft.html): 유한체와 무한 Galois 이론.
 - Gabor Wiese, [Galois Representations](https://math.uni.lu/~wiese/notes/GalRep): 연속 Galois 표현의 기초 및 §1.3의 cyclotomic character.

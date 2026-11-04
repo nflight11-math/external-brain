@@ -53,6 +53,11 @@ Finite group $H$와 group homomorphism $\rho:G_K\to H$를 생각하자.
 >     만일 finite Galois extension $L/K$에 대하여 homomorphism $\rho_L:\operatorname{Gal}(L/K)\to H$이 $\rho=\rho_L\circ\operatorname{res}_{L/K}$라고 하자.
 >     그러면 [[Theories/Algebra/InfiniteGalois#Infinite Galois correspondence|infinite Galois correspondence]]에 의하여 $\operatorname{Gal}(K^{\operatorname{sep}}/L)=\ker\operatorname{res}_{L/K}\subset\ker\rho$이므로, $L=(K^{\operatorname{sep}})^{\operatorname{Gal}(K^{\operatorname{sep}}/L)}\supset (K^{\operatorname{sep}})^{\ker\rho}=L_\rho$이다.
 >     즉, $L_\rho$는 그러한 factorization이 가능한 minimal intermediate field이다. $\square$
+>
+4.
+>    $\#k=q=p^f$라고 하자.
+>    3.에서 얻은 결과를 그대로 적용하면, extension degree $[L_{\overline{\rho}}:K]$는 size of Galois group $\#\operatorname{Gal}(L_{\overline\rho}/K)=\#\operatorname{im}\overline{\rho}$와 같다.
+>    이는 codomain의 size $\#\operatorname{GL}_d(k)$의 divisor이며, $\#\operatorname{GL}_d(k)=q^{\binom d2}(q-1)^d[d]!_q$이므로 $[L_{\overline{\rho}}:K]\mid q^{\binom d2}(q-1)^d[d]!_q$이다.
 
 ## 문제 2. Finite field의 Galois group과 1-dimensional representation
 

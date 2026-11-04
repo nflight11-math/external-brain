@@ -61,12 +61,12 @@ Finite group $H$와 group homomorphism $\rho:G_K\to H$를 생각하자.
 
 ### 문제 2. Finite field의 Galois group과 1-dimensional representation
 
-$q=p^k$는 prime power이며, $F_q\in G_{\mathbb F_q}$를 $F_q(x)=x^q$로 정의하자.
+$q=p^k$는 prime power이며, $\sigma\in G_{\mathbb F_q}$를 $\sigma(x)=x^q$로 정의하자.
 
-1. Galois groups of finite extension을 이용하여 $G_{\mathbb F_q}\cong\widehat{\mathbb Z}$ as topological group임을 증명하라. 이 동형에서 $F_q$가 $1\in\widehat{\mathbb Z}$에 대응하며, $F_q$가 생성하는 cyclic subgroup이 dense함을 보여라.
-2. Finite group $H$와 $h\in H$가 주어졌다고 하자. $\rho(F_q)=h$를 만족하는 continuous homomorphism $\rho:G_{\mathbb F_q}\to H$가 유일하게 존재함을 증명하라. 이 representation의 kernel의 fixed field도 구하라.
-3. $a\in\mathbb Q_\ell^\times$가 주어졌다고 하자. $\chi_a(F_q)=a$인 continuous homomorphism $\chi_a:G_{\mathbb F_q}\to\mathbb Q_\ell^\times$가 존재할 필요충분조건을 $v_\ell(a)$로 나타내고 증명하라. 존재할 때 유일성도 증명하라. 여기서 $v_\ell(\ell)=1$로 정규화한다.
-4. 3번에서 존재하는 $\chi_a$의 상이 유한할 필요충분조건을 $a$에 관한 조건으로 서술하고 증명하라. Codomain이 $H$인 경우와 $\mathbb Q_\ell^\times$인 경우의 차이를 설명하라.
+1. Galois groups of finite extension을 이용하여 $G_{\mathbb F_q}\cong\widehat{\mathbb Z}$ as topological group임을 증명하라. 이 동형에서 $\sigma$가 $1\in\widehat{\mathbb Z}$에 대응하며, $F_q$가 생성하는 cyclic subgroup이 dense함을 보여라.
+2. Finite group $H$와 $h\in H$가 주어졌다고 하자. $\rho(\sigma)=h$를 만족하는 continuous homomorphism $\rho:G_{\mathbb F_q}\to H$가 유일하게 존재함을 증명하라. 이 representation의 kernel의 fixed field도 구하라.
+3. $a\in\mathbb Q_\ell^\times$가 주어졌다고 하자. $\chi_a(\sigma_=a$인 continuous homomorphism $\chi_a:G_{\mathbb F_q}\to\mathbb Q_\ell^\times$가 존재할 필요충분조건을 $v_\ell(a)$로 나타내고 증명하라. 존재할 때 유일성도 증명하라. 여기서 $v_\ell(\ell)=1$로 정규화한다.
+4. 3번에서 존재하는 $\chi_a$의 상이 유한할 필요충분조건을 $a$에 관한 조건으로 서술하고 증명하라. Codomain이 finite group $H$인 경우와 $\mathbb Q_\ell^\times$인 경우의 차이를 설명하라.
 
 > [!tip]- 힌트
 > Dense subset에서 일치하는 연속함수의 유일성을 이용하라. 존재성은 유한한 몫들에서 구성하고, 필요조건은 compact한 상에 valuation을 적용하여 조사하라.

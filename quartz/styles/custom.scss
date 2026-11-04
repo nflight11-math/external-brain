@@ -12,17 +12,32 @@
   }
 }
 
-/* 접힌 Callout의 빈 공간 제거 */
+article p {
+  margin-bottom: 0.8em;
+}
+
+/* 접힌 callout의 빈 공간 제거 */
 .callout.is-collapsed > .callout-content {
   display: none;
 }
 
-/* 접힌 callout의 세로 높이 축소 */
+/* 접힌 callout의 높이 및 수직 정렬 */
 .callout.is-collapsed > .callout-title {
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  padding-block: 0.3rem;
 }
 
-article p {
-  margin-bottom: 0.8em;
+/* 아이콘의 불필요한 상하 padding 제거 */
+.callout.is-collapsed > .callout-title {
+  .callout-icon,
+  .fold-callout-icon {
+    padding-block: 0;
+    align-self: center;
+  }
+
+  .callout-title-inner > p {
+    margin: 0;
+    line-height: 1.3;
+  }
 }

@@ -110,15 +110,15 @@ aliases:
 > 1. $H$가 open이면 $H$는 closed이고 $[G:H]<\infty$이다.
 > 2. $H$가 closed이고 $[G:H]<\infty$이면 $H$는 open이다.
 > 3. 임의의 identity neighborhood $U$에 대하여 $N\subseteq U$인 open normal subgroup $N\trianglelefteq G$가 존재한다.
-> 특히, $\mathcal N(G)$를 open normal subgroups의 집합이라 하면
-> $$
-> G\cong\varprojlim_{N\in\mathcal N(G)}G/N
-> $$
-> 이 topological group으로서 성립한다.
+>     특히, $\mathcal N(G)$를 open normal subgroups의 집합이라 하면
+>     $$
+>     G\cong\varprojlim_{N\in\mathcal N(G)}G/N
+>     $$
+>     이 topological group으로서 성립한다.
 
 > [!done]- 증명
 > 1. $H$가 open이면 [[#Relation of open and closed|open subgroup은 closed]]이다.
->     또한 left cosets $\{gH:g\in G\}$는 $G$의 open cover를 이룬다. $G$가 compact이므로 finite subcover가 존재하고, 서로 다른 left cosets는 disjoint이므로 $[G:H]<\infty$이다.
+>     또한 left cosets $\{gH:g\in G\}$는 $G$의 open cover를 이룬다. [$G$가 compact](#equivalent-characterization)이므로 finite subcover가 존재하고, 서로 다른 left cosets는 disjoint이므로 $[G:H]<\infty$이다.
 > 2. $H$가 closed이고 $[G:H]<\infty$이면 [[#Relation of open and closed|finite index closed subgroup은 open]]이다.
 > 3. Equivalent Characterization의 (3)에 의해 open normal subgroups는 identity의 neighborhood basis를 이룬다. 마지막 inverse limit 표현도 해당 정리의 증명에서 얻어진다. $\square$
 
@@ -134,6 +134,7 @@ aliases:
     \mathbb Z_p\cong\varprojlim_{n\ge 1}\mathbb Z/p^n\mathbb Z.
     $$
     각 $\mathbb Z/p^n\mathbb Z$는 finite discrete group이므로, $\mathbb Z_p$는 addition에 대하여 profinite group이다.
+
 2. $\widehat{\mathbb Z}$
     
     Integers의 profinite completion은 다음과 같이 주어진다. ^profinite-group-zhat

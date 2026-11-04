@@ -52,12 +52,12 @@ aliases:
 > 3. $G$ is compact and Hausdorff, and the open normal subgroups of $G$ form a neighborhood basis of the identity.
 
 > [!done]- 증명
-> - **(1) $\Rightarrow$ (2).**
+> - **1 $\Rightarrow$ 2.**
 >     $G=\varprojlim_{i\in I}G_i$라고 하자. 각 $G_i$는 finite discrete group이므로 compact Hausdorff이다. Tychonoff's theorem에 의하여 product $\prod_{i\in I}G_i$도 compact Hausdorff이다.
 >     Inverse limit은 product의 closed subgroup이므로 $G$ 역시 compact Hausdorff이다.
 >     또한 서로 다른 두 원소 $x,y\in G$에 대하여, 어떤 $i\in I$에서 $\pi_i(x)\ne\pi_i(y)$이다. 이때 $\pi_i^{-1}(\{\pi_i(x)\})$는 $x$를 포함하고 $y$를 포함하지 않는 clopen set이다. 따라서 $G$는 totally disconnected이다.
 >
-> - **(2) $\Rightarrow$ (3).**
+> - **2 $\Rightarrow$ 3.**
 >     Compact Hausdorff totally disconnected space는 clopen sets로 이루어진 basis를 가진다는 사실을 이용한다.
 >     Identity $1$의 임의의 neighborhood $O$에 대하여 $1\in U\subseteq O$인 clopen set $U$를 택하자. $U$는 compact이고 multiplication은 continuous이므로, $1$의 symmetric open neighborhood $W$가 존재하여 $WU\subseteq U$이다.
 >     $W=W^{-1}$이므로 모든 $w\in W$에 대하여 $wU=U$이다. 따라서
@@ -72,7 +72,7 @@ aliases:
 >     은 finitely many distinct conjugates의 intersection이며, open normal subgroup이다. 더욱이 $N\subseteq H\subseteq O$이다.
 >     따라서 open normal subgroups는 identity의 neighborhood basis를 이룬다.
 >
-> - **(3) $\Rightarrow$ (1).**
+> - **3 $\Rightarrow$ 1.**
 >     $\mathcal N(G)$를 $G$의 모든 open normal subgroups의 집합이라 하자. 각 $N\in\mathcal N(G)$는 open subgroup이므로 compactness에 의해 $[G:N]<\infty$이다. 따라서 $G/N$은 finite discrete group이다.
 >     자연스러운 continuous homomorphism
 >     $$
@@ -80,7 +80,6 @@ aliases:
 >     $$
 >     을 생각하자.
 >     Open normal subgroups가 identity의 neighborhood basis를 이루고 $G$가 Hausdorff이므로 $\bigcap_{N\in\mathcal N(G)}N=\{e\}$이다. 따라서 $\varphi$는 injective이다.
->     
 >     
 >     또한 $\varphi(G)$가 inverse limit에서 dense임을 보이자.
 >     임의의 $x=(x_N)_{N\in\mathcal N(G)}$와 $x$의 basic open neighborhood
@@ -120,14 +119,14 @@ aliases:
 > 1. $H$가 open이면 [[#Relation of open and closed|open subgroup은 closed]]이다.
 >     또한 left cosets $\{gH:g\in G\}$는 $G$의 open cover를 이룬다. [$G$가 compact](#equivalent-characterization)이므로 finite subcover가 존재하고, 서로 다른 left cosets는 disjoint이므로 $[G:H]<\infty$이다.
 > 2. $H$가 closed이고 $[G:H]<\infty$이면 [[#Relation of open and closed|finite index closed subgroup은 open]]이다.
-> 3. Equivalent Characterization의 (3)에 의해 open normal subgroups는 identity의 neighborhood basis를 이룬다. 마지막 inverse limit 표현도 해당 정리의 증명에서 얻어진다. $\square$
+> 3. [[#equivalent-characterization|Equivalent Characterization]]의 (3)에 의해 open normal subgroups는 identity의 neighborhood basis를 이룬다. 마지막 inverse limit 표현도 해당 정리의 증명에서 얻어진다. $\square$
 
 > [!warning] Remark
 > Profinite group에서 subgroup이 finite index를 가진다는 사실만으로 open임을 결론 내릴 수는 없다. 일반적으로 finite index subgroup이 open이기 위한 충분조건으로 closedness가 필요하다.
 
 ### Examples
 
-1. $\mathbb Z_p$
+1. $p$-adic integers $\mathbb Z_p$
     
     Prime $p$에 대하여 $p$-adic integers는 다음 inverse limit으로 주어진다. ^profinite-group-zp
     $$
@@ -147,7 +146,7 @@ aliases:
 3. Galois group of an infinite Galois extension
     
     $L/K$를 Galois extension이라 하고, $\mathcal F$를 $L/K$의 finite Galois subextensions의 집합이라 하자. ^profinite-group-galois
-    [[Algebra/InfiniteGaloisTheory#Krull Topology|Krull topology]]를 부여한 Galois group은 다음과 같이 표현된다.
+    [[Theories/Algebra/InfiniteGalois#Krull Topology|Krull topology]]를 부여한 Galois group은 다음과 같이 표현된다.
     $$
     \operatorname{Gal}(L/K)
     \cong

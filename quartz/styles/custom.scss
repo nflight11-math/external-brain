@@ -12,6 +12,8 @@
   }
 }
 
+/* 문단 간 개행 조절 */
+
 article p {
   margin-bottom: 0.8em;
 }
@@ -25,7 +27,7 @@ article p {
 .callout.is-collapsed > .callout-title {
   display: flex;
   align-items: center;
-  padding-block: 0.3rem;
+  padding-block: 0.5rem;
 }
 
 /* 아이콘의 불필요한 상하 padding 제거 */

@@ -5,14 +5,14 @@ tags:
   - exercise
 ---
 
-# Galois Representaton
+## Galois Representaton
 
-## GPT-generated
+### GPT-generated
 
 - [[Exercise/GalosGPT/galois_representation_exercise_261102|갈로아 표현론 연습문제 1]]
 
-# Modularity
+## Modularity
 
-## GPT-generated
+### GPT-generated
 
 - [[Exercise/ModularityGPT/modularity_exercise_261102|모듈러성 연습문제 1]]

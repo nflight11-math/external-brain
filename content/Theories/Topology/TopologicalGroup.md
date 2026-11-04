@@ -52,37 +52,38 @@ aliases:
 > 3. $G$ is compact and Hausdorff, and the open normal subgroups of $G$ form a neighborhood basis of the identity.
 
 > [!done]- 증명
-> **(1) $\Rightarrow$ (2).**
-> $G=\varprojlim_{i\in I}G_i$라고 하자. 각 $G_i$는 finite discrete group이므로 compact Hausdorff이다. Tychonoff's theorem에 의하여 product $\prod_{i\in I}G_i$도 compact Hausdorff이다.
-> Inverse limit은 product의 closed subgroup이므로 $G$ 역시 compact Hausdorff이다.
-> 또한 서로 다른 두 원소 $x,y\in G$에 대하여, 어떤 $i\in I$에서 $\pi_i(x)\ne\pi_i(y)$이다. 이때 $\pi_i^{-1}(\{\pi_i(x)\})$는 $x$를 포함하고 $y$를 포함하지 않는 clopen set이다. 따라서 $G$는 totally disconnected이다.
+> - **(1) $\Rightarrow$ (2).**
+>     $G=\varprojlim_{i\in I}G_i$라고 하자. 각 $G_i$는 finite discrete group이므로 compact Hausdorff이다. Tychonoff's theorem에 의하여 product $\prod_{i\in I}G_i$도 compact Hausdorff이다.
+>     Inverse limit은 product의 closed subgroup이므로 $G$ 역시 compact Hausdorff이다.
+>     또한 서로 다른 두 원소 $x,y\in G$에 대하여, 어떤 $i\in I$에서 $\pi_i(x)\ne\pi_i(y)$이다. 이때 $\pi_i^{-1}(\{\pi_i(x)\})$는 $x$를 포함하고 $y$를 포함하지 않는 clopen set이다. 따라서 $G$는 totally disconnected이다.
 >
-> **(2) $\Rightarrow$ (3).**
-> Compact Hausdorff totally disconnected space는 clopen sets로 이루어진 basis를 가진다는 사실을 이용한다.
-> Identity $e$의 임의의 neighborhood $O$에 대하여 $e\in U\subseteq O$인 clopen set $U$를 택하자. $U$는 compact이고 multiplication은 continuous이므로, $e$의 symmetric open neighborhood $W$가 존재하여 $WU\subseteq U$이다.
-> $W=W^{-1}$이므로 모든 $w\in W$에 대하여 $wU=U$이다. 따라서
-> $$
-> H:=\{g\in G:gU=U\}
-> $$
-> 는 $W$를 포함하는 subgroup이고, 특히 open subgroup이다. 또한 $e\in U$이므로 $H\subseteq U\subseteq O$이다.
-> $G$는 compact이고 $H$는 open이므로 $[G:H]<\infty$이다. 따라서
-> $$
-> N:=\bigcap_{g\in G}gHg^{-1}
-> $$
-> 은 finitely many distinct conjugates의 intersection이며, open normal subgroup이다. 더욱이 $N\subseteq H\subseteq O$이다.
-> 따라서 open normal subgroups는 identity의 neighborhood basis를 이룬다.
+> - **(2) $\Rightarrow$ (3).**
+>     Compact Hausdorff totally disconnected space는 clopen sets로 이루어진 basis를 가진다는 사실을 이용한다.
+>     Identity $1$의 임의의 neighborhood $O$에 대하여 $1\in U\subseteq O$인 clopen set $U$를 택하자. $U$는 compact이고 multiplication은 continuous이므로, $1$의 symmetric open neighborhood $W$가 존재하여 $WU\subseteq U$이다.
+>     $W=W^{-1}$이므로 모든 $w\in W$에 대하여 $wU=U$이다. 따라서
+>     $$
+>     H:=\{g\in G:gU=U\}
+>     $$
+>     는 $W$를 포함하는 subgroup이고, 특히 open subgroup이다. 또한 $e\in U$이므로 $H\subseteq U\subseteq O$이다.
+>     $G$는 compact이고 $H$는 open이므로 $[G:H]<\infty$이다. 따라서
+>     $$
+>     N:=\bigcap_{g\in G}gHg^{-1}
+>     $$
+>     은 finitely many distinct conjugates의 intersection이며, open normal subgroup이다. 더욱이 $N\subseteq H\subseteq O$이다.
+>     따라서 open normal subgroups는 identity의 neighborhood basis를 이룬다.
 >
-> **(3) $\Rightarrow$ (1).**
-> $\mathcal N(G)$를 $G$의 모든 open normal subgroups의 집합이라 하자. 각 $N\in\mathcal N(G)$는 open subgroup이므로 compactness에 의해 $[G:N]<\infty$이다. 따라서 $G/N$은 finite discrete group이다.
-> 자연스러운 continuous homomorphism
-> $$
-> \varphi:G\longrightarrow\varprojlim_{N\in\mathcal N(G)}G/N
-> $$
-> 을 생각하자.
-> Open normal subgroups가 identity의 neighborhood basis를 이루고 $G$가 Hausdorff이므로 $\bigcap_{N\in\mathcal N(G)}N=\{e\}$이다. 따라서 $\varphi$는 injective이다.
-> 또한 $\varphi(G)$는 inverse limit에서 dense이다. 실제로 finitely many quotient coordinates에 대한 compatible condition은 그들의 kernel들의 intersection에 대응하는 하나의 finite quotient에서 실현할 수 있다.
-> 한편 $G$가 compact이고 inverse limit이 Hausdorff이므로 $\varphi(G)$는 closed이다. 따라서 $\varphi$는 surjective이다.
-> 결론적으로 $\varphi$는 compact space에서 Hausdorff space로의 continuous bijection이므로 homeomorphism이며, $G$는 profinite group이다. $\square$
+> - **(3) $\Rightarrow$ (1).**
+>     $\mathcal N(G)$를 $G$의 모든 open normal subgroups의 집합이라 하자. 각 $N\in\mathcal N(G)$는 open subgroup이므로 compactness에 의해 $[G:N]<\infty$이다. 따라서 $G/N$은 finite discrete group이다.
+>     자연스러운 continuous homomorphism
+>     $$
+>     \varphi:G\longrightarrow\varprojlim_{N\in\mathcal N(G)}G/N
+>     $$
+>     을 생각하자.
+>     Open normal subgroups가 identity의 neighborhood basis를 이루고 $G$가 Hausdorff이므로 $\bigcap_{N\in\mathcal N(G)}N=\{e\}$이다. 따라서 $\varphi$는 injective이다.
+>     
+>     또한 $\varphi(G)$는 inverse limit에서 dense이다. 실제로 finitely many quotient coordinates에 대한 compatible condition은 그들의 kernel들의 intersection에 대응하는 하나의 finite quotient에서 실현할 수 있다.
+>     한편 $G$가 compact이고 inverse limit이 Hausdorff이므로 $\varphi(G)$는 closed이다. 따라서 $\varphi$는 surjective이다.
+>     결론적으로 $\varphi$는 compact space에서 Hausdorff space로의 continuous bijection이므로 homeomorphism이며, $G$는 profinite group이다. $\square$
 
 ### Basic Properties
 
@@ -109,12 +110,14 @@ aliases:
 ### Examples
 
 1. $\mathbb Z_p$
+    
     Prime $p$에 대하여 $p$-adic integers는 다음 inverse limit으로 주어진다. ^profinite-group-zp
     $$
     \mathbb Z_p\cong\varprojlim_{n\ge 1}\mathbb Z/p^n\mathbb Z.
     $$
     각 $\mathbb Z/p^n\mathbb Z$는 finite discrete group이므로, $\mathbb Z_p$는 addition에 대하여 profinite group이다.
 2. $\widehat{\mathbb Z}$
+    
     Integers의 profinite completion은 다음과 같이 주어진다. ^profinite-group-zhat
     $$
     \widehat{\mathbb Z}\cong
@@ -123,6 +126,7 @@ aliases:
     여기서 inverse system은 divisibility relation에 의해 주어지며, $m\mid n$일 때 자연스러운 reduction map $\mathbb Z/n\mathbb Z\to\mathbb Z/m\mathbb Z$를 사용한다.
 
 3. Galois group of an infinite Galois extension
+    
     $L/K$를 Galois extension이라 하고, $\mathcal F$를 $L/K$의 finite Galois subextensions의 집합이라 하자. ^profinite-group-galois
     [[Algebra/InfiniteGaloisTheory#Krull Topology|Krull topology]]를 부여한 Galois group은 다음과 같이 표현된다.
     $$

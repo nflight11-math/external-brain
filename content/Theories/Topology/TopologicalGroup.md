@@ -124,7 +124,7 @@ aliases:
 
 3. Galois group of an infinite Galois extension
     $L/K$를 Galois extension이라 하고, $\mathcal F$를 $L/K$의 finite Galois subextensions의 집합이라 하자. ^profinite-group-galois
-    [[InfiniteGaloisTheory|Krull topology]]를 부여한 Galois group은 다음과 같이 표현된다.
+    [[Algebra/InfiniteGaloisTheory#Krull Topology|Krull topology]]를 부여한 Galois group은 다음과 같이 표현된다.
     $$
     \operatorname{Gal}(L/K)
     \cong

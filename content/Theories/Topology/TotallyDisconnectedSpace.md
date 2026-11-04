@@ -19,12 +19,10 @@ Totally disconnectedness는 discrete topology보다 약한 조건이다. 각 con
 ## Examples
 
 1. Discrete spaces
-
     모든 discrete space $X$는 totally disconnected이다. 서로 다른 두 점 $x,y$를 포함하는 subspace는 $\{x\}$와 $X\setminus\{x\}$으로 분리된다.
 
 2. Rational numbers $\mathbb Q$
-
-Subspace topology를 부여한 $\mathbb Q\subset\mathbb R$는 totally disconnected이지만 discrete하지 않다.
+    Subspace topology를 부여한 $\mathbb Q\subset\mathbb R$는 totally disconnected이지만 discrete하지 않다.
 
     실제로 서로 다른 $a,b\in\mathbb Q$에 대해 $a<b$라 하고, $a<r<b$인 irrational number $r$를 택하자.\
     그러면 $\mathbb Q\cap(-\infty,r)$와 $\mathbb Q\cap(r,\infty)$는 서로소인 clopen subsets이며 $a,b$를 분리한다.
@@ -33,14 +31,12 @@ Subspace topology를 부여한 $\mathbb Q\subset\mathbb R$는 totally disconnect
     한편 모든 $q\in\mathbb Q$의 open neighborhood에는 $q$와 다른 유리수가 존재하므로 $\{q\}$는 open이 아니다.
 
 3. Cantor space $C\cong\{0,1\}^{\mathbb N}$
-
     각 factor에 discrete topology를 부여한 $\{0,1\}^{\mathbb N}$은 totally disconnected이다.
     두 원소가 다르면 적어도 하나의 coordinate가 다르며, 그 coordinate의 값을 지정하는 clopen subset이 두 원소를 분리한다.
 
     이 공간은 compact Hausdorff이므로 [[Topology/StoneSpace|Stone space]]이기도 하다.
 
 4. $p$-adic spaces $\mathbb Z_p,\mathbb Q_p$
-
     $\mathbb Q_p$에서 $a+p^n\mathbb Z_p\quad(a\in\mathbb Q_p$, $n\in\mathbb Z)$ 꼴의 subsets는 clopen basis를 이룬다.
     서로 다른 두 점은 이러한 subset으로 분리되므로 $\mathbb Q_p$와 그 subspace $\mathbb Z_p$는 totally disconnected이다.
 
@@ -48,22 +44,20 @@ Subspace topology를 부여한 $\mathbb Q\subset\mathbb R$는 totally disconnect
 
 ## Basic properties
 
-> [!abstract] Proposition (Subspaces)
+> [!abstract] Proposition (Heredity)
 > Totally disconnected space의 모든 subspace는 totally disconnected이다.
+> 또한 Totally disconnected spaces의 임의의 product는 totally disconnected이다.
 
 > [!done]- Proof
 > $Y\subset X$이고 $C\subset Y$가 connected라고 하자.
 > Inclusion $Y\hookrightarrow X$가 연속이므로 $C$는 $X$에서도 connected이다.
-> 따라서 $C$는 원소를 최대 하나만 갖는다. $\square$
-
-> [!abstract] Proposition (Products)
-> Totally disconnected spaces의 임의의 product는 totally disconnected이다.
-
-> [!done]- Proof
-> $X=\prod_{i\in I}X_i$라 하고 $C\subset X$가 nonempty connected subset이라고 하자.
+> 따라서 $C$는 원소를 최대 하나만 갖는다. 즉, $Y$는 totally disconnected.
+> 
+> $X=\prod_{i\in I}X_i$이 product of totally disconnected spaces $X_i$라 하고 $C\subset X$가 nonempty connected subset이라고 하자.
 > 각 projection $\pi_i:X\to X_i$는 연속이므로 $\pi_i(C)$는 connected이다. 따라서 $\pi_i(C)$는 singleton이다.
 >
-> 그러므로 $C$의 임의의 두 원소는 모든 coordinate가 같으며, $C$ 자체가 singleton이다. $\square$
+> 그러므로 $C$의 임의의 두 원소는 모든 coordinate가 같으며, $C$ 자체가 singleton이다.
+> 즉, $X$는 totally disconnected. $\square$
 
 > [!abstract] Proposition (Continuous maps from connected spaces)
 > $Y$가 nonempty connected space이고 $X$가 totally disconnected이면, 모든 연속함수 $f:Y\to X$는 constant이다.
@@ -81,6 +75,8 @@ Subspace topology를 부여한 $\mathbb Q\subset\mathbb R$는 totally disconnect
 > (a_n)_{n\geq1}\longmapsto\sum_{n=1}^{\infty}\frac{a_n}{2^n}
 > $$
 > 는 연속인 surjection이다. 연속성은 partial sums가 연속이고 그 급수가 uniformly convergent라는 사실에서, surjectivity는 binary expansion에서 따른다.
+
+^continuous-images
 
 ## Totally separated and zero-dimensional spaces
 

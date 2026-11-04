@@ -156,7 +156,7 @@ $\mathcal P\leq\mathcal Q$이면 각 $V\in\mathcal Q$는 유일한 $U\in\mathcal
 
 Open subspace는 compact일 필요가 없으므로 Stone space일 필요가 없다. 예를 들어 $\mathbb Z_p\setminus\{0\}$는 open이지만 compact하지 않다. 만일 compact이면 Hausdorff space $\mathbb Z_p$에서 closed여야 하지만, $p^n\to0$이므로 closed가 아니다.
 
-Continuous images 역시 일반적으로 Stone spaces가 아니다. [[Topology/TotallyDisconnectedSpace#기본 성질|Cantor space에서 interval로 가는 연속인 surjection]]이 그 예이다.
+Continuous images 역시 일반적으로 Stone spaces가 아니다. [[Topology/TotallyDisconnectedSpace^continuous-images|Cantor space에서 interval로 가는 연속인 surjection]]이 그 예이다.
 
 ## References
 

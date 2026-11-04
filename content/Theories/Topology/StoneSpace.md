@@ -13,13 +13,13 @@ aliases:
 
 ## Definition
 
-> [!abstract] Stone space
+> [!abstract] Definition (Stone space)
 > Compact Hausdorff [[Topology/TotallyDisconnectedSpace|totally disconnected space]]를 **Stone space**라고 한다.
 > Stone spaces는 **profinite spaces** 또는 **profinite sets**라고도 한다. Finite discrete spaces의 inverse limits로 특징지을 수 있기 때문이다.
 
 ## Equivalent Characterization
 
-> [!abstract] Stone space의 특징
+> [!abstract] Proposition (Characterization of Stone space)
 > Topological space $X$에 대해 다음 조건들은 동치이다.
 >
 > 1. $X$는 Stone space이다.
@@ -83,50 +83,51 @@ aliases:
 
 ## Finite clopen partitions
 
-> [!abstract] Finite clopen partition
+> [!abstract] Definition (Finite clopen partition)
 > $X$의 **finite clopen partition**은 nonempty clopen subsets의 finite collection $\mathcal P$로서, 그 원소들이 pairwise disjoint이고 union이 $X$인 것을 말한다.
 
-> [!abstract] Open covers의 refinement
+> [!abstract] Definition (Refinement)
+> 집합 $X$의 두 covers $\mathcal U,\mathcal V$에 대해, 모든 $V\in\mathcal V$가 어떤 $U\in\mathcal U$에 포함되면 $\mathcal V$가 $\mathcal U$를 **refine한다**고 하며, $\mathcal V$를 $\mathcal U$의 **refinement**라고 한다.
+>
+> Partitions의 refinement도 같은 방식으로 정의한다.
+
+> [!abstract] Propotision (Refinement of open covers)
 > Stone space $X$의 모든 open cover는 finite clopen partition에 의한 refinement를 갖는다.
 
 > [!done]- 증명
-> $X=\varnothing$인 경우는 자명하다. Clopen basis와 compactness를 사용하면 주어진 cover를 refine하는 finite clopen cover $U_1,\ldots,U_n$을 얻는다.
->
+> Clopen basis와 compactness를 사용하면 주어진 cover를 refine하는 finite clopen cover $U_1,\ldots,U_n$을 얻는다.
 > $V_1=U_1$ 및 $V_k=U_k\setminus\bigcup_{j<k}U_j$로 두자. 각 $V_k$는 clopen이고, 이들은 pairwise disjoint이며 union이 $X$이다. Empty subsets를 제거하면 원하는 partition을 얻는다. $\square$
 
-> [!corollary] Finite discrete spaces로 가는 maps
+> [!corollary] Corollary (Maps to finite discrete spaces)
 > $X$가 Stone space이고 $D$가 finite discrete space일 때, 함수 $f:X\to D$가 연속일 필요충분조건은 모든 fiber $f^{-1}(\{d\})$가 clopen인 것이다.
 
 > [!done]- 증명
-> $f$가 연속이면 $\{d\}$가 clopen이므로 그 inverse image도 clopen이다. 반대로 모든 fiber가 clopen이면 $D$의 임의의 subset의 inverse image가 open이므로 $f$는 연속이다. $\square$
+> $f$가 연속이면 $\{d\}$가 clopen이므로 그 inverse image도 clopen이다. 반대로 모든 fiber $f^{-1}(\{d\})$가 clopen이면 $D$의 임의의 subset의 inverse image가 open이므로 $f$는 연속이다. $\square$
 
 또한 Stone space $X$에서 discrete space $D$로 가는 연속함수의 image는 항상 finite이다. Image가 compact이고, discrete compact space는 finite이기 때문이다. 따라서 이러한 함수는 자신의 nonempty fibers로 이루어진 finite clopen partition을 통해 기술된다.
 
-## Finite discrete spaces의 inverse limit
+## Inverse limit of finite discrete spaces
 
-### Inverse limits는 Stone spaces이다
+### Stone space is inverse limit
 
-> [!abstract] Finite discrete spaces의 inverse limit
-> Directed set $I$ 위의 finite discrete spaces의 inverse system $(X_i,\rho_{ji})$에 대해 $\varprojlim_iX_i$는 Stone space이다. Transition maps의 surjectivity는 가정하지 않는다.
+> [!abstract] Proposition (Inverse limit of finite discrete spaces)
+> Directed set $I$ 위의 finite discrete spaces의 inverse system $(X_i,\rho_{ji})$에 대해 $\varprojlim_iX_i$는 Stone space이다.
 
 > [!done]- 증명
-> Inverse limit은 product $P=\prod_{i\in I}X_i$의 다음 subspace이다.
-> $$
-> X=\left\{(x_i)\in P:\rho_{ji}(x_j)=x_i\text{ whenever }i\leq j\right\}.
-> $$
-> 각 $X_i$가 compact Hausdorff이므로 Tychonoff's theorem에 의해 $P$도 compact Hausdorff이다. 각 compatibility condition은 closed condition이므로 $X$는 $P$의 closed subset이다. 따라서 $X$는 compact Hausdorff이다.
+> 각 $X_i$가 compact Hausdorff이므로 Tychonoff's theorem에 의해 $P$도 compact Hausdorff이다.
+> 각 compatibility condition은 closed condition이므로 $X$는 $P$의 closed subset이다. 따라서 $X$는 compact Hausdorff이다.
 >
 > 각 $X_i$는 totally disconnected이므로 그 product와 subspace $X$도 totally disconnected이다. 따라서 $X$는 Stone space이다. $\square$
 
-### Stone spaces를 inverse limits로 표현하기
+이제 Stone space $X$가 주어졌다고 하자.
+$X$의 모든 finite clopen partitions의 집합을 $\mathfrak P(X)$라 쓰고, $\mathcal P\leq\mathcal Q$를 $\mathcal Q$가 $\mathcal P$를 refine한다는 뜻으로 정의한다.
+두 partitions $\mathcal P,\mathcal Q$에 대해 nonempty intersections $U\cap V$로 이루어진 partition은 둘을 동시에 refine한다.
+따라서 $\mathfrak P(X)$는 directed set이다.
 
-이제 Stone space $X$가 주어졌다고 하자. $X$의 모든 finite clopen partitions의 집합을 $\mathfrak P(X)$라 쓰고, $\mathcal P\leq\mathcal Q$를 $\mathcal Q$가 $\mathcal P$를 refine한다는 뜻으로 정의한다.
+각 $\mathcal P$ 자체를 finite discrete space로 생각하자.
+$\mathcal P\leq\mathcal Q$이면 각 $V\in\mathcal Q$는 유일한 $U\in\mathcal P$에 포함되므로 map $r_{\mathcal Q\mathcal P}:\mathcal Q\to\mathcal P$를 $V\mapsto U$로 정의할 수 있다.
 
-두 partitions $\mathcal P,\mathcal Q$에 대해 nonempty intersections $U\cap V$로 이루어진 partition은 둘을 동시에 refine한다. 따라서 $\mathfrak P(X)$는 directed set이다.
-
-각 $\mathcal P$ 자체를 finite discrete space로 생각하자. $\mathcal P\leq\mathcal Q$이면 각 $V\in\mathcal Q$는 유일한 $U\in\mathcal P$에 포함되므로 map $r_{\mathcal Q\mathcal P}:\mathcal Q\to\mathcal P$를 $V\mapsto U$로 정의할 수 있다.
-
-> [!abstract] Clopen partitions에 의한 표현
+> [!abstract] Proposition (Representation via clopen partitions)
 > Map
 > $$
 > \Phi:X\longrightarrow\varprojlim_{\mathcal P\in\mathfrak P(X)}\mathcal P,
@@ -149,7 +150,7 @@ aliases:
 
 따라서 Stone space와 finite discrete spaces의 inverse limit이라는 두 특징은 동치이다. 위 구성에서 transition maps는 모두 surjective이다.
 
-## 기본적인 보존 성질
+## Basic Heredity
 
 - **Closed subspaces:** Stone space의 closed subspace는 compact Hausdorff이고 totally disconnected이므로 Stone space이다.
 - **Products:** Stone spaces의 임의의 product는 Tychonoff's theorem과 totally disconnectedness의 product에 대한 보존 성질에 의해 Stone space이다.
@@ -159,7 +160,7 @@ Open subspace는 compact일 필요가 없으므로 Stone space일 필요가 없�
 
 Continuous images 역시 일반적으로 Stone spaces가 아니다. [[Topology/TotallyDisconnectedSpace#기본 성질|Cantor space에서 interval로 가는 연속인 surjection]]이 그 예이다.
 
-## 참고문헌
+## References
 
 - [The Stacks Project, Profinite spaces, Section 5.22](https://stacks.math.columbia.edu/tag/08ZW).
 - [The Stacks Project, Lemma 5.12.11: compact Hausdorff spaces의 connected components](https://stacks.math.columbia.edu/tag/08ZN).

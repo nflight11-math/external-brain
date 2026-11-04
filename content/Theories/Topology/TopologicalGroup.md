@@ -81,7 +81,25 @@ aliases:
 >     을 생각하자.
 >     Open normal subgroups가 identity의 neighborhood basis를 이루고 $G$가 Hausdorff이므로 $\bigcap_{N\in\mathcal N(G)}N=\{e\}$이다. 따라서 $\varphi$는 injective이다.
 >     
->     또한 $\varphi(G)$는 inverse limit에서 dense이다. 실제로 finitely many quotient coordinates에 대한 compatible condition은 그들의 kernel들의 intersection에 대응하는 하나의 finite quotient에서 실현할 수 있다.
+>     
+>     또한 $\varphi(G)$가 inverse limit에서 dense임을 보이자.
+>     임의의 $x=(x_N)_{N\in\mathcal N(G)}$와 $x$의 basic open neighborhood
+>     $$
+>     U=\{y\in X:y_{N_i}=x_{N_i},\ 1\le i\le r\}
+>     $$
+>     를 택하자. 여기서 $X:=\varprojlim_{N\in\mathcal N(G)}G/N$이다.
+>     $N:=\bigcap_{i=1}^rN_i$라 두면 $N\in\mathcal N(G)$이고 $N\subseteq N_i$이다. 따라서 inverse limit의 compatibility condition에 의해
+>     $$
+>     \pi_{N,N_i}(x_N)=x_{N_i}
+>     $$
+>     가 모든 $i$에 대하여 성립한다.
+>     $x_N\in G/N$이므로 $x_N=gN$인 $g\in G$를 택할 수 있다. 그러면
+>     $$
+>     gN_i=\pi_{N,N_i}(gN)
+>     =\pi_{N,N_i}(x_N)=x_{N_i}
+>     $$
+>     이므로 $\varphi(g)\in U$이다. 따라서 $\varphi(G)$는 $X$에서 dense이다.
+>     
 >     한편 $G$가 compact이고 inverse limit이 Hausdorff이므로 $\varphi(G)$는 closed이다. 따라서 $\varphi$는 surjective이다.
 >     결론적으로 $\varphi$는 compact space에서 Hausdorff space로의 continuous bijection이므로 homeomorphism이며, $G$는 profinite group이다. $\square$
 

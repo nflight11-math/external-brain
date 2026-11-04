@@ -9,7 +9,7 @@ tags:
 
 ## GPT-generated
 
-- [[galois_representation_exercise_261102|갈로아 표현론 연습문제 1]]
+- [[GalosGPT/galois_representation_exercise_261102|갈로아 표현론 연습문제 1]]
 
 # Modularity
 

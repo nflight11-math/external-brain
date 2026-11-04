@@ -136,8 +136,6 @@ $\mathcal P\leq\mathcal Q$이면 각 $V\in\mathcal Q$는 유일한 $U\in\mathcal
 > 는 homeomorphism이다. 여기서 $U_{\mathcal P}(x)$는 $x$를 포함하는 $\mathcal P$의 유일한 원소이다.
 
 > [!done]- 증명
-> $X=\varnothing$이면 유일한 partition이 empty space이므로 결론은 자명하다. 이제 $X\neq\varnothing$라 하자.
->
 > **연속성.** 각 coordinate map $x\mapsto U_{\mathcal P}(x)$의 fibers는 $\mathcal P$의 원소들이므로 clopen이다. 따라서 각 coordinate map은 연속이고 $\Phi$도 연속이다. Refinement에 대한 compatibility는 정의에서 따른다.
 >
 > **Injectivity.** 서로 다른 $x,y\in X$에 대해 $x\in U$, $y\notin U$인 clopen subset $U$를 택한다. Partition $\{U,X\setminus U\}$에 해당하는 coordinate에서 $\Phi(x)$와 $\Phi(y)$가 다르다.

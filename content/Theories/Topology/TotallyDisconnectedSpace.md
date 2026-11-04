@@ -14,35 +14,37 @@ aliases:
 >
 > 동치로, $X$의 모든 connected subset은 원소를 최대 하나만 갖는다.
 
-여기서는 empty space도 totally disconnected인 것으로 정한다. 이 정의에는 Hausdorff 조건이 포함되지 않는다.
-
 Totally disconnectedness는 discrete topology보다 약한 조건이다. 각 connected component가 singleton이라고 해서 그 singleton이 open일 필요는 없다.
 
 ## Examples
 
-### Discrete spaces
+1. Discrete spaces
 
-모든 discrete space는 totally disconnected이다. 서로 다른 두 점을 포함하는 subspace는 singleton과 그 여집합으로 분리된다.
+    모든 discrete space $X$는 totally disconnected이다. 서로 다른 두 점 $x,y$를 포함하는 subspace는 $\{x\}$와 $X\setminus\{x\}$으로 분리된다.
 
-### Rational numbers
+2. Rational numbers $\mathbb Q$
 
 Subspace topology를 부여한 $\mathbb Q\subset\mathbb R$는 totally disconnected이지만 discrete하지 않다.
 
-실제로 서로 다른 $a,b\in\mathbb Q$에 대해 $a<b$라 하고, $a<r<b$인 irrational number $r$를 택하자. 그러면 $\mathbb Q\cap(-\infty,r)$와 $\mathbb Q\cap(r,\infty)$는 서로소인 clopen subsets이며 $a,b$를 분리한다. 따라서 두 점 이상을 포함하는 $\mathbb Q$의 subset은 connected일 수 없다.
+    실제로 서로 다른 $a,b\in\mathbb Q$에 대해 $a<b$라 하고, $a<r<b$인 irrational number $r$를 택하자.\
+    그러면 $\mathbb Q\cap(-\infty,r)$와 $\mathbb Q\cap(r,\infty)$는 서로소인 clopen subsets이며 $a,b$를 분리한다.
+    따라서 두 점 이상을 포함하는 $\mathbb Q$의 subset은 connected일 수 없다.
 
-한편 모든 $q\in\mathbb Q$의 open neighborhood에는 $q$와 다른 유리수가 존재하므로 $\{q\}$는 open이 아니다.
+    한편 모든 $q\in\mathbb Q$의 open neighborhood에는 $q$와 다른 유리수가 존재하므로 $\{q\}$는 open이 아니다.
 
-### Cantor space
+3. Cantor space $C\cong\{0,1\}^{\mathbb N}$
 
-각 factor에 discrete topology를 부여한 $\{0,1\}^{\mathbb N}$은 totally disconnected이다. 두 원소가 다르면 적어도 하나의 coordinate가 다르며, 그 coordinate의 값을 지정하는 clopen subset이 두 원소를 분리한다.
+    각 factor에 discrete topology를 부여한 $\{0,1\}^{\mathbb N}$은 totally disconnected이다.
+    두 원소가 다르면 적어도 하나의 coordinate가 다르며, 그 coordinate의 값을 지정하는 clopen subset이 두 원소를 분리한다.
 
-이 공간은 compact Hausdorff이므로 [[Topology/StoneSpace|Stone space]]이기도 하다.
+    이 공간은 compact Hausdorff이므로 [[Topology/StoneSpace|Stone space]]이기도 하다.
 
-### $p$-adic spaces
+4. $p$-adic spaces $\mathbb Z_p,\mathbb Q_p$
 
-$\mathbb Q_p$에서 $a+p^n\mathbb Z_p$ 꼴의 subsets는 clopen basis를 이룬다. 여기서 $a\in\mathbb Q_p$, $n\in\mathbb Z$이다. 서로 다른 두 점은 이러한 subset으로 분리되므로 $\mathbb Q_p$와 그 subspace $\mathbb Z_p$는 totally disconnected이다.
+    $\mathbb Q_p$에서 $a+p^n\mathbb Z_p\quad(a\in\mathbb Q_p$, $n\in\mathbb Z)$ 꼴의 subsets는 clopen basis를 이룬다.
+    서로 다른 두 점은 이러한 subset으로 분리되므로 $\mathbb Q_p$와 그 subspace $\mathbb Z_p$는 totally disconnected이다.
 
-$\mathbb Z_p$는 compact이므로 Stone space이지만 $\mathbb Q_p$는 compact이 아니므로 Stone space이 아니다.
+    $\mathbb Z_p$는 compact이므로 Stone space이지만 $\mathbb Q_p$는 compact이 아니므로 Stone space이 아니다.
 
 ## Basic properties
 
@@ -50,15 +52,18 @@ $\mathbb Z_p$는 compact이므로 Stone space이지만 $\mathbb Q_p$는 compact�
 > Totally disconnected space의 모든 subspace는 totally disconnected이다.
 
 > [!done]- Proof
-> $Y\subseteq X$이고 $C\subseteq Y$가 connected라고 하자. Inclusion $Y\hookrightarrow X$가 연속이므로 $C$는 $X$에서도 connected이다. 따라서 $C$는 원소를 최대 하나만 갖는다. $\square$
+> $Y\subset X$이고 $C\subset Y$가 connected라고 하자.
+> Inclusion $Y\hookrightarrow X$가 연속이므로 $C$는 $X$에서도 connected이다.
+> 따라서 $C$는 원소를 최대 하나만 갖는다. $\square$
 
 > [!abstract] Proposition (Products)
 > Totally disconnected spaces의 임의의 product는 totally disconnected이다.
 
 > [!done]- Proof
-> $X=\prod_{i\in I}X_i$라 하고 $C\subseteq X$가 nonempty connected subset이라고 하자. 각 projection $\pi_i:X\to X_i$는 연속이므로 $\pi_i(C)$는 connected이다. 따라서 $\pi_i(C)$는 singleton이다.
+> $X=\prod_{i\in I}X_i$라 하고 $C\subset X$가 nonempty connected subset이라고 하자.
+> 각 projection $\pi_i:X\to X_i$는 연속이므로 $\pi_i(C)$는 connected이다. 따라서 $\pi_i(C)$는 singleton이다.
 >
-> 그러므로 $C$의 임의의 두 원소는 모든 coordinate가 같으며, $C$ 자체가 singleton이다. Empty product는 one-point space이므로 역시 totally disconnected이다. $\square$
+> 그러므로 $C$의 임의의 두 원소는 모든 coordinate가 같으며, $C$ 자체가 singleton이다. $\square$
 
 > [!abstract] Proposition (Continuous maps from connected spaces)
 > $Y$가 nonempty connected space이고 $X$가 totally disconnected이면, 모든 연속함수 $f:Y\to X$는 constant이다.
@@ -80,14 +85,16 @@ $\mathbb Z_p$는 compact이므로 Stone space이지만 $\mathbb Q_p$는 compact�
 ## Totally separated and zero-dimensional spaces
 
 > [!abstract] Definition (Totally separated space)
-> 서로 다른 임의의 $x,y\in X$에 대해 $x\in U$, $y\notin U$인 clopen subset $U\subseteq X$가 존재하면 $X$를 **totally separated**라고 한다.
+> 서로 다른 임의의 $x,y\in X$에 대해 $x\in U$, $y\notin U$인 clopen subset $U\subset X$가 존재하면 $X$를 **totally separated**라고 한다.
 
 > [!abstract] Definition (Zero-dimensional space)
-> 이 문서에서는 clopen subsets로 이루어진 basis를 갖는 공간을 **zero-dimensional**이라고 한다. 이 용어 자체에 separation axiom을 포함하지 않는다.
+> Clopen subsets로 이루어진 basis를 갖는 공간을 **zero-dimensional**이라고 한다.
 
-Totally separated space는 Hausdorff이며 totally disconnected이다. 실제로 $U$와 $X\setminus U$가 서로 다른 두 점의 disjoint open neighborhoods를 주며, 두 점을 함께 포함하는 subset의 separation도 준다.
+Totally separated space는 Hausdorff이며 totally disconnected이다.
+실제로 $U$와 $X\setminus U$가 서로 다른 두 점의 disjoint open neighborhoods를 주며, 두 점을 함께 포함하는 subset의 separation도 준다.
 
-또한 zero-dimensional $T_0$ space는 totally separated이다. $T_0$ 조건으로 두 점 중 하나만 포함하는 open set을 택한 뒤, 그 안에서 clopen basic neighborhood를 택하면 된다. 필요한 경우 그 여집합을 취한다.
+또한 zero-dimensional $T_0$ space는 totally separated이다.
+$T_0$ 조건으로 두 점 중 하나만 포함하는 open set을 택한 뒤, 그 안에서 clopen basic neighborhood를 택하면 된다. 필요한 경우 그 여집합을 취한다.
 
 따라서 다음 implication이 성립한다.
 
@@ -108,10 +115,10 @@ $x\in X$에 대해 $C(x)$를 $x$의 connected component라 하자.
 > [!abstract] Definition (Quasi-component)
 > $x\in X$의 **quasi-component**는 $x$를 포함하는 모든 clopen subsets의 intersection이다. 이를 $Q(x)$로 나타낸다.
 > $$
-> Q(x):=\bigcap_{\substack{x\in U\subseteq X\\U\text{ clopen}}}U.
+> Q(x):=\bigcap_{\substack{x\in U\subset X\\U\text{ clopen}}}U.
 > $$
 
-항상 $C(x)\subseteq Q(x)$이다. 실제로 $x$를 포함하는 clopen subset $U$가 $C(x)$ 전체를 포함하지 않으면 $C(x)\cap U$와 $C(x)\setminus U$가 $C(x)$를 분리한다.
+항상 $C(x)\subset Q(x)$이다. 실제로 $x$를 포함하는 clopen subset $U$가 $C(x)$ 전체를 포함하지 않으면 $C(x)\cap U$와 $C(x)\setminus U$가 $C(x)$를 분리한다.
 
 > [!abstract] Theorem (Connected components and quasi-components)
 > $X$가 compact Hausdorff이면 모든 $x\in X$에 대해 $C(x)=Q(x)$이다.
@@ -119,13 +126,13 @@ $x\in X$에 대해 $C(x)$를 $x$의 connected component라 하자.
 > [!done]- Proof
 > $Q(x)$는 closed subset이므로 compact이다. $Q(x)$가 disconnected라고 가정하고, nonempty disjoint subsets $A,B$로 이루어진 separation $Q(x)=A\sqcup B$를 택하자. 이름을 바꾸어 $x\in A$라 할 수 있다.
 >
-> $A,B$는 $Q(x)$에서 closed이고 $Q(x)$도 $X$에서 closed이므로 $A,B$는 $X$에서 closed이다. Compact Hausdorff space는 normal이므로 $A\subseteq V$, $B\subseteq W$인 disjoint open subsets $V,W\subseteq X$가 존재한다.
+> $A,B$는 $Q(x)$에서 closed이고 $Q(x)$도 $X$에서 closed이므로 $A,B$는 $X$에서 closed이다. Compact Hausdorff space는 normal이므로 $A\subset V$, $B\subset W$인 disjoint open subsets $V,W\subset X$가 존재한다.
 >
-> $K:=X\setminus(V\cup W)$라 하자. 각 $z\in K$는 $Q(x)$에 속하지 않으므로 $x\in U_z$, $z\notin U_z$인 clopen subset $U_z$가 존재한다. $K$는 compact space $X$의 closed subset이므로 compact이다. 따라서 finitely many $X\setminus U_z$가 $K$를 덮는다. 대응하는 $U_z$들의 intersection을 $U$라 하면 $x\in U\subseteq V\cup W$이고 $U$는 clopen이다. $K=\varnothing$이면 $U=X$로 둔다.
+> $K:=X\setminus(V\cup W)$라 하자. 각 $z\in K$는 $Q(x)$에 속하지 않으므로 $x\in U_z$, $z\notin U_z$인 clopen subset $U_z$가 존재한다. $K$는 compact space $X$의 closed subset이므로 compact이다. 따라서 finitely many $X\setminus U_z$가 $K$를 덮는다. 대응하는 $U_z$들의 intersection을 $U$라 하면 $x\in U\subset V\cup W$이고 $U$는 clopen이다. $K=\varnothing$이면 $U=X$로 둔다.
 >
-> 이제 $U\cap V$는 open이다. 그 여집합은 $(X\setminus U)\cup(U\cap W)$로 주어지며 open이므로 $U\cap V$는 clopen이다. 또한 $x\in U\cap V$이다. 따라서 $Q(x)$의 정의에 의해 $Q(x)\subseteq U\cap V$이다. 이는 $\varnothing\neq B\subseteq Q(x)\cap W$와 모순이다.
+> 이제 $U\cap V$는 open이다. 그 여집합은 $(X\setminus U)\cup(U\cap W)$로 주어지며 open이므로 $U\cap V$는 clopen이다. 또한 $x\in U\cap V$이다. 따라서 $Q(x)$의 정의에 의해 $Q(x)\subset U\cap V$이다. 이는 $\varnothing\neq B\subset Q(x)\cap W$와 모순이다.
 >
-> 그러므로 $Q(x)$는 connected이다. $x\in Q(x)$이므로 $Q(x)\subseteq C(x)$이고, 반대 포함 관계와 합치면 결론을 얻는다. $\square$
+> 그러므로 $Q(x)$는 connected이다. $x\in Q(x)$이므로 $Q(x)\subset C(x)$이고, 반대 포함 관계와 합치면 결론을 얻는다. $\square$
 
 특히 compact Hausdorff totally disconnected space에서는 $Q(x)=\{x\}$이다. 따라서 서로 다른 두 점을 clopen subset으로 분리할 수 있다.
 

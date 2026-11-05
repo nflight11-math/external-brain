@@ -167,7 +167,8 @@ $\mathfrak P/\mathfrak p$가 unramified이면 $I_{\mathfrak P}=\{1\}$이므로 �
 
 ### Absolute Galois Groups
 
-> [!corollary] $q_v=\#k_v$라 하자. $G_{k_v}$의 arithmetic Frobenius는 $x\mapsto x^{q_v}$로 정의되며, $G_{k_v}$의 [[Theories/Topology/TopologicalGroup#Topological generation|topological generator]]이다.
+> [!corollary] Corollary
+> $q_v=\#k_v$라 하자. $G_{k_v}$의 arithmetic Frobenius는 $x\mapsto x^{q_v}$로 정의되며, $G_{k_v}$의 [[Theories/Topology/TopologicalGroup#Topological generation|topological generator]]이다.
 
 > [!done]- 증명
 > $k_v=\mathbb F_{q_v}$라 쓰고, algebraic closure $\overline{k_v}$를 고정하자. 각 $n\ge1$에 대하여 $\overline{k_v}$ 안의 degree $n$ extension은 $\mathbb F_{q_v^n}$으로 유일하며,

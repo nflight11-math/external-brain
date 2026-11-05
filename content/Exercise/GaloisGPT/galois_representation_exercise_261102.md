@@ -167,6 +167,17 @@ $q=p^k$는 prime power이며, $\sigma\in G_{\mathbb F_q}$를 $\sigma(x)=x^q$로 
 >     
 >     $(\chi_{\ell,n})_n$이 compatible하므로, $\chi_\ell:\sigma\mapsto\varprojlim_n\chi_{\ell,n}(\sigma)$는 잘 정의된 map이다.
 >     또한 각 $\chi_{\ell,n}$이 모두 continuous homomorphism이므로 $\chi_\ell$ 역시 continuous homomorphism.
+> 
+> 2.
+>     다른 compatible system of $\ell^n$-th root of unities를 $(\xi_{\ell^n})_n$이라고 하자.
+>     그러면 각 $n$에 대하여, $\xi_{\ell^n}=\zeta_{\ell_n}^{u_n}$인 $u_n\in(\mathbb Z/\ell^n)^\times$가 존재한다.
+>     이때 $(\xi_{\ell,n})_n$에 의해 생성된 continuous homomorphism을 $\chi'_{\ell,n}:G_{\mathbb Q}\to(\mathbb Z/\ell^n)^\times$와 $\chi'_\ell:G_{\mathbb Q}\to\mathbb Z_\ell^\times$라고 하자.
+>     그러면 $\xi_{\ell^n}^{\chi'_{\ell,n}(\sigma)}=\sigma(\xi_{\ell^n})=(\sigma(\zeta_{\ell^n}))^{u_n}=(\zeta_{\ell^n}^{u_n})^{\chi_{\ell,n}(\sigma)}$이 성립하므로, $\chi'_{\ell,n}=\chi_{\ell,n}$이다.
+>     Inverse limit을 취하면 $\chi_\ell'=\chi_\ell$임 역시 알 수 있다. $\square$
+>     
+>     Root of unity의 선택에 따라서 $\chi_\ell$이 바뀌지 않으므로, $\zeta_{\ell^n}$을 $\exp(2\pi i/\ell^n)$으로 두어도 문제가 없다.
+>     이때 $c(\zeta_{\ell^n})=\zeta_{\ell^n}^{-1}$이 임의의 $n$에 대하여 성립하므로, $\chi_{\ell,n}(c)=-1\in(\mathbb Z/\ell^n)^\times$가 된다.
+>     $\chi_\ell(c)$는 $(-1)_n$의 inverse limit인 $-1\in\mathbb Z_\ell^\times$가 된다.
 
 ### 참고 자료
 

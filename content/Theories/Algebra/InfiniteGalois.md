@@ -30,7 +30,7 @@ G\cong\varprojlim_{F\in\mathcal F}\operatorname{Gal}(F/K)
 $$
 이 존재한다. 각 $\operatorname{Gal}(F/K)$에 discrete topology를 부여하면, 이 inverse limit이 product $\prod_{F\in\mathcal F}\operatorname{Gal}(F/K)$로부터 물려받는 subspace topology는 위에서 정의한 Krull topology와 일치한다. ^krull-topology-inverse-limit
 
-각 $\operatorname{Gal}(F/K)$는 finite discrete group이므로 compact Hausdorff이다. 위 inverse limit은 product의 closed subset이므로 $G$는 compact Hausdorff topological group이며, 특히 profinite group이다.
+각 $\operatorname{Gal}(F/K)$는 finite discrete group이므로 compact Hausdorff이다. 위 inverse limit은 product의 closed subset이므로 $G$는 compact Hausdorff topological group이며, 특히 [[Theories/Topology/TopologicalGroup/#Profinite Groups|profinite group]]이다.
 
 ## Infinite Galois Correspondence
 

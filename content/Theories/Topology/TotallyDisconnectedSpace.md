@@ -48,7 +48,7 @@ Totally disconnectedness는 discrete topology보다 약한 조건이다. 각 con
 > Totally disconnected space의 모든 subspace는 totally disconnected이다.
 > 또한 Totally disconnected spaces의 임의의 product는 totally disconnected이다.
 
-> [!done]- Proof
+> [!done]- 증명
 > $Y\subset X$이고 $C\subset Y$가 connected라고 하자.
 > Inclusion $Y\hookrightarrow X$가 연속이므로 $C$는 $X$에서도 connected이다.
 > 따라서 $C$는 원소를 최대 하나만 갖는다. 즉, $Y$는 totally disconnected.
@@ -62,7 +62,7 @@ Totally disconnectedness는 discrete topology보다 약한 조건이다. 각 con
 > [!abstract] Proposition (Continuous maps from connected spaces)
 > $Y$가 nonempty connected space이고 $X$가 totally disconnected이면, 모든 연속함수 $f:Y\to X$는 constant이다.
 
-> [!done]- Proof
+> [!done]- 증명
 > $f(Y)$는 nonempty connected subset이므로 singleton이다. $\square$
 
 특히 totally disconnected space의 모든 path는 constant이다.
@@ -119,7 +119,7 @@ $x\in X$에 대해 $C(x)$를 $x$의 connected component라 하자.
 > [!abstract] Theorem (Connected components and quasi-components)
 > $X$가 compact Hausdorff이면 모든 $x\in X$에 대해 $C(x)=Q(x)$이다.
 
-> [!done]- Proof
+> [!done]- 증명
 > $Q(x)$는 closed subset이므로 compact이다. $Q(x)$가 disconnected라고 가정하고, nonempty disjoint subsets $A,B$로 이루어진 separation $Q(x)=A\sqcup B$를 택하자. 이름을 바꾸어 $x\in A$라 할 수 있다.
 >
 > $A,B$는 $Q(x)$에서 closed이고 $Q(x)$도 $X$에서 closed이므로 $A,B$는 $X$에서 closed이다. Compact Hausdorff space는 normal이므로 $A\subset V$, $B\subset W$인 disjoint open subsets $V,W\subset X$가 존재한다.

@@ -183,7 +183,7 @@ aliases:
 > [!abstract] Proposition (Topological generators of $\mathbb Z_p$)
 > Additive group $\mathbb Z_p$의 원소 $a$가 topological generator일 필요충분조건은 $a\in\mathbb Z_p^\times$, 즉 $a$가 unit인 것이다.
 
-> [!done]- Proof
+> [!done]- 증명
 > $a\in\mathbb Z_p^\times$이면 multiplication map $x\mapsto ax$는 $\mathbb Z_p$의 homeomorphism이다.
 > 따라서 dense subset $\mathbb Z$의 image $a\mathbb Z$도 dense하다. $\langle a\rangle=a\mathbb Z$이므로 $a$는 topological generator이다.
 >

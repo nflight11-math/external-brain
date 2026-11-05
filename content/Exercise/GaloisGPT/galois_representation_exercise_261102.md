@@ -115,7 +115,7 @@ $q=p^k$는 prime power이며, $\sigma\in G_{\mathbb F_q}$를 $\sigma(x)=x^q$로 
 >     $\mathbb Z$에 discrete topology를 부여하자.
 >     $\ell$-adic valuation $v_\ell:\mathbb Q_\ell^\times\to\mathbb Z$는 continuous homomorphism이므로,
 >     $\chi_a:G_{\mathbb F_q}\to\mathbb Q_\ell^\times$가 continuous homomorphism이면 $v_\ell\circ\chi_a:G_{\mathbb F_q}\to\mathbb Z$ 역시 그러하다.
->     Profinite group $G_{\mathbb F_q}$는 compact space이니, 이의 continuous image $(v_\ell\circ\chi_a)(G_{\mathbb F_q})$는 compact subgroup of $\mathbb Z$이다.
+>     [Profinite group $G_{\mathbb F_q}$는 compact space](https://external-brain.kr/theories/topology/topologicalgroup#equivalent-characterization)이니, 이의 continuous image $(v_\ell\circ\chi_a)(G_{\mathbb F_q})$는 compact subgroup of $\mathbb Z$이다.
 >     그러므로 이는 finite이므로, 0만이 가능하다.
 >     즉 $\chi_a:G_{\mathbb F_q}\to\mathbb Q_\ell^\times$가 continuous homomorphism이면 $v_\ell(a)=0$이다.
 >     
@@ -128,6 +128,19 @@ $q=p^k$는 prime power이며, $\sigma\in G_{\mathbb F_q}$를 $\sigma(x)=x^q$로 
 >     그러니 $\chi_a:=\varprojlim_n\chi_n$으로 정의하면 이는 continuous homomorhipsm이고 $\chi_a(\sigma)=\varprojlim_n\chi_n(\sigma)=\varprojlim_n a_n=a$이다.
 >     
 >     그러니 continuous homomorphism $\chi_a:G_{\mathbb F_q}\to\mathbb Q_\ell^\times$이 존재함과 $v_\ell(a)=0$임은 동치이다.
+>
+> 4.
+>     만일 $X\subset G_{\mathbb F_q}$이 closed이면 이는 compact이다.
+>     $\chi_a(X)$는 compact set의 continuous image이므로 compact이고, $\mathbb Q_\ell^\times$가 Hausdorff이니 closed이다.
+>     그러므로 continuous homomorhpism $\chi_a:G_{\mathbb F_p}\to \mathbb Q_\ell^\times$는 closed map이고, 따라서 $\operatorname{im}\chi_a=\chi_a\overline{\langle\sigma\rangle}=\overline{\langle\chi_a(\sigma)\rangle}=\overline{\langle a\rangle}$이다.
+>     만일 $\operatorname{im}\chi_a$가 finite set이면 $\langle a\rangle$도 finite set이 되어 $a\in\mu
+>     (\mathbb Q_\ell^\times)$.[^1]
+>     역으로 $a\in\mu(\mathbb Q_\ell^\times)$이면 $\langle a\rangle$은 finite subset of Hausdorff space $\mathbb Q_\ell^\times$이므로 compact이며, 따라서 $\operatorname{im}\chi_a=\overline{\langle a\rangle}=\langle a\rangle$은 finite set이다.
+>     
+>     즉, $\operatorname{im}\chi_a$가 finite set임과 $a\in\mu(\mathbb Q_\ell^\times)$임은 동치.
+>     
+>     Codomain이 finite group $H$일 경우, 항상 $H=\mu(H)$이기 때문에 모든 $h\in H$에 대하여 $\rho(\sigma)=h$인 continuous homomorphism $\rho:G_{\mathbb F_q}\to H$이 존재하나,
+>     codomain이 $\mathbb Q_\ell^\times$인 경우 $\mu(\mathbb Q_\ell^\times)\ne\mathbb Q_\ell^\times$이므로 $\rho(\sigma)=a$인 continuous homomorphism $\rho:G_{\mathbb F_q}\to\mathbb Q_\ell^\times$는 존재하지 않을 수 있다.
 
 ### 문제 3. Cyclotomic character의 구성과 Frobenius 값
 
@@ -145,3 +158,5 @@ $q=p^k$는 prime power이며, $\sigma\in G_{\mathbb F_q}$를 $\sigma(x)=x^q$로 
 
 - J. S. Milne, [Fields and Galois Theory](https://www.jmilne.org/math/CourseNotes/ft.html): 유한체와 무한 Galois 이론.
 - Gabor Wiese, [Galois Representations](https://math.uni.lu/~wiese/notes/GalRep): 연속 Galois 표현의 기초 및 §1.3의 cyclotomic character.
+
+[^1]: Group $G$에 대하여, $\mu(G):=\{x\in G: \exists n\ge0\text{ such that }x^n=1\}$이다.

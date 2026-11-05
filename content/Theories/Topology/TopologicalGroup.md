@@ -43,7 +43,7 @@ aliases:
 > $$
 > 가 topological group으로서 성립한다. ^profinite-group-def
 
-### Equivalent Characterization
+### Equivalent Characterization of Profinite Group
 
 > [!abstract] Theorem
 > Topological group $G$에 대하여 다음은 동치이다. ^profinite-group-characterization

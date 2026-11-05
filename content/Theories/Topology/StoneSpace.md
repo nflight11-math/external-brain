@@ -17,7 +17,7 @@ aliases:
 > Compact Hausdorff [[Topology/TotallyDisconnectedSpace|totally disconnected space]]를 **Stone space**라고 한다.
 > Stone spaces는 **profinite spaces** 또는 **profinite sets**라고도 한다. Finite discrete spaces의 inverse limits로 특징지을 수 있기 때문이다.
 
-## Equivalent Characterization
+## Equivalent Characterization of Stone Space
 
 > [!abstract] Proposition (Characterization of Stone space)
 > Topological space $X$에 대해 다음 조건들은 동치이다.

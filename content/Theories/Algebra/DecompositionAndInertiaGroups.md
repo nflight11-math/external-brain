@@ -157,21 +157,43 @@ $K=\mathbb Q$이고 $v$가 prime number $p$에 대응할 때에는 보통 $D_p$,
 
 ### Finite Extensions
 
-$q=\#k_{\mathfrak p}$라 하자. $k_{\mathfrak P}/k_{\mathfrak p}$의 Galois group은 $x\mapsto x^q$로 생성된다.
-이에 대응하는 $D_{\mathfrak P}/I_{\mathfrak P}$의 원소를 **arithmetic Frobenius**라 한다.
+> [!abstract] Definition (Arithmetic and geometric Frobenius)
+> $q=\#k_{\mathfrak p}$라 하자. $k_{\mathfrak P}/k_{\mathfrak p}$의 Galois group은 $x\mapsto x^q$로 생성된다.
+> 이에 대응하는 $D_{\mathfrak P}/I_{\mathfrak P}$의 원소를 **arithmetic Frobenius**라 한다.
+> **Geometric Frobenius**는 arithmetic Frobenius의 역원이다. 
 
 $\mathfrak P/\mathfrak p$가 unramified이면 $I_{\mathfrak P}=\{1\}$이므로 이 원소는 $D_{\mathfrak P}$의 유일한 원소 $\operatorname{Frob}_{\mathfrak P}$로 lift된다.
 이는 모든 $a\in\mathcal O_L$에 대해 $\operatorname{Frob}_{\mathfrak P}(a)\equiv a^q\pmod{\mathfrak P}$를 만족한다. Prime을 바꾸면 Frobenius 원소는 conjugate된다.
 
 ### Absolute Galois Groups
 
-$q_v=|k_v|$라 하자. $G_{k_v}$의 arithmetic Frobenius는 $x\mapsto x^{q_v}$로 정의되며, $G_{k_v}$의 [[Theories/Topology/TopologicalGroup#Topological generation|topological generator]]이다.
+> [!corollary] $q_v=\#k_v$라 하자. $G_{k_v}$의 arithmetic Frobenius는 $x\mapsto x^{q_v}$로 정의되며, $G_{k_v}$의 [[Theories/Topology/TopologicalGroup#Topological generation|topological generator]]이다.
+
+> [!done]- 증명
+> $k_v=\mathbb F_{q_v}$라 쓰고, algebraic closure $\overline{k_v}$를 고정하자. 각 $n\ge1$에 대하여 $\overline{k_v}$ 안의 degree $n$ extension은 $\mathbb F_{q_v^n}$으로 유일하며,
+> $$
+> \operatorname{Gal}(\mathbb F_{q_v^n}/\mathbb F_{q_v})
+> =\langle x\mapsto x^{q_v}\rangle
+> \cong\mathbb Z/n\mathbb Z.
+> $$
+> 이 isomorphism에서 arithmetic Frobenius의 restriction은 $1\bmod n$에 대응한다. 또한 $m\mid n$일 때 restriction maps는 $\mathbb Z/n\to\mathbb Z/m$의 reduction maps에 대응한다.
+>
+> 따라서 inverse limit을 취하면
+> $$
+> G_{k_v}\cong\varprojlim_n\mathbb Z/n
+> =\widehat{\mathbb Z}
+> $$
+> 이며, arithmetic Frobenius는 $1\in\widehat{\mathbb Z}$에 대응한다.
+>
+> $\mathbb Z$의 image는 모든 finite quotient $\mathbb Z/n$에 surject하므로 $\widehat{\mathbb Z}$에서 dense하다.
+> 따라서 arithmetic Frobenius가 생성하는 cyclic subgroup도 $G_{k_v}$에서 dense하며, 이는 arithmetic Frobenius가 topological generator라는 뜻이다.
+>
+> 관련 연습문제: [[Exercise/GaloisGPT/galois_representation_exercise_261102#문제 2. Finite field의 Galois group과 1-dimensional representation|Galois representation 연습문제 1, 문제 2 (1)]].
+
 위 exact sequence를 통해 이를 $D_v/I_v$의 원소로도 본다.
 
 이 문서에서 $\operatorname{Frob}_v$는 이 quotient의 원소를 나타낸다. $D_v$ 안의 원소가 필요하면 그 lift $\widetilde{\operatorname{Frob}}_v$를 선택한다.
-두 lift는 inertia의 원소만큼 차이가 나므로, 일반적으로 $D_v$ 안에 정준적인 Frobenius 원소가 정해지는 것은 아니다.
-
-**Geometric Frobenius**는 arithmetic Frobenius의 역원이다. 두 convention을 바꾸면 representation에 의한 Frobenius의 상도 역행렬로 바뀐다.
+두 lift는 inertia의 원소만큼 차이가 나므로, 일반적으로 $D_v$ 안에 canonical Frobenius element가 정해지는 것은 아니다.
 
 ## Related Pages
 

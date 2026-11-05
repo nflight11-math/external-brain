@@ -98,15 +98,20 @@ $\rho$가 unramified at $v$이면 $\rho(\operatorname{Frob}_v):=\rho_v^{\mathrm{
 
 $v$ 위의 place 자체를 바꾸면 이 automorphism은 conjugate된다. 따라서 characteristic polynomial $\det(T\operatorname{id}_V-\rho(\operatorname{Frob}_v))$은 이 선택에도 의존하지 않는다. Character의 경우 $E^\times$가 abelian이므로 $\chi(\operatorname{Frob}_v)$라는 값 자체가 선택에 의존하지 않는다.
 
-$G_{k_v}$는 arithmetic Frobenius에 의해 topologically generated된다. 따라서 선택한 $D_v$에 대한 unramified restriction $\rho|_{D_v}$는 $\rho(\operatorname{Frob}_v)$에 의해 결정된다. 이는 두 continuous homomorphisms가 dense subgroup에서 일치하면 전체에서 일치한다는 사실에서 따른다.
+[$G_{k_v}$는 arithmetic Frobenius에 의해 topologically generated된다.](https://external-brain.kr/theories/algebra/decompositionandinertiagroups#absolute-galois-groups-1)
+따라서 선택한 $D_v$에 대한 unramified restriction $\rho|_{D_v}$는 $\rho(\operatorname{Frob}_v)$에 의해 결정된다. 이는 두 continuous homomorphisms가 dense subgroup에서 일치하면 전체에서 일치한다는 사실에서 따른다.
 
 ## Cyclotomic Character
 
 ### Definition
 
-$\ell$-adic **cyclotomic character**는 continuous homomorphism $\chi_\ell:G_{\mathbb Q}\to\mathbb Z_\ell^\times$로서, 모든 $\ell$-power root of unity $\zeta$에 대해 $\sigma(\zeta)=\zeta^{\chi_\ell(\sigma)}$를 만족한다. $\zeta$의 order가 $\ell^n$이면 exponent는 $\chi_\ell(\sigma)\bmod\ell^n$을 사용한다는 뜻이다.
+> [!abstract] Proposition ($\ell$-adic cyclotomic character)
+> $\ell$-adic **cyclotomic character**는 continuous homomorphism $\chi_\ell:G_{\mathbb Q}\to\mathbb Z_\ell^\times$로서,
+> 모든 $\ell$-power root of unity $\zeta$에 대해 $\sigma(\zeta)=\zeta^{\chi_\ell(\sigma)}$를 만족한다.
+> $\zeta$의 order가 $\ell^n$이면 exponent는 $\chi_\ell(\sigma)\bmod\ell^n$을 사용한다는 뜻이다.
 
-각 $n$에서 roots of unity에 대한 작용은 $(\mathbb Z/\ell^n\mathbb Z)^\times$로 가는 continuous homomorphism을 주고, 이 homomorphisms는 reduction maps와 compatible하다. 이들의 inverse limit이 $\chi_\ell$이다.
+각 $n$에서 roots of unity에 대한 action은 reduction과 compatible한 continuous homomorphism $\chi_{\ell,n}:G_{\mathbb Q}\to(\mathbb Z/\ell^n)^\times$을 준다.
+이들의 inverse limit이 $\chi_\ell$이다.
 
 ### Ramification and Frobenius
 

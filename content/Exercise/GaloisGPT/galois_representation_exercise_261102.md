@@ -95,7 +95,7 @@ $q=p^k$는 prime power이며, $\sigma\in G_{\mathbb F_q}$를 $\sigma(x)=x^q$로 
 >     그러므로 $\pi_{F_n}(\tau)\notin\overline{\langle \pi_{F_n}(\sigma)\rangle}$이나, $\overline{\langle \pi_{F_n}(\sigma)\rangle}=\operatorname{Gal}(F_n/\mathbb F_q)$이므로 그럴 수 없다.
 >     
 >     즉 $\sigma$는 $1\in\widehat{\mathbb Z}$에 대응하며, $\langle\sigma\rangle$은 dense in $G_{\mathbb F_q}$이다.
->     다른 말로, $\sigma$는 [[Theories/Topology/TopologicalGroup#Topological Geneartion|topological generator]] of $G_{\mathbb F_q}$이다. $\square$
+>     다른 말로, $\sigma$는 [[Theories/Topology/TopologicalGroup#Topological Generation|topological generator]] of $G_{\mathbb F_q}$이다. $\square$
 
 ### 문제 3. Cyclotomic character의 구성과 Frobenius 값
 

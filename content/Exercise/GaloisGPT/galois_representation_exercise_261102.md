@@ -127,7 +127,7 @@ $q=p^k$는 prime power이며, $\sigma\in G_{\mathbb F_q}$를 $\sigma(x)=x^q$로 
 >     Uniqueness of $\chi_n$으로부터 $(\chi_n)_n$이 compatible함을 알 수 있다.
 >     그러니 $\chi_a:=\varprojlim_n\chi_n$으로 정의하면 이는 continuous homomorhipsm이고 $\chi_a(\sigma)=\varprojlim_n\chi_n(\sigma)=\varprojlim_n a_n=a$이다.
 >     
->     그러니 continuous homomorphism $\chi_a:G_{\mathbb F_q}\to\mathbb Q_\ell^\times$이 존재함과 $v_\ell(a)=0$임은 동치이다.
+>     그러니 continuous homomorphism $\chi_a:G_{\mathbb F_q}\to\mathbb Q_\ell^\times$이 존재함과 $v_\ell(a)=0$임은 동치이다. $\square$
 >
 > 4.
 >     만일 $X\subset G_{\mathbb F_q}$이 closed이면 이는 compact이다.
@@ -137,7 +137,7 @@ $q=p^k$는 prime power이며, $\sigma\in G_{\mathbb F_q}$를 $\sigma(x)=x^q$로 
 >     (\mathbb Q_\ell^\times)$.[^1]
 >     역으로 $a\in\mu(\mathbb Q_\ell^\times)$이면 $\langle a\rangle$은 finite subset of Hausdorff space $\mathbb Q_\ell^\times$이므로 compact이며, 따라서 $\operatorname{im}\chi_a=\overline{\langle a\rangle}=\langle a\rangle$은 finite set이다.
 >     
->     즉, $\operatorname{im}\chi_a$가 finite set임과 $a\in\mu(\mathbb Q_\ell^\times)$임은 동치.
+>     즉, $\operatorname{im}\chi_a$가 finite set임과 $a\in\mu(\mathbb Q_\ell^\times)$임은 동치. $\square$
 >     
 >     Codomain이 finite group $H$일 경우, 항상 $H=\mu(H)$이기 때문에 모든 $h\in H$에 대하여 $\rho(\sigma)=h$인 continuous homomorphism $\rho:G_{\mathbb F_q}\to H$이 존재하나,
 >     codomain이 $\mathbb Q_\ell^\times$인 경우 $\mu(\mathbb Q_\ell^\times)\ne\mathbb Q_\ell^\times$이므로 $\rho(\sigma)=a$인 continuous homomorphism $\rho:G_{\mathbb F_q}\to\mathbb Q_\ell^\times$는 존재하지 않을 수 있다.
@@ -153,6 +153,20 @@ $q=p^k$는 prime power이며, $\sigma\in G_{\mathbb F_q}$를 $\sigma(x)=x^q$로 
 
 > [!tip]- 힌트
 > 각 finite layer의 cyclotomic field에서 먼저 생각하라. $p\ne\ell$에서는 $\ell$-powerth primitive root of unity를 residue field로 환원하는 것이 잘 작동한다는 사실을 이용하라.
+
+> [!done]- 증명
+> 1.
+>     우선 $\zeta_{\ell^n}^{\chi_{\ell,n}(\sigma\tau)}=\sigma\tau(\zeta_{\ell^n})=\sigma(\zeta_{\ell^n}^{\chi_{\ell,n}(\tau)})=\sigma(\zeta_{\ell^n})^{\chi_{\ell,n}(\tau)}=\zeta_{\ell^n}^{\chi_{\ell,n}(\sigma)\chi_{\ell,n}(\tau)}$이므로
+>     $\chi_{\ell,n}(\sigma\tau)=\chi_{\ell,n}(\sigma)\chi_{\ell,n}(\tau)$, 즉 $\chi_{\ell,n}:G_\mathbb Q\to(\mathbb Z/\ell^n)^\times$는 homomorphism이다.
+>     
+>     그리고 $\sigma\in\ker\chi_{\ell,n}$임과 $\zeta_{\ell^n}$이 fixed point of $\sigma$임, $\sigma\in\operatorname{Gal}(G_\mathbb Q/\mathbb Q(\zeta_{\ell^n}))$임은 동치이다.
+>     그러니 $\ker\chi_{\ell,n}=\operatorname{Gal}(G_\mathbb Q/\mathbb Q(\zeta_{\ell^n}))$이고, 이는 open subgroup of $G_\mathbb Q$이므로 $\ker\chi_{\ell,n}$는 연속.
+>     
+>     또한 $\zeta_{\ell^{n+1}}^{\chi_{\ell,n+1}(\sigma)}=\sigma(\zeta_{\ell^{n+1}})$의 양변을 $\ell$제곱하면, $\zeta_{\ell^n}^{\chi_{\ell,n+1}(\sigma)}=\sigma(\zeta_{\ell^n})=\zeta_{\ell^n}^{\chi_{\ell,n}(\sigma)}$이다.
+>     $\chi_{\ell,n+1}(\sigma)\equiv \chi_{\ell,n}(\sigma)\pmod{\ell^n}$이 임의의 $\sigma\in G_\mathbb Q$에 대하여 성립하므로, $r_n\circ\chi_{\ell,n+1}=\chi_{\ell,n}$. $\square$
+>     
+>     $(\chi_{\ell,n})_n$이 compatible하므로, $\chi_\ell:\sigma\mapsto\varprojlim_n\chi_{\ell,n}(\sigma)$는 잘 정의된 map이다.
+>     또한 각 $\chi_{\ell,n}$이 모두 continuous homomorphism이므로 $\chi_\ell$ 역시 continuous homomorphism.
 
 ### 참고 자료
 

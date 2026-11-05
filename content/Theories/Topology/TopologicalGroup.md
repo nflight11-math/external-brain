@@ -153,3 +153,52 @@ aliases:
     \varprojlim_{F\in\mathcal F}\operatorname{Gal}(F/K).
     $$
     각 $\operatorname{Gal}(F/K)$는 finite discrete group이므로 $\operatorname{Gal}(L/K)$는 profinite group이다.
+
+## Topological generation
+
+> [!abstract] Definition (Topological generating set and generator)
+> Topological group $G$의 subset $S\subseteq G$가 $\overline{\langle S\rangle}=G$를 만족하면 $S$를 $G$의 **topological generating set**이라고 한다.
+>
+> 특히, $\{g\}$가 topological generating set인 $g\in G$를 $G$의 **topological generator**라고 한다.
+> 
+> Finite topological generating set을 갖는 topological group을 **topologically finitely generated**라고 한다.
+
+### Characterization by closed subgroups
+
+> [!abstract] Proposition (Closed subgroups)
+> $S\subseteq G$가 $G$를 topologically generate할 필요충분조건은 $S$를 포함하는 closed subgroup이 $G$뿐인 것이다.
+
+> [!done]- Proof
+> $\overline{\langle S\rangle}=G$라 하자.
+> Closed subgroup $H\subseteq G$가 $S$를 포함하면 $\langle S\rangle\subseteq H$이므로 $G=\overline{\langle S\rangle}\subseteq H$이다. 따라서 $H=G$이다.
+>
+> 반대로 $S$를 포함하는 closed subgroup이 $G$뿐이라고 하자.
+> Topological group에서 subgroup의 closure도 subgroup이므로 $\overline{\langle S\rangle}$는 $S$를 포함하는 closed subgroup이다. 따라서 $\overline{\langle S\rangle}=G$이다. $\square$
+
+### Examples
+
+1. Discrete groups
+
+    $G$가 discrete group이면 모든 subset이 closed이므로 $\overline{\langle S\rangle}=\langle S\rangle$이다.
+    따라서 이 경우에는 topological generation과 ordinary group generation이 일치한다.
+
+2. $p$-adic integers $\mathbb Z_p$
+
+    Additive group $\mathbb Z_p$에서 $1$은 topological generator이다.
+    실제로 $\langle1\rangle=\mathbb Z$이고 $\mathbb Z$는 $\mathbb Z_p$에서 dense하다.
+
+    이를 확인하려면 각 $x\in\mathbb Z_p$와 $n\geq1$에 대해 basic open neighborhood $x+p^n\mathbb Z_p$가 정수를 포함함을 보이면 된다.
+    $x$의 residue class modulo $p^n$을 나타내는 integer $m$을 택하면 $m\in x+p^n\mathbb Z_p$이다.
+
+    한편 $\mathbb Z\neq\mathbb Z_p$이므로 $1$은 $\mathbb Z_p$를 ordinary group generation의 의미로 생성하지는 않는다.
+
+> [!abstract] Proposition (Topological generators of $\mathbb Z_p$)
+> Additive group $\mathbb Z_p$의 원소 $a$가 topological generator일 필요충분조건은 $a\in\mathbb Z_p^\times$, 즉 $a$가 unit인 것이다.
+
+> [!done]- Proof
+> $a\in\mathbb Z_p^\times$이면 multiplication map $x\mapsto ax$는 $\mathbb Z_p$의 homeomorphism이다.
+> 따라서 dense subset $\mathbb Z$의 image $a\mathbb Z$도 dense하다. $\langle a\rangle=a\mathbb Z$이므로 $a$는 topological generator이다.
+>
+> 반대로 $a$가 unit이 아니면 $a\in p\mathbb Z_p$이다.
+> 따라서 $\langle a\rangle\subseteq p\mathbb Z_p$이고, $p\mathbb Z_p$는 proper closed subgroup이므로 $\overline{\langle a\rangle}\subseteq p\mathbb Z_p\neq\mathbb Z_p$이다.
+> 따라서 $a$는 topological generator가 아니다. $\square$

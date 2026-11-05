@@ -35,7 +35,8 @@ Finite group $H$와 group homomorphism $\rho:G_K\to H$를 생각하자.
 
 > [!done]- 증명
 > 1.
->     만일 $\rho$가 연속이라면 inverse image of open set $\{1\}\subset H$인 $\ker\rho$는 open subgroup of $G_K$여야 한다. 반대로 만일 $\ker\rho$가 open subgroup이라면, 임의의 (open) subset $U\subset H$에 대하여, $\rho^{-1}U=\bigcup_{\sigma\in\rho^{-1}U}\sigma\ker\rho$는 union of open set이므로 역시 open이므로 $\rho$가 연속이다. $\square$
+>     만일 $\rho$가 연속이라면 inverse image of open set $\{1\}\subset H$인 $\ker\rho$는 open subgroup of $G_K$여야 한다.
+>     반대로 만일 $\ker\rho$가 open subgroup이라면, 임의의 (open) subset $U\subset H$에 대하여, $\rho^{-1}U=\bigcup_{\sigma\in\rho^{-1}U}\sigma\ker\rho$는 union of open set이므로 역시 open이므로 $\rho$가 연속이다. $\square$
 > 
 > 2.
 >     만일 $\rho$가 연속이라면 $\ker\rho$가 open subgroup이므로, 적당한 finite Galois subextension $L/K$가 $G_L\subset \ker\rho$이게 존재한다.
@@ -63,13 +64,37 @@ Finite group $H$와 group homomorphism $\rho:G_K\to H$를 생각하자.
 
 $q=p^k$는 prime power이며, $\sigma\in G_{\mathbb F_q}$를 $\sigma(x)=x^q$로 정의하자.
 
-1. Galois groups of finite extension을 이용하여 $G_{\mathbb F_q}\cong\widehat{\mathbb Z}$ as topological group임을 증명하라. 이 동형에서 $\sigma$가 $1\in\widehat{\mathbb Z}$에 대응하며, $F_q$가 생성하는 cyclic subgroup이 dense함을 보여라.
+1. Galois groups of finite extension을 이용하여 $G_{\mathbb F_q}\cong\widehat{\mathbb Z}$ as topological group임을 증명하라. 이 동형에서 $\sigma$가 $1\in\widehat{\mathbb Z}$에 대응하며, $\sigma$가 생성하는 cyclic subgroup이 dense함을 보여라.
 2. Finite group $H$와 $h\in H$가 주어졌다고 하자. $\rho(\sigma)=h$를 만족하는 continuous homomorphism $\rho:G_{\mathbb F_q}\to H$가 유일하게 존재함을 증명하라. 이 representation의 kernel의 fixed field도 구하라.
 3. $a\in\mathbb Q_\ell^\times$가 주어졌다고 하자. $\chi_a(\sigma_=a$인 continuous homomorphism $\chi_a:G_{\mathbb F_q}\to\mathbb Q_\ell^\times$가 존재할 필요충분조건을 $v_\ell(a)$로 나타내고 증명하라. 존재할 때 유일성도 증명하라. 여기서 $v_\ell(\ell)=1$로 정규화한다.
 4. 3번에서 존재하는 $\chi_a$의 상이 유한할 필요충분조건을 $a$에 관한 조건으로 서술하고 증명하라. Codomain이 finite group $H$인 경우와 $\mathbb Q_\ell^\times$인 경우의 차이를 설명하라.
 
 > [!tip]- 힌트
 > Dense subset에서 일치하는 연속함수의 유일성을 이용하라. 존재성은 유한한 몫들에서 구성하고, 필요조건은 compact한 상에 valuation을 적용하여 조사하라.
+
+> [!done]- 증명
+> 1.
+>     $\mathbb F_q$의 finite extension은 오직 $F_n=\mathbb F_{q^n}:=\{x\in\mathbb F_q^{\operatorname{sep}}:x^{q^n}-x=0\}$ 뿐이고, 이는 splitting field of separable polynomial $x^{q^n}-x=0$이니 Galois이다.
+>     그러므로
+>     $$
+>     \begin{aligned}
+>     \mathcal F &=\{\mathbb F_q\subset F\subset\mathbb F_q^{\operatorname{sep}}:F/\mathbb F_q\text{ is finite Galois}\}\\
+>     &= \{F_n:1\le n\in\mathbb Z\}
+>     \end{aligned}
+>     $$
+>     이며, $F_m\subset F_n$임은 $m\mid n$과 동치이다.
+>     
+>     이때, $\operatorname{Gal}(F_n/\mathbb F_q)\cong\mathbb Z/n$이고 이의 generator는 $\sigma_n:x\mapsto x^q$이다.
+>     또한 $(\sigma_n)_n$은 compatible하다: $m\mid n$이면, 즉 $F_m\subset F_n$이면
+>     transition map $\operatorname{res}_{F_n,F_m}:\operatorname{Gal}(F_n/\mathbb F_q)\to\operatorname{Gal}(F_m/\mathbb F_q)$에 대하여 $\operatorname{res}_{F_n,F_m}(\sigma_n)=\sigma_m$이 성립한다.
+>     $\widehat{\mathbb Z}:=\varprojlim\mathbb Z/n\cong\varprojlim\operatorname{Gal}(\mathbb F_{q^n}/\mathbb F_q)=G_{\mathbb F_q}$이며, $(\sigma_n)_n$은 compatible이므로 $G_{\mathbb F_q}$의 원소이다.
+>     
+>     만일 $G_{\mathbb F_q}\ne\overline{\langle\sigma\rangle}$이라고 하자.
+>     그러면 $G_{\mathbb F_q}\setminus\overline{\langle\sigma\rangle}$는 open set이므로, $\tau\in G_{\mathbb F_q}\setminus\overline{\langle\sigma\rangle}$에 대하여
+>     $\tau\operatorname{Gal}(\mathbb F_q^{\operatorname{sep}}/F_n)\subset G_{\mathbb F_q}\setminus\overline{\langle\sigma\rangle}$인 $F_n$이 존재한다.
+>     그러므로 $\pi_{F_n}(\tau)\notin\overline{\langle \pi_{F_n}(\sigma)\rangle}$이나, $\overline{\langle \pi_{F_n}(\sigma)\rangle}=\operatorname{Gal}(F_n/\mathbb F_q)$이므로 그럴 수 없다.
+>     
+>     즉 $\sigma$는 $1\in\widehat{\mathbb Z}$에 대응하며, $\langle\sigma\rangle$은 dense in $\G_{\mathbb F_q}$이다. 다른 말로, $\sigma$는 topological generator of $\G_{\mathbb F_q}$이다. $\square$
 
 ### 문제 3. Cyclotomic character의 구성과 Frobenius 값
 

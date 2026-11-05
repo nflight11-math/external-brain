@@ -163,18 +163,6 @@ aliases:
 > 
 > Finite topological generating set을 갖는 topological group을 **topologically finitely generated**라고 한다.
 
-### Characterization by closed subgroups
-
-> [!abstract] Proposition (Closed subgroups)
-> $S\subseteq G$가 $G$를 topologically generate할 필요충분조건은 $S$를 포함하는 closed subgroup이 $G$뿐인 것이다.
-
-> [!done]- Proof
-> $\overline{\langle S\rangle}=G$라 하자.
-> Closed subgroup $H\subseteq G$가 $S$를 포함하면 $\langle S\rangle\subseteq H$이므로 $G=\overline{\langle S\rangle}\subseteq H$이다. 따라서 $H=G$이다.
->
-> 반대로 $S$를 포함하는 closed subgroup이 $G$뿐이라고 하자.
-> Topological group에서 subgroup의 closure도 subgroup이므로 $\overline{\langle S\rangle}$는 $S$를 포함하는 closed subgroup이다. 따라서 $\overline{\langle S\rangle}=G$이다. $\square$
-
 ### Examples
 
 1. Discrete groups

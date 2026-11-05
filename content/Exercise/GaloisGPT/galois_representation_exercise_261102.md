@@ -66,7 +66,7 @@ $q=p^k$는 prime power이며, $\sigma\in G_{\mathbb F_q}$를 $\sigma(x)=x^q$로 
 
 1. Galois groups of finite extension을 이용하여 $G_{\mathbb F_q}\cong\widehat{\mathbb Z}$ as topological group임을 증명하라. 이 동형에서 $\sigma$가 $1\in\widehat{\mathbb Z}$에 대응하며, $\sigma$가 생성하는 cyclic subgroup이 dense함을 보여라.
 2. Finite group $H$와 $h\in H$가 주어졌다고 하자. $\rho(\sigma)=h$를 만족하는 continuous homomorphism $\rho:G_{\mathbb F_q}\to H$가 유일하게 존재함을 증명하라. 이 representation의 kernel의 fixed field도 구하라.
-3. $a\in\mathbb Q_\ell^\times$가 주어졌다고 하자. $\chi_a(\sigma_=a$인 continuous homomorphism $\chi_a:G_{\mathbb F_q}\to\mathbb Q_\ell^\times$가 존재할 필요충분조건을 $v_\ell(a)$로 나타내고 증명하라. 존재할 때 유일성도 증명하라. 여기서 $v_\ell(\ell)=1$로 정규화한다.
+3. $a\in\mathbb Q_\ell^\times$가 주어졌다고 하자. $\chi_a(\sigma)=a$인 continuous homomorphism $\chi_a:G_{\mathbb F_q}\to\mathbb Q_\ell^\times$가 존재할 필요충분조건을 $v_\ell(a)$로 나타내고 증명하라. 존재할 때 유일성도 증명하라. 여기서 $v_\ell(\ell)=1$로 정규화한다.
 4. 3번에서 존재하는 $\chi_a$의 상이 유한할 필요충분조건을 $a$에 관한 조건으로 서술하고 증명하라. Codomain이 finite group $H$인 경우와 $\mathbb Q_\ell^\times$인 경우의 차이를 설명하라.
 
 > [!tip]- 힌트
@@ -96,6 +96,10 @@ $q=p^k$는 prime power이며, $\sigma\in G_{\mathbb F_q}$를 $\sigma(x)=x^q$로 
 >     
 >     즉 $\sigma$는 $1\in\widehat{\mathbb Z}$에 대응하며, $\langle\sigma\rangle$은 dense in $G_{\mathbb F_q}$이다.
 >     다른 말로, $\sigma$는 [[Theories/Topology/TopologicalGroup#Topological Generation|topological generator]] of $G_{\mathbb F_q}$이다. $\square$
+>
+> 2.
+>     $G_{\mathbb F_q}=\overline{\langle\sigma\rangle}$이므로, 연속함수 $\rho:G_{\mathbb F_q}\to H$는 $\left.\rho\right|_{\langle\sigma\rangle}$에 의해 결정된다.
+>     또한 이는 $\rho(\sigma)$에 의하여 결정되므로, $\rho(\sigma)=h$인 continuous homomorphism $\rho$는 유일하다. $\square$
 
 ### 문제 3. Cyclotomic character의 구성과 Frobenius 값
 

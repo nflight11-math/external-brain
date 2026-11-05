@@ -100,6 +100,34 @@ $q=p^k$는 prime power이며, $\sigma\in G_{\mathbb F_q}$를 $\sigma(x)=x^q$로 
 > 2.
 >     $G_{\mathbb F_q}=\overline{\langle\sigma\rangle}$이므로, 연속함수 $\rho:G_{\mathbb F_q}\to H$는 $\left.\rho\right|_{\langle\sigma\rangle}$에 의해 결정된다.
 >     또한 이는 $\rho(\sigma)$에 의하여 결정되므로, $\rho(\sigma)=h$인 continuous homomorphism $\rho$는 유일하다. $\square$
+> 
+>     또한 $\ker\rho$에 대한 fixed field를 $L_\rho:=(\mathbb F_q^{\operatorname{sep}})^{\ker\rho}$라고 두면 $\ker\rho\cong\operatorname{Gal}(\mathbb F_q^{\operatorname{sep}}/L_\rho)$이므로,
+>     $$
+>     \operatorname{Gal}(L_\rho/\mathbb F_q)\cong\frac{\operatorname{Gal}(\mathbb F_q^{\operatorname{sep}}/\mathbb F_q)}{\operatorname{Gal}(\mathbb F_q^{\operatorname{sep}}/L_\rho)}\cong\frac{G_{\mathbb F_q}}{\ker\rho}\cong\operatorname{im}\rho.
+>     $$
+>     또한 $H$는 discrete space이므로 모든 subset이 closed이며, $\rho$가 closed map이므로 $\operatorname{im}\rho=\rho\overline{\langle\sigma\rangle}=\overline{\langle h\rangle}=\langle h\rangle$이 성립한다.
+>     그러므로 $\operatorname{ord}(h)=n$일 시, $\#\operatorname{im}\rho=\#\langle h\rangle=n$.
+>     $[L_\rho:\mathbb F_q]=\#\operatorname{Gal}(L_\rho/\mathbb F_q)=n$이며, 이러한 $L_\rho$는 $\mathbb F_{q^n}$으로 유일하다.
+>     
+>     결론적으로, $(\mathbb F_q^{\operatorname{sep}})^{\ker\rho}=\mathbb F_{q^{\operatorname{ord}(h)}}$.
+> 
+> 3.
+>     $\mathbb Z$에 discrete topology를 부여하자.
+>     $\ell$-adic valuation $v_\ell:\mathbb Q_\ell^\times\to\mathbb Z$는 continuous homomorphism이므로,
+>     $\chi_a:G_{\mathbb F_q}\to\mathbb Q_\ell^\times$가 continuous homomorphism이면 $v_\ell\circ\chi_a:G_{\mathbb F_q}\to\mathbb Z$ 역시 그러하다.
+>     Profinite group $G_{\mathbb F_q}$는 compact space이니, 이의 continuous image $(v_\ell\circ\chi_a)(G_{\mathbb F_q})$는 compact subgroup of $\mathbb Z$이다.
+>     그러므로 이는 finite이므로, 0만이 가능하다.
+>     즉 $\chi_a:G_{\mathbb F_q}\to\mathbb Q_\ell^\times$가 continuous homomorphism이면 $v_\ell(a)=0$이다.
+>     
+>     역으로 $v_\ell(a)=0$이라고 가정하자. 그려면 $a\in\mathbb Z_\ell^\times$이다.
+>     Projection $\pi_n:\mathbb Z_\ell^\times\to(\mathbb Z/\ell^n)^\times$에 대해 $a_n=\pi_n(a)$라고 하면,
+>     2.의 결과로부터 $\chi_n(\sigma)=a_n$인 continuous homomorphism $\chi_n:G_{\mathbb F_q}\to(\mathbb Z/\ell^n)^\times$가 유일하게 존재한다.
+>     $m\le n$일 때 reduction $r_{n,m}:(\mathbb Z/\ell^n)^\times\to(\mathbb Z/\ell^m)^\times$이 $N+\ell^n\mathbb Z\mapsto N+\ell^m\mathbb Z$를 정의하자.
+>     그러면 compatibility of $(a_n)_n$으로부터 $(r_{n,m}\circ\chi_n)(\sigma)=\chi_m(\sigma)$가 얻어진다.
+>     Uniqueness of $\chi_n$으로부터 $(\chi_n)_n$이 compatible함을 알 수 있다.
+>     그러니 $\chi_a:=\varprojlim_n\chi_n$으로 정의하면 이는 continuous homomorhipsm이고 $\chi_a(\sigma)=\varprojlim_n\chi_n(\sigma)=\varprojlim_n a_n=a$이다.
+>     
+>     그러니 continuous homomorphism $\chi_a:G_{\mathbb F_q}\to\mathbb Q_\ell^\times$이 존재함과 $v_\ell(a)=0$임은 동치이다.
 
 ### 문제 3. Cyclotomic character의 구성과 Frobenius 값
 

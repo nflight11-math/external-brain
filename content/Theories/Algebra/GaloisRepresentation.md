@@ -14,24 +14,29 @@ aliases:
 
 ## Galois Representations and Characters
 
-$K$를 field라 하고 separable closure $K^{\mathrm{sep}}$를 고정한다. Absolute Galois group $G_K=\operatorname{Gal}(K^{\mathrm{sep}}/K)$에는 [[Theories/Algebra/InfiniteGalois#Krull Topology|Krull topology]]를 부여한다. $\ell$을 prime number, $E/\mathbb Q_\ell$을 finite extension이라 하자.
+$K$를 field라 하고 separable closure $K^{\mathrm{sep}}$를 고정한다.
+Absolute Galois group $G_K=\operatorname{Gal}(K^{\mathrm{sep}}/K)$에는 [[Theories/Algebra/InfiniteGalois#Krull Topology|Krull topology]]를 부여한다.
+$\ell$을 prime number, $E/\mathbb Q_\ell$을 finite extension이라 하자.
 
 > [!abstract] Definition (Galois representation)
-> Finite-dimensional $E$-vector space $V$에 대한 **Galois representation**은 continuous group homomorphism $\rho:G_K\to\operatorname{GL}_E(V)$이다. 여기서 basis를 선택하여 $\operatorname{GL}_E(V)\cong\operatorname{GL}_d(E)$로 볼 때, codomain에는 $E^{d^2}$의 subspace topology를 부여한다. 이 topology는 basis의 선택에 의존하지 않는다.
+> Finite-dimensional $E$-vector space $V$에 대한 **Galois representation**은 continuous group homomorphism $\rho:G_K\to\operatorname{GL}_E(V)$이다.
+> 여기서 basis를 선택하여 $\operatorname{GL}_E(V)\cong\operatorname{GL}_d(E)$로 볼 때, codomain에는 $E^{d^2}$의 subspace topology를 부여한다. 이 topology는 basis의 선택에 의존하지 않는다.
 
 > [!abstract] Definition (Character)
-> 이 문서에서 **character**는 continuous group homomorphism $\chi:G_K\to E^\times$를 뜻한다. 이는 $V=E$ 위에 $\sigma\cdot x=\chi(\sigma)x$로 작용하는 $1$-dimensional Galois representation이다.
+> 이 문서에서 **character**는 continuous group homomorphism $\chi:G_K\to E^\times$를 뜻한다.
+> 이는 $V=E$ 위에 $\sigma\cdot x=\chi(\sigma)x$로 작용하는 $1$-dimensional Galois representation이다.
 
 Finite field $k$에 대해 $\operatorname{GL}_d(k)$에 discrete topology를 부여하여 continuous representations $G_K\to\operatorname{GL}_d(k)$도 생각할 수 있다. 아래의 unramified 조건은 이 경우에도 같은 방식으로 정의된다.
 
 ## Unramified Representations
 
-이 절에서는 $K$를 number field라 하고 $v$를 nonarchimedean place라 한다. $v$ 위의 place를 하나 선택하여 [[Theories/Algebra/DecompositionAndInertiaGroups#Decomposition and Inertia at a Place|decomposition group $D_v$와 inertia group $I_v$]]를 잡는다.
+이 절에서는 $K$를 number field라 하고 $v$를 nonarchimedean place라 한다.
+$v$ 위의 place를 하나 선택하여 [decomposition group $D_v$와 inertia group $I_v$](https://external-brain.kr/theories/algebra/decompositionandinertiagroups#decomposition-and-inertia-at-a-place)를 잡는다.
 
 ### Definition
 
 > [!abstract] Definition (Unramified at a place)
-> Galois representation $\rho:G_K\to\operatorname{GL}_E(V)$가 **unramified at $v$**라는 것은 $I_v$가 $V$에 자명하게 작용한다는 뜻이다. 즉,
+> Galois representation $\rho:G_K\to\operatorname{GL}_E(V)$가 **unramified at** $v$라는 것은 $I_v$가 $V$에 자명하게 작용한다는 뜻이다. 즉,
 > $$
 > \rho(\tau)=\operatorname{id}_V\quad\text{for every }\tau\in I_v.
 > $$
@@ -44,7 +49,7 @@ $$
 \chi(\tau)=1\quad\text{for every }\tau\in I_v.
 $$
 
-$K=\mathbb Q$이고 $v$가 prime number $p$에 대응하면 **unramified at $p$**라고 쓴다. 이 정의에서 $p$는 base field의 place를 지정하고, $\ell$은 coefficient field를 지정한다. 정의 자체에는 $p\ne\ell$이라는 조건이 없다.
+$K=\mathbb Q$이고 $v$가 prime number $p$에 대응하면 **unramified at** $p$라고 쓴다.
 
 ### Independence of the Choice of Place
 
@@ -52,7 +57,8 @@ $K=\mathbb Q$이고 $v$가 prime number $p$에 대응하면 **unramified at $p$*
 > Representation이 unramified at $v$라는 조건은 $v$ 위의 place를 선택하는 방식에 의존하지 않는다.
 
 > [!done]- 증명
-> 두 선택에서 얻는 inertia groups는 $I_v'=gI_vg^{-1}$인 $g\in G_K$를 갖는다. 따라서 $\rho(I_v')=\rho(g)\rho(I_v)\rho(g)^{-1}$이다. 한쪽이 identity만으로 이루어질 필요충분조건은 다른 쪽도 그러한 것이다.
+> 두 선택에서 얻는 inertia groups는 $I_v'=gI_vg^{-1}$인 $g\in G_K$를 갖는다. 따라서 $\rho(I_v')=\rho(g)\rho(I_v)\rho(g)^{-1}$이다.
+> 한쪽이 trivial할 필요충분조건은 다른 쪽도 그러한 것이다.
 
 ### Factorization through the Residue Galois Group
 
@@ -69,20 +75,24 @@ $K=\mathbb Q$이고 $v$가 prime number $p$에 대응하면 **unramified at $p$*
 ### Relation to Extensions
 
 > [!abstract] Proposition
-> $\rho$의 image가 finite이고 $L=(K^{\mathrm{sep}})^{\ker\rho}$라 하자. 그러면 $L/K$는 finite Galois extension이며, $\rho$가 unramified at $v$임과 $v$가 $L/K$에서 unramified임은 동치이다.
+> $\rho$의 image가 finite이고 $L=(K^{\mathrm{sep}})^{\ker\rho}$라 하자.
+> 그러면 $L/K$는 finite Galois extension이며, $\rho$가 unramified at $v$임과 $v$가 $L/K$에서 unramified임은 동치이다.
 
 > [!done]- 증명
-> Codomain은 Hausdorff이므로 finite image에는 discrete subspace topology가 유도된다. 따라서 $\ker\rho$는 open normal subgroup이고, [[Theories/Algebra/InfiniteGalois#Infinite Galois Correspondence|infinite Galois correspondence]]에 의해 $L/K$는 finite Galois extension이다.
+> Codomain은 Hausdorff이므로 finite image에는 discrete subspace topology가 유도된다.
+> 따라서 $\ker\rho$는 open normal subgroup이고, [[Theories/Algebra/InfiniteGalois#Infinite Galois Correspondence|infinite Galois correspondence]]에 의해 $L/K$는 finite Galois extension이다.
 >
-> $G_K\to\operatorname{Gal}(L/K)$에서 $I_v$의 image는 $L/K$의 해당 inertia group이다. 또한 $\operatorname{Gal}(L/K)\cong\operatorname{im}\rho$이므로 이 image가 자명할 필요충분조건은 $\rho(I_v)=\{1\}$이다. Finite Galois extension에서 inertia group이 자명함은 해당 prime이 unramified임과 동치이다.
+> $G_K\to\operatorname{Gal}(L/K)$에서 $I_v$의 image는 $L/K$의 해당 inertia group이다.
+> 또한 $\operatorname{Gal}(L/K)\cong\operatorname{im}\rho$이므로 이 image가 자명할 필요충분조건은 $\rho(I_v)=\{1\}$이다.
+> Finite Galois extension에서 inertia group이 자명함은 해당 prime이 unramified임과 동치이다.
 
-여기서 unramified 조건은 $\rho(I_v)$가 자명하다는 조건이다. Absolute inertia group $I_v$ 자체가 자명하다는 주장은 아니다. 또한 inertia의 image가 finite이라는 조건만으로 unramified라고 하지는 않는다.
+여기서 unramified 조건은 $\rho(I_v)$가 trivial하다는 것이다.
 
 반대로 unramified character의 image가 finite일 필요도 없다. 예를 들어 $G_{\mathbb Q_p}\to G_{\mathbb F_p}\cong\widehat{\mathbb Z}$에, arithmetic Frobenius를 $1+\ell\in\mathbb Z_\ell^\times$로 보내는 continuous character를 합성하면 unramified character를 얻는다. 이 character의 image에는 $(1+\ell)^n$이 모든 $n\in\mathbb Z$에 대해 포함되므로 image는 infinite이다. 해당 continuous character는 각 finite quotient $(\mathbb Z/\ell^m\mathbb Z)^\times$에서 compatible한 homomorphisms를 만든 뒤 inverse limit을 취하여 구성할 수 있다.
 
 ## Frobenius Images
 
-$q_v=|k_v|$라 하고, 이 문서에서는 **arithmetic Frobenius** convention을 사용한다. 즉 $\operatorname{Frob}_v\in G_{k_v}$는 $x\mapsto x^{q_v}$이다.
+$q_v=\#k_v$라 하고, 이 문서에서는 **arithmetic Frobenius** convention을 사용한다. 즉 $\operatorname{Frob}_v\in G_{k_v}$는 $x\mapsto x^{q_v}$이다.
 
 $\rho$가 unramified at $v$이면 $\rho(\operatorname{Frob}_v):=\rho_v^{\mathrm{ur}}(\operatorname{Frob}_v)$로 정의한다. 동치로, $D_v$ 안에서 임의의 lift $\widetilde{\operatorname{Frob}}_v$를 선택하여 $\rho(\widetilde{\operatorname{Frob}}_v)$를 취하면 된다. 두 lift의 차이는 inertia에 속하므로 이 값은 lift의 선택에 의존하지 않는다.
 

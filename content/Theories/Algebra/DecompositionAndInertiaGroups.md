@@ -33,10 +33,10 @@ $n=[L:K]$라 하자. 다음 용어도 사용한다.
 
 | $\mathfrak p$의 성질 | 의미 |
 | --- | --- |
-| ramified | 어떤 $i$에 대해 $e_i>1$ |
-| totally ramified | $\mathfrak p\mathcal O_L=\mathfrak P^n$인 prime $\mathfrak P$가 존재 |
-| inert | $\mathfrak p\mathcal O_L$ 자체가 prime ideal |
-| splits completely | $g=n$이고 모든 $e_i=f_i=1$ |
+| **ramified** | 어떤 $i$에 대해 $e_i>1$ |
+| **totally ramified** | $\mathfrak p\mathcal O_L=\mathfrak P^n$인 prime $\mathfrak P$가 존재 |
+| **inert** | $\mathfrak p\mathcal O_L$ 자체가 prime ideal |
+| **splits completely** | $g=n$이고 모든 $e_i=f_i=1$ |
 
 Local fields에서는 ramification index를 [[Theories/Algebra/LocalField#Ramification Index and Residue Degree|uniformizer의 valuation]]으로 정의한다. 두 정의는 completion을 취했을 때 일치한다.
 
@@ -122,7 +122,7 @@ $\sigma(\mathfrak P)=\mathfrak P$이므로 이 정의는 representative의 선�
 >
 > Local fields의 degree formula에 의해 $|D_{\mathfrak P}|=[M:F]=ef$이다. 또한 finite fields의 extension에 대해 $|\operatorname{Gal}(l/k)|=[l:k]=f$이므로 $|I_{\mathfrak P}|=e$이다.
 >
-> 마지막으로 $G$가 $\mathfrak p$ 위의 primes에 transitively 작용하므로, orbit-stabilizer theorem에 의해 $[G:D_{\mathfrak P}]=g$이다.
+> 마지막으로 $G$가 $\mathfrak p$ 위의 primes에 transitively 작용하므로, orbit-stabilizer theorem에 의해 $[G:D_{\mathfrak P}]=g$이다. $\square$
 
 특히 $\mathfrak P/\mathfrak p$가 **unramified**임과 $I_{\mathfrak P}=\{1\}$임은 동치이다.
 또한 $\mathfrak p$가 $L$에서 **splits completely**함과 $D_{\mathfrak P}=\{1\}$임은 동치이다.
@@ -136,7 +136,7 @@ $\sigma(\mathfrak P)=\mathfrak P$이므로 이 정의는 representative의 선�
 > $\sigma(\mathfrak P')=\mathfrak P'$임과 $(\tau^{-1}\sigma\tau)(\mathfrak P)=\mathfrak P$임이 동치이므로 decomposition groups에 관한 등식이 성립한다.
 >
 > 또한 $\tau$가 유도하는 residue field isomorphism을 통해 $\sigma$의 작용과 $\tau^{-1}\sigma\tau$의 작용이 대응한다.
-> 따라서 한쪽 작용이 자명할 필요충분조건은 다른 쪽 작용이 자명한 것이므로 inertia groups에 관한 등식도 성립한다.
+> 따라서 한쪽 작용이 자명할 필요충분조건은 다른 쪽 작용이 자명한 것이므로 inertia groups에 관한 등식도 성립한다. $\square$
 
 따라서 $\mathfrak p$만 고정하면 decomposition group과 inertia group은 conjugacy까지 결정된다.
 
@@ -158,7 +158,7 @@ $\sigma(\mathfrak P)=\mathfrak P$이므로 이 정의는 representative의 선�
 >
 > 반대로 $\tau\in\operatorname{Gal}(M/F)$라 하자. 각 $a\in L$에 대해 $\tau(a)$는 $a$의 $K$ 위 minimal polynomial의 root이다. $L/K$의 normality에 의해 $\tau(a)\in L$이다. 따라서 $\tau$는 $L$의 $K$-automorphism으로 restrict된다. 또한 [[Theories/Algebra/LocalField#Extension of the Valuation|local field의 absolute value의 연장 유일성]]에 의해 $\tau$는 valuation을 보존하므로 그 restriction은 $D_{\mathfrak P}$에 속한다.
 >
-> 두 과정은 서로 inverse이므로 원하는 isomorphism을 얻는다.
+> 두 과정은 서로 inverse이므로 원하는 isomorphism을 얻는다. $\square$
 
 ## Absolute Galois Groups
 
@@ -184,7 +184,7 @@ Closedness는 각 군을 finite Galois quotients에서 해당 subgroups의 inver
 
 ### Relation to Local Fields
 
-$K_v$를 [[Theories/Algebra/LocalField#Completion at a Place|$K$의 $v$에 관한 completion]]이라 하고, algebraic closure $\overline{K_v}$를 고정한다.
+$K_v$를 $K$의 $v$에 관한 [[Theories/Algebra/LocalField#Completion at a Place|completion]]이라 하고, algebraic closure $\overline{K_v}$를 고정한다.
 
 > [!abstract] Definition (Maximal unramified extension)
 > $K_v^{\mathrm{nr}}$는 고정한 $\overline{K_v}$ 안의 모든 finite unramified extensions $E/K_v$의 union이다. 이 union이 field를 이루는 이유와 기본 성질은 [[Theories/Algebra/LocalField#Maximal Unramified Extension|maximal unramified extension]]을 참고한다.

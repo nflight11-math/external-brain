@@ -72,7 +72,7 @@ $K=\mathbb Q$이고 $v$가 prime number $p$에 대응하면 **unramified at** $p
 
 즉, unramified representation의 local restriction은 $G_{k_v}$의 representation으로 기술된다. 특히 $K=\mathbb Q$이면 $G_{\mathbb F_p}\cong\widehat{\mathbb Z}$의 representations가 등장한다.
 Local field $K_v$의 representation에 대해서도 $I_v=\operatorname{Gal}(\overline{K_v}/K_v^{\mathrm{nr}})$ 위의 작용이 trivial하다는 조건으로 unramified를 정의한다.
-여기서 [[Theories/Algebra/LocalField#Maximal Unramified Extension|$K_v^{\mathrm{nr}}$]]는 $K_v$의 maximal unramified extension이며, global $I_v$와 local inertia group은 $D_v\cong G_{K_v}$를 통해 동일시한다.
+여기서 $K_v^{\mathrm{nr}}$는 $K_v$의 [[Theories/Algebra/LocalField#Maximal Unramified Extension|maximal unramified extension]]이며, global $I_v$와 local inertia group은 $D_v\cong G_{K_v}$를 통해 동일시한다.
 
 ### Relation to Extensions
 
@@ -100,7 +100,7 @@ $\rho$가 unramified at $v$이면 $\rho(\operatorname{Frob}_v):=\rho_v^{\mathrm{
 
 $v$ 위의 place 자체를 바꾸면 이 automorphism은 conjugate된다. 따라서 characteristic polynomial $\det(T\operatorname{id}_V-\rho(\operatorname{Frob}_v))$은 이 선택에도 의존하지 않는다. Character의 경우 $E^\times$가 abelian이므로 $\chi(\operatorname{Frob}_v)$라는 값 자체가 선택에 의존하지 않는다.
 
-[$G_{k_v}$는 arithmetic Frobenius에 의해 topologically generated된다.](https://external-brain.kr/theories/algebra/decompositionandinertiagroups#absolute-galois-groups-1)
+$G_{k_v}$는 [[Theories/Algebra/DecompositionAndInertiaGroups#Absolute Galois Groups|arithmetic Frobenius에 의해 topologically generated된다.]]
 따라서 선택한 $D_v$에 대한 unramified restriction $\rho|_{D_v}$는 $\rho(\operatorname{Frob}_v)$에 의해 결정된다. 이는 두 continuous homomorphisms가 dense subgroup에서 일치하면 전체에서 일치한다는 사실에서 따른다.
 
 ## Cyclotomic Character

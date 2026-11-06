@@ -30,8 +30,8 @@ Finite field $k$에 대해 $\operatorname{GL}_d(k)$에 discrete topology를 부�
 
 ## Unramified Representations
 
-이 절에서는 $K$를 number field라 하고 $v$를 nonarchimedean place라 한다.
-$v$ 위의 place를 하나 선택하여 [decomposition group $D_v$와 inertia group $I_v$](https://external-brain.kr/theories/algebra/decompositionandinertiagroups#decomposition-and-inertia-at-a-place)를 잡는다.
+이 절에서는 $K$를 number field라 하고 $v$를 [[Theories/Algebra/LocalField#Nonarchimedean Places|nonarchimedean place]]라 한다.
+$v$ 위의 place를 하나 선택하여 [[Theories/Algebra/DecompositionAndInertiaGroups#Decomposition and Inertia at a Place|decomposition group]] $D_v$와 [[Theories/Algebra/DecompositionAndInertiaGroups#Decomposition and Inertia at a Place|inertia group]] $I_v$를 잡는다.
 
 ### Definition
 
@@ -70,7 +70,9 @@ $K=\mathbb Q$이고 $v$가 prime number $p$에 대응하면 **unramified at** $p
 >
 > 또한 $D_v$는 compact이고 $G_{k_v}$는 Hausdorff이므로 continuous surjection $\pi_v$는 quotient map이다. 따라서 $\rho|_{D_v}$의 연속성으로부터 유도된 homomorphism의 연속성도 따른다.
 
-즉, unramified representation의 local restriction은 $G_{k_v}$의 representation으로 기술된다. 특히 $K=\mathbb Q$이면 $G_{\mathbb F_p}\cong\widehat{\mathbb Z}$의 representations가 등장한다. Local field $K_v$의 representation에 대해서도 $I_v=\operatorname{Gal}(\overline{K_v}/K_v^{\mathrm{nr}})$ 위의 작용이 자명하다는 조건으로 unramified를 정의한다.
+즉, unramified representation의 local restriction은 $G_{k_v}$의 representation으로 기술된다. 특히 $K=\mathbb Q$이면 $G_{\mathbb F_p}\cong\widehat{\mathbb Z}$의 representations가 등장한다.
+Local field $K_v$의 representation에 대해서도 $I_v=\operatorname{Gal}(\overline{K_v}/K_v^{\mathrm{nr}})$ 위의 작용이 trivial하다는 조건으로 unramified를 정의한다.
+여기서 [[Theories/Algebra/LocalField#Maximal Unramified Extension|$K_v^{\mathrm{nr}}$]]는 $K_v$의 maximal unramified extension이며, global $I_v$와 local inertia group은 $D_v\cong G_{K_v}$를 통해 동일시한다.
 
 ### Relation to Extensions
 

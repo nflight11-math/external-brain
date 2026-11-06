@@ -10,6 +10,10 @@ tags:
 ## Galois Theory
 
 - [[Theories/Algebra/InfiniteGalois|Infinite Galois Theory]]
+
+## Algebraic Number Theory
+
+- [[Theories/Algebra/LocalField|Local Field]]
 - [[Theories/Algebra/DecompositionAndInertiaGroups|Decomposition and Inertia Groups]]
 - [[Theories/Algebra/GaloisRepresentation|Galois Representation]]
 

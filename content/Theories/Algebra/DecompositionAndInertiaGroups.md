@@ -168,10 +168,52 @@ $v$를 $K$의 nonarchimedean place, $k_v$를 residue field라 하자.
 
 ### Decomposition and Inertia at a Place
 
-$v$의 $\overline K$로의 extension $\overline v$를 하나 선택한다. **Decomposition group** $D_v\subset G_K$는 $\overline v$를 보존하는 automorphism들의 군이다.
-이 군은 $\overline v$의 residue field $\overline{k_v}$에 작용하며, 이 작용의 kernel을 **inertia group** $I_v$라 한다. 여기서 $\overline{k_v}$는 $k_v$의 algebraic closure이다.
+$v$의 extension인 additive valuation $\overline v:\overline K\to\mathbb Q\cup\{\infty\}$를 하나 고정한다. 즉 $\overline v|_K=v$이다. 이에 대응하는 valuation ring과 maximal ideal을
+$$
+\mathcal O_{\overline v}
+:=\{x\in\overline K:\overline v(x)\ge0\},
+\qquad
+\mathfrak m_{\overline v}
+:=\{x\in\overline K:\overline v(x)>0\}
+$$
+로 정의하고, residue field를 $\kappa(\overline v):=\mathcal O_{\overline v}/\mathfrak m_{\overline v}$라 하자.
 
-이 표기에서 $\overline v$의 선택은 생략되어 있다. 다른 선택으로 얻는 두 군은 $G_K$ 안에서 각각 conjugate이다.
+$\mathcal O_v=K\cap\mathcal O_{\overline v}$, $\mathfrak m_v=K\cap\mathfrak m_{\overline v}$라 하면 inclusion에 의해 $k_v=\mathcal O_v/\mathfrak m_v$를 $\kappa(\overline v)$의 subfield로 자연스럽게 볼 수 있다.
+
+> [!abstract] Definition (Decomposition and inertia groups at a place)
+> 선택한 $\overline v$의 **decomposition group**은
+> $$
+> D_{\overline v}
+> :=\{\sigma\in G_K:
+> \overline v(\sigma(x))=\overline v(x)
+> \text{ for every }x\in\overline K\}
+> $$
+> 이다.
+>
+> 각 $\sigma\in D_{\overline v}$는 $\mathcal O_{\overline v}$와 $\mathfrak m_{\overline v}$를 보존하므로, $k_v$-automorphism
+> $$
+> \overline\sigma:\kappa(\overline v)\longrightarrow\kappa(\overline v),
+> \qquad
+> x+\mathfrak m_{\overline v}
+> \longmapsto\sigma(x)+\mathfrak m_{\overline v}
+> $$
+> 를 유도한다. 따라서 group homomorphism
+> $$
+> r_{\overline v}:D_{\overline v}
+> \longrightarrow\operatorname{Aut}_{k_v}(\kappa(\overline v)),
+> \qquad \sigma\longmapsto\overline\sigma
+> $$
+> 이 정의된다.
+>
+> 선택한 $\overline v$의 **inertia group**은 $I_{\overline v}:=\ker r_{\overline v}$이다. 동치로,
+> $$
+> I_{\overline v}
+> =\{\sigma\in D_{\overline v}:
+> \sigma(x)-x\in\mathfrak m_{\overline v}
+> \text{ for every }x\in\mathcal O_{\overline v}\}.
+> $$
+
+$\overline v$를 다른 extension으로 선택하면, 이에 대응하는 decomposition groups와 inertia groups는 각각 $G_K$ 안에서 conjugate이다.
 
 각 finite Galois subextension $L/K$에서 $\overline v$가 정하는 prime을 $\mathfrak P_L$라 하면 restriction maps에 관하여
 $$

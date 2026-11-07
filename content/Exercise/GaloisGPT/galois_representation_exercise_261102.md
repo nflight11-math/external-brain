@@ -148,7 +148,8 @@ $q=p^k$는 prime power이며, $\sigma\in G_{\mathbb F_q}$를 $\sigma(x)=x^q$로 
 
 1. 각 $\chi_{\ell,n}$이 continuous group homomorphism이며, $n$에 관한 자연스러운 reduction map $r_n:a\bmod \ell^{n+1}\mapsto a\bmod \ell^n$과 compatible함, 즉 $r_n\circ\chi_{\ell,n+1}=\chi_{\ell,n}$임을 증명하라. 이를 이용하여 continuous homomorphism $\chi_\ell:G_{\mathbb Q}\to\mathbb Z_\ell^\times$를 구성하라.
 2. Compatible한 collections of $\zeta_{\ell^n}$을 달리 선택해도 $\chi_\ell$이 변하지 않음을 증명하라. 또한 complex conjugation $c\in G_{\mathbb Q}$에 대한 $\chi_\ell(c)$를 구하라.
-3. $\overline{\mathbb Z}$를 integral closure of $\overline{\mathbb Q}/\mathbb Q$라고 하자. Prime $p\ne\ell$과 prime above $p$ $\mathfrak p\subset\overline{\mathbb Z}$를 하나 고르고, 대응하는 [[Theories/Algebra/DecompositionAndInertiaGroups|decomposition group과 inertia group]]을 $D_p$, $I_p$라 쓰자. $\chi_\ell(I_p)=\{1\}$임을 증명하라. 즉 $\chi_\ell$이 $p$에서 unramified임을 보여라.
+3. Prime $p\ne\ell$을 고정하고, $\mathbb Q$의 $p$-adic valuation $v_p$를 $\overline{\mathbb Q}$로 확장한 valuation $\overline v_p$를 하나 고르자. Extension $\overline{\mathbb Q}/\mathbb Q$에서 $\overline v_p$에 대응하는 [[Theories/Algebra/DecompositionAndInertiaGroups#Decomposition and Inertia at a Place|decomposition group과 inertia group]]을 각각 $D_p\subset G_{\mathbb Q}$, $I_p\subset D_p$라 쓰자.
+    $\chi_\ell(I_p)=\{1\}$임을 증명하라. 즉, $\chi_\ell$이 $p$에서 unramified임을 보여라.
 4. $\operatorname{Frob}_p\in D_p/I_p$를 [[Theories/Algebra/DecompositionAndInertiaGroups#Frobenius|arithmetic Frobenius]]라 하자. 3번에 의해 정의되는 값이 $\chi_\ell(\operatorname{Frob}_p)=p$임을 증명하라. Geometric Frobenius를 사용하면 우변이 어떻게 바뀌는지도 설명하라.
 
 > [!tip]- 힌트

@@ -275,7 +275,7 @@ $K=\mathbb Q$이고 $v$가 prime number $p$에 대응하면 $K_v=\mathbb Q_p$, $
 
 ## Frobenius
 
-### Finite Extensions
+### Frobenius in Finite Extensions
 
 > [!abstract] Definition (Arithmetic and geometric Frobenius)
 > $q=\#k_{\mathfrak p}$라 하자. $k_{\mathfrak P}/k_{\mathfrak p}$의 Galois group은 $x\mapsto x^q$로 생성된다.
@@ -285,7 +285,7 @@ $K=\mathbb Q$이고 $v$가 prime number $p$에 대응하면 $K_v=\mathbb Q_p$, $
 $\mathfrak P/\mathfrak p$가 unramified이면 $I_{\mathfrak P}=\{1\}$이므로 이 원소는 $D_{\mathfrak P}$의 유일한 원소 $\operatorname{Frob}_{\mathfrak P}$로 lift된다.
 이는 모든 $a\in\mathcal O_L$에 대해 $\operatorname{Frob}_{\mathfrak P}(a)\equiv a^q\pmod{\mathfrak P}$를 만족한다. Prime을 바꾸면 Frobenius 원소는 conjugate된다.
 
-### Absolute Galois Groups
+### Frobenius in Absolute Galois Groups
 
 > [!corollary] Corollary
 > $q_v=\#k_v$라 하자. $G_{k_v}$의 arithmetic Frobenius는 $x\mapsto x^{q_v}$로 정의되며, $G_{k_v}$의 [[Theories/Topology/TopologicalGroup#Topological generation|topological generator]]이다.

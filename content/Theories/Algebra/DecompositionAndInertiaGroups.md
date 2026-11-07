@@ -185,8 +185,7 @@ $\mathcal O_v=K\cap\mathcal O_{\overline v}$, $\mathfrak m_v=K\cap\mathfrak m_{\
 > $$
 > D_{\overline v}
 > :=\{\sigma\in G_K:
-> \overline v(\sigma(x))=\overline v(x)
-> \text{ for every }x\in\overline K\}
+> \overline v\circ\sigma=\overline v\}
 > $$
 > 이다.
 >

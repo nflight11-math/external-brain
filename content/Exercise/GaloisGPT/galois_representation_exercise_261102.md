@@ -190,6 +190,12 @@ $q=p^k$는 prime power이며, $\sigma\in G_{\mathbb F_q}$를 $\sigma(x)=x^q$로 
 >     즉 $\sigma\zeta=\zeta$가 임의의 $\ell^n$-th root of unity $\zeta$에 대하여 성립하므로 $\chi_{\ell,n}(\sigma)=1$.
 >     Inverse limit을 취하면 $\chi_\ell(\sigma)=1$이다.
 >     그러므로 $\chi_\ell(I_p)=1$이니, $\chi_\ell$은 unramified representation이다. $\square$
+> 
+> 4.
+> $\mathcal O_{p}=\mathbb Q\cap\mathcal O_{\overline v_p}=\mathbb Z$이며, $\mathfrak m_p=\mathbb Q\cap\mathfrak m_{\overline v_p}=p\mathbb Z$이므로 $k_p=\mathbb F_p$이다.
+> 그러므로 arithmetic Frobenius는 $\operatorname{Frob}_p:x\mapsto x^p$로 작용하며, 따라서 $\chi_\ell(\operatorname{Frob}_p)=p$가, 임의의 $n$에 대하여 $\chi_{\ell,n}(\operatorname{Frob}_p)=p$이므로 성립한다.
+> 
+> 만일 $\operatorname{Frob}_p$이 geometric Frobenius이면 이는 arithmetic Frobenius의 역수이므로, $\chi_\ell(\operatorname{Frob}_p)=p^{-1}$이다.
 
 ### 참고 자료
 

@@ -63,7 +63,7 @@ $\mathbb Q_p$는 $\mathbb Q$의 $p$-adic valuation에 관한 completion이다. �
 > $F$가 local field이면 $\mathcal O_F$는 compact open subset이다. 따라서 $F$는 locally compact이다.
 
 > [!done]- 증명
-> $q=|k_F|$라 하자. 각 $i\ge0$에 대해 multiplication by $\pi_F^i$는 $k_F\cong\mathfrak m_F^i/\mathfrak m_F^{i+1}$를 유도한다. 따라서 $|\mathcal O_F/\mathfrak m_F^n|=q^n$이다.
+> $q=|k_F|$라 하자. 각 $i\ge0$에 대해 multiplication by $\pi_F^i$는 $k_F\cong\mathfrak m_F^i/\mathfrak m_F^{i+1}$를 유도한다. 따라서 $\#(\mathcal O_F/\mathfrak m_F^n)=q^n$이다.
 >
 > 각 residue class는 radius가 $0$으로 가는 ball이므로 $\mathcal O_F$는 totally bounded이다. 또한 $\mathcal O_F$는 complete metric space $F$의 closed subset이므로 complete이다. Complete하고 totally bounded인 metric space는 compact이므로 $\mathcal O_F$는 compact이다.
 >
@@ -147,7 +147,7 @@ Separable closure $F^{\mathrm{sep}}$와 그 위의 연장된 valuation을 고정
 ### Finite Unramified Extensions
 
 > [!abstract] Theorem
-> 각 $n\ge1$에 대해 $F^{\mathrm{sep}}$ 안에는 degree $n$인 unramified extension $F_n/F$가 유일하게 존재한다. $q=|k_F|$라 하면 $k_{F_n}=\mathbb F_{q^n}$이다.
+> 각 $n\ge1$에 대해 $F^{\mathrm{sep}}$ 안에는 degree $n$인 unramified extension $F_n/F$가 유일하게 존재한다. $q=\#k_F$라 하면 $k_{F_n}=\mathbb F_{q^n}$이다.
 >
 > 또한 $F_n/F$는 Galois이며, reduction은 natural isomorphism $\operatorname{Gal}(F_n/F)\cong\operatorname{Gal}(\mathbb F_{q^n}/\mathbb F_q)$을 유도한다. $F_n\subset F_m$임과 $n\mid m$임은 동치이다.
 

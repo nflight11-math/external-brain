@@ -35,24 +35,19 @@ $$
 
 ## 문제 1. Torsion subgroup과 Tate module
 
-### (1) Torsion subgroup의 구조
-
-모든 $n\ge 1$에 대해 $E[\ell^n]\cong(\mathbb Z/\ell^n\mathbb Z)^2$임을 증명하라. 원소 수만으로 결론을 내리지 말고, finite abelian group의 structure theorem을 이용하여 group structure를 설명하라.
-
-### (2) Compatible bases와 inverse limit
-
-각 $n$에서 $\mathbb Z/\ell^n\mathbb Z$-basis $(P_n,Q_n)$을 선택하되 $\ell P_{n+1}=P_n,\quad \ell Q_{n+1}=Q_n$이 되게 할 수 있음을 보여라. 이를 이용하여
-
-$$
-T_\ell(E):=\varprojlim_n E[\ell^n],
-\qquad\text{transition map }[\ell],
-$$
-
-가 rank $2$인 free $\mathbb Z_\ell$-module임을 증명하라.
-
-### (3) Finite-level representations와 Galois action
-
-Projection $\pi_n:T_\ell(E)\to E[\ell^n]$, $(R_j)_j\mapsto R_n$으로부터 $G_K$-equivariant isomorphism $T_\ell(E)/\ell^nT_\ell(E)\cong E[\ell^n]$을 얻어라. 이어서 $G_K$의 작용이 연속인 representation $\rho_{E,\ell}:G_K\longrightarrow\operatorname{GL}_2(\mathbb Z_\ell)$을 정의함을 보여라. 이 matrix representation이 basis 선택에 어떻게 의존하는지도 설명하라.
+1.
+    모든 $n\ge 1$에 대해 $E[\ell^n]\cong(\mathbb Z/\ell^n\mathbb Z)^2$임을 증명하라. 원소 수만으로 결론을 내리지 말고, finite abelian group의 structure theorem을 이용하여 group structure를 설명하라.
+2. 
+    각 $n$에서 $\mathbb Z/\ell^n\mathbb Z$-basis $(P_n,Q_n)$을 선택하되 $\ell P_{n+1}=P_n,\quad \ell Q_{n+1}=Q_n$이 되게 할 수 있음을 보여라. 이를 이용하여
+    $$
+    T_\ell(E):=\varprojlim_n E[\ell^n],
+    \qquad\text{transition map }[\ell],
+    $$
+    가 rank $2$인 free $\mathbb Z_\ell$-module임을 증명하라.
+3.
+    Projection $\pi_n:T_\ell(E)\to E[\ell^n]$, $(R_j)_j\mapsto R_n$으로부터 $G_K$-equivariant isomorphism $T_\ell(E)/\ell^nT_\ell(E)\cong E[\ell^n]$을 얻어라.
+    이어서 $G_K$의 작용이 연속인 representation $\rho_{E,\ell}:G_K\longrightarrow\operatorname{GL}_2(\mathbb Z_\ell)$을 정의함을 보여라.
+    이 matrix representation이 basis 선택에 어떻게 의존하는지도 설명하라.
 
 > [!tip]- 힌트
 >
@@ -70,33 +65,28 @@ e_{\ell^{n+1}}(P',Q')^\ell
 \qquad(P',Q'\in E[\ell^{n+1}]).
 $$
 
-### (1) Basis와 primitive root of unity
-
-$(P,Q)$가 $E[m]$의 $\mathbb Z/m\mathbb Z$-basis라면 $e_m(P,Q)$가 primitive $m$-th root of unity임을 증명하라.
-
-### (2) Finite-level representation의 determinant
-
-행렬 표기는 다음 규약을 따른다.
-
-$$
-\sigma P=aP+cQ,\qquad \sigma Q=bP+dQ,
-\qquad
-\rho_{E,m}(\sigma)=
-\begin{pmatrix}a&b\\c&d\end{pmatrix}.
-$$
-
-여기서 $a,b,c,d\in\mathbb Z/m\mathbb Z$이다. 다음 등식을 직접 계산하라: $e_m(\sigma P,\sigma Q)=e_m(P,Q)^{ad-bc}$. 이를 이용하여 $\det\rho_{E,m}=\chi_m$을 증명하라. 여기서 cyclotomic character $\chi_m:G_K\longrightarrow(\mathbb Z/m\mathbb Z)^\times$는 다음 조건으로 정의된다. $\sigma(\zeta)=\zeta^{\chi_m(\sigma)}$ ($\zeta\in\mu_m$).
-
-### (3) Tate module의 exterior square
-
-다음 inverse limit을 생각하자.
-
-$$
-\mathbb Z_\ell(1):=\varprojlim_n\mu_{\ell^n},
-\qquad\text{transition map }\zeta\longmapsto\zeta^\ell.
-$$
-
-그 위의 자연스러운 Galois action에 대응하는 character를 $\chi_\ell=\varprojlim_n\chi_{\ell^n}:G_K\to\mathbb Z_\ell^\times$로 쓴다. Weil pairing이 $G_K$-equivariant isomorphism $\bigwedge\nolimits^2_{\mathbb Z_\ell}T_\ell(E) \cong\mathbb Z_\ell(1)$을 유도함을 보이고, $\det\rho_{E,\ell}=\chi_\ell$을 도출하라. 여기서 $\bigwedge\nolimits^2_{\mathbb Z_\ell}T_\ell(E)$는 [[Theories/Algebra/ExteriorPower|exterior square]] of Tate module $T_\ell(E)$이다.
+1.
+    $(P,Q)$가 $E[m]$의 $\mathbb Z/m\mathbb Z$-basis라면 $e_m(P,Q)$가 primitive $m$-th root of unity임을 증명하라.
+2.
+    행렬 표기는 다음 규약을 따른다.
+    $$
+    \sigma P=aP+cQ,\qquad \sigma Q=bP+dQ,
+    \qquad
+    \rho_{E,m}(\sigma)=
+    \begin{pmatrix}a&b\\c&d\end{pmatrix}.
+    $$
+    여기서 $a,b,c,d\in\mathbb Z/m\mathbb Z$이다. 다음 등식을 직접 계산하라:$e_m(\sigma P,\sigma Q)=e_m(P,Q)^{ad-bc}$.
+    이를 이용하여 $\det\rho_{E,m}=\chi_m$을 증명하라.
+    여기서 cyclotomic character $\chi_m:G_K\longrightarrow(\mathbb Z/m\mathbb Z)^\times$는 다음 조건으로 정의된다. $\sigma(\zeta)=\zeta^{\chi_m(\sigma)}\quad(\zeta\in\mu_m).$
+3.
+    다음 inverse limit을 생각하자.
+    $$
+    \mathbb Z_\ell(1):=\varprojlim_n\mu_{\ell^n},
+    \qquad\text{transition map }\zeta\longmapsto\zeta^\ell.
+    $$
+    그 위의 자연스러운 Galois action에 대응하는 character를 $\chi_\ell=\varprojlim_n\chi_{\ell^n}:G_K\to\mathbb Z_\ell^\times$로 쓴다.
+    Weil pairing이 $G_K$-equivariant isomorphism $\bigwedge\nolimits^2_{\mathbb Z_\ell}T_\ell(E) \cong\mathbb Z_\ell(1)$을 유도함을 보이고, $\det\rho_{E,\ell}=\chi_\ell$을 도출하라.
+    여기서 $\bigwedge\nolimits^2_{\mathbb Z_\ell}T_\ell(E)$는 [[Theories/Algebra/ExteriorPower|exterior square]] of Tate module $T_\ell(E)$이다.
 
 > [!tip]- 힌트
 >
@@ -108,23 +98,22 @@ $$
 
 $m=\ell^n$이라 하고, $L_m=K(E[m])$을 모든 $m$-torsion point의 좌표를 첨가하여 얻는 field라 하자.
 
-### (1) Torsion field의 cyclotomic 부분
-
-$K(\mu_m)\subseteq L_m$임을 보이고, 다음 동치도 증명하라.
-
-$$
-\rho_{E,m}(G_K)\subseteq\operatorname{SL}_2(\mathbb Z/m\mathbb Z)
-\quad\Longleftrightarrow\quad
-\mu_m\subseteq K.
-$$
-
-### (2) Complex conjugation과 oddness
-
-$K$가 real place $v$를 갖는다고 가정하자. 해당 real embedding $v:K\hookrightarrow\mathbb R$를 확장하는 $\overline K\hookrightarrow\mathbb C$를 선택하여 얻는 complex conjugation을 $c_v\in G_K$라 하자. $\det\rho_{E,\ell}(c_v)=-1$임을 보여라. 이어서 $V_\ell(E):=T_\ell(E)\otimes_{\mathbb Z_\ell}\mathbb Q_\ell$ 위에서 $c_v$의 $+1$, $-1$ eigenspace가 각각 1차원임을 증명하라. 여기서 2-dimensional representation의 real place에서의 **oddness**는 complex conjugation의 determinant가 $-1$이라는 조건을 뜻한다.
-
-### (3) Residual representation과 $\ell=2$
-
-$\ell\ne2$이면 residual representation $\overline\rho_{E,\ell}:G_K\longrightarrow\operatorname{GL}_2(\mathbb F_\ell)$에서도 $c_v$의 eigenvalue가 $1,-1$이고 각각의 eigenspace가 1차원임을 보여라. $\ell=2$일 때는 왜 같은 논증이 성립하지 않는지 설명하라.
+1.
+    $K(\mu_m)\subseteq L_m$임을 보이고, 다음 동치도 증명하라.
+    $$
+    \rho_{E,m}(G_K)\subseteq\operatorname{SL}_2(\mathbb Z/m\mathbb Z)
+    \quad\Longleftrightarrow\quad
+    \mu_m\subseteq K.
+    $$
+2.
+    $K$가 real place $v$를 갖는다고 가정하자.
+    해당 real embedding $v:K\hookrightarrow\mathbb R$를 확장하는 $\overline K\hookrightarrow\mathbb C$를 선택하여 얻는 complex conjugation을 $c_v\in G_K$라 하자.
+    $\det\rho_{E,\ell}(c_v)=-1$임을 보여라.
+    이어서 $V_\ell(E):=T_\ell(E)\otimes_{\mathbb Z_\ell}\mathbb Q_\ell$ 위에서 $c_v$의 $+1$, $-1$ eigenspace가 각각 1차원임을 증명하라.
+    여기서 2-dimensional representation의 real place에서의 **oddness**는 complex conjugation의 determinant가 $-1$이라는 조건을 뜻한다.
+3.
+    $\ell\ne2$이면 residual representation $\overline\rho_{E,\ell}:G_K\longrightarrow\operatorname{GL}_2(\mathbb F_\ell)$에서도 $c_v$의 eigenvalue가 $1,-1$이고 각각의 eigenspace가 1차원임을 보여라.
+    $\ell=2$일 때는 왜 같은 논증이 성립하지 않는지 설명하라.
 
 > [!tip]- 힌트
 >

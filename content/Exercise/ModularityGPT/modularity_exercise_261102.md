@@ -12,17 +12,13 @@ tags:
 ## 설정
 
 $K$는 number field, $\overline K$는 $K$의 algebraic closure이며, $G_K=\operatorname{Gal}(\overline K/K)$라 하자. $E/K$는 elliptic curve, $\ell$은 prime이다. $n\ge 1$에 대하여
-
 $$
 E[\ell^n]=\{P\in E(\overline K):[\ell^n]P=O\}
 $$
-
 로 쓴다. 이는 $K$-rational torsion points만이 아니라 **geometric torsion points 전체**를 뜻한다. 또한
-
 $$
 \mu_m=\{\zeta\in\overline K^{\times}:\zeta^m=1\}
 $$
-
 로 쓴다.
 
 ### 사용할 수 있는 표준 사실
@@ -36,9 +32,9 @@ $$
 ## 문제 1. Torsion subgroup과 Tate module
 
 1.
-    모든 $n\ge 1$에 대해 $E[\ell^n]\cong(\mathbb Z/\ell^n\mathbb Z)^2$임을 증명하라. 원소 수만으로 결론을 내리지 말고, finite abelian group의 structure theorem을 이용하여 group structure를 설명하라.
+    모든 $n\ge 1$에 대해 $E[\ell^n]\cong(\mathbb Z/\ell^n)^2$임을 증명하라. 원소 수만으로 결론을 내리지 말고, finite abelian group의 structure theorem을 이용하여 group structure를 설명하라.
 2. 
-    각 $n$에서 $\mathbb Z/\ell^n\mathbb Z$-basis $(P_n,Q_n)$을 선택하되 $\ell P_{n+1}=P_n,\quad \ell Q_{n+1}=Q_n$이 되게 할 수 있음을 보여라. 이를 이용하여
+    각 $n$에서 $\mathbb Z/\ell^n\mathbb Z$-basis $(P_n,Q_n)$을 선택하되 $\ell P_{n+1}=P_n,\ell Q_{n+1}=Q_n$이 되게 할 수 있음을 보여라. 이를 이용하여
     $$
     T_\ell(E):=\varprojlim_n E[\ell^n],
     \qquad\text{transition map }[\ell],
@@ -54,6 +50,17 @@ $$
 > 1. $E[\ell^n][\ell]=E[\ell]$을 이용하여 cyclic factor의 개수를 구하고, 전체 원소 수를 비교하라.
 > 2. $P_n,Q_n$의 lift를 선택한 뒤, 두 lift 사이의 관계에 $[\ell]$을 적용하여 independence를 확인하라.
 > 3. Compatible bases에 관한 좌표로 projection의 kernel을 구하라. 연속성은 각 finite-level representation의 kernel이 open인지 확인하라.
+
+> [!done]- 증명
+> 1.
+>     우선 $E[\ell]$은 abelian group이고 모든 원소의 order가 $\ell$의 divisor이므로 $\mathbb F_\ell$-vector space로 보아도 무방하다.
+>     또한 $\#E[\ell]=\ell^2$이므로, $\#E[\ell]\cong\mathbb F_\ell^2$ as $\mathbb F_\ell$-vector space이다.
+>     $E[\ell^n]$은 원소 수가 $\ell^{2n}$인 $\ell$-primary module이므로, 다음과 같은 isomorphism이 존재한다:
+>     $$
+>     E[\ell^n]\cong\bigoplus_{i=1}^r\mathbb Z/\ell^{n_i},\quad 1\le n_i\in\mathbb Z,\quad\sum_{i=1}^rn_i=2n.
+>     $$
+>     이 때 $E[\ell]=E[\ell^n][\ell]=\bigoplus_1^r\mathbb Z/\ell$이므로 $r=2$여야 하고, $E[\ell^n]$의 모든 원소는 order가 최대 $\ell^n$이므로 모든 $n_i\le n$이어야 한다.
+>     따라서 반드시 $r=2,n_1=n_2=n$, 즉 $E[\ell^n]=(\mathbb Z/\ell^n)^2$이어야 한다. $\square$
 
 ## 문제 2. Weil pairing으로 determinant 계산하기
 

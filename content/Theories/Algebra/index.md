@@ -17,7 +17,7 @@ tags:
 
 ## Elliptic Curves
 - [[Theories/Algebra/Isogeny|Isogeny]]
-- [[Theories/Algebra/WeilPairingConstruction|Weil Pairing: Construction and Properties]]
+- [[Theories/Algebra/WeilPairing|Weil Pairing]]
 
 ## Multilinear Algebra
 - [[Theories/Algebra/ExteriorPower|Exterior Power]]

@@ -150,7 +150,7 @@ $m=\ell^n$이라 하자. Weil pairing의 Galois equivariance $e_m(\sigma P,\sigm
 >     그러므로 $(\zeta_{\ell^n})_n$은 compatible family of primitive $\ell^n$-th root of unity가 된다.
 >     
 >     Bilinear map $e:T_{\ell}(E)\times T_\ell(E)\to\mathbb Z_\ell(1)$을 $e((R_n)_n,(S_n)_n)=(e_{\ell^n}(R_n,S_n))_n$으로 정의하자.
->     그러면 각 finite level에서 $e_{\ell^n}$이 alternating이므로, $e$ 역시 alternating이고, 각 finite level에서 $e_{\ell^n}$이 Galois equivariant이므로 $e$ 역시 그러하다.
+>     그러면 각 finite level에서 $e_{\ell^n}$이 [[Theories/Algebra/WeilPairing#Alternation|alternating]]이므로, $e$ 역시 alternating이고, 각 finite level에서 $e_{\ell^n}$이 Galois equivariant이므로 $e$ 역시 그러하다.
 >     임의의 $(\eta_n)\in\mathbb Z_\ell(1)$에 대하여, $\eta_n=\zeta_{\ell^n}^{a_n}$인 $a_n\in\mathbb Z/\ell^n$이 유일하게 존재하며, $\zeta_{\ell^n}^{a_n}=\eta_n=\eta_{n+1}^\ell=(\zeta_{\ell^{n+1}}^\ell)^{a_{n+1}}=\zeta_{\ell^n}^{a_{n+1}}$이므로 $a=(a_n)_n\in\mathbb Z_\ell$이며 $e(P,Q)^a=\eta$이므로 $e$는 surjection이다.
 >     $e$가 alternating bilinear map이므로 exterior square의 universal property에 의하여 유일한 $\mathbb Z_\ell$-linear map $\Phi:\bigwedge_{\mathbb Z_\ell}^2T_\ell(E)\to\mathbb Z_\ell(1)$이 존재하여 $\Phi(R\wedge S)=e(R,S)$를 만족한다. 또한 $e$의 Galois equivariance로부터 $\Phi$ 역시 $G_K$-equivariant이다.
 > 
@@ -167,9 +167,7 @@ $m=\ell^n$이라 하고, $L_m=K(E[m])$을 모든 $m$-torsion point의 좌표를 
 1.
     $K(\mu_m)\subseteq L_m$임을 보이고, 다음 동치도 증명하라.
     $$
-    \rho_{E,m}(G_K)\subseteq\operatorname{SL}_2(\mathbb Z/m\mathbb Z)
-    \quad\Longleftrightarrow\quad
-    \mu_m\subseteq K.
+    \rho_{E,m}(G_K)\subseteq\operatorname{SL}_2(\mathbb Z/m) \quad\Longleftrightarrow\quad \mu_m\subseteq K.
     $$
 2.
     $K$가 real place $v$를 갖는다고 가정하자.
@@ -186,6 +184,15 @@ $m=\ell^n$이라 하고, $L_m=K(E[m])$을 모든 $m$-torsion point의 좌표를 
 > 1. $\ker\rho_{E,m}$과 $\ker\chi_m$을 비교하고 Galois correspondence를 적용하라.
 > 2. Complex conjugation이 roots of unity에 어떻게 작용하는지 확인하고, $c_v^2=1$을 이용하라.
 > 3. $X^2-1$이 $\mathbb F_\ell$ 위에서 distinct roots를 갖는 조건을 살펴보라.
+
+> [!done]- 증명
+> 1.
+>     만일 $\sigma\in\operatorname{Gal}(\overline K/L_m)$이라고 하면 $\sigma$는 $P,Q$를 고정한다.
+>     그러므로 $\sigma(\zeta_m)=e_m(\sigma P,\sigma Q)=e_m(P,Q)=\zeta_m$이니 $\sigma$는 $K(\zeta_m)$ 역시 고정해야 한다.
+>     즉 $K(\zeta_m)\subset L_m$.
+>     
+>     앞선 연습문제로부터 $\chi_m=\det\rho_{E,m}$을 얻었으므로 $\rho_{E,m}(G_K)\subset\operatorname{SL}_2(\mathbb Z/m)$임과 임의의 $\sigma\in G_K$에 대하여 $\sigma(\zeta_m)=\zeta_m^{\chi_m(\sigma)}=\zeta_m$, $\zeta_m\subset \overline{K}^{G_K}=K$임이 모두 동치임 역시 증명 가능하다. $\square$
+
 
 ## 참고문헌
 

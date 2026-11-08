@@ -96,13 +96,7 @@ $$
 
 ## 문제 2. Weil pairing으로 determinant 계산하기
 
-$m=\ell^n$이라 하자. Weil pairing의 Galois equivariance $e_m(\sigma P,\sigma Q)=\sigma(e_m(P,Q))$ ($\sigma\in G_K$)와 다음 compatibility를 추가로 사용해도 된다.
-
-$$
-e_{\ell^{n+1}}(P',Q')^\ell
-=e_{\ell^n}(\ell P',\ell Q')
-\qquad(P',Q'\in E[\ell^{n+1}]).
-$$
+$m=\ell^n$이라 하자. Weil pairing의 Galois equivariance $e_m(\sigma P,\sigma Q)=\sigma(e_m(P,Q))$ ($\sigma\in G_K$)를 사용해도 좋다.
 
 1.
     $(P,Q)$가 $E[m]$의 $\mathbb Z/m\mathbb Z$-basis라면 $e_m(P,Q)$가 primitive $m$-th root of unity임을 증명하라.
@@ -134,8 +128,21 @@ $$
 > [!done]- 증명
 > 1.
 >     $e_m(P,Q)$가 primitive $d$-th root of unity라고 하자. 그러면 $d\mid m$이다.
->     그러면 임의의 $R=aP+bQ$에 대하여 $e_m(dP,R)=e_m(P,P)^{ad}e_m(R,Q)^{bd}=1$이 성립하므로 nondegeneracy of Weil pairing에 의하여 $dP=O$이다.
->     그러므로 $m\mid d$이고, 따라서 $d=m$을 얻는다. 즉 $e_m(P,Q)$는 primitive $m$-th root of unity이다. $\square$
+>     그러면 임의의 $R=aP+bQ$에 대하여 $e_m(dP,R)=e_m(P,P)^{ad}e_m(R,Q)^{bd}=1$이 성립하므로 [[Theories/Algebra/WeilPairing#Nondegeneracy|nondegeneracy of Weil pairing]]에 의하여 $dP=O$이다.
+>     그러므로 $m\mid d$이고, 따라서 $d=m$다. 즉 $e_m(P,Q)$는 primitive $m$-th root of unity이다. $\square$
+> 
+> 2.
+>     $e_m(R,R)=1$과 $e_m(R,S)e_m(S,R)=1$을 이용하면
+>     $$
+>     \begin{aligned}
+>     e_m(\sigma P,\sigma Q) &= e_m(aP+cQ,bP+dQ)=e_m(P,P)^{ab}e_m(Q,Q)^{cd}e_m(P,Q)^{ad}e_m(Q,P)^{bc}\\
+>     &= e_m(P,Q)^{ad-bc}
+>     \end{aligned}
+>     $$
+>     이다.
+>     
+>     또한 $e_m(P,Q)=\zeta$는 primitive $m$-th root of unity이므로, $\sigma(\zeta)=e_m(\sigma P,\sigma Q)=\zeta^{ad-bc}$이다.
+>     즉 $\chi_m(\sigma)=ad-bc=\det\rho_{E,m}$. $\square$
 
 ## 문제 3. Torsion field와 real place에서의 oddness
 

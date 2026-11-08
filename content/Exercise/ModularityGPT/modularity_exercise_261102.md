@@ -143,6 +143,22 @@ $m=\ell^n$이라 하자. Weil pairing의 Galois equivariance $e_m(\sigma P,\sigm
 >     
 >     또한 $e_m(P,Q)=\zeta$는 primitive $m$-th root of unity이므로, $\sigma(\zeta)=e_m(\sigma P,\sigma Q)=\zeta^{ad-bc}$이다.
 >     즉 $\chi_m(\sigma)=ad-bc=\det\rho_{E,m}$. $\square$
+> 
+> 3.
+>     우선 각 finite level에서의 basis $(P_n,Q_n)$에 대하여 $\zeta_{\ell^n}:=e_{\ell^n}(P_n,Q_n)$으로 두자.
+>     그러면 compatibility for simultaneous multiplication에 의하여, $\zeta_{\ell^{n+1}}^\ell=e_{\ell^{n+1}}(P_{n+1},Q_{n+1})^\ell=e_{\ell^n}(\ell P_{n+1},\ell Q_{n+1})=e_{\ell^n}(P_n,Q_n)$이 성립한다.
+>     그러므로 $(\zeta_{\ell^n})_n$은 compatible family of primitive $\ell^n$-th root of unity가 된다.
+>     
+>     Bilinear map $e:T_{\ell}(E)\times T_\ell(E)\to\mathbb Z_\ell(1)$을 $e((R_n)_n,(S_n)_n)=(e_{\ell^n}(R_n,S_n))_n$으로 정의하자.
+>     그러면 각 finite level에서 $e_{\ell^n}$이 alternating이므로, $e$ 역시 alternating이고, 각 finite level에서 $e_n$이 Galois equivariant이므로 $e$ 역시 그러하다.
+>     또한 kernel of $e$는 $(R,R)$ 꼴의 원소로 generated되니, $T_{\ell}(E)\times T_\ell(E)/\ker e=\bigwedge\nolimits^2_{\mathbb Z_\ell}T_\ell(E)$이다.
+>     마지막으로 임의의 $(\eta_n)\in\mathbb Z_\ell(1)$에 대하여, $\eta_n=\zeta_{\ell^n}^{a_n}$인 $a_n\in\mathbb Z/\ell^n$이 존재하며, $\zeta_{\ell^n}^{a_n}=\eta_n=\eta_{n+1}^\ell=(\zeta_{\ell^{n+1}}^\ell)^{a_{n+1}}=\zeta_{\ell^n}^{a_{n+1}}$이므로 $a=(a_n)_n\in\mathbb Z_\ell$이며 $ae(P,Q)=\eta$이므로 $e$는 surjection이다.
+>     
+>     따라서 $G_K$ equivariant $\mathbb Z_\ell$-linear map $\Phi:\bigwedge\nolimits_{\mathbb Z_\ell}^2 T_{\ell}(E)\to\mathbb Z_\ell(1)$을 $\Phi:R\wedge S=(R,S)+\ker e\mapsto e(R,S)$로 정의하면 이는 well-defined isomorphism이다.
+>     
+>     또한 $(aP+cQ)\wedge(bP+dQ)=(ad-bc) P\wedge Q$이며, 따라서 $\sigma(P\wedge Q)=\det\rho_{E,\ell}(\sigma)(P\wedge Q)$이 성립한다.
+>     $\zeta=\Phi(P\wedge Q)$로 두면, $(\Phi\circ\sigma)(P\wedge Q)=\Phi(P\wedge Q)^{\det\rho_{E,\ell}(\sigma)}$이므로 $\chi_\ell(\sigma)=\det\rho_{E,\ell}(\sigma)$.
+>     즉 $\chi_\ell=\det\rho_{E,\ell}$라고 할 수 있다.
 
 ## 문제 3. Torsion field와 real place에서의 oddness
 

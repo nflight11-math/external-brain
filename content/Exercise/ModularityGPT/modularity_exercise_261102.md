@@ -109,12 +109,10 @@ $$
 2.
     행렬 표기는 다음 규약을 따른다.
     $$
-    \sigma P=aP+cQ,\qquad \sigma Q=bP+dQ,
-    \qquad
-    \rho_{E,m}(\sigma)=
-    \begin{pmatrix}a&b\\c&d\end{pmatrix}.
+    \sigma P=aP+cQ,\qquad \sigma Q=bP+dQ,\qquad
+    \rho_{E,m}(\sigma)=\begin{pmatrix}a&b\\c&d\end{pmatrix}.
     $$
-    여기서 $a,b,c,d\in\mathbb Z/m\mathbb Z$이다. 다음 등식을 직접 계산하라:$e_m(\sigma P,\sigma Q)=e_m(P,Q)^{ad-bc}$.
+    여기서 $a,b,c,d\in\mathbb Z/m\mathbb Z$이다. 다음 등식을 직접 계산하라: $e_m(\sigma P,\sigma Q)=e_m(P,Q)^{ad-bc}$.
     이를 이용하여 $\det\rho_{E,m}=\chi_m$을 증명하라.
     여기서 cyclotomic character $\chi_m:G_K\longrightarrow(\mathbb Z/m\mathbb Z)^\times$는 다음 조건으로 정의된다. $\sigma(\zeta)=\zeta^{\chi_m(\sigma)}\quad(\zeta\in\mu_m).$
 3.
@@ -132,6 +130,12 @@ $$
 > 1. $e_m(P,Q)$의 order를 $d$라 놓고, $e_m(dP,R)$를 모든 $R\in E[m]$에 대해 살펴보라.
 > 2. Bilinearity와 $e_m(Q,P)=e_m(P,Q)^{-1}$을 사용한 뒤, Galois equivariance와 비교하라.
 > 3. Compatible bases에서 얻은 pairing 값들이 $\mathbb Z_\ell(1)$의 generator를 이루는지 확인하라.
+
+> [!done]- 증명
+> 1.
+>     $e_m(P,Q)$가 primitive $d$-th root of unity라고 하자. 그러면 $d\mid m$이다.
+>     그러면 임의의 $R=aP+bQ$에 대하여 $e_m(dP,R)=e_m(P,P)^{ad}e_m(R,Q)^{bd}=1$이 성립하므로 nondegeneracy of Weil pairing에 의하여 $dP=O$이다.
+>     그러므로 $m\mid d$이고, 따라서 $d=m$을 얻는다. 즉 $e_m(P,Q)$는 primitive $m$-th root of unity이다. $\square$
 
 ## 문제 3. Torsion field와 real place에서의 oddness
 

@@ -176,7 +176,7 @@ $m=\ell^n$이라 하고, $L_m=K(E[m])$을 모든 $m$-torsion point의 좌표를 
     이어서 $V_\ell(E):=T_\ell(E)\otimes_{\mathbb Z_\ell}\mathbb Q_\ell$ 위에서 $c_v$의 $+1$, $-1$ eigenspace가 각각 1차원임을 증명하라.
     여기서 2-dimensional representation의 real place에서의 **oddness**는 complex conjugation의 determinant가 $-1$이라는 조건을 뜻한다.
 3.
-    $\ell\ne2$이면 residual representation $\overline\rho_{E,\ell}:G_K\longrightarrow\operatorname{GL}_2(\mathbb F_\ell)$에서도 $c_v$의 eigenvalue가 $1,-1$이고 각각의 eigenspace가 1차원임을 보여라.
+    $\ell\ne2$이면 $\overline\rho_{E,\ell}:\sigma\mapsto\rho_{E,\ell}(\sigma)\bmod\ell\mathbb Z_\ell$로 정의 residual representation $\overline\rho_{E,\ell}:G_K\longrightarrow\operatorname{GL}_2(\mathbb F_\ell)$에서도 $c_v$의 eigenvalue가 $1,-1$이고 각각의 eigenspace가 1차원임을 보여라.
     $\ell=2$일 때는 왜 같은 논증이 성립하지 않는지 설명하라.
 
 > [!tip]- 힌트
@@ -199,6 +199,23 @@ $m=\ell^n$이라 하고, $L_m=K(E[m])$을 모든 $m$-torsion point의 좌표를 
 >     $A$를 $\rho_{E,\ell}(c_v)\in\operatorname{GL}_2(\mathbb Z_\ell)$을 $\operatorname{GL}_2(\mathbb Q_\ell)$의 원소로 보면, $c_v^2=1$이니 $A^2=I$가 된다.
 >     또한 $\det A=-1$이므로 $A$의 eigenvalue는 $1,-1$로 서로 다르므로($\operatorname{char}\mathbb Q_\ell=0$임에 유의하라.) 반드시 $A$는 diagonalizable이다.
 >     각 eigenvalue에 대응하는 eigenspace의 차원은 최소 $1$이며 차원의 합이 $2$이므로, eigenvalue $\pm1$에 대응하는 eigenspace를 각각 $V_\ell(E)^\pm$이라고 하면 $\dim_{\mathbb Q_\ell}V_\ell(E)^+=\dim_{\mathbb Q_\ell}V_\ell(E)^-=1$이다. $\square$
+> 
+> 3.
+>     $\ell\ne 2$이면 characteristic $\ell$에서는 $1\ne -1$이므로 2.의 논증을 그대로 유지하여 $\overline\rho_{E,\ell}$에서도 $c_v$의 eigenvalue가 $\pm1$이고 각 eigenvalue에 대응되는 eigenspace가 1차원이다.
+>     
+>     그러나 $\ell=2$일 경우에는 $A^2=I$, $\det A=1$이므로 $A$가 diagonalizable임을 확신할 수 없다.
+>     예를 들어, $E/\mathbb Q:y^2=x^3-1$에서는 $E[2]=\{O,P,Q,R\}$ for
+>     $$
+>     P=(1,0),\quad Q=(\omega,0),\quad R=(\omega^2,0)
+>     $$
+>     이, $\omega=e^{2\pi i/3}$일 시 성립한다.
+>     $P+Q+R=O$이 성립함은 group law에 의해서 알 수 있다.
+>     $c$가 complex conjugation이면, $c(P)=P, c(Q)=R=P+Q$이므로 basis $(P,Q)$에서는
+>     $$
+>     \overline{\rho}_{E,2}(c)=\begin{bmatrix}1&1\\0&1\end{bmatrix}
+>     $$
+>     로, 이는 diagonalizable하지 않다.
+>     그러나, 물론 2.에서 증명한 대로 $V_2(E)$에서는 complex conjugation은 diagonalizable이다.
 
 ## 참고문헌
 

@@ -153,7 +153,7 @@ Point $T$에 의한 translation을 $\tau_T(P)=P+T$로 쓴다.
 > $$
 > 를 얻는다. 이것이 두 조건의 동치이며, $h$의 유일성은 $\varphi^*$의 injectivity에서 따른다.
 
-이 명제를 $\varphi=[m]$에 적용하면, 모든 $m$-torsion translation에 invariant인 rational function이 정확히 $h\circ[m]$ 꼴이라는 것을 알 수 있다. 이 사실은 [[Theories/Algebra/WeilPairingConstruction#Nondegeneracy|Weil pairing의 nondegeneracy]]를 증명할 때 사용한다.
+이 명제를 $\varphi=[m]$에 적용하면, 모든 $m$-torsion translation에 invariant인 rational function이 정확히 $h\circ[m]$ 꼴이라는 것을 알 수 있다. 이 사실은 [[Theories/Algebra/WeilPairing#Nondegeneracy|Weil pairing의 nondegeneracy]]를 증명할 때 사용한다.
 
 ## 참고문헌
 

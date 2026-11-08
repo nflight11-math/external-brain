@@ -88,8 +88,8 @@ $$
 >     따라서 representation $\rho_{E,\ell,n}:G_K\to \operatorname{GL}_2(\mathbb Z/\ell^n)$이 $\rho_{E,\ell,n}(\sigma):R\mapsto \sigma R$가 되도록 정의할 수 있다.
 >     만일 $\sigma\in \ker\rho_{E,\ell,n}$라면, $\sigma$는 모든 $\ell^n$-torsion point를 고정하므로 그의 좌표들도 고정한다.
 >     따라서 $\ker\rho_{E,\ell,n}$은 $K(E[\ell^n])$ 역시 고정한다.
->     이때 $K(E[\ell^n])$은 generator인 $R_x,R_y$가 유한 개이므로 finite extension over $K$이고 따라서 $\ker\rho_{E,\ell,n}=\operatorname{Gal}(\overline{K}/K(E[\ell^n])$은 open group이다.
->     그러니 $\rho_{E,\ell,n}$은 continuous이고, 이들의 inverse limit인 $\rho_{E,\ell}:G_K\to\operatorname{GL}_2(\mathbb Z_\ell)$ 역시 continuous이다. $\square$
+>     이때 $K(E[\ell^n])$은 generator인 $R_x,R_y$가 유한 개이므로 finite extension over $K$이고 따라서 $\ker\rho_{E,\ell,n}=\operatorname{Gal}(\overline{K}/K(E[\ell^n])$은 open group이다.[^1]
+>     그러니 $\rho_{E,\ell,n}$은 continuous이고[^2], 이들의 inverse limit인 $\rho_{E,\ell}:G_K\to\operatorname{GL}_2(\mathbb Z_\ell)$ 역시 continuous이다. $\square$
 >     
 >     만일 basis가 바뀌면 각 finite level에서 matrix가 base change matrix $A_n$에 대해서 conjugation으로 바뀐다: $\rho_{E,\ell,n}'(\sigma)=A_n\rho_{E,\ell,n}(\sigma)A_n^{-1}$.
 >     그러므로 global level에서도 역시 intertwining map $A:=\varprojlim A_n$에 대해서 $\rho_{E,\ell}'(\sigma)=A\rho_{E,\ell}(\sigma)A^{-1}$이 성립하여, $\rho_{E,\ell}$과 $\rho_{E,\ell}'$은 isomorphic representation이 된다.
@@ -165,3 +165,5 @@ $m=\ell^n$이라 하고, $L_m=K(E[m])$을 모든 $m$-torsion point의 좌표를 
 - Andrew Sutherland, [Lecture 6: Torsion subgroups and endomorphism rings](https://math.mit.edu/classes/18.783/2023/LectureNotes6.pdf), MIT 18.783, Fall 2023, §6.1, Theorem 6.1.
 - Andrew Sutherland, [Lecture 23: Divisors and the Weil pairing](https://math.mit.edu/classes/18.783/2023/LectureNotes23.pdf), MIT 18.783, Fall 2023, Theorem 23.29, Corollary 23.30.
 - Andrew Snowden, [Lecture 2: Elliptic curves](https://websites.umich.edu/~asnowden/teaching/2013/679/L02.html), Math 679, 2013, “The Tate module and Weil pairing”.
+
+[^1]: [[Exercise/GaloisGPT/galois_representation_exercise_261102##문제-1-finite-codomain-representation의-연속성|Galois representation 연습문제 1의 문제 1-1]].

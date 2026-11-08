@@ -192,7 +192,13 @@ $m=\ell^n$이라 하고, $L_m=K(E[m])$을 모든 $m$-torsion point의 좌표를 
 >     즉 $K(\zeta_m)\subset L_m$.
 >     
 >     앞선 연습문제로부터 $\chi_m=\det\rho_{E,m}$을 얻었으므로 $\rho_{E,m}(G_K)\subset\operatorname{SL}_2(\mathbb Z/m)$임과 임의의 $\sigma\in G_K$에 대하여 $\sigma(\zeta_m)=\zeta_m^{\chi_m(\sigma)}=\zeta_m$, $\zeta_m\subset \overline{K}^{G_K}=K$임이 모두 동치임 역시 증명 가능하다. $\square$
-
+> 
+> 2.
+>     $c_v(\zeta)=\zeta^{-1}=\zeta^{\chi_\ell(c_v)}$이므로, $\det\rho_{E,\ell}(c_v)=\chi_\ell(c_v)=-1$이다.
+>     
+>     $A$를 $\rho_{E,\ell}(c_v)\in\operatorname{GL}_2(\mathbb Z_\ell)$을 $\operatorname{GL}_2(\mathbb Q_\ell)$의 원소로 보면, $c_v^2=1$이니 $A^2=I$가 된다.
+>     또한 $\det A=-1$이므로 $A$의 eigenvalue는 $1,-1$로 서로 다르므로($\operatorname{char}\mathbb Q_\ell=0$임에 유의하라.) 반드시 $A$는 diagonalizable이다.
+>     각 eigenvalue에 대응하는 eigenspace의 차원은 최소 $1$이며 차원의 합이 $2$이므로, eigenvalue $\pm1$에 대응하는 eigenspace를 각각 $V_\ell(E)^\pm$이라고 하면 $\dim_{\mathbb Q_\ell}V_\ell(E)^+=\dim_{\mathbb Q_\ell}V_\ell(E)^-=1$이다. $\square$
 
 ## 참고문헌
 

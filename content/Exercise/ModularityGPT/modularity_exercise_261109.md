@@ -1,5 +1,5 @@
 ---
-title: Modularity Exercise #2
+title: Modularity Exercise \#2
 date: 2026-11-09
 tags:
   - exercise

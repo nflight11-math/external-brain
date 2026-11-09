@@ -28,6 +28,15 @@ $\ell$을 prime number, $E/\mathbb Q_\ell$을 finite extension이라 하자.
 
 Finite field $k$에 대해 $\operatorname{GL}_d(k)$에 discrete topology를 부여하여 continuous representations $G_K\to\operatorname{GL}_d(k)$도 생각할 수 있다. 아래의 unramified 조건은 이 경우에도 같은 방식으로 정의된다.
 
+## Lattices and Residual Representations
+
+$\mathbb Q_\ell$ 위의 representation을 integral matrices로 나타내기 위해 [[Theories/Algebra/Lattice#Stable Lattices|stable lattice]]를 사용한다.
+Lattice와 basis의 선택은 [[Theories/Algebra/Lattice#Basis and Lattice Choices|Basis and Lattice Choices]]를 참조한다.
+
+Stable lattice를 선택한 뒤 얻는 [[Theories/Algebra/ResidualRepresentation#Finite-Level Representations|finite-level representations]], [[Theories/Algebra/ResidualRepresentation#Residual Representation|residual representation]] 및 [[Theories/Algebra/ResidualRepresentation#Composition Series and Semisimplification|semisimplification]]은 별도 문서에 정리되어 있다.
+
+이 정의를 사용하는 증명 및 계산은 [[Exercise/GaloisGPT/galois_representation_exercise_261109|Stable Lattices and Reduction]]에서 다룬다.
+
 ## Unramified Representations
 
 이 절에서는 $K$를 number field라 하고 $v$를 [[Theories/Algebra/LocalField#Nonarchimedean Places|nonarchimedean place]]라 한다.
@@ -129,6 +138,8 @@ $p=\ell$에서는 $\chi_\ell$이 ramified이다. 실제로 $\mathbb Q_\ell$의 $
 - [[Theories/Algebra/DecompositionAndInertiaGroups|Decomposition and Inertia Groups]]
 - [[Theories/Algebra/InfiniteGalois|Infinite Galois Theory]]
 - [[Exercise/GaloisGPT/galois_representation_exercise_261102|Galois representation 연습문제 1]]
+- [[Theories/Algebra/Lattice|Lattice]]
+- [[Theories/Algebra/ResidualRepresentation|Residual Representation]]
 
 ## References
 

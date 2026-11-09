@@ -20,11 +20,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 소스 가져오기
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - name: Node.js 설치
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 24
       - name: Node.js 의존성 설치
@@ -34,7 +34,7 @@ jobs:
       - name: 정적 웹사이트 빌드
         run: npx quartz build
       - name: GitHub Pages 결과 업로드
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: public
 
@@ -47,4 +47,4 @@ jobs:
     steps:
       - name: GitHub Pages 배포
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

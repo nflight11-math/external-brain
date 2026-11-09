@@ -1,5 +1,5 @@
 ---
-title: Galois Representation Exercises #2
+title: "Galois Representation Exercises #2"
 date: 2026-11-09
 tags:
   - exercise

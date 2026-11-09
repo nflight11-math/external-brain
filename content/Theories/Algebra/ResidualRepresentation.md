@@ -6,7 +6,7 @@ tags:
   - galois-representation
 ---
 
-$\ell$을 prime, $G$를 profinite group, $V$를 finite-dimensional $\mathbb Q_\ell$-vector space라 하자. $\rho:G\to\operatorname{GL}_{\mathbb Q_\ell}(V)$는 연속 representation이고, $T\subset V$는 [[Theories/Algebra/Lattice#Stable Lattices|$G$-stable $\mathbb Z_\ell$-lattice]]라 한다. $T_n:=T/\ell^nT$로 쓴다.
+$\ell$을 prime, $G$를 profinite group, $V$를 finite-dimensional $\mathbb Q_\ell$-vector space라 하자. $\rho:G\to\operatorname{GL}_{\mathbb Q_\ell}(V)$는 연속 representation이고, $T\subset V$는 $G$[[Theories/Algebra/Lattice#Stable Lattices|-stable lattice]]라 한다. $T_n:=T/\ell^nT$로 쓴다.
 
 ## Finite-Level Representations
 

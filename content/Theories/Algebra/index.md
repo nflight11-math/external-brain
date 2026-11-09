@@ -18,6 +18,8 @@ tags:
 ## Elliptic Curves
 - [[Theories/Algebra/Isogeny|Isogeny]]
 - [[Theories/Algebra/WeilPairing|Weil Pairing]]
+- [[Theories/Algebra/TangentSpaceAndDifferential|Tangent Space and Differential]]
+- [[Theories/Algebra/FrobeniusMorphism|Frobenius Morphism]]
 
 ## Multilinear Algebra
 - [[Theories/Algebra/ExteriorPower|Exterior Power]]

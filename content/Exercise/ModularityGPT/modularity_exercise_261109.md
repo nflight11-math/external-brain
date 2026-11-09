@@ -26,7 +26,7 @@ Finite-level representation은 $\rho_{E,\ell,n}=\rho_{E,\ell}\bmod\ell^n$으로 
 
 ## Problem 1. Reduction and Inertia
 
-**[증명된 사실]** $E/F$가 good reduction을 갖는다고 가정한다. 다음 standard facts를 사용해도 된다.
+$E/F$가 good reduction을 갖는다고 가정한다. 다음 standard facts를 사용해도 된다.
 
 - Reduction map $\operatorname{red}:E(\overline F)\to\widetilde E(\overline k)$는 group homomorphism이고, $\operatorname{red}(\sigma P)=\overline\sigma\operatorname{red}(P)$를 만족한다.
     여기서 $\overline\sigma$는 residue field에 유도되는 automorphism이다.
@@ -49,7 +49,7 @@ Finite-level representation은 $\rho_{E,\ell,n}=\rho_{E,\ell}\bmod\ell^n$으로 
 
 ## Problem 2. Point Counts and the Characteristic Polynomial
 
-**[알려진 정리의 가정 아래의 귀결]** 아래 standard theorems는 모두 증명된 정리이며, 이 문제에서는 증명 없이 사용해도 된다.
+아래 standard theorems는 모두 증명된 정리이며, 이 문제에서는 증명 없이 사용해도 된다.
 
 - Finite field $k=\mathbb F_q$ 위의 elliptic curve $C$와 $\ell\ne\operatorname{char}k$에 대해, 모든 nonzero endomorphism $\varphi:C\to C$는 isogeny이고 $\det(T_\ell(\varphi))=\deg\varphi$이다.
 - $\pi_q:C\to C$의 degree는 $q$이고 identity에서의 differential은 $0$이다. Group homomorphisms의 합에 대해 identity에서의 differential은 additive이다.
@@ -69,7 +69,7 @@ Finite-level representation은 $\rho_{E,\ell,n}=\rho_{E,\ell}\bmod\ell^n$으로 
 
 ## Problem 3. An Explicit Curve and Residual Frobenius
 
-**[증명된 사실]** $E/\mathbb Q:y^2=x^3-x+1$을 생각하자. $p=5,7$에 대하여 아래를 수행하라. 앞선 두 문제의 결과와 Lagrange's theorem을 사용해도 된다.
+$E/\mathbb Q:y^2=x^3-x+1$을 생각하자. $p=5,7$에 대하여 아래를 수행하라. 앞선 두 문제의 결과와 Lagrange's theorem을 사용해도 된다.
 이 문제에서 $\rho_{E,\ell}:G_{\mathbb Q}\to\operatorname{GL}_2(\mathbb Z_\ell)$은 global representation이고, $\operatorname{Frob}_p$는 $p$ 위의 decomposition group 안에서 선택한 arithmetic Frobenius lift이다.
 
 1. 주어진 integral Weierstrass equation의 discriminant를 계산하여 $p=5,7$에서 good reduction임을 확인하라.

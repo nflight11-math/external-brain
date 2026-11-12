@@ -76,6 +76,19 @@ $G_K$[[Theories/Algebra/Lattice#Stable Lattices|-stable lattice]] $T$를 하나 
 > Basis를 고르면 $T\cong\mathbb Z_\ell^d$이다. Compatible matrices의 entries에 inverse limit을 취하고, inverse matrices에도 같은 구성을 적용하라.
 > 연속성에는 [[Theories/Algebra/ResidualRepresentation#Congruence Subgroups|congruence subgroups]]를, 4번에는 $\bigcap_{n\ge1}\ell^nT=\{0\}$을 이용하라.
 
+> [!done]- 증명
+> 1.
+>     $\rho(g)$는 $\mathbb Z_\ell$-linear map이니, $\rho(g)(\ell^n T)=\ell^n\rho(g)(T)=\ell^nT$이다.
+>     그러므로 $\rho_{T,n}(g):x+\ell^nT\mapsto \rho(g)(x)+\ell^nT$는 well-defined automorhpism이다.
+>     그러므로 $\rho_{T,n}:G_K\to\operatorname{Aut}_{\mathbb Z/\ell^n\mathbb Z}(T_n)$.
+>     
+>     Reduction map $r_n:T\to T/\ell^nT$와 $r_{m,n}:T/\ell^mT\to T/\ell^n T$에 대하여$(m\ge n)$, 각 reduction은 모두 연속이며 $\rho_{T,n}=r_n\circ \rho$이다.
+>     그러므로 $\rho_{T,n}$은 연속이고, $m\ge n$일 때
+>     $$
+>     r_{m,n}\circ \rho_{T,m}=(r_{m,n}\circ r_m)\circ\rho = r_n\circ\rho=\rho_{T,n}.
+>     $$
+>     즉, $\{\rho_{T,n}\}$은 compatible. $\square$
+
 ## Problem 3. Dependence on the Lattice
 
 이 문제에서는 $G_K$ 대신 $G:=G_{\mathbb F_q}=\operatorname{Gal}(\overline{\mathbb F}_q/\mathbb F_q)$를 사용한다. Arithmetic Frobenius $F_q:x\mapsto x^q$가 $1\in\widehat{\mathbb Z}$에 대응하도록 $G\cong\widehat{\mathbb Z}$를 identify하자. $t:G\to\mathbb Z_\ell$은 $\widehat{\mathbb Z}\to\varprojlim_n\mathbb Z/\ell^n\mathbb Z=\mathbb Z_\ell$로 주어지는 연속 additive homomorphism이다. 특히 $t(F_q)=1$이다.

@@ -35,7 +35,17 @@ $V$의 basis $e_1,\ldots,e_d$를 고르고 $T_0=\bigoplus_{i=1}^d\mathbb Z_\ell 
 >     $G_K$는 compact이니, 그 continuous image $\rho_{ij}G_K\subset\mathbb Q_\ell$ 역시 compact이다.
 >     $\{\ell^{-N}\mathbb Z_\ell\}_{N\ge 0}$은 open cover of $\rho_{ij}G_K$이므로, $\rho_{ij}G_K\subset \ell^{-N_{ij}}\mathbb Z_\ell$인 $0\le N_{ij}\in\mathbb Z$가 존재한다.
 >     $N:=\max\{N_{ij}:1\le i,j\le d\}$로 두면, 모든 $i,j$에 대하여 $\rho_{ij}G_K\subset \ell^{-N}\mathbb Z_\ell$이어야 한다.
->     임의의 $g\in G_K$와 $\sum_in_ie_i\in T_0$에 대하여 $\rho(g)(\sum_i n_ie_i)=\sum_j(\sum_i n_i\rho_{ij}(g))e_j\in\ell^{-N}T_0$이 성립하므로, $\rho(g)T_0\subset \ell^{-N}T_0$ 역시 임의의 $g\in G_K$에 대하여 성립한다.
+>     임의의 $g\in G_K$와 $\sum_in_ie_i\in T_0$에 대하여 $\rho(g)(\sum_i n_ie_i)=\sum_j(\sum_i n_i\rho_{ij}(g))e_j\in\ell^{-N}T_0$이 성립하므로, $\rho(g)T_0\subset \ell^{-N}T_0$ 역시 임의의 $g\in G_K$에 대하여 성립한다. $\square$
+> 
+> 2.
+>     $1\in G_K$이니 $T_0=I T_0=\rho(1)T_0\subset\sum_{g\in G_K}\rho(g)T_0=T$이다.
+>     또한 자연수 $N$을 1.처럼 잡으면 임의의 $g\in G_K$에 대하여 $\rho(g)T_0\subset\ell^{-N}T_0$이므로 $T=\sum_{g\in G_K}\rho(g)T_0\subset \ell^{-N}T_0$.
+>     그러므로 $T_0\subset T\subset \ell^{-N}T_0$이다.
+>     
+>     $T_0$은 lattice of $V$이므로 $\mathbb Q_\ell T_0=V$이며, $\mathbb Q_\ell(\ell^{-N}T_0)=(\ell^{-N}\mathbb Q_\ell)T_0=\mathbb Q_\ell T_0=V$이다.
+>     그러므로 $V\subset \mathbb Q_\ell T\subset V$이니 $\mathbb Q_\ell T=V$.
+>     또한 $T$는 finitely generated free $\mathbb Z_\ell$-module $\ell^{-N}T_0$의 submodule이니 finitely generated free이, $\operatorname{rank}T=\operatorname{dim}_{\mathbb Q_\ell}\mathbb Q_\ell T=\dim_{\mathbb Q_\ell}V=d$이다.
+>     그러므로 $T$는 $V$의 $\mathbb Z_\ell$-lattice. $\square$
 
 ## Problem 2. Finite-Level Representations
 

@@ -27,6 +27,16 @@ $V$의 basis $e_1,\ldots,e_d$를 고르고 $T_0=\bigoplus_{i=1}^d\mathbb Z_\ell 
 > Matrix entries는 $G_K$ 위의 연속함수이다. Compact subset of $\mathbb Q_\ell$의 valuations는 아래로 bounded이다.
 > 2번에서는 $T$를 두 free modules 사이에 놓고, 3번에서는 sum의 index를 바꾸어 보라.
 
+> [!done]- 증명
+> 1.
+>     $\rho_{ij}:G_K\to\mathbb Q_\ell$를 $g\mapsto \rho(g)_{ij}$라고 생각하자.
+>     그러면 matrix의 $ij$-entry를 리턴하는 함수 $(-)_{ij}:\operatorname{Mat}_{n}\mathbb Q_\ell\to\mathbb Q_\ell$이 연속이므로, $\rho_{ij}:G_K\to\mathbb Q_\ell$은 연속이다.
+>     
+>     $G_K$는 compact이니, 그 continuous image $\rho_{ij}G_K\subset\mathbb Q_\ell$ 역시 compact이다.
+>     $\{\ell^{-N}\mathbb Z_\ell\}_{N\ge 0}$은 open cover of $\rho_{ij}G_K$이므로, $\rho_{ij}G_K\subset \ell^{-N_{ij}}\mathbb Z_\ell$인 $0\le N_{ij}\in\mathbb Z$가 존재한다.
+>     $N:=\max\{N_{ij}:1\le i,j\le d\}$로 두면, 모든 $i,j$에 대하여 $\rho_{ij}G_K\subset \ell^{-N}\mathbb Z_\ell$이어야 한다.
+>     임의의 $g\in G_K$와 $\sum_in_ie_i\in T_0$에 대하여 $\rho(g)(\sum_i n_ie_i)=\sum_j(\sum_i n_i\rho_{ij}(g))e_j\in\ell^{-N}T_0$이 성립하므로, $\rho(g)T_0\subset \ell^{-N}T_0$ 역시 임의의 $g\in G_K$에 대하여 성립한다.
+
 ## Problem 2. Finite-Level Representations
 
 $G_K$[[Theories/Algebra/Lattice#Stable Lattices|-stable lattice]] $T$를 하나 고정하자. $T$의 basis를 선택하여 $\operatorname{Aut}_{\mathbb Z_\ell}(T)$를 $\operatorname{GL}_d(\mathbb Z_\ell)$와 identify하고 그 topology를 사용한다. $n\ge1$에 대해 $T_n:=T/\ell^nT$로 놓는다.

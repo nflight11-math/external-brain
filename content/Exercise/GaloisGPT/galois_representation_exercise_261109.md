@@ -46,6 +46,20 @@ $V$의 basis $e_1,\ldots,e_d$를 고르고 $T_0=\bigoplus_{i=1}^d\mathbb Z_\ell 
 >     그러므로 $V\subset \mathbb Q_\ell T\subset V$이니 $\mathbb Q_\ell T=V$.
 >     또한 $T$는 finitely generated free $\mathbb Z_\ell$-module $\ell^{-N}T_0$의 submodule이니 finitely generated free이, $\operatorname{rank}T=\operatorname{dim}_{\mathbb Q_\ell}\mathbb Q_\ell T=\dim_{\mathbb Q_\ell}V=d$이다.
 >     그러므로 $T$는 $V$의 $\mathbb Z_\ell$-lattice. $\square$
+> 
+> 3.
+>     임의의 $g\in G_K$에 대하여 $G_K=gG_K$임을 이용하면 된다.
+>     $$
+>     \begin{aligned}
+>     \rho(g)T &= \rho(g)\sum_{x\in G_K}\rho(x)T_0 = \sum_{x\in G_K}\rho(g)\rho(x)T_0\\
+>     &= \sum_{gx\in G_K}\rho(gx)T_0 = T.
+>     \end{aligned}
+>     $$
+>     그러므로 $T$는 $G_K$-stable lattice이다.
+>     
+>     $V$의 basis를 $T=T_0$이게 잡자. 즉 $T=\bigoplus_1^d\mathbb Z_\ell e_i$, $V=\bigoplus_1^d\mathbb Q_\ell e_i$로 두자는 것이다.
+>     그러면 $\rho(g)T,\rho(g^{-1})T\subset T$가 임의의 $g\in G_K$에 대하여 성립하는 것으로부터 $\rho(g),\rho(g^{-1})$의 모든 entry가 $\mathbb Z_\ell$의 원소임을 알 수 있다.
+>     즉 $\rho(g)\in\operatorname{GL}_d(\mathbb Z_\ell)$가 되게끔 $V$의 basis를 적절히 선택할 수 있다. $\square$
 
 ## Problem 2. Finite-Level Representations
 

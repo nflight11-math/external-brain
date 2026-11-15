@@ -31,7 +31,7 @@ $E/F$가 good reduction을 갖는다고 가정한다. 다음 standard facts를 �
 
 - Reduction map $\operatorname{red}:E(\overline F)\to\widetilde E(\overline k)$는 group homomorphism이고, $\operatorname{red}(\sigma P)=\overline\sigma\operatorname{red}(P)$를 만족한다.
     여기서 $\overline\sigma$는 residue field에 유도되는 automorphism이다.
-- 모든 finite extension $L/F$에 대해 reduction kernel $E_1(L)$은 parameter $t=-x/y$를 통해 $\mathfrak m_L$과 identify된다. 여기서 $t(O)=0$이다.
+- 모든 finite extension $L/F$에 대해 reduction kernel $E_1(L):=\ker\operatorname{red}=\{R\in E(L):\operatorname{red}(R)=\widetiled{O}\}$은 parameter $t=-x/y$를 통해 $\mathfrak m_L$과 identify된다. 여기서 $t(O)=0$이다.
     어떤 power series $h(T)\in\mathcal O_L[[T]]$가 존재하여 모든 $R\in E_1(L)$에 대해 다음이 성립한다:
     $$
     t([\ell]R)=\ell\,t(R)+t(R)^2h(t(R)).

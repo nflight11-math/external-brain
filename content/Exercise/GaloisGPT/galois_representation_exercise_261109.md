@@ -133,12 +133,25 @@ $$
 $T=\mathbb Z_\ell e_1\oplus\mathbb Z_\ell e_2$와 $T'=\mathbb Z_\ell(\ell^{-1}e_1)\oplus\mathbb Z_\ell e_2$를 생각하자.
 
 1. $\rho$가 연속 representation이고, $T$, $T'$가 모두 $G$-stable lattices임을 증명하라. 각 displayed basis에 대해 $\rho(g)$의 행렬을 구하라.
-2. 두 residual representations $\overline\rho_T$, $\overline\rho_{T'}$를 구하고 서로 isomorphic하지 않음을 증명하라. 이를 위해 두 representations의 [[Theories/Algebra/ResidualRepresentation#Isomorphisms and Fixed Subspaces|$G$-fixed subspaces]]의 차원을 비교하라.
+2. 두 residual representations $\overline\rho_T$, $\overline\rho_{T'}$를 구하고 서로 isomorphic하지 않음을 증명하라. 이를 위해 두 representations의 $G$-[[Theories/Algebra/ResidualRepresentation#Isomorphisms and Fixed Subspaces|fixed subspaces]]의 차원을 비교하라.
 3. 각 $g\in G$에 대해 두 residual matrices의 characteristic polynomials를 비교하라. 이 예에서 characteristic polynomials만으로 두 representations의 isomorphism 여부를 결정할 수 있는지 설명하라.
 4. 각 residual representation에서 첫 번째 basis vector가 생성하는 line과 그 quotient의 action을 조사하라. 두 representations의 [[Theories/Algebra/ResidualRepresentation#Composition Series and Semisimplification|semisimplifications]]를 비교하라.
 
 > [!tip]- 힌트
 > $T'$에서는 $f_1=\ell^{-1}e_1$, $f_2=e_2$를 basis로 사용하라. Fixed vectors는 $F_q$의 행렬부터 조사하고, characteristic polynomial과 invariant line의 quotient action을 구별하라.
+
+> [!done]- 증명
+> 1.
+>     $T$에서 $\rho(g)$의 행렬 표현은 $\begin{pmatrix}1& t(g)\\0&1\end{pmatrix}$이다.
+>     또한 $\rho(g)(\ell^{-1}e_1)=\ell^{-1}e_1$이고 $\rho(g)(e_2)=\ell t(g)\cdot\ell^{-1}e_1+e_2$이므로 $T'$에서 $\rho(g)$의 행렬 표현은 $\begin{pmatrix}1& \ell t(g)\\0&1\end{pmatrix}$가 된다.
+>     각 coordinate의 함수가 모두 연속이므로 $\rho$는 continuous이며, $\rho(F_q)$의 행렬 표현이 $T,T'$에서 각각
+>     $$
+>     \begin{pmatrix}1& a+b\\0&1\end{pmatrix}=\begin{pmatrix}1& a\\0&1\end{pmatrix}\begin{pmatrix}1& b\\0&1\end{pmatrix},\quad\begin{pmatrix}1& a\\0&1\end{pmatrix}^{-1}=\begin{pmatrix}1& a\\0&1\end{pmatrix}
+>     $$
+>     이므로 $\rho$는 group homomrphism이다.
+>     
+>     또한 $\rho(g)(ae_1+be_2)=(a+bt(g))e_1+be_2\in T$이니 $\rho(g)T\subset T$이 임의의 $g\in G$에 대하여 성립하며, $T=\rho(g)\rho(g^{-1})T\subset \rho(g)T\subset T$이므로 $\rho(g)T=T$, 즉 $T$는 $G$-stable이다.
+>     $\rho(g)(a\ell^{-1}e_1+be_2)=(a+b\ell t(g))\ell^{-1}e_1+be_2\in T'$이므로, 같은 방식으로 $T'$ 역시 $G$-stable임을 알 수 있다. $\square$
 
 
 ## Related Pages

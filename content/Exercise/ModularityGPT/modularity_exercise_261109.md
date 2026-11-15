@@ -32,7 +32,7 @@ $E/F$가 good reduction을 갖는다고 가정한다. 다음 standard facts를 �
 - Reduction map $\operatorname{red}:E(\overline F)\to\widetilde E(\overline k)$는 group homomorphism이고, $\operatorname{red}(\sigma P)=\overline\sigma\operatorname{red}(P)$를 만족한다.
     여기서 $\overline\sigma$는 residue field에 유도되는 automorphism이다.
 - 모든 finite extension $L/F$에 대해 reduction kernel $E_1(L)$은 parameter $t=-x/y$를 통해 $\mathfrak m_L$과 identify된다.
-    이때 $t(O)=0$이고 multiplication by $\ell$은 power series $[\ell]_{\widehat E}(T)=\ell T+T^2h(T)$, $h(T)\in\mathcal O_L[[T]]$ 로 주어진다.
+    이때 $t(O)=0$이고 multiplication by $\ell$은 $h(T)\in\mathcal O_L[[T]]$에 대하여 power series $[\ell]_{\widehat E}(T)=\ell T+T^2h(T)$로 주어진다.
 - Characteristic이 $\ell$이 아닌 field 위의 elliptic curve의 geometric $\ell^n$-torsion은 $(\mathbb Z/\ell^n\mathbb Z)^2$와 isomorphic이다.
 
 1. $E_1(L)[\ell]=\{O\}$임을 보이고, 모든 $n\ge1$에 대해 $E_1(L)[\ell^n]=\{O\}$임을 도출하라.

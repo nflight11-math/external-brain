@@ -68,9 +68,7 @@ $G_K$[[Theories/Algebra/Lattice#Stable Lattices|-stable lattice]] $T$를 하나 
 1. $\rho$가 연속 homomorphism $\rho_{T,n}:G_K\to\operatorname{Aut}_{\mathbb Z/\ell^n\mathbb Z}(T_n)$을 유도함을 증명하라. $\rho_{T,n+1}$의 행렬을 modulo $\ell^n$으로 reduce하면 $\rho_{T,n}$이 됨을 보여라.
 2. 자연스러운 map $T\to\varprojlim_nT_n$이 isomorphism임을 증명하라. 이를 이용하여 모든 $n$에서 주어진 [[Theories/Algebra/ResidualRepresentation#Compatibility|compatible representations]] $\rho_n:G_K\to\operatorname{Aut}(T_n)$이 연속이면, 이들을 유도하는 연속 homomorphism $G_K\to\operatorname{Aut}_{\mathbb Z_\ell}(T)$가 유일하게 존재함을 증명하라.
 3. 일반적으로 homomorphism $\rho:G_K\to\operatorname{Aut}_{\mathbb Z_\ell}(T)$가 연속일 필요충분조건은 모든 modulo $\ell^n$ reductions가 연속이라는 것임을 증명하라.
-4. 임의의 subgroup $J\subseteq G_K$에 대해, $\rho(J)=\{1\}$일 필요충분조건은 모든 $n\ge1$에서 $\rho_{T,n}(J)=\{1\}$이라는 것임을 증명하라.
-
-[[Theories/Algebra/ResidualRepresentation#Residual Representation|Residual representation]]의 notation $\overline\rho_T=\rho_{T,1}$을 사용한다.
+4. 임의의 subgroup $J\subseteq G_K$에 대해, $\rho(J)=1$일 필요충분조건은 모든 $n\ge1$에서 $\rho_{T,n}(J)=1$이라는 것임을 증명하라.
 
 > [!tip]- 힌트
 > Basis를 고르면 $T\cong\mathbb Z_\ell^d$이다. Compatible matrices의 entries에 inverse limit을 취하고, inverse matrices에도 같은 구성을 적용하라.
@@ -114,10 +112,18 @@ $G_K$[[Theories/Algebra/Lattice#Stable Lattices|-stable lattice]] $T$를 하나 
 >     
 >     이때 임의의 open neighborhood $W$ of $I_d\in\operatorname{GL}_d(\mathbb Z_\ell)$에 대하여 적당한 $U_n$이 존재하여 $U_n\subset W$이다.
 >     그러니 $1\in\rho^{-1}U_n\subset\rho^{-1}W$이므로 $\rho$는 $1$에서 연속이고, translation에 의하여 정의역 내의 임의의 점에서 연속이게 된다. $\square$
+> 
+> 4.
+>     만일 $\rho(J)=1$이면 reduction도 자명하다, 즉 임의의 $n$에 대하여 $\rho_{T,n}(J)=1$이다.
+>     역으로 임의의 $n$에 대하여 $\rho_{T,n}(J)=1$이면, $g\in J$에 대하여 $\rho_{T,n}(g)(x+\ell^nT)=x+\ell^nT$이므로, $\rho(g)(x)-x\in \ell^n T$가 성립한다.
+>     이것이 임의의 $n$에 대하여 성립하고 $\bigcap_1^\infty \ell^nT=0$이므로, $\rho(g)(x)-x=0$이다.
+>     $\rho(g)=1$이 되며 $g$를 임의로 설정했으므로 $\rho(J)=1$이다. $\square$
 
 ## Problem 3. Dependence on the Lattice
 
 이 문제에서는 $G_K$ 대신 $G:=G_{\mathbb F_q}=\operatorname{Gal}(\overline{\mathbb F}_q/\mathbb F_q)$를 사용한다. Arithmetic Frobenius $F_q:x\mapsto x^q$가 $1\in\widehat{\mathbb Z}$에 대응하도록 $G\cong\widehat{\mathbb Z}$를 identify하자. $t:G\to\mathbb Z_\ell$은 $\widehat{\mathbb Z}\to\varprojlim_n\mathbb Z/\ell^n\mathbb Z=\mathbb Z_\ell$로 주어지는 연속 additive homomorphism이다. 특히 $t(F_q)=1$이다.
+
+[[Theories/Algebra/ResidualRepresentation#Residual Representation|Residual representation]]의 notation $\overline\rho_T=\rho_{T,1}$을 사용한다.
 
 $V=\mathbb Q_\ell e_1\oplus\mathbb Q_\ell e_2$ 위에 다음 action을 정의한다.
 $$

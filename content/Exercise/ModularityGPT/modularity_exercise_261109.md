@@ -31,8 +31,11 @@ $E/F$가 good reduction을 갖는다고 가정한다. 다음 standard facts를 �
 
 - Reduction map $\operatorname{red}:E(\overline F)\to\widetilde E(\overline k)$는 group homomorphism이고, $\operatorname{red}(\sigma P)=\overline\sigma\operatorname{red}(P)$를 만족한다.
     여기서 $\overline\sigma$는 residue field에 유도되는 automorphism이다.
-- 모든 finite extension $L/F$에 대해 reduction kernel $E_1(L):=\ker\operatorname{red}=\{R\in E(L):\operatorname{red}(R)=\widetiled{O}\}$은 parameter $t=-x/y$를 통해 $\mathfrak m_L$과 identify된다. 여기서 $t(O)=0$이다.
-    어떤 power series $h(T)\in\mathcal O_L[[T]]$가 존재하여 모든 $R\in E_1(L)$에 대해 다음이 성립한다:
+- $L/F$가 finite extension이고 $E_1(L):=\ker(E(L)\to\widetilde E(k_L))$라 하자. 즉, $E_1(L)$은 reduction이 $\widetilde O$인 점들의 집합이다.
+    함수 $t:E_1(L)\to\mathfrak m_L$을 $R\ne O$에서는 $t(R)=-x(R)/y(R)$로, $R=O$에서는 $t(O)=0$으로 정의한다. 이 함수는 bijection이다.
+    따라서 각 $u\in\mathfrak m_L$에 대해 $t(R)=u$인 점 $R\in E_1(L)$이 유일하게 존재한다.
+    
+    또한 어떤 power series $h(T)\in\mathcal O_L[[T]]$가 존재하여 모든 $R\in E_1(L)$에 대해 다음이 성립한다:
     $$
     t([\ell]R)=\ell\,t(R)+t(R)^2h(t(R)).
     $$

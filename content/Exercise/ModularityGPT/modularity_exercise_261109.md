@@ -34,7 +34,7 @@ $E/F$가 good reduction을 갖는다고 가정한다. 다음 standard facts를 �
 - $L/F$가 finite extension이고 $E_1(L):=\ker(E(L)\to\widetilde E(k_L))$라 하자. 즉, $E_1(L)$은 reduction이 $\widetilde O$인 점들의 집합이다.
     함수 $t:E_1(L)\to\mathfrak m_L$을 $R\ne O$에서는 $t(R)=-x(R)/y(R)$로, $R=O$에서는 $t(O)=0$으로 정의한다. 이 함수는 bijection이다.
     따라서 각 $u\in\mathfrak m_L$에 대해 $t(R)=u$인 점 $R\in E_1(L)$이 유일하게 존재한다.
-    
+
     또한 어떤 power series $h(T)\in\mathcal O_L[[T]]$가 존재하여 모든 $R\in E_1(L)$에 대해 다음이 성립한다:
     $$
     t([\ell]R)=\ell\,t(R)+t(R)^2h(t(R)).
@@ -55,6 +55,14 @@ $E/F$가 good reduction을 갖는다고 가정한다. 다음 standard facts를 �
 > 3. Frobenius의 residue field action을 각 torsion level에서 확인하라. 두 lift는 inertia의 원소만큼 다르다.
 
 > [!done]- 증명
+> 1.
+>     만일 $R\in E_1(L)$이 $\ell R=O$이면, $t_R=t(R)$이라고 할 시 $0=t(\ell R)=t_R(\ell+t_Rh(t_R))$이 된다.
+>     $R$은 reduction kernel의 element이기 때문에 $t_R\in \mathfrak m_L$이고, $\ell\ne p$이므로 $\ell\in\mathcal O_L^\times$이다.
+>     따라서 $\ell+t_Rh(t_R)$은 unit이고, 그러므로 $t_R=0$이어야 한다.
+>     그러므로 $R=O$이고, 이로부터 $E_1(L)[\ell]=\{O\}$임을 얻는다.
+>     
+>     만일 $R\in E_1(L)[\ell^n]$, 즉 $\ell^nR=O$이면 $\ell^{n-1}R\in E_1(L)[\ell]$로부터 $\ell^{n-1}R=0$임을 알 수 있다.
+>     이를 반복하면 $R=O$가 된다. 즉, $E_1(L)[\ell^n]=\{O\}$가 임의의 $1\le n\in\mathbb Z$에 대하여 성립한다. $\square$
 
 ## Problem 2. Point Counts and the Characteristic Polynomial
 

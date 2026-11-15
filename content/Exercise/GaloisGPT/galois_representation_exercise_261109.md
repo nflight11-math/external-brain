@@ -170,6 +170,13 @@ $T=\mathbb Z_\ell e_1\oplus\mathbb Z_\ell e_2$와 $T'=\mathbb Z_\ell(\ell^{-1}e_
 > 3.
 >     Residual matrices의 characteristic polynomial은 $\overline\rho_T,\overline\rho_{T'}$ 모두 $(X-1)^2$로 동일하다.
 >     그러므로 characteristic polynomial만으로는 representation의 isomorphic한지를 구별할 수 없다.
+> 
+> 4.
+>     $L:=\mathbb F_\ell \overline{e}_1\subset T/\ell T$라고 하자. 그러면 임의의 $g\in G$에 대하여 $\left.\rho(g)\right|_L=\operatorname{id}_L$이며, $\rho(g)(\overline e_2+L)=\overline e_2+\overline t(g)\overline e_1+L=\overline e_2+L$이다.
+>     그러므로, $\rho(g)$는 $L,(T/\ell T)/L$에서 모두 trivial하게 작용한다. 그러니 $\overline\rho_T^{\operatorname{SS}}\cong\mathbf1\oplus\mathbf 1$이다.
+>     또한 $\overline\rho_{T'}$은 이미 trivial하므로 $\overline\rho_{T'}^{\operatorname{SS}}\cong\mathbf1\oplus\mathbf 1$ 역시 성립한다.
+>     
+>     즉 두 residual representation의 semisimplification은 $\mathbf1\oplus\mathbf 1$로 동일하다. 그러므로 semisimplication이 일치한다고 representation이 isomorphic하지 않을 수 있다.
 
 
 ## Related Pages

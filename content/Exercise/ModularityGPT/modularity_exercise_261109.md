@@ -18,8 +18,9 @@ Arithmetic Frobenius $\operatorname{Fr}_q$는 $\overline k$에서 $z\mapsto z^q$
 그 lift $\operatorname{Frob}_v\in G_F$를 하나 선택한다.
 Geometric Frobenius의 lift로는 $\operatorname{Frob}_v^{-1}$을 사용한다.
 
-$E/F$가 good reduction을 갖는다는 것은 $E$가 $\mathcal O_F$ 위의 smooth proper elliptic scheme으로 확장된다는 뜻이며, 그 special fiber를 $\widetilde E/k$라 쓴다.
-$p\ge5$에서는 integral Weierstrass equation의 discriminant가 unit이면 good reduction이다.
+$E/F$가 $a,b\in\mathcal O_F$이고 $\Delta=-16(4a^3+27b^2)\in\mathcal O_F^\times$인 Weierstrass equation $y^2=x^3+ax+b$를 가지면 **good reduction**을 갖는다고 한다.
+이러한 equation을 하나 선택하고, $a,b$의 modulo $\mathfrak m_F$ reduction을 $\bar a,\bar b\in k$라 하자. Projective curve $Y^2Z=X^3+\bar aXZ^2+\bar bZ^3$를 $\widetilde E/k$라 쓴다.
+$\bar\Delta\ne0$이므로 $\widetilde E$는 nonsingular elliptic curve이다. 이 curve를 선택한 equation의 **reduction**이라 부른다.
 
 $\rho_{E,\ell}:G_F\to\operatorname{GL}_2(\mathbb Z_\ell)$은 선택한 $T_\ell(E)$-basis에 대한 representation이며, $\overline\rho_{E,\ell}=\rho_{E,\ell}\bmod\ell$이다.
 Finite-level representation은 $\rho_{E,\ell,n}=\rho_{E,\ell}\bmod\ell^n$으로 표기한다.
@@ -31,7 +32,7 @@ $E/F$가 good reduction을 갖는다고 가정한다. 다음 standard facts를 �
 - Reduction map $\operatorname{red}:E(\overline F)\to\widetilde E(\overline k)$는 group homomorphism이고, $\operatorname{red}(\sigma P)=\overline\sigma\operatorname{red}(P)$를 만족한다.
     여기서 $\overline\sigma$는 residue field에 유도되는 automorphism이다.
 - 모든 finite extension $L/F$에 대해 reduction kernel $E_1(L)$은 parameter $t=-x/y$를 통해 $\mathfrak m_L$과 identify된다.
-    이때 $t(O)=0$이고 multiplication-by-$\ell$은 power series $[\ell]_{\widehat E}(T)=\ell T+T^2h(T)$, $h(T)\in\mathcal O_L[[T]]$, 로 주어진다.
+    이때 $t(O)=0$이고 multiplication by $\ell$은 power series $[\ell]_{\widehat E}(T)=\ell T+T^2h(T)$, $h(T)\in\mathcal O_L[[T]]$ 로 주어진다.
 - Characteristic이 $\ell$이 아닌 field 위의 elliptic curve의 geometric $\ell^n$-torsion은 $(\mathbb Z/\ell^n\mathbb Z)^2$와 isomorphic이다.
 
 1. $E_1(L)[\ell]=\{O\}$임을 보이고, 모든 $n\ge1$에 대해 $E_1(L)[\ell^n]=\{O\}$임을 도출하라.
@@ -46,6 +47,8 @@ $E/F$가 good reduction을 갖는다고 가정한다. 다음 standard facts를 �
 > 1. $t\in\mathfrak m_L$일 때 $\ell+t h(t)$가 unit인지 확인하라.
 > 2. 같은 reduction을 갖는 두 torsion points의 차이를 살펴보라. Surjectivity에는 양쪽의 원소 수를 비교하라.
 > 3. Frobenius의 residue field action을 각 torsion level에서 확인하라. 두 lift는 inertia의 원소만큼 다르다.
+
+> [!done]- 증명
 
 ## Problem 2. Point Counts and the Characteristic Polynomial
 

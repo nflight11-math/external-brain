@@ -88,6 +88,16 @@ $G_K$[[Theories/Algebra/Lattice#Stable Lattices|-stable lattice]] $T$를 하나 
 >     r_{m,n}\circ \rho_{T,m}=(r_{m,n}\circ r_m)\circ\rho = r_n\circ\rho=\rho_{T,n}.
 >     $$
 >     즉, $\{\rho_{T,n}\}$은 compatible. $\square$
+> 
+> 2.
+>     $\Phi:x\mapsto (x+\ell^nT)_n$은 well-defined module homomorphism이며, 만일 $x=\sum_in_ie_i\in\ker\Phi$이면 $x\in\ell^n T$이니 모든 $n,i$에 대하여 $\ell^n\mid n_i$이므로 $n_i=0$이다.
+>     따라서 $\ker\Phi=0$이므로 $\Phi$는 injective.
+>     또한 $(\sum_iN_{n,i}e_i+\ell^nT)_n\in\varprojlim_n T_n$에 대하여, $(N_{n,i})_n$이 compatible sequence in $\mathbb Z$이므로
+>     이의 inverse limit $N_i:=\varprojlim_n N_{n,i}\mathbb Z$에 대해 $\Phi(\sum_i N_ie_i)=(\sum_iN_{n,i}e_i+\ell^nT)_n$이 성립한다.
+>     그러므로 $\Phi$는 surejective이고, 그러니 자연스러운 map $\Phi$는 isomorphism이다. $\square$
+>     
+>     $\rho:G_K\to\operatorname{Aut}_{\mathbb Z_\ell}(T)$를, $\rho(g)$의 $i,j$-component가 $\rho_n(g)$의 $i,j$-component의 inverse limit이 되게 정의하면 이는 homomorphism이 된다.
+>     연속성은 각 $\rho_n$이 연속이므로 3.에 의해서 얻을 수 있다.
 
 ## Problem 3. Dependence on the Lattice
 

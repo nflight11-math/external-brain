@@ -152,6 +152,20 @@ $T=\mathbb Z_\ell e_1\oplus\mathbb Z_\ell e_2$와 $T'=\mathbb Z_\ell(\ell^{-1}e_
 >     
 >     또한 $\rho(g)(ae_1+be_2)=(a+bt(g))e_1+be_2\in T$이니 $\rho(g)T\subset T$이 임의의 $g\in G$에 대하여 성립하며, $T=\rho(g)\rho(g^{-1})T\subset \rho(g)T\subset T$이므로 $\rho(g)T=T$, 즉 $T$는 $G$-stable이다.
 >     $\rho(g)(a\ell^{-1}e_1+be_2)=(a+b\ell t(g))\ell^{-1}e_1+be_2\in T'$이므로, 같은 방식으로 $T'$ 역시 $G$-stable임을 알 수 있다. $\square$
+> 
+> 2.
+>     $\rho(g)$의 $T,T'$에서의 행렬 표현은 각각
+>     $$
+>     \begin{pmatrix}1& t(g)\pmod \ell\\0&1\end{pmatrix},\quad\begin{pmatrix}1&0\\0&1\end{pmatrix}
+>     $$
+>     이다.
+>     
+>     $\overline e_{i}:=e_i+\ell T,e_i+\ell T'$로 정의하자.
+>     그러면 만일 $a\overline e_1+b\overline e_2$가 fixed subspace의 원소라면 $T$에서는 $\overline{\rho}_T(F_q)(a\overline e_1+b\overline e_2)=(a+b)\overline{e}_1+b\overline{e}_2$이므로 $a=0$이어야 한다.
+>     $T'$에서는, $\overline{\rho}_{T'}$이 trivial하므로 모든 $T/\ell T$의 원소가 임의의 $g\in G$에 의하여 고정된다.
+>     
+>     즉 $(T/\ell T)^G=\mathbb F_\ell\overline{e}_1$이고, $(T'/\ell T')^G=T'/\ell T'$이며, dimension은 각각 $1,2$이다.
+>     Isomorhpic representation은 $G$-fixed subspace의 차원을 공유하므로, $\overline{\rho}_T,\overline{\rho}_{T'}$은 isomorphic하지 않다. $\square$
 
 
 ## Related Pages

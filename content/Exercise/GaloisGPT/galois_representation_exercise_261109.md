@@ -166,6 +166,10 @@ $T=\mathbb Z_\ell e_1\oplus\mathbb Z_\ell e_2$와 $T'=\mathbb Z_\ell(\ell^{-1}e_
 >     
 >     즉 $(T/\ell T)^G=\mathbb F_\ell\overline{e}_1$이고, $(T'/\ell T')^G=T'/\ell T'$이며, dimension은 각각 $1,2$이다.
 >     Isomorhpic representation은 $G$-fixed subspace의 차원을 공유하므로, $\overline{\rho}_T,\overline{\rho}_{T'}$은 isomorphic하지 않다. $\square$
+> 
+> 3.
+>     Residual matrices의 characteristic polynomial은 $\overline\rho_T,\overline\rho_{T'}$ 모두 $(X-1)^2$로 동일하다.
+>     그러므로 characteristic polynomial만으로는 representation의 isomorphic한지를 구별할 수 없다.
 
 
 ## Related Pages

@@ -67,7 +67,7 @@ $G_K$[[Theories/Algebra/Lattice#Stable Lattices|-stable lattice]] $T$를 하나 
 
 1. $\rho$가 연속 homomorphism $\rho_{T,n}:G_K\to\operatorname{Aut}_{\mathbb Z/\ell^n\mathbb Z}(T_n)$을 유도함을 증명하라. $\rho_{T,n+1}$의 행렬을 modulo $\ell^n$으로 reduce하면 $\rho_{T,n}$이 됨을 보여라.
 2. 자연스러운 map $T\to\varprojlim_nT_n$이 isomorphism임을 증명하라. 이를 이용하여 모든 $n$에서 주어진 [[Theories/Algebra/ResidualRepresentation#Compatibility|compatible representations]] $\rho_n:G_K\to\operatorname{Aut}(T_n)$이 연속이면, 이들을 유도하는 연속 homomorphism $G_K\to\operatorname{Aut}_{\mathbb Z_\ell}(T)$가 유일하게 존재함을 증명하라.
-3. 일반적으로 homomorphism $r:G_K\to\operatorname{Aut}_{\mathbb Z_\ell}(T)$가 연속일 필요충분조건은 모든 modulo $\ell^n$ reductions가 연속이라는 것임을 증명하라.
+3. 일반적으로 homomorphism $\rho:G_K\to\operatorname{Aut}_{\mathbb Z_\ell}(T)$가 연속일 필요충분조건은 모든 modulo $\ell^n$ reductions가 연속이라는 것임을 증명하라.
 4. 임의의 subgroup $J\subseteq G_K$에 대해, $\rho(J)=\{1\}$일 필요충분조건은 모든 $n\ge1$에서 $\rho_{T,n}(J)=\{1\}$이라는 것임을 증명하라.
 
 [[Theories/Algebra/ResidualRepresentation#Residual Representation|Residual representation]]의 notation $\overline\rho_T=\rho_{T,1}$을 사용한다.
@@ -98,6 +98,22 @@ $G_K$[[Theories/Algebra/Lattice#Stable Lattices|-stable lattice]] $T$를 하나 
 >     
 >     $\rho:G_K\to\operatorname{Aut}_{\mathbb Z_\ell}(T)$를, $\rho(g)$의 $i,j$-component가 $\rho_n(g)$의 $i,j$-component의 inverse limit이 되게 정의하면 이는 homomorphism이 된다.
 >     연속성은 각 $\rho_n$이 연속이므로 3.에 의해서 얻을 수 있다.
+> 
+> 3.
+>     Reduction 자체가 연속이므로, 만일 $\rho$가 연속이라면 모든 modulo $\ell^n$ reduction $\rho_n:G_K\to\operatorname{Aut}(T_n)$은 연속이다.
+>     반대로 모든 모든 modulo $\ell^n$ reduction $\rho_n:G_K\to\operatorname{Aut}(T_n)$이 연속이라고 하자.
+>     그러면 이의 kernel
+>     $$
+>     \begin{aligned}
+>     U_n &:= \ker\left(\operatorname{GL}_d(\mathbb Z_\ell)\to\operatorname{GL}_d(\mathbb Z/\ell^n)\right)\\
+>     &= \left\{A\in\operatorname{GL_d(\mathbb Z_\ell)}:A\equiv I_d\pmod{\ell^n}\right\}
+>     \end{aligned}
+>     $$
+>     은 $I_d$에서의 local base $\{U_n\}_n$을 이룬다.
+>     또한 $\rho^{-1}U_n=\ker\rho_n=\rho_n^{-1}(I_d)$은 $\operatorname{GL}_d(\mathbb Z/\ell^n)$이 discrete이므로 open set이다.
+>     
+>     이때 임의의 open neighborhood $W$ of $I_d\in\operatorname{GL}_d(\mathbb Z_\ell)$에 대하여 적당한 $U_n$이 존재하여 $U_n\subset W$이다.
+>     그러니 $1\in\rho^{-1}U_n\subset\rho^{-1}W$이므로 $\rho$는 $1$에서 연속이고, translation에 의하여 정의역 내의 임의의 점에서 연속이게 된다. $\square$
 
 ## Problem 3. Dependence on the Lattice
 

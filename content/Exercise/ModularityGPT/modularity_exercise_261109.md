@@ -173,6 +173,20 @@ $E/\mathbb Q:y^2=x^3-x+1$을 생각하자. $p=5,7$에 대하여 아래를 수행
 >     $p=5$일 경우, characteristic polynomial of arithmetic Frobenius는 $X^2-a_5X+5=X^2+2X+5$이고, 그 계수를 뒤집으면 $P_5(T)=5T^2+2T+1$을 얻을 수 있다.
 >     
 >     $p=7$일 경우, characteristic polynomial of arithmetic Frobenius는 $X^2-a_7X+7=X^2+4X+7$이고, 그 계수를 뒤집으면 $P_7(T)=7T^2+4T+1$을 얻을 수 있다.
+> 
+> 3.
+>     $\ell=3$에서는 characteristic polynomial의 계수도 $\bmod \ell$로 reduction된다.
+>     그러니 $p_{B_5}(X)=X^2+2X+2$이며 $p_{B_7}(X)=X^2+X+1=(X-1)^2$이다.
+>     
+>     $p=5$일 경우를 살펴보자. $X^2+2X+2$는 irreducible in $(\mathbb Z/3)[X]$이다.
+>     만일 nonzero proper invariant subspace가 존재한다면 그는 반드시 $1$차원이어야 하며, 이의 generator는 $B_5$의 eigenvector가 되어야 한다.
+>     그에 상응하는 eigenvalue는 $p_{B_5}(X)$의 근이어야 하므로 모순이며, 따라서 $\overline\rho_{E,3}$은 irreducible이다.
+>     
+>     $p=7$일 경우를 살펴보자. $B_7$의 유일한 eigenvalue는 $1$이므로, 만일 $\overline\rho_{E,3}$이 reducible이라면 이는 diagonalizable해야 하니 $B_7=I$이다.
+>     이러면 모든 $P\in E[3]$에 대하여 $\operatorname{Frob}_7(P)=P$이므로, $\operatorname{red}_3(P)=(\operatorname{red_3\circ\operatorname{Frob}_7})(P)=\operatorname{Fr}_7(\operatorname{red}_3(P))$이 되어 모든 $\operatorname{red}_3(P)\in\widetilde E[3]$는 $\operatorname{Fr}_7$에 의하여 고정된다.
+>     그러므로 $\operatorname{red}_3(P)\in\widetilde E(\mathbb F_7)$.
+>     
+>     그러나 $\#\widetilde E[3]=9$이고 $\#\widetilde E[\mathbb F_7]=12$이므로 $\widetilde E[3]$는 $\widetilde E[\mathbb F_7]$의 subgroup이 될 수 없다. 이는 모순이므로, 이 경우에도 $\overline\rho_{E,3}$은 irreducible이다. $\square$
 
 ## References
 

@@ -1,5 +1,5 @@
 ---
-title: "Modularity Exercises 3 — Invariant Lines and Rational Isogenies"
+title: "Modularity Exercise #3"
 date: 2026-11-16
 tags:
   - exercise

@@ -1,5 +1,5 @@
 ---
-title: "Galois Representation Exercises 3: Extensions and First Cohomology"
+title: "Galois Representation Exercises #3"
 date: 2026-11-16
 tags:
   - exercise

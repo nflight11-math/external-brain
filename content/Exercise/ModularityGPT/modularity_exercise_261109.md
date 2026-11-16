@@ -131,7 +131,7 @@ $E/F$가 good reduction을 갖는다고 가정한다. 다음 standard facts를 �
 >     그러므로 $\operatorname{tr}A_v=1+q-\#\widetilde E(k)=a_v$이다.
 >     
 >     Characteristic polynomial of $A_v$는 $X^2-\operatorname{tr}A_v\cdot X+\det A_v=X^2-a_vX+q$이 된다.
->     $P_v(T)=T^2\det(T^{-1}I-A_v)$는 characteristic polynomial의 계수를 뒤집은 것으로, $P_v(T)=qX^2-a_vX+1$이 된다.
+>     $P_v(T)=T^2\det(T^{-1}I-A_v)$는 characteristic polynomial의 계수를 뒤집은 것으로, $P_v(T)=qT^2-a_vT+1$이 된다.
 >     이는 $\ell\ne p$의 선택과 무관하다.
 > 
 > 3.
@@ -168,6 +168,11 @@ $E/\mathbb Q:y^2=x^3-x+1$을 생각하자. $p=5,7$에 대하여 아래를 수행
 >     그러므로 $N_7=12$.
 > 
 >     이로부터 $a_5=5+1-8=-2$이고 $a_7=7+1-12=-4$임을 알 수 있다.
+> 
+> 2.
+>     $p=5$일 경우, characteristic polynomial of arithmetic Frobenius는 $X^2-a_5X+5=X^2+2X+5$이고, 그 계수를 뒤집으면 $P_5(T)=5T^2+2T+1$을 얻을 수 있다.
+>     
+>     $p=7$일 경우, characteristic polynomial of arithmetic Frobenius는 $X^2-a_7X+7=X^2+4X+7$이고, 그 계수를 뒤집으면 $P_7(T)=7T^2+4T+1$을 얻을 수 있다.
 
 ## References
 

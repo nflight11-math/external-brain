@@ -1,5 +1,6 @@
 ---
 title: Algebra
+date: 2026-11-16
 tags:
   - theory
   - algebra
@@ -17,7 +18,11 @@ tags:
 - [[Theories/Algebra/Lattice|Lattice]]
 - [[Theories/Algebra/ResidualRepresentation|Residual Representation]]
 
+- [[Theories/Algebra/AbsoluteIrreducibility|Absolute Irreducibility]]
+
 ## Elliptic Curves
+- [[Theories/Algebra/EllipticCurveGroupLaw|Elliptic Curve Group Law]]
+- [[Theories/Algebra/QuotientIsogeny|Quotient Isogeny]]
 - [[Theories/Algebra/Isogeny|Isogeny]]
 - [[Theories/Algebra/WeilPairing|Weil Pairing]]
 - [[Theories/Algebra/TangentSpaceAndDifferential|Tangent Space and Differential]]

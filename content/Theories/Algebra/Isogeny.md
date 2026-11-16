@@ -1,5 +1,6 @@
 ---
 title: Isogeny
+date: 2026-11-16
 tags:
   - theory
   - algebra
@@ -215,6 +216,12 @@ Point $T$에 의한 translation을 $\tau_T(P)=P+T$로 쓴다.
 이 명제는 $[m]$이 separable인 경우, 즉 $m\ne0$ in $K$일 때 적용할 수 있다.
 이때 모든 $m$-torsion translation에 invariant인 rational function은 정확히 $h\circ[m]$ 꼴이다.
 이 사실은 [[Theories/Algebra/WeilPairing#Nondegeneracy|Weil pairing의 nondegeneracy]]를 증명할 때 사용한다.
+
+## Related Pages
+
+- [[Theories/Algebra/QuotientIsogeny|Quotient Isogeny]]: $G_K$-stable finite subgroup에서 출발하는 isogeny의 존재 정리.
+- [[Theories/Algebra/EllipticCurveGroupLaw|Elliptic Curve Group Law]]: addition과 doubling의 coordinate formulas.
+- [[Exercise/ModularityGPT/modularity_exercise_261116|Invariant Lines and Rational Isogenies: Exercises]]
 
 ## 참고문헌
 

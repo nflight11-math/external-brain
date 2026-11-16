@@ -18,3 +18,4 @@ tags:
 
 - [[Exercise/ModularityGPT/modularity_exercise_261102|모듈러성 연습문제 1]]
 - [[Exercise/ModularityGPT/modularity_exercise_261109|모듈러성 연습문제 2]]
+- [[Exercise/ModularityGPT/modularity_exercise_261116|모듈러성 연습문제 3]]

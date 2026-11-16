@@ -1,5 +1,6 @@
 ---
 title: Residual Representation
+date: 2026-11-16
 tags:
   - theory
   - algebra
@@ -82,6 +83,9 @@ Finite-dimensional representation은 composition series를 갖는다. Jordan–H
 Semisimplification은 composition factors를 남기고, 그 factors가 extension으로 결합된 정보를 제거한다. 위에서 정의한 residual representation과 구별하여 $(\overline\rho_T)^{\mathrm{ss}}$로 표시한다. 구체적 계산은 [[Exercise/GaloisGPT/galois_representation_exercise_261109#Problem 3. Dependence on the Lattice|Problem 3]]에서 다룬다.
 
 ## Related Pages
+
+- [[Theories/Algebra/AbsoluteIrreducibility|Absolute Irreducibility]]
+- [[Exercise/ModularityGPT/modularity_exercise_261116|Invariant Lines and Rational Isogenies: Exercises]]
 
 - [[Theories/Algebra/GaloisRepresentation|Galois Representation]]
 - [[Theories/Algebra/Lattice|Lattice]]

@@ -63,6 +63,21 @@ $E/F$가 good reduction을 갖는다고 가정한다. 다음 standard facts를 �
 >     
 >     만일 $R\in E_1(L)[\ell^n]$, 즉 $\ell^nR=O$이면 $\ell^{n-1}R\in E_1(L)[\ell]$로부터 $\ell^{n-1}R=0$임을 알 수 있다.
 >     이를 반복하면 $R=O$가 된다. 즉, $E_1(L)[\ell^n]=\{O\}$가 임의의 $1\le n\in\mathbb Z$에 대하여 성립한다. $\square$
+> 
+> 2.
+>     우선 $\# E[\ell^n]=\#\widetilde{E}[\ell^n]=\ell^{2n}$이다.
+>     $E/F$에서는 $\operatorname{char}F=0$이므로, $\widetilde{E}/k$에서는 $\operatorname{char}k=p\not\mid \ell^n$이므로 $[\ell^2]$은 degree $\ell^{2n}$인 separable isogeny이기 때문이다.
+>     또한 $R\in E[\ell^n]$에 대하여, $\ell^n\operatorname{red}(R)=\operatorname{red}(\ell^n R)=\operatorname{red}(O)=O$이므로 $\operatorname{red}(R)\in\widetilde{E}[\ell^n]$이다.
+>     그리고 $\operatorname{red}(\sigma P)=\overline\sigma\operatorname{red}(P)$이므로 $\left.\operatorname{red}\right|_{E[\ell^n]}$는 $G_F$-equivariant이다.
+>     
+>     만일 두 점 $R,S\in E[\ell^n]$이 같은 reduction을 갖는다고 하자.
+>     그러면 $L/F$이 $R,S$의 좌표를 모두 포함하는 finite extension이라고 할 시 $R-S\in E_1(L)[\ell^n]$이므로 $R-S=O$.
+>     즉 $\left.\operatorname{red}\right|_{E[\ell^n]}:E[\ell^n]\to\widetilde{E}[\ell^n]$은 injective homomorphism.
+>     $\# E[\ell^n]=\#\widetilde{E}[\ell^n]=\ell^{2n}$이므로 $\left.\operatorname{red}\right|_{E[\ell^n]}$는 $G_F$-equivariant isomorphism이 된다.
+>     
+>     $\sigma\in I_F$에 대하여, 이의 residue field에서의 action은 자명하므로 $\overline\sigma\operatorname{red}(P)=\operatorname{red}(P)$이다.
+>     이로부터 $\operatorname{red}(\sigma P)=\operatorname{red}(P)$이며, $I_F$는 $E[\ell^n]$에서 항상 자명하게 작용한다.
+>     그러므로 $T_\ell(E)$에서도 자명하게 작용하며, 그러므로 $\rho_{E,\ell}(I_F)=\{I_2\}$이 성립한다. $\square$
 
 ## Problem 2. Point Counts and the Characteristic Polynomial
 

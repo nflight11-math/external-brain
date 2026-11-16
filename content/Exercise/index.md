@@ -11,6 +11,7 @@ tags:
 
 - [[Exercise/GaloisGPT/galois_representation_exercise_261102|갈로아 표현론 연습문제 1]]
 - [[Exercise/GaloisGPT/galois_representation_exercise_261109|갈로아 표현론 연습문제 2]]
+- [[Exercise/GaloisGPT/galois_representation_exercise_261116|갈로아 표현론 연습문제 3]]
 
 ## Modularity
 

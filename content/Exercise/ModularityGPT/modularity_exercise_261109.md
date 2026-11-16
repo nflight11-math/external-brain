@@ -131,6 +131,8 @@ $E/F$가 good reduction을 갖는다고 가정한다. 다음 standard facts를 �
 >     그러므로 $\operatorname{tr}A_v=1+q-\#\widetilde E(k)=a_v$이다.
 >     
 >     Characteristic polynomial of $A_v$는 $X^2-\operatorname{tr}A_v\cdot X+\det A_v=X^2-a_vX+q$이 된다.
+>     $P_v(T)=T^2\det(T^{-1}I-A_v)$는 characteristic polynomial의 계수를 뒤집은 것으로, $P_v(T)=qX^2-a_vX+1$이 된다.
+>     이는 $\ell\ne p$의 선택과 무관하다.
 > 
 > 3.
 >     $2\times 2$ 행렬의 inverse에 대하여 $\det(A^{-1})=(\det A)^{-1}$이고 $\operatorname{tr}(A^{-1})=\operatorname{tr}A/\det A$이므로, geometric Frobenius에 해당하는 determinant는 $q^{-1}$, trace는 $a_vq^{-1}$이다.

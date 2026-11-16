@@ -133,6 +133,12 @@ $G_{k_v}$는 [[Theories/Algebra/DecompositionAndInertiaGroups#Absolute Galois Gr
 
 $p=\ell$에서는 $\chi_\ell$이 ramified이다. 실제로 $\mathbb Q_\ell$의 $\ell$-power cyclotomic extensions는 totally ramified이고 그 tower의 Galois group은 $\mathbb Z_\ell^\times$이므로 $\chi_\ell(I_\ell)=\mathbb Z_\ell^\times$이다.
 
+## Extensions and First Cohomology
+
+Character modules $R(\psi)$, equivariant maps, short exact sequences와 splitting은 [[Theories/Algebra/RepresentationExtension|Representation Extension]]에서 다룬다. Continuous cocycles, coboundaries와 $H^1_{\mathrm{cont}}(G,M)$의 정의는 [[Theories/Algebra/ContinuousFirstCohomology|Continuous First Cohomology]]를 참조한다.
+
+이 개념을 사용하는 증명과 계산은 [[Exercise/GaloisGPT/galois_representation_exercise_261116|Extensions and First Cohomology: Exercises]]에서 다룬다.
+
 ## Related Pages
 
 - [[Theories/Algebra/DecompositionAndInertiaGroups|Decomposition and Inertia Groups]]

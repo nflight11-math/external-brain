@@ -122,6 +122,15 @@ $E/F$가 good reduction을 갖는다고 가정한다. 다음 standard facts를 �
 >     
 >     만일 $P=(x_P,y_P)\in\ker(1-\pi_q)$임과 $P=\pi_q(P)=(x_P^q,y_P^q)$임과 $x,y$는 $X^q-X=0$의 root임, $x,y\in\mathbb F_q$임과 $P\in\widetilde E(k)$이 모두 동치이다.
 >     따라서 $\ker(1-\pi_q)=\widetilde E(k)$이고, separable isogeny의 geometric kernel의 size가 degree와 동일하므로 $\#\widetilde E(k)=\deg(1-\pi_q)$이 성립한다.
+> 
+> 2.
+>     $\operatorname{Frob}_v,T_\ell(\pi_q)$의 행렬 표현이 $A_v=\rho_{E,\ell}(\operatorname{Frob}_v)$로 같으므로 이의 determinant도 같다.
+>     그러므로 $\det A_v=\det T_\ell(\pi_q)=\deg\pi_q=q$이다.
+>     
+>     또한 $T_\ell(1-\pi_q)$의 행렬 표현이 $I-A_v$이므로 $\#\widetilde E(k)=\deg(1-\pi_q)=\det T_\ell(1-\pi_q)=\det(I-A_v)=1-\operatorname{tr} A_v+q$이다.
+>     그러므로 $\operatorname{tr}A_v=1+q-\#\widetilde E(k)=a_v$이다.
+>     
+>     Characteristic polynomial of $A_v$는 $X^2-\operatorname{tr}A_v\cdot X+\det A_v=X^2-a_vX+q$이 된다.
 
 ## Problem 3. An Explicit Curve and Residual Frobenius
 

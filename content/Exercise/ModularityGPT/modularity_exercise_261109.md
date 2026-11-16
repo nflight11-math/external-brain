@@ -156,6 +156,16 @@ $E/\mathbb Q:y^2=x^3-x+1$을 생각하자. $p=5,7$에 대하여 아래를 수행
 > 3. Invariant line이 존재하면 Frobenius의 characteristic polynomial은 $\mathbb F_3$에 root를 갖는다. $B_7=I_2$이면 $\widetilde E[3]$ 전체가 $\mathbb F_7$-rational임을 이용하라.
 
 > [!done]- 증명
+> 1.
+>     $a=-1,b=1$이므로 discriminant $\Delta=-16(4a^3+27b^2)=-368$이며, 이는 $\mathbb Z/5,\mathbb Z/7$에서 모두 unit이므로 $E$는 $p=5,7$에서 good reduction이다.
+> 
+>     $p=5$일 시 $x^3-x+1=\begin{cases}0,&x=3\\1,&x=0,1,4\\2,&x=2\end{cases}$이며 $p=7$일 시 $x^3-x+1=\begin{cases}0,&x=2\\1,&x=0,1,6\\2,&x=5\\4,&x=3\\5&x=4\end{cases}$이다.
+>     $p=5$일 시 $0,1,4$가 quadratic residue이므로 $y$는 $x=0,1,4$일 때 각 $2$개, $x=3$일 때 $1$개이다.
+>     그러므로 $N_5=8$이다.
+>     $p=7$일 시 $0,1,2,4$가 quadratic residue이므로 $y$는 $x=0,1,3,5,6$일 때 각 $2$개, $x=2$일 때 $1$개이다.
+>     그러므로 $N_7=12$.
+> 
+>     이로부터 $a_5=5+1-8=-2$이고 $a_7=7+1-12=-4$임을 알 수 있다.
 
 ## References
 

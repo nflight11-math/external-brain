@@ -78,6 +78,22 @@ $E/F$가 good reduction을 갖는다고 가정한다. 다음 standard facts를 �
 >     $\sigma\in I_F$에 대하여, 이의 residue field에서의 action은 자명하므로 $\overline\sigma\operatorname{red}(P)=\operatorname{red}(P)$이다.
 >     이로부터 $\operatorname{red}(\sigma P)=\operatorname{red}(P)$이며, $I_F$는 $E[\ell^n]$에서 항상 자명하게 작용한다.
 >     그러므로 $T_\ell(E)$에서도 자명하게 작용하며, 그러므로 $\rho_{E,\ell}(I_F)=\{I_2\}$이 성립한다. $\square$
+> 
+> 3.
+>     $\operatorname{red}_n:=\left.\operatorname{red}\right|_{E[\ell^n]}:E[\ell^n]\to \widetilde{E}[\ell^n]$로 정의하자.
+>     그러면 Reduction map은 group homomorphism이므로 $\ell$-multiplication과 $\operatorname{red}_n(\ell R)=\ell\operatorname{red}_{n+1}(R)$의 형식으로 호환된다.
+>     그러므로 $\Phi:T_\ell(E)\to T_\ell(\widetilde{E})$를 $(R_n)_n\mapsto(\operatorname{red}_nR_n)_n$으로 정의하면 이 $\Phi$는 well-defined $\mathbb Z_\ell$-module isomorphism이다.
+>     
+>     $P=[X:Y:Z]\in\widetilde{E}(\overline k)$에 대하여, $\operatorname{Fr}_q(P)=[X^q:Y^q:Z^q]=\pi_q(P)$이 성립한다.
+>     $\operatorname{Frob}_v$는 residue field의 arithmetic Frobenius $\operatorname{Fr}_q:z\mapsto z^q$의 lift이므로 $\operatorname{red}_n(\operatorname{Frob}_vP)=\operatorname{Fr}_q(\operatorname{red}_n(P))=\pi_q(\operatorname{red}_n(P))$이 성립한다.
+>     그러므로 $\Phi(\operatorname{Frob}_v(R_n)_n)=(\operatorname{red}_n(\operatorname{Frob}_vR_n))_n=(\pi_q(\operatorname{red}_n(P)))_n=T_\ell(\pi_q)(\Phi((R_n)_n))$이 성립한다.
+>     여기서 $T_\ell(\pi_q):(R_n)_n\mapsto(\pi_q(R_n))_n$이다.
+>     
+>     즉, $\operatorname{Frob}_v=\Phi^{-1}\circ T_\ell(\pi_q)\circ\Phi$이며, $T_\ell(\widetilde{E})$의 basis를 $T_\ell(E)$의 basis의 $\Phi$-image로 두면 $\operatorname{Frob}_v,T_\ell(\pi_q)$의 행렬 표현은 일치한다. $\square$
+>     
+>     $\operatorname{Frob}'_v$가 $\operatorname{Fr}_q$의 다른 lift라고 가정하자.
+>     그러면 $\operatorname{Frob}'_v\operatorname{Frob}^{-1}_v$는 $I_F$의 원소이며, 따라서 $\rho_{E,\ell}(\operatorname{Frob}'_v\operatorname{Frob}^{-1}_v)$는 자명하다.
+>     그러므로 $\rho_{E,\ell}(\operatorname{Frob}_v)=\rho_{E,\ell}(\operatorname{Frob}'_v)$이다. $\square$
 
 ## Problem 2. Point Counts and the Characteristic Polynomial
 

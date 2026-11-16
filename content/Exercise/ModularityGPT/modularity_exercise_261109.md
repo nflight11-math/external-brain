@@ -115,6 +115,14 @@ $E/F$가 good reduction을 갖는다고 가정한다. 다음 standard facts를 �
 > 2. $2\times2$ 행렬 $A$에 대해 $\det(I_2-A)$를 $\operatorname{tr}A$, $\det A$로 전개하라.
 > 3. Invertible $2\times2$ 행렬의 inverse의 trace와 determinant를 원래 행렬의 trace와 determinant로 표현하라.
 
+> [!done]- 증명
+> 1.
+>     Identity에서 $1=\operatorname{id}_E$의 diffential은 $d(\operatorname{id}_E)_O=\operatorname{id}_{T_OE}=1$이므로, $1-\pi_q$의 differential은 $d(\operatorname{id}_E)_O-d(\pi_q)_O=1-0=1$, 즉 nonzero이다.
+>     그러니 $1-\pi_q$는 differential이 nonzero인 isogeny로, 따라서 separable이다.
+>     
+>     만일 $P=(x_P,y_P)\in\ker(1-\pi_q)$임과 $P=\pi_q(P)=(x_P^q,y_P^q)$임과 $x,y$는 $X^q-X=0$의 root임, $x,y\in\mathbb F_q$임과 $P\in\widetilde E(k)$이 모두 동치이다.
+>     따라서 $\ker(1-\pi_q)=\widetilde E(k)$이고, separable isogeny의 geometric kernel의 size가 degree와 동일하므로 $\#\widetilde E(k)=\deg(1-\pi_q)$이 성립한다.
+
 ## Problem 3. An Explicit Curve and Residual Frobenius
 
 $E/\mathbb Q:y^2=x^3-x+1$을 생각하자. $p=5,7$에 대하여 아래를 수행하라. 앞선 두 문제의 결과와 Lagrange's theorem을 사용해도 된다.

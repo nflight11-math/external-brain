@@ -35,7 +35,7 @@ Underlying $R$-module을 $M$과 identify하면 twisted action은 $g* m=\psi(g)(g
 > [!abstract] Definition (Short exact sequence of representations)
 > Sequence $0\to A\xrightarrow{i}B\xrightarrow{\pi}C\to0$가 **short exact**라는 것은 $i,\pi$가 $R$-linear $G$-equivariant maps이고, $i$가 injective, $\pi$가 surjective이며 $\operatorname{im}i=\ker\pi$라는 뜻이다.
 
-이때 $B$를 **extension of $C$ by $A$**라 한다. 이 표현에서 $A$는 subrepresentation으로 들어가고, $C$는 quotient representation으로 나타난다. $i(A)$를 $A$와 identify하면 $C\cong B/A$이다.
+이때 $B$를 **extension** of $C$ by $A$라 한다. 이 표현에서 $A$는 subrepresentation으로 들어가고, $C$는 quotient representation으로 나타난다. $i(A)$를 $A$와 identify하면 $C\cong B/A$이다.
 
 ### Lifts
 

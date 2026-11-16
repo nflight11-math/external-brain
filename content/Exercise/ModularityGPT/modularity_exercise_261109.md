@@ -131,6 +131,10 @@ $E/F$가 good reduction을 갖는다고 가정한다. 다음 standard facts를 �
 >     그러므로 $\operatorname{tr}A_v=1+q-\#\widetilde E(k)=a_v$이다.
 >     
 >     Characteristic polynomial of $A_v$는 $X^2-\operatorname{tr}A_v\cdot X+\det A_v=X^2-a_vX+q$이 된다.
+> 
+> 3.
+>     $2\times 2$ 행렬의 inverse에 대하여 $\det(A^{-1})=(\det A)^{-1}$이고 $\operatorname{tr}(A^{-1})=\operatorname{tr}A/\det A$이므로, geometric Frobenius에 해당하는 determinant는 $q^{-1}$, trace는 $a_vq^{-1}$이다.
+>     그러므로 characteristic polynomial은 $X^2-a_vq^{-1}X+q^{-1}$이 된다.
 
 ## Problem 3. An Explicit Curve and Residual Frobenius
 
@@ -150,6 +154,8 @@ $E/\mathbb Q:y^2=x^3-x+1$을 생각하자. $p=5,7$에 대하여 아래를 수행
 > 1. $\Delta=-16(4A^3+27B^2)$를 사용하라. $y^2=u$의 해 개수는 $u=0$, nonzero square, nonsquare의 경우를 구분하라.
 > 2. 문제 2의 결과에 직접 대입하라.
 > 3. Invariant line이 존재하면 Frobenius의 characteristic polynomial은 $\mathbb F_3$에 root를 갖는다. $B_7=I_2$이면 $\widetilde E[3]$ 전체가 $\mathbb F_7$-rational임을 이용하라.
+
+> [!done]- 증명
 
 ## References
 

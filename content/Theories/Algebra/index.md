@@ -19,7 +19,6 @@ tags:
 - [[Theories/Algebra/ResidualRepresentation|Residual Representation]]
 - [[Theories/Algebra/RepresentationExtension|Representation Extension]]
 - [[Theories/Algebra/ContinuousFirstCohomology|Continuous First Cohomology]]
-
 - [[Theories/Algebra/AbsoluteIrreducibility|Absolute Irreducibility]]
 
 ## Elliptic Curves

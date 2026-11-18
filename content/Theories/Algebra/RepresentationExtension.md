@@ -19,7 +19,7 @@ $R(\psi)$의 원소는 scalar $a\in R$로 표시할 수 있지만, 이 notation�
 ### Twists
 
 > [!abstract] Definition (Character twist)
-> Representation $M$의 **twist by $\psi$**는 $M(\psi):=M\otimes_R R(\psi)$이며, action은 $g(m\otimes a)=(gm)\otimes\psi(g)a$이다.
+> Representation $M$의 **twist** by $\psi$는 $M(\psi):=M\otimes_R R(\psi)$이며, action은 $g(m\otimes a)=(gm)\otimes\psi(g)a$이다.
 
 Underlying $R$-module을 $M$과 identify하면 twisted action은 $g* m=\psi(g)(gm)$이다. 여기의 character twist와 [[Theories/Algebra/FrobeniusMorphism#Frobenius Twist|Frobenius twist of a curve]]는 서로 다른 constructions이다.
 

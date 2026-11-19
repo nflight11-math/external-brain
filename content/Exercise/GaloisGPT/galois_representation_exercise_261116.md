@@ -51,6 +51,18 @@ $$
 >     \end{aligned}
 >     $$
 >     이며, $z$는 continuous map이므로 $z\in Z^1_{\operatorname{cont}}(G,\mathbb Q_\ell(\psi))$.
+> 
+> 3.
+>     $$
+>     \begin{aligned}
+>     \rho(g)(e_2')&=a\rho(g)(e_1)+\rho(g)(e_2)=a\chi_1(g)e_1+(b(g)e_1+\chi_2(g)e_2)\\
+>     &=(a\chi_1(g)+b(g))e_1+\chi_2(g)(e_2'-ae_1)\\
+>     &= (a\chi_1(g)-a\chi_2(g)+b(g))e_1+\chi_2(g)e_2'.
+>     \end{aligned}
+>     $$
+>     그러므로 $b'-b=a\chi_1-a\chi_2$가 되어, $z'-z=(a\chi_1-a\chi_2)/\chi_2=a\psi-a$이므로 $(z'-z)(g)=a\psi(g)-a=(\delta a)(g)\in B^1_{\operatorname{cont}}(G,\mathbb Q_\ell)$이다.
+>     그러므로 $[z'-z]=0\in H^1_{\operatorname{cont}}(G,\mathbb Q_\ell)$이다.
+>     즉, $[z]=[z']$으로, $[z]$는 lift $e_2$의 선택에는 무관하다.
 
 ## Problem 2. First Cohomology over a Finite Field
 

@@ -44,6 +44,7 @@ $$
 >     $\rho(g)\rho(h), \rho(gh)$의 $(1,2)$-entry를 비교하면 $b(gh)=\chi_1(g)b(h)+b(g)\chi_2(h)$여야만 한다.
 > 
 > 2.
+>     $z(gh)$를 계산하면
 >     $$
 >     \begin{aligned}
 >     z(gh)&=\frac{1}{\chi_2(gh)}\left(\chi_1(g)b(h)+b(g)\chi_2(h)\right) = \frac{b(g)}{\chi_2(g)}+\frac{\chi_1(g)}{\chi_2(g)}\frac{b(h)}{\chi_2(h)}\\
@@ -53,6 +54,7 @@ $$
 >     이며, $z$는 continuous map이므로 $z\in Z^1_{\operatorname{cont}}(G,\mathbb Q_\ell(\psi))$. $\square$
 > 
 > 3.
+>     $\rho(g)(e_2')$를 계산하면
 >     $$
 >     \begin{aligned}
 >     \rho(g)(e_2')&=a\rho(g)(e_1)+\rho(g)(e_2)=a\chi_1(g)e_1+(b(g)e_1+\chi_2(g)e_2)\\

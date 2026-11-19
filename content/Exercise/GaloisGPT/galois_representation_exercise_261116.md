@@ -63,6 +63,34 @@ $$
 >     그러므로 $b'-b=a\chi_1-a\chi_2$가 되어, $z'-z=(a\chi_1-a\chi_2)/\chi_2=a\psi-a$이므로 $(z'-z)(g)=a\psi(g)-a=(\delta a)(g)\in B^1_{\operatorname{cont}}(G,\mathbb Q_\ell)$이다.
 >     그러므로 $[z'-z]=0\in H^1_{\operatorname{cont}}(G,\mathbb Q_\ell)$이다.
 >     즉, $[z]=[z']$으로, $[z]$는 lift $e_2$의 선택에는 무관하다. $\square%
+> 
+> 4.
+> 만일 주어진 short exact sequence가 split하면 $\mathbb Q_\ell$-linear $G$-equivariant map $s:\mathbb Q_\ell(\chi_2)\to V$가 $\pi\circ s=\operatorname{id}_{\mathbb Q_\ell(\chi_2)}$이게끔 존재해야 한다.
+> 그러면 $\pi(s(1))=\pi(e_2)=1$이므로 $s(1)\in e_2+\ker\pi=e_2+\operatorname{im}i$이므로 $s(1)=ae_1+e_2$인 $a\in\mathbb Q_\ell$이 존재한다.
+> $s$가 $G$-equivariant이므로
+> $$
+> \begin{aligned}
+> a\chi_2(g)e_1+\chi_2(g)e_2 &= \chi_2(g)s(1) = s(\chi_2(g)) = s(g\cdot 1)\\
+> &= g\cdot s(1) = \rho(g)(s(1)) = \rho(g)(ae_1+e_2)\\
+> &= (a\chi_1(g)+b(g))e_1+\chi_2(g)e_2
+> \end{aligned}
+> $$
+> 이며, 따라서 모든 $g\in G$에 대하여 $a\chi_1(g)+b(g)=a\chi_2(g)$이 되므로 $z=b/\chi_2=a-a\psi=-\delta a\in B^1_{\operatorname{cont}}(G,\mathbb Q_\ell(\psi))$이다.
+> 그러므로 $[z]=0$.
+> 
+> 반대로 $[z]=0$이라고 가정하자. 그러면 $z(g)=g\cdot a-a=a\psi(g)-a$인 $a\in\mathbb Q_\ell$이 존재한다.
+> 이때 모든 $g\in G$에 대하여 $-a\chi_1(g)+b(g)=-a\chi_2(g)$가 성립한다.
+> 그러므로 $s(1)=e_2-ae_1$인 $\mathbb Q_\ell$-linear map $s:\mathbb Q_\ell(\chi_2)\to V$은,
+> $$
+> \begin{aligned}
+> g\cdot s(1) &= \rho(g)(e_2-ae_1)=(-a\chi_1(g)+b(g))e_1+\chi_2(g)e_2\\
+> &= -a\chi_2(g)e_1+\chi_2(g)e_2=\chi_2(g)(e_2-ae_1)=s(\chi_2(g))\\
+> &= s(g\cdot 1)
+> \end{aligned}
+> $$
+> 이므로 $G$-equivariant이고, $(\pi\circ s)(1)=\pi(e_2-ae_1)=\pi(e_2)-a\pi(e_1)=1$이니 $\pi\cdot s=\operatorname{id}_{\mathbb Q_\ell(\chi_2)}$이므로 주어진 short exact sequence는 split한다.
+> 
+> 곧, 주어진 short exact sequence이 split함과 $[z]=0\in H^1_{\operatorname{cont}}(G,\mathbb Q_\ell(\psi))$임은 동치이다. $\square$
 
 ## Problem 2. First Cohomology over a Finite Field
 

@@ -105,6 +105,10 @@ $q$를 prime power라 하고 $G=G_{\mathbb F_q}$라 하자. $F_q:x\mapsto x^q$�
 > [!tip]- 힌트
 > 먼저 $z(1)$과 $z(F_q^{-1})$를 구하라. $F_q$의 정수 거듭제곱들이 dense하다는 사실을 이용하라. 2번에서 나오는 관계를 $u-1$로 나눌 수 있는지 확인하라.
 
+> [!done]- 증명
+> 1.
+>     Continuous map $z:G\to\mathbb Q_\ell(\psi)$은 domain의 topological generator $F_q$의 image $z(F_q)$에 의하여 유일하게 결정된다. $\square$
+
 ## Problem 3. Rational and Integral Splittings
 
 $G=G_{\mathbb F_q}$와 $F_q$는 Problem 2의 표기를 사용한다. $\psi:G\to\mathbb Z_\ell^\times$를 $\psi(F_q)=1+\ell$인 연속 character라 하고, $\mathbb Q_\ell$-valued function $c(g):=(\psi(g)-1)/\ell$을 정의한다.

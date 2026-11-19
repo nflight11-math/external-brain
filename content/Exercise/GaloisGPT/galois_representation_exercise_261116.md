@@ -42,6 +42,12 @@ $$
 >     $$
 >     
 >     $\rho(g)\rho(h), \rho(gh)$의 $(1,2)$-entry를 비교하면 $b(gh)=\chi_1(g)b(h)+b(g)\chi_2(h)$여야만 한다.
+> 
+> 2.
+>     $$
+>     z(gh)=\frac{1}{\chi_2(gh)}\left(\chi_1(g)b(h)+b(g)\chi_2(h)\right) = \frac{b(g)}{\chi_2(g)}+\frac{\chi_1(g)}{\chi_2(g)}\frac{b(h)}{\chi_2(h)}=z(g)+\psi(g)z(h)=z(g)+g\cdot z(h)
+>     $$
+>     이며, $z$는 continuous map이므로 $z\in Z^1_{\operatorname{cont}}(G,\mathbb Q_\ell(\psi))$.
 
 ## Problem 2. First Cohomology over a Finite Field
 

@@ -64,7 +64,7 @@ $$
 >     $$
 >     그러므로 $b'-b=a\chi_1-a\chi_2$가 되어, $z'-z=(a\chi_1-a\chi_2)/\chi_2=a\psi-a$이므로 $(z'-z)(g)=a\psi(g)-a=(\delta a)(g)\in B^1_{\operatorname{cont}}(G,\mathbb Q_\ell)$이다.
 >     그러므로 $[z'-z]=0\in H^1_{\operatorname{cont}}(G,\mathbb Q_\ell)$이다.
->     즉, $[z]=[z']$으로, $[z]$는 lift $e_2$의 선택에는 무관하다. $\square%
+>     즉, $[z]=[z']$으로, $[z]$는 lift $e_2$의 선택에는 무관하다. $\square$
 > 
 > 4.
 >     만일 주어진 short exact sequence가 split하면 $\mathbb Q_\ell$-linear $G$-equivariant map $s:\mathbb Q_\ell(\chi_2)\to V$가 $\pi\circ s=\operatorname{id}_{\mathbb Q_\ell(\chi_2)}$이게끔 존재해야 한다.

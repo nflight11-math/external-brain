@@ -38,7 +38,7 @@ $$
 >     따라서 $\rho(g)(e_2)=b(g)e_1+\chi_2(g)e_2$인 연속함수 $b(g)\in\mathbb Q_\ell$이 존재한다.
 >     그러므로 $\rho(g)$의 행렬표현은
 >     $$
->     \begin{pmatrix}\chi_1(g) & b(g)\\ 0 & \chi_2(g)\end{pmatrix}.
+>     \begin{pmatrix}\chi_1(g) & b(g)\\ 0 & \chi_2(g)\end{pmatrix}.\quad\square
 >     $$
 >     
 >     $\rho(g)\rho(h), \rho(gh)$의 $(1,2)$-entry를 비교하면 $b(gh)=\chi_1(g)b(h)+b(g)\chi_2(h)$여야만 한다.
@@ -50,7 +50,7 @@ $$
 >     &=z(g)+\psi(g)z(h)=z(g)+g\cdot z(h)
 >     \end{aligned}
 >     $$
->     이며, $z$는 continuous map이므로 $z\in Z^1_{\operatorname{cont}}(G,\mathbb Q_\ell(\psi))$.
+>     이며, $z$는 continuous map이므로 $z\in Z^1_{\operatorname{cont}}(G,\mathbb Q_\ell(\psi))$. $\square$
 > 
 > 3.
 >     $$
@@ -62,7 +62,7 @@ $$
 >     $$
 >     그러므로 $b'-b=a\chi_1-a\chi_2$가 되어, $z'-z=(a\chi_1-a\chi_2)/\chi_2=a\psi-a$이므로 $(z'-z)(g)=a\psi(g)-a=(\delta a)(g)\in B^1_{\operatorname{cont}}(G,\mathbb Q_\ell)$이다.
 >     그러므로 $[z'-z]=0\in H^1_{\operatorname{cont}}(G,\mathbb Q_\ell)$이다.
->     즉, $[z]=[z']$으로, $[z]$는 lift $e_2$의 선택에는 무관하다.
+>     즉, $[z]=[z']$으로, $[z]$는 lift $e_2$의 선택에는 무관하다. $\square%
 
 ## Problem 2. First Cohomology over a Finite Field
 

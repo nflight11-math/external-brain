@@ -31,6 +31,18 @@ $$
 > [!tip]- 힌트
 > Matrix product의 upper-right entry를 계산하라. Split 조건은 $e_2+ae_1$이 생성하는 line 위의 action이 $\chi_2$인 조건으로 표현할 수 있다.
 
+> [!done]- 증명
+> 1.
+>     $i$가 $\mathbb Q_\ell$-linear $G$-equivariant map이니 임의의 $g\in G$에 대하여 $\rho(g)(e_1)=\rho(g)(i(1))=i(g\cdot 1)=i(\chi_1(g))=\chi_1(g)e_1.$
+>     또한 $\pi(\rho(g)(e_2))=\pi(g\cdot e_2)=g\cdot\pi(e_2)=\chi_2(g)\pi(e_2)=\pi(\chi_2(g)e_2)$이므로 $\rho(g)(e_2)\in\chi_2(g)e_2+\ker\pi=\chi_2(g)e_2+\operatorname{im}i$이다.
+>     따라서 $\rho(g)(e_2)=b(g)e_1+\chi_2(g)e_2$인 연속함수 $b(g)\in\mathbb Q_\ell$이 존재한다.
+>     그러므로 $\rho(g)$의 행렬표현은
+>     $$
+>     \begin{pmatrix}\chi_1(g) & b(g)\\ 0 & \chi_2(g)\end{pmatrix}.
+>     $$
+>     
+>     $\rho(g)\rho(h), \rho(gh)$의 $(1,2)$-entry를 비교하면 $b(gh)=\chi_1(g)b(h)+b(g)\chi_2(h)$여야만 한다.
+
 ## Problem 2. First Cohomology over a Finite Field
 
 $q$를 prime power라 하고 $G=G_{\mathbb F_q}$라 하자. $F_q:x\mapsto x^q$가 $1\in\widehat{\mathbb Z}$에 대응하도록 $G\cong\widehat{\mathbb Z}$를 고정한다. $u\in\mathbb Z_\ell^\times$에 대해 $\psi:G\to\mathbb Z_\ell^\times$는 $\psi(F_q)=u$인 유일한 연속 character이다.

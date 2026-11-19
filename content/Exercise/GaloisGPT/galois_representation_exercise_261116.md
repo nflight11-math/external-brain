@@ -45,7 +45,10 @@ $$
 > 
 > 2.
 >     $$
->     z(gh)=\frac{1}{\chi_2(gh)}\left(\chi_1(g)b(h)+b(g)\chi_2(h)\right) = \frac{b(g)}{\chi_2(g)}+\frac{\chi_1(g)}{\chi_2(g)}\frac{b(h)}{\chi_2(h)}=z(g)+\psi(g)z(h)=z(g)+g\cdot z(h)
+>     \begin{aligned}
+>     z(gh)&=\frac{1}{\chi_2(gh)}\left(\chi_1(g)b(h)+b(g)\chi_2(h)\right) = \frac{b(g)}{\chi_2(g)}+\frac{\chi_1(g)}{\chi_2(g)}\frac{b(h)}{\chi_2(h)}\\
+>     &=z(g)+\psi(g)z(h)=z(g)+g\cdot z(h)
+>     \end{aligned}
 >     $$
 >     이며, $z$는 continuous map이므로 $z\in Z^1_{\operatorname{cont}}(G,\mathbb Q_\ell(\psi))$.
 

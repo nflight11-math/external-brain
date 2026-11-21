@@ -144,6 +144,19 @@ $G=G_{\mathbb F_q}$와 $F_q$는 Problem 2의 표기를 사용한다. $\psi:G\to\
 > [!tip]- 힌트
 > 1번에서 $\psi\bmod\ell$을 dense cyclic subgroup에서 먼저 조사하라. Splitting map의 $1$에서의 값은 $e_2+ae_1$ 꼴이다. Rational splitting과 integral splitting에서 허용되는 $a$의 범위를 구별하고, $g=F_q$를 대입하라.
 
+> [!done]- 증명
+> 1.
+>     우선 $g\in\langle F_q\rangle$이면 $g= F_q^n$인 정수 $n$이 존재한다.
+>     이때 $\psi(F_q)\in 1+\ell\mathbb Z_\ell$이고 $1+\ell\mathbb Z_\ell$은 group이므로 $\psi(g)=\psi(F_q)^n\in 1+\ell\mathbb Z_\ell$.
+>     임의의 $g\in G$에 대하여는 $g_n\to g$인 $\langle F_q\rangle$에서의 수열 $(g_n)$이 존재하고, 따라서 $\psi(g)=\psi(\lim g_n)=\lim\psi(g_n)\in\overline{1+\ell\mathbb Z_\ell}$이다.
+>     $1+\ell\mathbb Z_\ell$은 closed in $\mathbb Q_\ell$이므로 $c(g)=(\psi(g)-1)/\ell\in\mathbb Z_\ell$.
+>     
+>     $c$는 continuous map이고,
+>     $$
+>     c(gh)=\frac{\psi(g)\psi(h)-1}{\ell}=\frac{\psi(g)-1}{\ell}+\psi(g)\frac{\psi(h)-1}{\ell}=c(g)+g\cdot c(h)
+>     $$
+>     이므로 $c\in Z^1_{\operatorname{cont}}(G,\mathbb Z_\ell(\psi)).$ $\square$
+
 
 ## Related Pages
 

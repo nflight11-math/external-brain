@@ -108,6 +108,13 @@ $q$를 prime power라 하고 $G=G_{\mathbb F_q}$라 하자. $F_q:x\mapsto x^q$�
 > [!done]- 증명
 > 1.
 >     Continuous map $z:G\to\mathbb Q_\ell(\psi)$은 domain의 topological generator $F_q$의 image $z(F_q)$에 의하여 유일하게 결정된다. $\square$
+> 
+> 2.
+>     $G$가 abelian이므로 $F_qg=gF_q$이다.
+>     $z(F_qg)=z(F_q)+F_q\cdot z(g)=z(F_q)+uz(g)$이고, $z(gF_q)=z(g)+g\cdot z(F_q)=z(g)+\psi(g)z(F_q)$.
+>     이 둘은 동일한 값이므로, $(u-1)z(g)=(\psi(g)-1)z(F_q)$이 성립한다.
+>     
+>     $u-1\ne0$이면 $a:= z(F_q)/(u-1)$로 두었을 때 $z(g)=(\psi(g)-1)a=g\cdot a-a=(\delta a)(g)$이므로 $z=\delta a\in B_{\operatorname{cont}}^1(G,\mathbb Q_\ell(\psi))$이다. $\square$
 
 ## Problem 3. Rational and Integral Splittings
 

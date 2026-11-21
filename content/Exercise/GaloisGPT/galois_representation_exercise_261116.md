@@ -115,6 +115,19 @@ $q$를 prime power라 하고 $G=G_{\mathbb F_q}$라 하자. $F_q:x\mapsto x^q$�
 >     이 둘은 동일한 값이므로, $(u-1)z(g)=(\psi(g)-1)z(F_q)$이 성립한다.
 >     
 >     $u-1\ne0$이면 $a:= z(F_q)/(u-1)$로 두었을 때 $z(g)=(\psi(g)-1)a=g\cdot a-a=(\delta a)(g)$이므로 $z=\delta a\in B_{\operatorname{cont}}^1(G,\mathbb Q_\ell(\psi))$이다. $\square$
+> 
+> 3.
+>     만일 $u=1$이라면 임의의 $g\in G$에 대하여도 $\psi(g)=1$이다. 즉 $g$는 trivial하게 act한다.
+>     또한 그러면 $z(gh)=z(g)+g\cdot z(h)=z(g)+z(h)$이니 $z$는 additive homomorphism이 된다.
+>     
+>     $B_{\operatorname{cont}}^1(G,\mathbb Q_\ell(\psi))=0$이므로 $[z]:=z+B_{\operatorname{cont}}^1(G,\mathbb Q_\ell(\psi))$로 간주할 수 있으며, 이때 $z(F_q)$에 의하여 $z$가 유일하게 결정되니 $[z]$ 역시 유일하게 결정된다.
+>     즉, evaluation map $[z]\mapsto z(F_q)$는 injective이며 동시에 $z(F_q)$는 임의의 $\mathbb Q_\ell$의 원소가 될 수 있으므로 surjective이다.
+>     정확하게는 $z_a(g)=at(g)$로 두면 $z_a(F_g)=a$이므로 $a$는 evaluation map의 image에 들어간다.
+>     
+>     그러므로
+>     $$
+>     H_{\operatorname{cont}}^1(G,\mathbb Q_\ell(\psi))=Z_{\operatorname{cont}}^1(G,\mathbb Q_\ell(\psi))=\mathbb Q_\ell.\qquad\square
+>     $$
 
 ## Problem 3. Rational and Integral Splittings
 

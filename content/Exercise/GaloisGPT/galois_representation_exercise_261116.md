@@ -153,7 +153,10 @@ $G=G_{\mathbb F_q}$와 $F_q$는 Problem 2의 표기를 사용한다. $\psi:G\to\
 >     
 >     $c$는 continuous map이고,
 >     $$
->     c(gh)=\frac{\psi(g)\psi(h)-1}{\ell}=\frac{\psi(g)-1}{\ell}+\psi(g)\frac{\psi(h)-1}{\ell}=c(g)+g\cdot c(h)
+>     \begin{aligned}
+>     c(gh)&=\frac{\psi(g)\psi(h)-1}{\ell}=\frac{\psi(g)-1}{\ell}+\psi(g)\frac{\psi(h)-1}{\ell}\\
+>     &=c(g)+g\cdot c(h)
+>     \end{aligned}
 >     $$
 >     이므로 $c\in Z^1_{\operatorname{cont}}(G,\mathbb Z_\ell(\psi)).$ $\square$
 

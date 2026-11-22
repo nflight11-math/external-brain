@@ -179,6 +179,30 @@ $G=G_{\mathbb F_q}$와 $F_q$는 Problem 2의 표기를 사용한다. $\psi:G\to\
 >     이므로 $\mathbb Q_\ell e_2$ 역시 $g$에 대하여 고정된다.
 >     즉, basis $\{f_1,f_2\}$에서 $\rho(g)$는 $\operatorname{diag}(\psi(g),1)$이다.
 >     특히, $(1,2)$-entry $b(g)$가 $0$이므로 $z:=b/1=0$이 되어, $[z]=0$이므로 대응하는 exact sequence는 split한다. $\square$
+> 
+> 3.
+>     $\psi(g),c(g)\in\mathbb Z_\ell$이 임의의 $g$에 대하여 성립하므로, 임의의 $ae_1+be_2\in T$에 대하여 $\rho(g)(ae_1+be_2)=(a\psi(g)+bc(g))e_1+be_2\in T$이다.
+>     즉 $\rho(g)T\subset T$이 임의의 $g$에 대하여 성립하고, 따라서 $T$는 $G$-stable lattice이다.
+>     
+>     만일 exact sequence $0\to\mathbb Z_\ell(\psi)\xrightarrow{i} T\xrightarrow{\pi}\mathbb Z_\ell(\mathbf1)\to0$이 split하다고 가정하자.
+>     그러면 $\pi\circ s=\operatorname{id}_{\mathbb Z_\ell(\mathbf1)}$인 $s:\mathbb Z_\ell(\mathbf 1)\to T$가 존재하여야 한다.
+>     $\pi(s(1))=1$이므로 $s(1)\in e_2+\operatorname{ker}\pi=e_2+\operatorname{im}i$여야 한다.
+>     즉, $s(1)=ae_1+e_2$인 $a\in\mathbb Z_\ell$이 존재한다.
+>     
+>     $g\cdot s(1)=s(g\cdot 1)=s(1)$이어야 한다.
+>     그러므로
+>     $$
+>     \rho(g)(s(1))-s(1) = (c(g)+a(\psi(g)-1))e_1 
+>     $$
+>     이다.
+>     여기에 $g=F_q$를 대입하면 $\psi(F_q)=1+\ell,c(F_q)=1$이므로 $1+a\ell=0$이 되어야 한다. $-\ell^{-1}\notin\mathbb Z_\ell$이므로 모순.
+>     즉 $\pi\circ s=\operatorname{id}_{\mathbb Z_\ell(\mathbf1)}$인 $s:\mathbb Z_\ell(\mathbf 1)\to T$는 존재하지 않고, 주어진 exact sequence는 split하지 않는다. $\square$
+> 
+> 4.
+>     $\psi(g)\in 1+\ell\mathbb Z_\ell$이므로 residual matrix는 $\begin{pmatrix}1&\overline c(g)\\0&1\end{pmatrix}$이 된다.
+>     만일 residual section이 존재한다면 $\overline s(1)=a\overline e_1+\overline e_2$가 fixed by any $g$여야 한다.
+>     그러나 $\overline c(F_q)=1$이므로, $\overline{\rho}_T(F_q)(a\overline e_1+\overline e_2)=(a+1)\overline e_1+\overline e_2\ne a\overline e_1+\overline e_2$이므로 모순이다.
+>     그러므로 residual exact sequence도 split이 아니다. $\square$
 
 
 ## Related Pages

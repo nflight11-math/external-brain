@@ -159,6 +159,26 @@ $G=G_{\mathbb F_q}$와 $F_q$는 Problem 2의 표기를 사용한다. $\psi:G\to\
 >     \end{aligned}
 >     $$
 >     이므로 $c\in Z^1_{\operatorname{cont}}(G,\mathbb Z_\ell(\psi)).$ $\square$
+> 
+> 2.
+>     각 entry $\psi,c$가 연속이니 $\rho$도 연속함수이다.
+>     또한 $\rho(gh)=\rho(g)\rho(h)$는 $c\in Z_{\operatorname{cont}}^1(G,\mathbb Z_\ell(\psi))$이므로 성립한다.
+>     그러므로 $\rho:G\to\operatorname{GL}_{\mathbb Z_\ell}(V)$는 연속 representation이다.
+>     
+>     또한 $\rho(g)(e_1)=\psi(g)e_1\in\mathbb Q_\ell e_1$이니 line $\mathbb Q_\ell e_1$은 stable이다.
+>     그리고 $\rho(g)(e_2+\mathbb Q_\ell e_1)=\rho(g)(e_2)+\mathbb Q_\ell e_1=e_2+\mathbb Q_\ell e_1$이니 quotient $V/\mathbb Q_\ell e_1\cong \mathbb Q_\ell e_2$에 $G$는 trivial하게 act한다.
+>     
+>     $V$의 basis $\{f_1,f_2\}$를 $f_1=e_1, f_2=e_2-\ell^{-1}e_1$이라고 하자.
+>     그러면
+>     $$
+>     \begin{aligned}
+>     \rho(g)(f_2) &= -\ell^{-1}\rho(g)(e_1)+\rho(g)(e_2)=-\ell^{-1}\psi(g)e_1+c(g)e_1+e_2\\
+>     &= e_2-\ell^{-1}e_1=f_1.
+>     \end{aligned}
+>     $$
+>     이므로 $\mathbb Q_\ell e_2$ 역시 $g$에 대하여 고정된다.
+>     즉, basis $\{f_1,f_2\}$에서 $\rho(g)$는 $\operatorname{diag}(\psi(g),1)$이다.
+>     특히, $(1,2)$-entry $b(g)$가 $0$이므로 $z:=b/1=0$이 되어, $[z]=0$이므로 대응하는 exact sequence는 split한다. $\square$
 
 
 ## Related Pages

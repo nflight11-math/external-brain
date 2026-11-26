@@ -32,6 +32,20 @@ $K$는 number field, $G_K=\operatorname{Gal}(\overline K/K)$, $E/K$는 elliptic 
 > 2. 첫 번째 basis vector가 생성하는 line이 보존된다는 조건을 첫 번째 column에 반영하고 determinant를 계산하라.
 > 3. Stable line의 generator 하나가 고정되는 조건을 character로 읽어라.
 
+> [!done]- 증명
+> 1.
+>     $\overline{\rho}_{E,\ell}$이 reducible임과 nonzero proper $G_K$-stable subspace $W$ of $V$가 존재함은 동치이다.
+>     이때 $\dim_{\mathbb F_\ell}V=2$이므로 $\dim_{\mathbb F_\ell}W=1$일 수밖에 없으며, 따라서 $W$는 $G_K$-stable subgroup of $V=E[\ell]$이며 order는 $\ell$이다.
+>     역으로 만일 $W$가 order $\ell$인 $G_K$-stable subgroup of $V$이면 이는 자연스럽게 $\mathbb F_\ell$-subspace of $V$이며 동시에 nonzero, proper이다.
+>     
+>     만일 $W$가 order $\ell$인 $G_K$-stable subgroup of $V$이면 by Standard theorem, $\ker \varphi=W$인 degree $\ell=\#W$ isogeny $\varphi:E\to E'$이 존재한다.
+>     역으로 $\varphi:E\to E'$이 $K$-rational $\ell$-isogeny이면, $W=\ker\varphi$라고 할 시 $\#W=\deg \varphi=\ell$이다.
+>     또한 $P\in W$이면 $\varphi(\sigma P)=\sigma(\varphi P)=\sigma O_E=O_{E'}$이므로 $\sigma W\subset W$.
+>     이가 임의의 $\sigma\in G_K$에 대하여 성립하므로 $W$는 $G_K$-stable subgroup이다.
+>     
+>     그러므로 $\overline{\rho}_{E,\ell}$이 reducible임, $G_K$-stable subgroup of $V$ with order $\ell$이 존재함, $K$-rational $\ell$-isogeny $\varphi:E\to E'$가 존재함은 동치이다. $\square$
+> 
+
 ## Problem 2. A Rational Isogeny Without Rational Kernel Points
 
 **[증명된 사실]** $E_0/\mathbb Q:y^2=x^3-1$, $i^2=-1$, $P=(0,i)$, $C=\{O,P,-P\}$라 하자. $\ell=3$이다. [[Theories/Algebra/EllipticCurveGroupLaw#Doubling Formula|Standard doubling formula]]를 사용해도 된다: $R=(x,y)$에서 $y\ne0$이면 $s=3x^2/(2y)$, $x([2]R)=s^2-2x$, $y([2]R)=s(x-x([2]R))-y$이다.

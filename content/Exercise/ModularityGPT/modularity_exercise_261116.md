@@ -45,6 +45,21 @@ $K$는 number field, $G_K=\operatorname{Gal}(\overline K/K)$, $E/K$는 elliptic 
 >     
 >     그러므로 $\overline{\rho}_{E,\ell}$이 reducible임, $G_K$-stable subgroup of $V$ with order $\ell$이 존재함, $K$-rational $\ell$-isogeny $\varphi:E\to E'$가 존재함은 동치이다. $\square$
 > 
+> 2.
+>     $\psi(\sigma\tau)(P)=\sigma\tau P=\sigma(\psi(\tau)(P))=\psi(\sigma)\psi(\tau)P$이므로 $\psi:G_K\to\mathbb F_\ell^\times$는 character이다.
+>     또한 $L=K(x_P,y_P)$로 두면 $\sigma\in\ker\psi$는 $P$를 고정하므로 $L$ 역시 고정한다.
+>     즉 $\operatorname{ker}\psi=\operatorname{Gal}(\overline{K}/L)$이고 이는 $[L:K]<\infty$이므로 open이다.
+>     그러니 $\psi$는 연속함수. $\square$
+>     
+>     $\overline{\rho}_{E,\ell}(\sigma)=\begin{pmatrix}a(\sigma)& b(\sigma)\\c(\sigma)& d(\sigma)\end{pmatrix}\in\operatorname{GL}_2(\mathbb F_\ell)$라고 하자.
+>     그러면 $\psi(\sigma)P=\overline{\rho}_{E,\ell}(\sigma)(P)=a(\sigma)P+c(\sigma)Q$이 되어 $a=\psi,c=0$이 된다.
+>     또한 $\overline\chi_\ell=\det\overline\rho_{E,\ell}=ad-bc=\psi d$이므로 $d=\psi^{-1}$.
+>     즉, basis $\{P,Q\}$ 위에서 $\overline{\rho}_{E,\ell}(\sigma)$의 행렬 표현은 $\begin{pmatrix}\psi(\sigma) & b(\sigma)\\0 & \psi^{-1}(\sigma)\overline\chi_\ell(\sigma)\end{pmatrix}$이다.
+>     
+>     $V/C$의 원소는 $mQ+C$ 꼴이다.
+>     이때 $\sigma(Q+C)=\sigma Q+C=b(\sigma)P+\psi^{-1}(\sigma)\overline\chi_\ell(\sigma)Q+C=\psi^{-1}(\sigma)\overline\chi_\ell(\sigma)(Q+C)$이므로, $V/C$ 위의 $G_K$-action은 $\psi^{-1}\overline\chi_\ell$이라고 할 수 있다.
+> 
+
 
 ## Problem 2. A Rational Isogeny Without Rational Kernel Points
 

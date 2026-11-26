@@ -23,7 +23,7 @@ $K$는 number field, $G_K=\operatorname{Gal}(\overline K/K)$, $E/K$는 elliptic 
 **[증명된 정리를 사용한 귀결]** 위 quotient-isogeny theorem을 사용하라. [[Theories/Algebra/ResidualRepresentation#Subrepresentations and Quotients|Subrepresentation과 quotient representation]], [[Theories/Algebra/ResidualRepresentation#Isomorphisms and Fixed Subspaces|fixed subspace]], [[Theories/Algebra/QuotientIsogeny#Galois-Stable Finite Subgroups|Galois-stable subgroup]]의 정의를 참조하라.
 
 1. 다음 세 조건이 동치임을 증명하라: $\overline\rho_{E,\ell}$이 $\mathbb F_\ell$ 위에서 reducible이다; $E[\ell]$에 order $\ell$인 $G_K$-stable subgroup이 존재한다; $E$에서 출발하는 $K$-rational $\ell$-isogeny가 존재한다. Isogeny에서 출발하는 방향에서는 그 kernel이 왜 $E[\ell]$에 포함되는지도 설명하라.
-2. Stable line $C=\mathbb F_\ell P$를 고르고 $P$를 basis $(P,Q)$로 확장하라. $\sigma P=\psi(\sigma)P$로 정의한 $\psi:G_K\to\mathbb F_\ell^\times$이 연속인 character임을 증명하라. 이 basis에서 $\overline\rho_{E,\ell}(\sigma)$의 upper triangular matrix를 쓰고, quotient $V/C$ 위의 character를 $\psi,\overline\chi_\ell$로 표현하라. Quotient action은 $\sigma(R+C)=\sigma R+C$로 정의한다.
+2. Stable line $C=\mathbb F_\ell P$를 고르고 $P$를 basis $(P,Q)$로 확장하라. $\sigma P=\psi(\sigma)P$로 정의한 $\psi:G_K\to\mathbb F_\ell^\times$이 연속인 character임을 증명하라. 이 basis에서 $\overline\rho_{E,\ell}(\sigma)$의 upper triangular matrix를 쓰고, quotient $V/C$ 위의 character를 $\psi$와 mod $\ell$ cyclotomic character $\overline\chi_\ell$로 표현하라. Quotient action은 $\sigma(R+C)=\sigma R+C$로 정의한다.
 3. 고정한 stable line $C$에 대해 $C\subset E(K)$와 $\psi=1$이 동치임을 증명하라. 이어서 $E(K)[\ell]\ne\{O\}$이면 $K$-rational $\ell$-isogeny가 존재함을 보여라. 그 converse가 항상 참인지는 문제 2에서 판정하라.
 
 > [!tip]- 힌트

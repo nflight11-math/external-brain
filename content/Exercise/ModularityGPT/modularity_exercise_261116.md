@@ -59,7 +59,11 @@ $K$는 number field, $G_K=\operatorname{Gal}(\overline K/K)$, $E/K$는 elliptic 
 >     $V/C$의 원소는 $mQ+C$ 꼴이다.
 >     이때 $\sigma(Q+C)=\sigma Q+C=b(\sigma)P+\psi^{-1}(\sigma)\overline\chi_\ell(\sigma)Q+C=\psi^{-1}(\sigma)\overline\chi_\ell(\sigma)(Q+C)$이므로, $V/C$ 위의 $G_K$-action은 $\psi^{-1}\overline\chi_\ell$이라고 할 수 있다.
 > 
-
+> 3.
+>     $C=\mathbb F_\ell P\in E(K)$임과 $P\in E(K)$, 모든 $\sigma\in G_K$가 $P$를 고정함, 그리고 $\psi=1$이 모두 동치이다.
+>     
+>     만일 $E(K)[\ell]\ne\{O\}$이면 $O\ne P\in E(K)[\ell]$에 대하여 $C=\mathbb F_\ell P$가 $G_K$-stable line, 즉 order $\ell$인 $G_K$-stable subgroup of $E[\ell]$이다.
+>     그러므로 **1,**에 의하여 $K$-rational $\ell$-isogeny $\varphi:E\to E'$이 존재한다. $\square$
 
 ## Problem 2. A Rational Isogeny Without Rational Kernel Points
 

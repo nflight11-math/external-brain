@@ -90,6 +90,12 @@ $K$는 number field, $G_K=\operatorname{Gal}(\overline K/K)$, $E/K$는 elliptic 
 >     그러니 $C$는 $G_\mathbb Q$-stable이고 order $\ell=3$이다.
 >     **1-1**에 의하여 $\mathbb Q$-rational $3$-isogeny $\varphi:E\to E'$이 존재한다. $\square$
 
+> 2.
+>     $\sigma P=i^{\sigma-1}P$이므로 $\psi(\sigma)=i^{\sigma-1}\in\{\pm1\}$이다.
+>     $\sigma\in\ker \psi$임과 $\sigma(i)=i$, $\sigma\in\operatorname{Gal}(\overline{\mathbb Q}/\mathbb Q(i))$임이 동치이므로 $\ker\psi=\operatorname{Gal}(\overline{\mathbb Q}/\mathbb Q(i))$이고 이의 fixed field는 $\overline{\mathbb Q}^{\ker\psi}=\mathbb Q(i)$이다.
+>     
+>     $C=\mathbb F_3P$는 fixed by $\overline{\mathbb Q}$이나, $P$ 자신은 $\operatorname{conj}(P)=2P\ne P$이므로 $\overline{\mathbb Q}$에 fixed되지 않으니, $P$는 $\mathbb Q$-rational point가 아니다.
+
 ## Problem 3. Irreducibility and Absolute Irreducibility
 
 **[증명된 사실]** [[Theories/Algebra/AbsoluteIrreducibility#Scalar Extension|Scalar extension]]은 $V\otimes_{\mathbb F_\ell}\overline{\mathbb F}_\ell$에서 같은 행렬을 더 큰 coefficient field 위의 행렬로 보는 것이다. Kernel과 rank가 scalar extension 아래 어떻게 변하는지, eigenspace·nilpotent·unipotent의 정의는 [[Theories/Algebra/AbsoluteIrreducibility#Linear Algebra under Scalar Extension|해당 절]]을 참조하라.

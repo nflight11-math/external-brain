@@ -79,6 +79,17 @@ $K$는 number field, $G_K=\operatorname{Gal}(\overline K/K)$, $E/K$는 elliptic 
 > 2. $\sigma P=P$인 조건과 $\sigma P=-P$인 조건을 구분하라.
 > 3. $x([2]R)=x(R)$를 사용하여 $x$에 관한 식을 얻고, 가능한 rational $x$를 검토하라.
 
+> [!done]- 증명
+> 1.
+>     $E:y^2=x^3+ax+b$ 꼴의 curve에 대하여는 $-P=(x_P,-y_P)$이다.
+>     $s_P=3x_P^2/2y_P=3\cdot0^2/2i=0$이고, $x_{2P}=s_P^2-2x_P=0^2-2\cdot 0=0,$ $y_{2P}=s_P(x_P-x_{2P})-y_P=0(0-0)-i=-i$이다.
+>     그러므로 $2P=(0,-i)=-P$이며, $3P=O$이나 $P\ne O$이니 $\operatorname{ord}P=3$. $\square$
+>     
+>     모든 $\sigma\in G_\mathbb Q$에 대하여 $(\sigma i)^2=\sigma(i^2)=-1$이니 $\sigma i=\pm i.$
+>     $\sigma P=(0,\sigma i)=(i^{\sigma-1})P\in \{P,-P\}$이므로 $\sigma C\subset C$, 곧 $\sigma C=C$이다.
+>     그러니 $C$는 $G_\mathbb Q$-stable이고 order $\ell=3$이다.
+>     **1-1**에 의하여 $\mathbb Q$-rational $3$-isogeny $\varphi:E\to E'$이 존재한다. $\square$
+
 ## Problem 3. Irreducibility and Absolute Irreducibility
 
 **[증명된 사실]** [[Theories/Algebra/AbsoluteIrreducibility#Scalar Extension|Scalar extension]]은 $V\otimes_{\mathbb F_\ell}\overline{\mathbb F}_\ell$에서 같은 행렬을 더 큰 coefficient field 위의 행렬로 보는 것이다. Kernel과 rank가 scalar extension 아래 어떻게 변하는지, eigenspace·nilpotent·unipotent의 정의는 [[Theories/Algebra/AbsoluteIrreducibility#Linear Algebra under Scalar Extension|해당 절]]을 참조하라.

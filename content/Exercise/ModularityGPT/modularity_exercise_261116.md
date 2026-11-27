@@ -89,7 +89,7 @@ $K$는 number field, $G_K=\operatorname{Gal}(\overline K/K)$, $E/K$는 elliptic 
 >     $\sigma P=(0,\sigma i)=(i^{\sigma-1})P\in \{P,-P\}$이므로 $\sigma C\subset C$, 곧 $\sigma C=C$이다.
 >     그러니 $C$는 $G_\mathbb Q$-stable이고 order $\ell=3$이다.
 >     **1-1**에 의하여 $\mathbb Q$-rational $3$-isogeny $\varphi:E\to E'$이 존재한다. $\square$
-
+>
 > 2.
 >     $\sigma P=i^{\sigma-1}P$이므로 $\psi(\sigma)=i^{\sigma-1}\in\{\pm1\}$이다.
 >     $\sigma\in\ker \psi$임과 $\sigma(i)=i$, $\sigma\in\operatorname{Gal}(\overline{\mathbb Q}/\mathbb Q(i))$임이 동치이므로 $\ker\psi=\operatorname{Gal}(\overline{\mathbb Q}/\mathbb Q(i))$이고 이의 fixed field는 $\overline{\mathbb Q}^{\ker\psi}=\mathbb Q(i)$이다.
